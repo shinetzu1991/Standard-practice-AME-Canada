@@ -1,0 +1,2630 @@
+[
+  {
+    "id": "math-001",
+    "pregunta": "The cube root of 99 divided by the square root of 1 is:",
+    "opciones": [
+      "4.6261",
+      "0.46261",
+      "0.046261",
+      "0.0046261"
+    ],
+    "correcta": 0,
+    "tema": "Math"
+    
+  },
+  {
+    "id": "math-002",
+    "pregunta": "The volume of a cylinder measuring 12 inches in diameter and 10 inches in height is:",
+    "opciones": [
+      "563.0 cubic inches",
+      "1130.0 cubic inches",
+      "2261.9 cubic inches",
+      "4523.9 cubic inches"
+    ],
+    "correcta": 1,
+    "tema": "Math"
+  },
+  {
+    "id": "math-003",
+    "pregunta": "1 microvolt is equal to:",
+    "opciones": [
+      "10^-3 volt",
+      "10^-1 volt",
+      "10^-6 volt",
+      "10^6 volt"
+    ],
+    "correcta": 2,
+    "tema": "Electrical"
+  },
+  {
+    "id": "math-004",
+    "pregunta": "In the triangle illustrated, cosine A is equal to:",
+    "opciones": [
+      "X/A",
+      "Z/X",
+      "X/B",
+      "Y/X"
+    ],
+    "correcta": 1,
+    "tema": "Trigonometry",
+    "explicacion": "cos(A) = adjacent / hypotenuse → Z/X",
+    "imagen": "/images/triangle.png"
+  },
+  {
+  "id": "physics-001",
+  "pregunta": "If the volume and the absolute temperature of a confined gas are doubled, the pressure will:",
+  "opciones": [
+    "Be halved",
+    "Be doubled",
+    "Be quadrupled",
+    "Not change"
+  ],
+  "correcta": 3,
+  "tema": "Physics",
+  "explicacion": "From the ideal gas law (PV = nRT), if both volume and temperature double, pressure remains constant."
+  },
+  {
+  "id": "physics-002",
+  "pregunta": "Of the following, the liquid with the lowest specific gravity is:",
+  "opciones": [
+    "Gasoline",
+    "Water",
+    "Kerosene",
+    "Mercury"
+  ],
+  "correcta": 0,
+  "tema": "Physics",
+  "explicacion": "Specific gravity compares density to water (1.0). Gasoline (~0.72) is the lowest among the options."
+  },
+  {
+  "id": "physics-003",
+  "pregunta": "Power may be defined as:",
+  "opciones": [
+    "(Force × Time) / Distance",
+    "(Time × Distance) / Force",
+    "Time / (Force × Distance)",
+    "(Force × Distance) / Time"
+  ],
+  "correcta": 3,
+  "tema": "Physics",
+  "explicacion": "Power is defined as work done per unit time. Work = Force × Distance, so Power = (Force × Distance) / Time."
+  },
+  {
+  "id": "mechanical-001",
+  "pregunta": "The gear ratio of the following planetary gear system is:",
+  "opciones": [
+    "1:1",
+    "3:2",
+    "2:1",
+    "3:1"
+  ],
+  "correcta": 2,
+  "tema": "Mechanical",
+  "explicacion": "For a planetary gear with fixed sun gear (50 teeth) and ring gear (100 teeth), the gear ratio is 2:1.",
+  "imagen": "/images/planetarygear.png"
+  },
+  {
+    "id": "physics-004",
+    "pregunta": "1 horsepower is equal to:",
+    "opciones": [
+      "550 ft-lb per square inch",
+      "550 ft-lb per minute",
+      "33,000 ft-lb per second",
+      "33,000 ft-lb per minute"
+    ],
+    "correcta": 3,
+    "tema": "Physics",
+    "explicacion": "1 horsepower = 33,000 foot-pounds per minute or 550ft-lb per second."
+  },
+  {
+    "id": "physics-005",
+    "pregunta": "The air that we breathe is a physical mixture of gases of which approximately:",
+    "opciones": [
+      "2% is nitrogen and 98% is oxygen",
+      "21% is nitrogen and 78% is oxygen",
+      "78% is nitrogen and 21% is oxygen",
+      "98% is oxygen and 2% is other gases"
+    ],
+    "correcta": 2,
+    "tema": "Physics",
+    "explicacion": "Air is approximately 78% nitrogen and 21% oxygen, with small amounts of other gases."
+  },
+  {
+    "id": "physics-006",
+    "pregunta": "The law that states: 'An increase in pressure at any point in a confined liquid will produce an equal increase in pressure at every other point in the liquid.' is:",
+    "opciones": [
+      "Dalton's law",
+      "Pascal's law",
+      "Boyle's law",
+      "Avogadro's law"
+    ],
+    "correcta": 1,
+    "tema": "Physics",
+    "explicacion": "Pascal's law states that pressure applied to a confined fluid is transmitted equally in all directions."
+  },
+  {
+  "id": "physics-007",
+  "pregunta": "The speed of sound in air is dependent on:",
+  "opciones": [
+    "The altimeter setting",
+    "Air pressure",
+    "Air temperature",
+    "Both air pressure and air temperature"
+  ],
+  "correcta": 2,
+  "tema": "Physics",
+  "explicacion": "The speed of sound in air primarily depends on temperature. Higher temperature increases the speed of sound."
+  },
+  {
+  "id": "physics-008",
+  "pregunta": "The atmospheric pressure at sea level is approximately:",
+  "opciones": [
+    "712 millibars",
+    "29.92 inches of water",
+    "14.7 p.s.i.",
+    "2992 inches of mercury"
+  ],
+  "correcta": 2,
+  "tema": "Physics",
+  "explicacion": "Standard atmospheric pressure at sea level is approximately 14.7 psi (or 1013 mb / 29.92 inHg)."
+  },
+  {
+  "id": "physics-009",
+  "pregunta": "The temperature at which humid air, when cooled at constant pressure, becomes saturated is called:",
+  "opciones": [
+    "The dew point",
+    "The isobaric point",
+    "The inversion point",
+    "The relative temperature"
+  ],
+  "correcta": 0,
+  "tema": "Physics",
+  "explicacion": "The dew point is the temperature at which air becomes saturated with moisture when cooled at constant pressure."
+  },
+  {
+  "id": "electrical-001",
+  "pregunta": "Identify the resistor depicted below:",
+  "opciones": [
+    "250 ohms ± 4%",
+    "2,500 ohms ± 10%",
+    "250,000 ohms ± 20%",
+    "2,500,000 ohms ± 20%"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "Color code: Red (2), Green (5), Yellow (multiplier 10^4). So 25 × 10^4 = 250,000 ohms. No tolerance band shown → ±20%.",
+  "imagen": "/images/resistor1.png"
+},
+{
+    "id": "electronics-016",
+    "pregunta": "As the temperature of a transistor increases above normal operation range:",
+    "opciones": [
+      "The electron flow across the junction changes direction",
+      "The semiconductor material from which it is constructed takes on the characteristics of a nonconductor",
+      "The electron activity within the transistor decreases",
+      "Its electrical resistance decreases"
+    ],
+    "correcta": 3,
+    "explicacion": "As temperature increases, semiconductor conductivity increases, meaning resistance decreases."
+  },
+  {
+    "id": "electronics-017",
+    "pregunta": "The current through a 500 watt, 100 ohm load (resistance) is:",
+    "opciones": [
+      "1.12 amperes",
+      "2.0 amperes",
+      "2.24 amperes",
+      "5.0 amperes"
+    ],
+    "correcta": 2,
+    "explicacion": "Using P = I²R → I = sqrt(P/R) = sqrt(500/100) = sqrt(5) ≈ 2.24 A."
+  },
+  {
+    "id": "electronics-018",
+    "pregunta": "The electrolyte used in a Ni-cad battery is a:",
+    "opciones": [
+      "30% solution of potassium hydroxide",
+      "70% solution of potassium hydroxide",
+      "30% nickel and 70% cadmium hydroxide solution",
+      "30% nickel and 70% potassium hydroxide solution"
+    ],
+    "correcta": 0,
+    "explicacion": "Nickel-cadmium batteries use an electrolyte of approximately 30% potassium hydroxide solution."
+  },
+  {
+    "id": "electronics-019",
+    "pregunta": "A 400 Hz AC circuit contains a 5 henry coil. The inductive reactance in the circuit is:",
+    "opciones": [
+      "796 ohm",
+      "796 henry",
+      "12,560 ohm",
+      "12,560 henry"
+    ],
+    "correcta": 2,
+    "explicacion": "Inductive reactance is XL = 2πfL = 2 × π × 400 × 5 ≈ 12,566 ohms, rounded to 12,560 ohm."
+  },
+  {
+    "id": "electronics-020",
+    "pregunta": "When AC power is applied to a capacitive circuit, the current:",
+    "opciones": [
+      "Lags the voltage by 90 degrees",
+      "Leads the voltage by 90 degrees",
+      "Lags the voltage by 180 degrees",
+      "Leads the voltage by 180 degrees"
+    ],
+    "correcta": 1,
+    "explicacion": "In a purely capacitive AC circuit, current leads voltage by 90 degrees."
+  },
+  {
+    "id": "electronics-021",
+    "pregunta": "The color used to identify the terminal lug of a 20 gauge aircraft wire is:",
+    "opciones": [
+      "Red",
+      "Blue",
+      "Yellow",
+      "Orange"
+    ],
+    "correcta": 0,
+    "explicacion": "A 20 gauge aircraft wire terminal lug is identified by the color red."
+  },
+  {
+  "id": "electronics-022",
+  "pregunta": "The symbol depicted below represents a:",
+  "opciones": [
+    "Tunnel diode",
+    "PNP transistor",
+    "Unijunction diode",
+    "Field effect transistor"
+  ],
+  "correcta": 3,
+    "explicacion": "The symbol shows a gate (G), source (S), and drain (D), which identifies it as a field effect transistor (FET).",
+    "imagen": "/images/fieldeffect.png"
+},
+{
+  "id": "electronics-023",
+  "pregunta": "The total resistance of three 47 ohm resistors connected in parallel is:",
+  "opciones": [
+    "1.41 ohm",
+    "1.56 ohm",
+    "14.1 ohm",
+    "15.6 ohm"
+  ],
+  "correcta": 3,
+  "explicacion": "For equal resistors in parallel: R_total = R / n = 47 / 3 ≈ 15.67 ohms. Closest answer is 15.6 ohm."
+},
+{
+  "id": "electronics-024",
+  "pregunta": "The working voltage of a capacitor to which AC or pulsating DC is applied should be:",
+  "opciones": [
+    "0.707 times the applied voltage",
+    "1.41 times the applied voltage",
+    "At least 50% greater than the applied voltage",
+    "The same as or greater than the applied voltage"
+  ],
+  "correcta": 2,
+  "explicacion": "Capacitors used in AC or pulsating DC circuits should have a voltage rating at least 50% higher to handle peak voltages safely."
+},
+{
+  "id": "electronics-025",
+  "pregunta": "In reference to the figure depicted below, the Boolean expression is:",
+  "opciones": [
+    "Y = AC + BC̅ + A̅BC",
+    "Y = AC̅ + B̅C + ABC",
+    "Y = AC + B̅C + ABC̅",
+    "Y = AC + BC + A̅BC"
+  ],
+  "correcta": 0,
+  "explicacion": "The top AND gate gives AC, the middle AND gate gives BC̅, and the bottom AND gate gives A̅BC. These three outputs are ORed together, so Y = AC + BC̅ + A̅BC.",
+  "imagen": "/images/logic-025.png"
+},
+{
+  "id": "electronics-026",
+  "pregunta": "The binary number equivalent to the number 9 in the decimal number system is:",
+  "opciones": [
+    "0110",
+    "1001",
+    "1010",
+    "1011"
+  ],
+  "correcta": 1,
+  "explicacion": "Decimal 9 converted to binary is 1001 (8 + 1)."
+},
+{
+  "id": "electronics-027",
+  "pregunta": "The function of the logic symbol depicted below can also be accomplished by:",
+  "opciones": [
+    "An OR gate",
+    "A NOR gate",
+    "A negative OR gate",
+    "A negative AND gate"
+  ],
+  "correcta": 0,
+  "explicacion": "The diagram shows an AND gate with inverted inputs and output, which is equivalent to an OR gate by De Morgan’s theorem.",
+  "imagen": "/images/logic-027.png"
+},
+{
+  "id": "electronics-028",
+  "pregunta": "A logic device has a voltage at its output only when there is no voltage on any input is:",
+  "opciones": [
+    "An AND gate",
+    "A NAND gate",
+    "A NOR gate",
+    "An inverter"
+  ],
+  "correcta": 2,
+  "explicacion": "A NOR gate outputs HIGH only when all inputs are LOW."
+},
+{
+  "id": "materials-029",
+  "pregunta": "The ability of a metal to be permanently deformed by drawing or pulling it is known as:",
+  "opciones": [
+    "Hardness",
+    "Ductility",
+    "Brittleness",
+    "Malleability"
+  ],
+  "correcta": 1,
+  "explicacion": "Ductility is the ability of a material to be stretched or drawn into a wire without breaking."
+},
+{
+  "id": "materials-030",
+  "pregunta": "Monel is an alloy consisting of:",
+  "opciones": [
+    "10% nickel, 88% steel, 2% others",
+    "20% nickel, 78% steel, 2% others",
+    "68% nickel, 29% copper, 3% others",
+    "68% nickel, 22% copper, 10% steel, 2% others"
+  ],
+  "correcta": 2,
+  "explicacion": "Monel is primarily composed of about 68% nickel and 29% copper, with small amounts of other elements."
+},
+{
+  "id": "materials-031",
+  "pregunta": "The alloy which has the highest strength-to-weight ratio when combined with aluminum is:",
+  "opciones": [
+    "Zinc and aluminum",
+    "Steel and magnesium",
+    "Chrome and nickel",
+    "Aluminum and magnesium"
+  ],
+  "correcta": 3,
+  "explicacion": "Aluminum-magnesium alloys provide high strength-to-weight ratio and are widely used in aircraft structures."
+},
+{
+  "id": "materials-032",
+  "pregunta": "The tensile strength of metals is usually measured in:",
+  "opciones": [
+    "Foot-pounds",
+    "Square inches per pounds",
+    "Foot-pounds per square inch",
+    "Thousands of pounds per square inch"
+  ],
+  "correcta": 3,
+  "explicacion": "Tensile strength is typically expressed in psi (pounds per square inch), often in thousands (ksi)."
+},
+{
+  "id": "materials-033",
+  "pregunta": "A material's resistance to the forces tending to tear it at the point of the applied load is:",
+  "opciones": [
+    "The shear strength",
+    "The bearing strength",
+    "The yield strength",
+    "The tensile strength"
+  ],
+  "correcta": 3,
+  "explicacion": "Bearing strength refers to resistance to crushing or tearing at the point where a load is applied, such as around fasteners."
+},
+{
+  "id": "materials-034",
+  "pregunta": "The color of grade 100 high-lead aviation gasoline is:",
+  "opciones": [
+    "Green",
+    "Blue",
+    "Straw",
+    "Red"
+  ],
+  "correcta": 0,
+  "explicacion": "Grade 100 aviation gasoline is dyed green for identification."
+},
+{
+  "id": "systems-035",
+  "pregunta": "The term \"Wide cut\" used in aviation fuel means:",
+  "opciones": [
+    "A kerosene type of fuel",
+    "An AVGAS type of fuel",
+    "A jet fuel containing both naphtha and kerosene",
+    "A jet fuel containing AVGAS and Jet-A or Jet-B"
+  ],
+  "correcta": 2,
+  "explicacion": "Wide-cut fuel (such as Jet-B) is a blend of naphtha and kerosene, providing better cold weather performance."
+},
+{
+  "id": "systems-036",
+  "pregunta": "The color band on a line carrying hydraulic fluid is:",
+  "opciones": [
+    "Blue and yellow",
+    "Grey and blue",
+    "Green and yellow",
+    "Orange and blue"
+  ],
+  "correcta": 0,
+  "explicacion": "Hydraulic lines are typically identified with blue and yellow color coding."
+},
+{
+  "id": "systems-037",
+  "pregunta": "A hydraulic fluid which has a good resistance to combustion and a low degree of evaporation at normal temperature possesses:",
+  "opciones": [
+    "A low flash point",
+    "A high flash point",
+    "A low fire point",
+    "A high viscosity"
+  ],
+  "correcta": 1,
+  "explicacion": "A high flash point indicates resistance to ignition and lower volatility."
+},
+{
+  "id": "structures-038",
+  "pregunta": "Aircraft bolts are almost always manufactured in:",
+  "opciones": [
+    "The Class 1, loose fit",
+    "The Class 2, free fit",
+    "The Class 3, medium fit",
+    "The Class 4, close fit"
+  ],
+  "correcta": 2,
+  "explicacion": "Aircraft bolts are generally manufactured with a Class 3 (medium fit) for proper strength and fit."
+},
+{
+  "id": "structures-039",
+  "pregunta": "Jo-Bolt is:",
+  "opciones": [
+    "A type of clevis bolt",
+    "A flush head threadless bolt",
+    "A hex-head threadless bolt",
+    "An internally threaded three-piece rivet"
+  ],
+  "correcta": 3,
+  "explicacion": "A Jo-bolt is a high-strength, three-piece fastener with an internally threaded sleeve, commonly used in aircraft structures."
+},
+{
+  "id": "structures-040",
+  "pregunta": "A piece of aircraft hardware is designated with a part number AN320-10. The digit 10 means:",
+  "opciones": [
+    "A number 10 bolt",
+    "10 threads per inch",
+    "A castellated shear nut",
+    "5/8 inch diameter"
+  ],
+  "correcta": 3,
+  "explicacion": "In AN bolt numbering, the number represents the diameter in sixteenths of an inch. 10/16 = 5/8 inch."
+},
+{
+  "id": "general-041",
+  "pregunta": "The acronym SAE used for aircraft materials means:",
+  "opciones": [
+    "Society of Aerospace Engineers",
+    "Standard of Aerospace Engineering",
+    "Society of Automotive Engineers",
+    "Standard of Aviation Engineering"
+  ],
+  "correcta": 2,
+  "explicacion": "SAE stands for Society of Automotive Engineers, which develops standards widely used in aviation."
+},
+{
+  "id": "structures-042",
+  "pregunta": "The material identified by two raised dashes on the head of an aircraft bolt is:",
+  "opciones": [
+    "Cadmium plated nickel steel",
+    "2024-T aluminum alloy",
+    "Corrosion resistant steel",
+    "Commercially pure aluminum"
+  ],
+  "correcta": 1,
+  "explicacion": "Two raised dashes on a bolt head identify it as being made from 2024-T aluminum alloy."
+},
+{
+  "id": "structures-043",
+  "pregunta": "A bolt with an \"X\" inside a triangle on the head is classified as:",
+  "opciones": [
+    "AN aluminum alloy bolt",
+    "NAS close tolerance bolt",
+    "NAS standard aircraft bolt",
+    "AN corrosion resistant steel bolt"
+  ],
+  "correcta": 1,
+  "explicacion": "A triangle with an \"X\" indicates a NAS close tolerance bolt used in precision applications."
+},
+{
+  "id": "structures-044",
+  "pregunta": "Clevis bolts are used:",
+  "opciones": [
+    "Mostly in landing gear assemblies",
+    "Only for shear load applications",
+    "For tension and shear load conditions",
+    "When external tension loads are applied"
+  ],
+  "correcta": 1,
+  "explicacion": "Clevis bolts are designed for shear loads only and are not intended to carry tension loads."
+},
+{
+  "id": "systems-045",
+  "pregunta": "The smallest size cable that may be used in aircraft primary control systems is:",
+  "opciones": [
+    "1/8 inch",
+    "3/16 inch",
+    "1/4 inch",
+    "5/16 inch"
+  ],
+  "correcta": 0,
+  "explicacion": "The minimum cable size permitted for primary flight control systems is typically 1/8 inch."
+},
+{
+  "id": "systems-046",
+  "pregunta": "A 7 x 19 cable:",
+  "opciones": [
+    "Consists of 7 wires of 19 strands",
+    "Consists of 7 strands of 19 wires",
+    "Has 7 strands and measures 19 inches in length",
+    "Has 19 strands and measures 7/16 inch in diameter"
+  ],
+  "correcta": 1,
+  "explicacion": "A 7×19 cable means 7 strands with 19 wires in each strand."
+},
+{
+  "id": "systems-047",
+  "pregunta": "The five-tuck woven splice is:",
+  "opciones": [
+    "Not authorized for aircraft use",
+    "Authorized provided the splice is swaged",
+    "Authorized for 7 x 19 cable only",
+    "Authorized for both 7 x 7 and 7 x 19 cables"
+  ],
+  "correcta": 3,
+  "explicacion": "The five-tuck splice is approved for both 7×7 and 7×19 aircraft control cables."
+},
+{
+  "id": "systems-048",
+  "pregunta": "The strength of a Nicopressed control cable assembly is:",
+  "opciones": [
+    "85% of the original cable strength",
+    "100% of the original cable strength",
+    "120% of the original cable strength",
+    "150% of the original control cable strength"
+  ],
+  "correcta": 1,
+  "explicacion": "A properly installed Nicopress fitting maintains 100% of the cable’s rated strength."
+},
+{
+  "id": "systems-049",
+  "pregunta": "Aircraft control cables may be made of:",
+  "opciones": [
+    "Aluminum or copper",
+    "Copper or stainless steel",
+    "Preformed steel or stainless steel",
+    "Galvanized carbon steel or stainless steel"
+  ],
+  "correcta": 3,
+  "explicacion": "Aircraft control cables are typically made from galvanized carbon steel or stainless steel for strength and corrosion resistance."
+},
+{
+  "id": "general-050",
+  "pregunta": "The type of diagram used to explain a principle of operation rather than show the parts as they actually appear is:",
+  "opciones": [
+    "A flow chart",
+    "A block diagram",
+    "A schematic diagram",
+    "An orthographic projection"
+  ],
+  "correcta": 2,
+  "explicacion": "A schematic diagram shows how a system works using symbols rather than the actual physical appearance of components."
+},
+{
+  "id": "general-051",
+  "pregunta": "How many faces of an object are visible in an isometric drawing:",
+  "opciones": [
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "correcta": 0,
+  "explicacion": "An isometric drawing typically shows three faces of an object simultaneously."
+},
+{
+  "id": "general-052",
+  "pregunta": "The line illustrated below is known as a:",
+  "opciones": [
+    "Hidden line",
+    "Phantom line",
+    "Long break line",
+    "Short break line"
+  ],
+  "correcta": 1,
+  "explicacion": "A phantom line is used to show alternate positions of moving parts and is represented by long and short dashes.",
+  "imagen": "/images/line-052.png"
+},
+{
+  "id": "general-053",
+  "pregunta": "The title block of an engineering drawing is located at:",
+  "opciones": [
+    "Lower left hand corner of the drawing",
+    "Lower right hand corner of the drawing",
+    "Upper left hand corner of the drawing",
+    "Upper right hand corner of the drawing"
+  ],
+  "correcta": 1,
+  "explicacion": "The title block is typically located in the lower right-hand corner of an engineering drawing."
+},
+{
+  "id": "systems-054",
+  "pregunta": "The type of bearing used where the bearing is subjected to radial loads only is:",
+  "opciones": [
+    "Steel plain bearing",
+    "Duplex ball bearing",
+    "Simplex ball bearing",
+    "Straight roller bearing"
+  ],
+  "correcta": 3,
+  "explicacion": "Straight roller bearings are designed to carry radial loads only and are not suitable for thrust loads."
+},
+{
+  "id": "systems-055",
+  "pregunta": "From the figure below, identify the Duplex bearing:",
+  "opciones": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "correcta": 0,
+  "explicacion": "A duplex bearing consists of two bearings mounted together to take combined loads. In the figure, option A shows this configuration.",
+  "imagen": "/images/bearing-055.png"
+},
+{
+  "id": "tools-056",
+  "pregunta": "Duckbill pliers are used:",
+  "opciones": [
+    "For crimping metal",
+    "For grasping odd shaped part",
+    "For twisting safety wire",
+    "To make adjustments in tight places"
+  ],
+  "correcta": 2,
+  "explicacion": "Duckbill pliers are commonly used for twisting safety wire in aircraft maintenance."
+},
+{
+  "id": "tools-057",
+  "pregunta": "The diagram below illustrates a vernier caliper reading of:",
+  "opciones": [
+    "1.304",
+    "1.314",
+    "1.324",
+    "1.368"
+  ],
+  "correcta": 1,
+  "explicacion": "The main scale reads 1.300 inches and the vernier scale aligns at 0.014, giving a total of 1.314 inches.",
+  "imagen": "/images/vernier-057.png"
+},
+{
+  "id": "tools-058",
+  "pregunta": "Holes are smoothed and enlarged to exact size by using:",
+  "opciones": [
+    "A reamer",
+    "A drill bit",
+    "A rat tail file",
+    "A round tapered file"
+  ],
+  "correcta": 0,
+  "explicacion": "A reamer is used to finish and bring a drilled hole to an accurate size with a smooth surface."
+},
+{
+  "id": "tools-059",
+  "pregunta": "The hand tool used to cut external threads on round stock is:",
+  "opciones": [
+    "A lathe",
+    "A tap",
+    "A die",
+    "A broach"
+  ],
+  "correcta": 2,
+  "explicacion": "A die is used to cut external threads, while a tap is used for internal threads."
+},
+{
+  "id": "tools-060",
+  "pregunta": "If the thimble of a standard micrometer caliper, graduated in thousandths of an inch, is turned one full revolution, the spindle will move:",
+  "opciones": [
+    "0.010 inch",
+    "0.025 inch",
+    "0.040 inch",
+    "0.050 inch"
+  ],
+  "correcta": 1,
+  "explicacion": "A standard micrometer has 40 threads per inch, so one full turn moves the spindle 1/40 inch = 0.025 inch."
+},
+{
+  "id": "tools-061",
+  "pregunta": "The tool used to find the center of a shaft or other cylindrical work is a:",
+  "opciones": [
+    "Surface gauge",
+    "Dial indicator",
+    "Combination set",
+    "Micrometer caliper"
+  ],
+  "correcta": 2,
+  "explicacion": "A combination set with a center head is used to locate the center of cylindrical workpieces."
+},
+{
+  "id": "structures-062",
+  "pregunta": "A joggle is:",
+  "opciones": [
+    "A flanged angle formed by shrinking",
+    "A hole cut in rib section, or fuselage frame",
+    "An offset formed on an angle strip",
+    "A flanged angle formed by cutting"
+  ],
+  "correcta": 2,
+  "explicacion": "A joggle is an offset or step formed in sheet metal to allow overlapping parts to fit flush."
+},
+{
+  "id": "structures-063",
+  "pregunta": "A piece of metal is bent to a certain radius. The curvature of the bend is referred to as the:",
+  "opciones": [
+    "Bend line",
+    "Neutral line",
+    "Bend radius",
+    "Bend allowance"
+  ],
+  "correcta": 3,
+  "explicacion": "Bend allowance refers to the amount of material required for the bend and relates to the curvature formed."
+},
+{
+  "id": "structures-064",
+  "pregunta": "To reduce the possibility of cracking and to insure more uniform strength characteristics, bends in sheet metal should be made:",
+  "opciones": [
+    "30 degrees to the grain",
+    "45 degrees to the grain",
+    "60 degrees to the grain",
+    "Perpendicular to the grain"
+  ],
+  "correcta": 3,
+  "explicacion": "Bending perpendicular to the grain reduces the likelihood of cracking and improves strength."
+},
+{
+  "id": "structures-065",
+  "pregunta": "The sharpest bend that can be placed in a piece of metal without critically weakening the part is called the:",
+  "opciones": [
+    "Bend allowance",
+    "Neutral radius of bend",
+    "Minimum radius of bend",
+    "Maximum radius of bend"
+  ],
+  "correcta": 2,
+  "explicacion": "Minimum bend radius is the smallest radius that can be formed without damaging the material."
+},
+{
+  "id": "systems-066",
+  "pregunta": "The term \"cold flow\" is generally associated with:",
+  "opciones": [
+    "Rubber hose",
+    "Hydraulic lock",
+    "Vaporizing fuel",
+    "Oxygen lines"
+  ],
+  "correcta": 0,
+  "explicacion": "Cold flow refers to the deformation of materials like rubber under pressure over time."
+},
+{
+  "id": "systems-067",
+  "pregunta": "When under pressure, a flexible hose:",
+  "opciones": [
+    "Expands in length and diameter",
+    "Contracts in length and diameter",
+    "Expands in length and contracts in diameter",
+    "Contracts in length and expands in diameter"
+  ],
+  "correcta": 3,
+  "explicacion": "Under pressure, a flexible hose typically expands in diameter and shortens in length."
+},
+{
+  "id": "systems-068",
+  "pregunta": "The principal advantage of Teflon hose is:",
+  "opciones": [
+    "Its low cost",
+    "Its flexibility",
+    "Its operating strength",
+    "Its corrosion resistance"
+  ],
+  "correcta": 2,
+  "explicacion": "Teflon hoses are known for their high operating strength and ability to withstand extreme temperatures and pressures."
+},
+{
+  "id": "systems-069",
+  "pregunta": "The international marking of an instrument air line is a:",
+  "opciones": [
+    "Wavy band",
+    "Zigzag line",
+    "Series of dots",
+    "Plain white band"
+  ],
+  "correcta": 1,
+  "explicacion": "Instrument air lines are identified internationally by a zigzag marking."
+},
+{
+  "id": "structures-070",
+  "pregunta": "The 2 types of threads provided on AN fittings are:",
+  "opciones": [
+    "Universal and bulkhead threads",
+    "Tube and pipe threads",
+    "Square and ACME threads",
+    "Parallel and tapered threads"
+  ],
+  "correcta": 3,
+  "explicacion": "AN fittings typically use parallel and tapered thread designs depending on application."
+},
+{
+  "id": "structures-071",
+  "pregunta": "Scratches or nicks on the straight portion of aluminum alloy tubing may be repaired if they are no deeper than:",
+  "opciones": [
+    "1/32 inch",
+    "1/16 inch",
+    "10% of the wall thickness",
+    "20% of the wall thickness"
+  ],
+  "correcta": 2,
+  "explicacion": "Damage not exceeding 10% of the wall thickness is generally acceptable for repair."
+},
+{
+  "id": "systems-072",
+  "pregunta": "When a turnbuckle is tightened, the number of exposed threads showing outside the barrel at each end is:",
+  "opciones": [
+    "1 thread",
+    "2 threads",
+    "3 threads",
+    "4 threads"
+  ],
+  "correcta": 2,
+  "explicacion": "Properly adjusted turnbuckles should have an equal number of threads exposed on each end, typically about 3 threads."
+},
+{
+  "id": "structures-073",
+  "pregunta": "The general rule for finding the proper rivet diameter is:",
+  "opciones": [
+    "1/4 the rivet's length",
+    "1/2 the rivet's length",
+    "Three times the thickness of the thinnest sheet",
+    "Three times the thickness of the thickest sheet"
+  ],
+  "correcta": 3,
+  "explicacion": "A common rule is that rivet diameter should be approximately three times the thickness of the thickest sheet being joined."
+},
+{
+  "id": "structures-074",
+  "pregunta": "The minimum edge distance for rivets is:",
+  "opciones": [
+    "Twice the diameter of the rivet shank",
+    "Twice the diameter of the rivet head",
+    "Three times the diameter of the rivet head",
+    "1/2 the thickness of the material being riveted"
+  ],
+  "correcta": 0,
+  "explicacion": "Minimum edge distance is typically 2 times the rivet diameter to prevent edge failure."
+},
+{
+  "id": "structures-075",
+  "pregunta": "The dimensions of an AN430-4-8 rivet are:",
+  "opciones": [
+    "1/8 inch in diameter and 1/2 inch long",
+    "4/16 inch in diameter and 8/16 inch long",
+    "4/16 inch in diameter and 8/32 inch long",
+    "4/32 inch in diameter and 8/32 inch long"
+  ],
+  "correcta": 0,
+  "explicacion": "AN430-4-8 indicates a 4/32 (1/8 inch) diameter and 8/16 (1/2 inch) length rivet."
+},
+{
+  "id": "structures-076",
+  "pregunta": "Most rivets used in aircraft construction have:",
+  "opciones": [
+    "Dimples",
+    "A raised dot",
+    "Smooth heads without markings",
+    "Two raised bars on their heads"
+  ],
+  "correcta": 0,
+  "explicacion": "Most aircraft rivets have identification marks such as dimples on the head."
+},
+{
+  "id": "structures-077",
+  "pregunta": "A well-designed rivet joint will subject the rivets to:",
+  "opciones": [
+    "Shear loads",
+    "Tension loads",
+    "Bending loads",
+    "Compression loads"
+  ],
+  "correcta": 0,
+  "explicacion": "Rivets are strongest in shear, so joints are designed to place rivets under shear loads."
+},
+{
+  "id": "structures-078",
+  "pregunta": "The primary factor to be considered when selecting an oxyacetylene torch tip is:",
+  "opciones": [
+    "Shape of the weld",
+    "Size of the weld rod",
+    "Location and position of the material",
+    "Thickness of the material to be welded"
+  ],
+  "correcta": 3,
+  "explicacion": "Torch tip size is selected primarily based on the thickness of the material being welded."
+},
+{
+  "id": "systems-079",
+  "pregunta": "The only acceptable lubricant for oxygen equipment used in welding is:",
+  "opciones": [
+    "Castor oil",
+    "Oxy-7 oil",
+    "Castile oil",
+    "Bee's wax"
+  ],
+  "correcta": 3,
+  "explicacion": "Only approved non-petroleum lubricants like beeswax are used with oxygen equipment to avoid fire hazards."
+},
+{
+  "id": "structures-080",
+  "pregunta": "The most important consideration when selecting a welding rod is:",
+  "opciones": [
+    "The type of torch",
+    "Regulator pressure",
+    "The type of metal to be welded",
+    "The thickness of the metal to be welded"
+  ],
+  "correcta": 2,
+  "explicacion": "The welding rod must match the type of base metal for proper bonding and strength."
+},
+{
+  "id": "structures-081",
+  "pregunta": "Silver soldering is a method of:",
+  "opciones": [
+    "Brazing",
+    "Welding",
+    "Oxidizing",
+    "Carburizing"
+  ],
+  "correcta": 0,
+  "explicacion": "Silver soldering is classified as brazing because it uses a filler metal without melting the base metals."
+},
+{
+  "id": "materials-082",
+  "pregunta": "Thermosetting plastic materials are those which:",
+  "opciones": [
+    "May be reshaped as often as necessary",
+    "Are softened by the application of heat",
+    "Are hardened by the application of heat",
+    "Are not affected by the application of heat"
+  ],
+  "correcta": 3,
+  "explicacion": "Thermosetting plastics are permanently set and do not soften again when reheated."
+},
+{
+  "id": "structures-083",
+  "pregunta": "Honeycomb material used to replace damaged aluminum core of honeycomb bonded structures is usually:",
+  "opciones": [
+    "Titanium",
+    "Magnesium",
+    "Fiberglass",
+    "Hardened plastic"
+  ],
+  "correcta": 2,
+  "explicacion": "Fiberglass honeycomb is commonly used as a replacement core material due to its strength and compatibility."
+},
+{
+  "id": "structures-084",
+  "pregunta": "The simplest test in checking for delaminated area on a honeycomb structure would be:",
+  "opciones": [
+    "Zyglo",
+    "X-ray",
+    "Ultrasonic",
+    "The metallic ring test"
+  ],
+  "correcta": 3,
+  "explicacion": "The metallic ring (tap) test is a simple method used to detect delamination in honeycomb structures."
+},
+{
+  "id": "materials-085",
+  "pregunta": "The purpose of refrigerating aluminum that has been solution heat treated is to:",
+  "opciones": [
+    "Harden it",
+    "Increase its ductility",
+    "Keep it relatively soft",
+    "Increase its corrosion resistance"
+  ],
+  "correcta": 2,
+  "explicacion": "Refrigeration delays natural aging, keeping the aluminum in a softer, more workable condition."
+},
+{
+  "id": "materials-086",
+  "pregunta": "Aluminum forming without annealing should be done immediately after:",
+  "opciones": [
+    "Aging",
+    "Heating",
+    "Quenching",
+    "Anodizing"
+  ],
+  "correcta": 2,
+  "explicacion": "Aluminum is most workable immediately after quenching before it begins to age harden."
+},
+{
+  "id": "materials-087",
+  "pregunta": "The types of quenching medium generally used when hardening alloy steels are:",
+  "opciones": [
+    "Oil and brine only",
+    "Water, oil or brine",
+    "Air, water or brine",
+    "Air, water or oil"
+  ],
+  "correcta": 1,
+  "explicacion": "Common quenching media include water, oil, or brine depending on the desired cooling rate."
+},
+{
+  "id": "ndt-093",
+  "pregunta": "The appropriate inspection method for detecting intergranular corrosion in non-ferrous metal is:",
+  "opciones": [
+    "Eddy current",
+    "Acoustic emission",
+    "Spectrography",
+    "Magnetic particle"
+  ],
+  "correcta": 0,
+  "explicacion": "Eddy current inspection is effective for detecting surface and near-surface flaws such as intergranular corrosion in non-ferrous metals."
+},
+{
+  "id": "ndt-094",
+  "pregunta": "Magnetic particle inspection is suitable for:",
+  "opciones": [
+    "Copper alloys",
+    "Iron alloys",
+    "Aluminum alloys",
+    "Magnesium alloys"
+  ],
+  "correcta": 1,
+  "explicacion": "Magnetic particle inspection is used on ferromagnetic materials such as iron alloys."
+},
+{
+  "id": "ndt-095",
+  "pregunta": "When using dye penetrants, a minute crack will require a relatively:",
+  "opciones": [
+    "Highly polished surface",
+    "Longer penetrating time",
+    "Shorter penetrating time",
+    "Shorter developing time"
+  ],
+  "correcta": 1,
+  "explicacion": "Very small cracks require longer dwell (penetrating) time to allow the penetrant to enter."
+},
+{
+  "id": "ndt-096",
+  "pregunta": "When trying to locate surface faults by magnetic particle inspection, the method of magnetization primarily used is:",
+  "opciones": [
+    "An infrared light with a fluorescent penetrant",
+    "An ultraviolet light with a fluorescent penetrant",
+    "A magnetic field produced by DC current",
+    "A magnetic field produced by AC current"
+  ],
+  "correcta": 3,
+  "explicacion": "AC current is typically used for detecting surface cracks because it produces a surface magnetic field."
+},
+{
+  "id": "materials-097",
+  "pregunta": "Two mating surfaces subject to slight relative motion may be prone to:",
+  "opciones": [
+    "Stress corrosion",
+    "Fretting corrosion",
+    "Surface corrosion",
+    "Intergranular corrosion"
+  ],
+  "correcta": 1,
+  "explicacion": "Fretting corrosion occurs due to slight movement between contacting surfaces."
+},
+{
+  "id": "ndt-098",
+  "pregunta": "When conducting a water washable liquid penetrant test, the developer is applied:",
+  "opciones": [
+    "After penetrant is removed and the part is dry",
+    "Before removal of the emulsifier",
+    "Immediately before the penetrant is applied",
+    "Immediately after the penetrant has been applied"
+  ],
+  "correcta": 0,
+  "explicacion": "In liquid penetrant inspection, the developer is applied after excess penetrant is removed and the part has been dried."
+},
+{
+  "id": "ndt-099",
+  "pregunta": "An eddy current is a circulating electrical current induced in a conducting material by:",
+  "opciones": [
+    "X-rays",
+    "Gamma rays",
+    "Piezoelectric force",
+    "A magnetic field"
+  ],
+  "correcta": 3,
+  "explicacion": "Eddy currents are induced by a changing magnetic field in a conductive material."
+},
+{
+  "id": "ndt-100",
+  "pregunta": "After wet magnetic particle inspection, a rinse bath is:",
+  "opciones": [
+    "Not necessary",
+    "Necessary to aid in removing remnant magnetism",
+    "Necessary to provide lubrication",
+    "Necessary to remove magnetic particles"
+  ],
+  "correcta": 3,
+  "explicacion": "A rinse bath is used to remove excess magnetic particles from the inspected part."
+},
+{
+  "id": "thermo-001",
+  "pregunta": "What is the equivalent of one BTU?",
+  "opciones": [
+    "778 FT LBS",
+    "550 FT LBS",
+    "2545 FT LBS",
+    "33,000 FT LBS"
+  ],
+  "correcta": 0,
+  "explicacion": "One BTU is equivalent to approximately 778 foot-pounds of energy."
+},
+{
+  "id": "materials-002",
+  "pregunta": "What type of steel is heat treatable?",
+  "opciones": [
+    "Magnetic",
+    "Austenitic stainless steel",
+    "Low carbon steel",
+    "Non-ferrous steel"
+  ],
+  "correcta": 0,
+  "explicacion": "Heat-treatable steels are typically ferrous (magnetic), as their structure allows hardening through heat treatment."
+},
+{
+  "id": "aero-003",
+  "pregunta": "What is the term for the leading edge of the mean aerodynamic chord?",
+  "opciones": [
+    "Lemac",
+    "Temac",
+    "Center of pressure",
+    "Aerodynamic center"
+  ],
+  "correcta": 0,
+  "explicacion": "LEMAC stands for Leading Edge of the Mean Aerodynamic Chord."
+},
+{
+  "id": "controls-004",
+  "pregunta": "Where is the weight installed on a flight control?",
+  "opciones": [
+    "Behind the hinge center line",
+    "At the hinge center line",
+    "Forward of the hinge center line",
+    "At the trailing edge"
+  ],
+  "correcta": 2,
+  "explicacion": "Balance weights are installed forward of the hinge center line to prevent flutter and ensure proper control balance."
+},
+{
+  "id": "materials-008",
+  "pregunta": "What is the normal quenching media for steel?",
+  "opciones": [
+    "Oil",
+    "Water",
+    "Brine",
+    "Air"
+  ],
+  "correcta": 2,
+  "explicacion": "Brine is commonly used as a quenching medium because it provides a faster cooling rate than water, which helps achieve proper hardening of steel."
+},
+{
+  "id": "materials-009",
+  "pregunta": "What does precipitation heat treating do?",
+  "opciones": [
+    "Reduces corrosion resistance",
+    "Increases ductility only",
+    "Greatly increases strength and hardness (artificial age hardening)",
+    "Relieves internal stresses only"
+  ],
+  "correcta": 2,
+  "explicacion": "Precipitation heat treatment (age hardening) increases strength and hardness by forming fine particles within the metal structure."
+},
+{
+  "id": "structures-017",
+  "pregunta": "What is the maximum allowable patch used on a tube?",
+  "opciones": [
+    "Equal to the tube diameter",
+    "1/4 of the tube diameter",
+    "1/2 of the tube diameter",
+    "3/4 of the tube diameter"
+  ],
+  "correcta": 2,
+  "explicacion": "The maximum allowable patch on a tube is typically limited to one-half of the tube diameter to maintain structural integrity."
+},
+{
+  "id": "hydraulics-019",
+  "pregunta": "What is the most suitable type of hose for carrying petroleum and synthetic fluids?",
+  "opciones": [
+    "Rubber",
+    "Neoprene",
+    "Teflon",
+    "Silicone"
+  ],
+  "correcta": 2,
+  "explicacion": "Teflon (PTFE) hoses are highly resistant to petroleum and synthetic fluids, making them the most suitable choice for these applications."
+},
+{
+  "id": "structures-024",
+  "pregunta": "The most common rivet used in aviation has a dimple on its head. What type of material does this identify?",
+  "opciones": [
+    "2017-T (aluminum) D",
+    "2117-T (aluminum) AD",
+    "2024-T (aluminum) DD",
+    "1100 (aluminum) A"
+  ],
+  "correcta": 1,
+  "explicacion": "A dimple on the rivet head identifies 2117-T aluminum alloy rivets, commonly referred to as AD rivets, which are the most widely used in aircraft structures."
+},
+{
+  "id": "structures-025",
+  "pregunta": "What is the minimum rivet pitch when installing rivets?",
+  "opciones": [
+    "2 rivet diameters",
+    "2.5 rivet diameters",
+    "3 rivet diameters",
+    "4 rivet diameters"
+  ],
+  "correcta": 2,
+  "explicacion": "The minimum rivet pitch is typically 3 times the rivet diameter to ensure proper load distribution and prevent weakening of the material."
+},
+{
+  "id": "structures-026",
+  "pregunta": "What type of load does a rivet take on a properly designed joint?",
+  "opciones": [
+    "Tension",
+    "Compression",
+    "Shear",
+    "Torsion"
+  ],
+  "correcta": 2,
+  "explicacion": "In a properly designed joint, rivets are intended to carry shear loads rather than tension."
+},
+{
+  "id": "structures-027",
+  "pregunta": "Two dashes on the head of a bolt or rivet means what?",
+  "opciones": [
+    "Composed of 2017-T aluminum alloy",
+    "Composed of 2024-T aluminum alloy",
+    "Composed of 2117-T aluminum alloy",
+    "Composed of 1100 aluminum alloy"
+  ],
+  "correcta": 1,
+  "explicacion": "Two dashes on the head identify 2024-T aluminum alloy rivets, also known as DD rivets."
+},
+{
+  "id": "materials-028",
+  "pregunta": "Nitriding is a process which?",
+  "opciones": [
+    "Softens the surface of a part",
+    "Forms a hard case on a part to resist wear",
+    "Relieves internal stresses only",
+    "Increases corrosion by oxidation"
+  ],
+  "correcta": 1,
+  "explicacion": "Nitriding is a heat treatment process that introduces nitrogen into the surface of a metal to form a hard, wear-resistant case."
+},
+{
+  "id": "ndt-030",
+  "pregunta": "Fluorescent penetrant inspection uses?",
+  "opciones": [
+    "White light",
+    "Ultraviolet (black) light",
+    "Infrared light",
+    "X-ray radiation"
+  ],
+  "correcta": 1,
+  "explicacion": "Fluorescent penetrant inspection uses ultraviolet (black) light to make defects visible."
+},
+{
+  "id": "ndt-030",
+  "pregunta": "Fluorescent penetrant inspection uses?",
+  "opciones": [
+    "White light",
+    "Ultraviolet (black) light",
+    "Infrared light",
+    "X-ray radiation"
+  ],
+  "correcta": 1,
+  "explicacion": "Fluorescent penetrant inspection uses ultraviolet (black) light to make defects visible."
+},
+{
+  "id": "ndt-031",
+  "pregunta": "Longer dwell time is necessary for small cracks to be visible with?",
+  "opciones": [
+    "Magnetic particle inspection",
+    "Eddy current inspection",
+    "Liquid penetrant inspection",
+    "Ultrasonic inspection"
+  ],
+  "correcta": 2,
+  "explicacion": "Small cracks require longer dwell time in liquid penetrant inspection to allow the penetrant to seep into the defects."
+},
+{
+  "id": "structures-032",
+  "pregunta": "A metallic ring test is the easiest way to say if the honeycomb has become?",
+  "opciones": [
+    "Corroded",
+    "Cracked",
+    "Delaminated",
+    "Overheated"
+  ],
+  "correcta": 2,
+  "explicacion": "A ring test helps detect delamination in honeycomb structures by the change in sound."
+},
+{
+  "id": "ndt-033",
+  "pregunta": "Magnetic particle inspection is used primarily to detect?",
+  "opciones": [
+    "Internal deep flaws only",
+    "Flaws on or near the surface",
+    "Corrosion only",
+    "Material composition"
+  ],
+  "correcta": 1,
+  "explicacion": "Magnetic particle inspection is most effective for detecting surface and near-surface flaws in ferromagnetic materials."
+},
+{
+  "id": "ndt-034",
+  "pregunta": "Which type of current is usually used to demagnetize aircraft parts?",
+  "opciones": [
+    "Direct current (DC)",
+    "Constant AC current",
+    "Decreasing AC current",
+    "Pulsed DC current"
+  ],
+  "correcta": 2,
+  "explicacion": "Demagnetization is typically done using decreasing alternating current to gradually reduce residual magnetism."
+},
+{
+  "id": "ndt-035",
+  "pregunta": "What are the two types of magnetization used in magnetic particle inspection?",
+  "opciones": [
+    "Longitudinal magnetization and circular magnetization",
+    "Direct and indirect magnetization",
+    "AC and DC magnetization",
+    "Primary and secondary magnetization"
+  ],
+  "correcta": 0,
+  "explicacion": "Magnetic particle inspection uses longitudinal and circular magnetization to detect flaws in different orientations."
+},
+{
+  "id": "ndt-036",
+  "pregunta": "What is required to detect fine cracks when doing dye penetrant inspection?",
+  "opciones": [
+    "Higher temperature",
+    "Shorter dwell time",
+    "Longer penetrating time",
+    "Increased pressure"
+  ],
+  "correcta": 2,
+  "explicacion": "Fine cracks require a longer dwell (penetration) time to allow the penetrant to fully enter the defect."
+},
+{
+  "id": "ndt-037",
+  "pregunta": "What step is to be done when performing a penetrant inspection before applying the developer?",
+  "opciones": [
+    "Applying emulsifier",
+    "Drying the part",
+    "Heating the part",
+    "Magnetizing the part"
+  ],
+  "correcta": 1,
+  "explicacion": "Before applying the developer, the part must be properly dried to ensure accurate indication of defects."
+},
+{
+  "id": "ndt-038",
+  "pregunta": "What kind of NDT inspection requires free electrons to drift through metal under the influence of an induced electromagnetic field?",
+  "opciones": [
+    "Ultrasonic inspection",
+    "Magnetic particle inspection",
+    "Eddy current inspection",
+    "Radiographic inspection"
+  ],
+  "correcta": 2,
+  "explicacion": "Eddy current inspection works by inducing electromagnetic fields in conductive materials, causing electrons to drift and form eddy currents."
+},
+{
+  "id": "ndt-039",
+  "pregunta": "Does lead refract or absorb X-rays?",
+  "opciones": [
+    "Refracts X-rays",
+    "Absorbs X-rays",
+    "Reflects X-rays",
+    "Amplifies X-rays"
+  ],
+  "correcta": 1,
+  "explicacion": "Lead absorbs X-rays effectively, which is why it is commonly used for shielding in radiographic inspection."
+},
+{
+  "id": "ndt-040",
+  "pregunta": "What type of parts are suited for magnetic particle inspection?",
+  "opciones": [
+    "Plastic and composite parts",
+    "Iron and steel parts",
+    "Aluminum and magnesium parts",
+    "Wood and ceramic parts"
+  ],
+  "correcta": 1,
+  "explicacion": "Magnetic particle inspection is used on ferromagnetic materials such as iron and steel."
+},
+{
+  "id": "ndt-041",
+  "pregunta": "Which method of NDT requires the least preparation?",
+  "opciones": [
+    "Liquid penetrant inspection",
+    "Magnetic particle inspection",
+    "Radiographic inspection",
+    "Ultrasonic testing"
+  ],
+  "correcta": 3,
+  "explicacion": "Ultrasonic testing generally requires the least preparation compared with many other NDT methods."
+},
+{
+  "id": "tools-042",
+  "pregunta": "The center head on a combination set is used to?",
+  "opciones": [
+    "Measure depth of holes",
+    "Check surface flatness",
+    "Find the center of shafts or other cylindrical work",
+    "Measure thread pitch"
+  ],
+  "correcta": 2,
+  "explicacion": "The center head on a combination set is used to locate the center of round or cylindrical workpieces such as shafts."
+},
+{
+  "id": "tools-046",
+  "pregunta": "What is the best angle for a drill to cut aluminum?",
+  "opciones": [
+    "118°",
+    "135°",
+    "90°",
+    "60°"
+  ],
+  "correcta": 2,
+  "explicacion": "A 90° drill point angle is commonly used for softer materials like aluminum to allow efficient cutting."
+},
+{
+  "id": "welding-047",
+  "pregunta": "When selecting welding torch tip size, what is a very important consideration?",
+  "opciones": [
+    "Gas color",
+    "Material thickness",
+    "Ambient temperature",
+    "Torch handle size"
+  ],
+  "correcta": 1,
+  "explicacion": "The welding torch tip size is selected based primarily on the material thickness to ensure proper heat input and control."
+},
+{
+  "id": "welding-049",
+  "pregunta": "Silver soldering is a form of?",
+  "opciones": [
+    "Welding",
+    "Brazing",
+    "Soldering",
+    "Fusion bonding"
+  ],
+  "correcta": 1,
+  "explicacion": "Silver soldering is actually a form of brazing, as it uses filler metals that melt above 450°C but below the base metal."
+},
+{
+  "id": "welding-051",
+  "pregunta": "When TIG welding aluminum, what would you use?",
+  "opciones": [
+    "Direct current electrode negative (DCEN)",
+    "Direct current electrode positive (DCEP)",
+    "Alternating current (AC)",
+    "Pulsed DC only"
+  ],
+  "correcta": 2,
+  "explicacion": "Alternating current is used for TIG welding aluminum because it helps break up the oxide layer and provides stable welding."
+},
+{
+  "id": "hardware-052",
+  "pregunta": "Where are clevis bolts used?",
+  "opciones": [
+    "Where tension loads occur",
+    "Where shear loads occur",
+    "Where torsion loads occur",
+    "Where compression loads occur"
+  ],
+  "correcta": 1,
+  "explicacion": "Clevis bolts are designed primarily for shear loads and are commonly used in control linkages."
+},
+{
+  "id": "hardware-053",
+  "pregunta": "What type of bolt would be identified by a triangle with an X in it?",
+  "opciones": [
+    "AN standard bolt",
+    "NAS close tolerance bolt",
+    "MS structural bolt",
+    "Commercial grade bolt"
+  ],
+  "correcta": 1,
+  "explicacion": "A triangle with an X marking identifies a NAS close tolerance bolt, used where precise fit is required."
+},
+{
+  "id": "hardware-055",
+  "pregunta": "Where is an eyebolt used?",
+  "opciones": [
+    "Where shear loads are applied",
+    "Where compression loads are applied",
+    "Where external tension loads are to be applied",
+    "Where torsion loads are applied"
+  ],
+  "correcta": 2,
+  "explicacion": "Eyebolts are used where external tension loads are applied, such as lifting or securing components."
+},
+{
+  "id": "hardware-057",
+  "pregunta": "What does it mean when a bolt has 2 dashes on it?",
+  "opciones": [
+    "Steel bolt",
+    "Aluminum bolt (2024)",
+    "Titanium bolt",
+    "Corrosion-resistant steel bolt"
+  ],
+  "correcta": 1,
+  "explicacion": "Two dashes on the head identify a 2024 aluminum alloy bolt."
+},
+{
+  "id": "hardware-058",
+  "pregunta": "What is a Jo-Bolt?",
+  "opciones": [
+    "A solid rivet used in primary structures",
+    "A self-tapping screw",
+    "An internally threaded three-piece rivet",
+    "A type of lockbolt"
+  ],
+  "correcta": 2,
+  "explicacion": "A Jo-Bolt is a type of high-strength blind fastener consisting of three parts and is internally threaded."
+},
+{
+  "id": "structures-059",
+  "pregunta": "What is the minimum size for a flight control 7x19 cable?",
+  "opciones": [
+    "1/16 inch",
+    "3/32 inch",
+    "1/8 inch",
+    "5/32 inch"
+  ],
+  "correcta": 2,
+  "explicacion": "The minimum size for a 7x19 flight control cable is typically 1/8 inch to ensure adequate strength and safety."
+},
+{
+  "id": "structures-062",
+  "pregunta": "With what type of cable may the 5 tuck woven splice be made?",
+  "opciones": [
+    "1x7 cable only",
+    "7x7 flexible and 7x19 extra flexible (3/32 inch diameter or greater)",
+    "Solid wire only",
+    "Any cable regardless of size"
+  ],
+  "correcta": 1,
+  "explicacion": "A 5 tuck woven splice is used on flexible cables such as 7x7 and 7x19, typically with a minimum diameter of 3/32 inch."
+},
+{
+  "id": "structures-063",
+  "pregunta": "Nicopress process gives what strength of cable?",
+  "opciones": [
+    "50%",
+    "75%",
+    "90%",
+    "100%"
+  ],
+  "correcta": 3,
+  "explicacion": "When properly applied, the Nicopress process can provide up to 100% of the cable strength."
+},
+{
+  "id": "safety-064",
+  "pregunta": "The color code for fire extinguishing equipment is?",
+  "opciones": [
+    "Red",
+    "Brown",
+    "Green",
+    "Blue"
+  ],
+  "correcta": 1,
+  "explicacion": "Brown is commonly used as a color code for certain fire extinguishing agents, particularly those used for specific types of fires."
+},
+{
+  "id": "structures-065",
+  "pregunta": "An extra flexible wire in the flight control system is one that has?",
+  "opciones": [
+    "1x7 strands",
+    "7x7 strands",
+    "7x19 strands",
+    "19x7 strands"
+  ],
+  "correcta": 2,
+  "explicacion": "A 7x19 cable configuration provides extra flexibility and is commonly used in flight control systems."
+},
+{
+  "id": "maintenance-066",
+  "pregunta": "What neutralizes battery acid?",
+  "opciones": [
+    "Baking soda solution",
+    "Distilled water",
+    "Boric acid or vinegar",
+    "Engine oil"
+  ],
+  "correcta": 2,
+  "explicacion": "Boric acid or vinegar can be used to neutralize battery acid, depending on the type of battery and electrolyte involved."
+},
+{
+  "id": "structures-068",
+  "pregunta": "The water lines on an aircraft are defined as?",
+  "opciones": [
+    "Imaginary vertical lines",
+    "Imaginary horizontal lines",
+    "Structural reference lines",
+    "Fuel system reference lines"
+  ],
+  "correcta": 1,
+  "explicacion": "Water lines are imaginary horizontal reference lines used in aircraft design and measurement."
+},
+{
+  "id": "structures-069",
+  "pregunta": "A honeycomb structure is one that is bonded?",
+  "opciones": [
+    "Using mechanical fasteners only",
+    "Under pressure only",
+    "Under vacuum and heat",
+    "At room temperature without pressure"
+  ],
+  "correcta": 2,
+  "explicacion": "Honeycomb structures are typically bonded under controlled vacuum and heat conditions to ensure proper adhesion."
+},
+{
+  "id": "welding-070",
+  "pregunta": "After welding aircraft tubing, it should be flushed with?",
+  "opciones": [
+    "Water only",
+    "Hot linseed oil or petrol base oil",
+    "Coolant fluid",
+    "Alcohol solution"
+  ],
+  "correcta": 1,
+  "explicacion": "After welding, tubing is flushed with oil such as hot linseed oil to prevent internal corrosion."
+},
+{
+  "id": "welding-071",
+  "pregunta": "We remove flux from a weld to prevent?",
+  "opciones": [
+    "Overheating",
+    "Cracking",
+    "Corrosion",
+    "Distortion"
+  ],
+  "correcta": 2,
+  "explicacion": "Flux residues are corrosive and must be removed to prevent corrosion of the welded area."
+},
+{
+  "id": "materials-072",
+  "pregunta": "When applied to aluminum alloy sheet, the term alclad indicates that the surface has been treated for corrosion by?",
+  "opciones": [
+    "Painting the surface",
+    "Anodizing the surface",
+    "Coating it with pure aluminum",
+    "Applying a plastic film"
+  ],
+  "correcta": 2,
+  "explicacion": "Alclad aluminum is coated with a thin layer of pure aluminum to improve corrosion resistance."
+},
+{
+  "id": "corrosion-073",
+  "pregunta": "Metal of different groups coming in contact results in what type of corrosion?",
+  "opciones": [
+    "Pitting corrosion",
+    "Stress corrosion",
+    "Galvanic corrosion",
+    "Surface corrosion"
+  ],
+  "correcta": 2,
+  "explicacion": "Galvanic corrosion occurs when dissimilar metals are in electrical contact in the presence of an electrolyte."
+},
+{
+  "id": "systems-074",
+  "pregunta": "The color coding for the engine oil system tubing is?",
+  "opciones": [
+    "Red",
+    "Blue",
+    "Green",
+    "Yellow"
+  ],
+  "correcta": 3,
+  "explicacion": "Yellow is the standard color code used to identify engine oil system tubing."
+},
+{
+  "id": "landinggear-075",
+  "pregunta": "When inflating oleos, it is recommended to use?",
+  "opciones": [
+    "Compressed air",
+    "Oxygen",
+    "Nitrogen",
+    "Helium"
+  ],
+  "correcta": 2,
+  "explicacion": "Nitrogen is used because it is dry and inert, reducing the risk of moisture and corrosion."
+},
+{
+  "id": "corrosion-076",
+  "pregunta": "Surface corrosion on aluminum alloys is easily detected by the formation of?",
+  "opciones": [
+    "Black stains",
+    "Red rust",
+    "White deposit on the surface",
+    "Green residue"
+  ],
+  "correcta": 2,
+  "explicacion": "Aluminum surface corrosion typically appears as a white powdery deposit."
+},
+{
+  "id": "drawings-079",
+  "pregunta": "Orthographic projection is?",
+  "opciones": [
+    "A 3D perspective drawing",
+    "6 possible views",
+    "A sectional drawing only",
+    "An isometric projection"
+  ],
+  "correcta": 1,
+  "explicacion": "Orthographic projection represents an object using multiple 2D views, typically up to six principal views (front, top, bottom, left, right, rear)."
+},
+{
+  "id": "systems-081",
+  "pregunta": "Air instrument lines markings are?",
+  "opciones": [
+    "Yellow with solid bands",
+    "Orange/gray band with zig zags",
+    "Green with white stripes",
+    "Blue with dotted lines"
+  ],
+  "correcta": 1,
+  "explicacion": "Air instrument lines are identified by orange/gray bands with zigzag markings for easy system recognition."
+},
+{
+  "id": "hydraulics-083",
+  "pregunta": "Pascal's law, hydraulic pressure exerted everywhere is expressed by what formula?",
+  "opciones": [
+    "P = F x A",
+    "F = P x A",
+    "A = P x F",
+    "P = F / A"
+  ],
+  "correcta": 1,
+  "explicacion": "Pascal's law states that force equals pressure times area (F = P × A), meaning pressure applied to a fluid is transmitted equally in all directions."
+},
+{
+  "id": "electronics-088",
+  "pregunta": "In resistor color coding, the first and second bands represent values; the third band represents what?",
+  "opciones": [
+    "Tolerance",
+    "Temperature coefficient",
+    "Number of zeros required (multiplier)",
+    "Voltage rating"
+  ],
+  "correcta": 2,
+  "explicacion": "The third color band on a resistor represents the multiplier, indicating the number of zeros to add to the first two digits."
+},
+{
+  "id": "electronics-092",
+  "pregunta": "Resistance increases as?",
+  "opciones": [
+    "The temperature decreases",
+    "The temperature increases",
+    "Voltage decreases",
+    "Current decreases"
+  ],
+  "correcta": 1,
+  "explicacion": "In most conductive materials, resistance increases as temperature increases due to increased atomic vibration."
+},
+{
+  "id": "electronics-095",
+  "pregunta": "Series-parallel resistance simplifies the circuit by using?",
+  "opciones": [
+    "RT = R1 + R2 + R3 for parallel circuits",
+    "RT = 1 / (R1 + R2 + R3) for series circuits",
+    "RT = 1 / (1/R1 + 1/R2 + 1/R3) for parallel circuits",
+    "RT = R1 × R2 × R3 for parallel circuits"
+  ],
+  "correcta": 2,
+  "explicacion": "For parallel circuits, total resistance is found using RT = 1 / (1/R1 + 1/R2 + 1/R3). Series resistances are simply added."
+},
+{
+  "id": "welding-096",
+  "pregunta": "What type of tip in welding rod is used?",
+  "opciones": [
+    "A fixed standard size for all materials",
+    "The size depends on the thickness of the material",
+    "The smallest tip available",
+    "The largest tip available"
+  ],
+  "correcta": 1,
+  "explicacion": "The welding rod or tip size is selected based on the thickness of the material to ensure proper heat input and weld quality."
+},
+{
+  "id": "math-098",
+  "pregunta": "Find the volume of a cylinder with a bore of 4 inches and a run of 8 inches?",
+  "opciones": [
+    "50.27 CU IN",
+    "100.54 CU IN",
+    "201.06 CU IN",
+    "25.13 CU IN"
+  ],
+  "correcta": 1,
+  "explicacion": "Volume of a cylinder is V = πr²h. With a bore (diameter) of 4 inches, radius is 2 inches. So V = 3.1416 × (2²) × 8 = 3.1416 × 4 × 8 = 100.53 cubic inches."
+},
+{
+  "id": "ndt-099",
+  "pregunta": "Which one of these NDT inspection methods requires less surface preparation?",
+  "opciones": [
+    "Liquid penetrant inspection",
+    "Magnetic particle inspection",
+    "Ultrasonic testing",
+    "Radiographic (X-ray) inspection"
+  ],
+  "correcta": 3,
+  "explicacion": "Radiographic (X-ray) inspection requires minimal surface preparation since it relies on penetrating radiation rather than surface condition."
+},
+{
+  "id": "aero-103",
+  "pregunta": "What is Bernoulli's principle?",
+  "opciones": [
+    "As velocity increases, pressure increases",
+    "As velocity increases, pressure decreases and as velocity decreases, pressure increases",
+    "Pressure remains constant regardless of velocity",
+    "Velocity and pressure are unrelated"
+  ],
+  "correcta": 1,
+  "explicacion": "Bernoulli's principle states that an increase in fluid velocity results in a decrease in pressure, and vice versa."
+},
+{
+  "id": "aero-104",
+  "pregunta": "Mach number is the ratio of?",
+  "opciones": [
+    "Aircraft speed to air density",
+    "Aircraft speed to the speed of sound",
+    "Lift to drag",
+    "Pressure to temperature"
+  ],
+  "correcta": 1,
+  "explicacion": "Mach number is the ratio of the speed of the aircraft to the speed of sound in the surrounding medium."
+},
+{
+  "id": "materials-107",
+  "pregunta": "Monel metal has?",
+  "opciones": [
+    "Low strength and poor corrosion resistance",
+    "High strength and corrosion resistance",
+    "Only magnetic properties",
+    "Only thermal resistance"
+  ],
+  "correcta": 1,
+  "explicacion": "Monel is a nickel-copper alloy known for its high strength and excellent corrosion resistance."
+},
+{
+  "id": "environment-108",
+  "pregunta": "Absolute humidity is the actual amount of?",
+  "opciones": [
+    "Oxygen in the air",
+    "Carbon dioxide in the air",
+    "Water vapor in the air",
+    "Nitrogen in the air"
+  ],
+  "correcta": 2,
+  "explicacion": "Absolute humidity refers to the actual amount of water vapor present in the air."
+},
+{
+  "id": "environment-109",
+  "pregunta": "Relative humidity is the ratio of?",
+  "opciones": [
+    "Actual amount of water in the air",
+    "Actual water vapor to the maximum possible at that temperature",
+    "Temperature to pressure",
+    "Density to altitude"
+  ],
+  "correcta": 1,
+  "explicacion": "Relative humidity is the ratio of the actual amount of water vapor in the air to the maximum amount the air can hold at that temperature."
+},
+{
+  "id": "environment-110",
+  "pregunta": "Dew point is?",
+  "opciones": [
+    "The temperature at which water boils",
+    "The temperature at which air pressure drops",
+    "The temperature at which humid air becomes saturated",
+    "The temperature of dry air only"
+  ],
+  "correcta": 2,
+  "explicacion": "Dew point is the temperature at which air becomes saturated and water vapor begins to condense."
+},
+{
+  "id": "ndt-111",
+  "pregunta": "After wet magnetic particle inspection, the parts must be?",
+  "opciones": [
+    "Left as is",
+    "Heated immediately",
+    "Cleaned with solvent",
+    "Painted directly"
+  ],
+  "correcta": 2,
+  "explicacion": "After wet magnetic particle inspection, parts must be cleaned with solvent to remove residual particles and prevent contamination or corrosion."
+},
+{
+  "id": "structures-112",
+  "pregunta": "A joggle is used to join?",
+  "opciones": [
+    "Two shafts together",
+    "Metal sheet to a reinforcing angle",
+    "Two cables together",
+    "Pipes to fittings"
+  ],
+  "correcta": 1,
+  "explicacion": "A joggle is an offset formed in sheet metal to allow it to fit flush when joined to a reinforcing angle or overlapping sheet."
+},
+{
+  "id": "electronics-113",
+  "pregunta": "In an inductive circuit the current lags?",
+  "opciones": [
+    "Leads voltage by 90°",
+    "Is equal to voltage",
+    "Lags voltage by 90°",
+    "Is independent of voltage"
+  ],
+  "correcta": 2,
+  "explicacion": "In an inductive circuit, current lags voltage by 90 degrees due to the nature of inductance."
+},
+{
+  "id": "materials-118",
+  "pregunta": "What metal combined with aluminum gives the best strength to weight ratio?",
+  "opciones": [
+    "Copper",
+    "Magnesium",
+    "Zinc",
+    "Nickel"
+  ],
+  "correcta": 1,
+  "explicacion": "Magnesium combined with aluminum produces alloys with excellent strength-to-weight ratios, widely used in aerospace applications."
+},
+{
+  "id": "physics-121",
+  "pregunta": "One horsepower equals how many watts?",
+  "opciones": [
+    "550 watts",
+    "746 watts",
+    "1000 watts",
+    "330 watts"
+  ],
+  "correcta": 1,
+  "explicacion": "One horsepower is equal to 746 watts."
+},
+{
+  "id": "electronics-122",
+  "pregunta": "What is the relationship of current and voltage in an inductive circuit and a capacitive circuit?",
+  "opciones": [
+    "In an inductive circuit, current leads voltage; in a capacitive circuit, current lags voltage",
+    "In an inductive circuit, current lags voltage; in a capacitive circuit, current leads voltage",
+    "Current and voltage are always in phase",
+    "Voltage leads in both inductive and capacitive circuits"
+  ],
+  "correcta": 1,
+  "explicacion": "In an inductive circuit, current lags voltage by 90°, while in a capacitive circuit, current leads voltage by 90°."
+},
+{
+  "id": "materials-123",
+  "pregunta": "What are the characteristics of titanium?",
+  "opciones": [
+    "Heavy weight and low strength",
+    "Light weight, very high strength, and in its pure form soft and ductile",
+    "High conductivity and low corrosion resistance",
+    "Brittle and difficult to machine"
+  ],
+  "correcta": 1,
+  "explicacion": "Titanium is known for its high strength-to-weight ratio, corrosion resistance, and in pure form it is relatively soft and ductile."
+},
+{
+  "id": "materials-124",
+  "pregunta": "What are the differences between titanium and magnesium?",
+  "opciones": [
+    "Titanium has poor corrosion resistance; magnesium is highly resistant",
+    "Titanium has excellent corrosion resistance; magnesium is highly susceptible to corrosion",
+    "Magnesium is stronger than titanium",
+    "Both have identical properties"
+  ],
+  "correcta": 1,
+  "explicacion": "Titanium has excellent corrosion resistance, while magnesium is more prone to corrosion and can be more difficult to form due to cracking tendencies."
+},
+{
+  "id": "materials-125",
+  "pregunta": "What is the most important characteristic of Inconel?",
+  "opciones": [
+    "Low melting point",
+    "High electrical conductivity",
+    "Ability to maintain strength and corrosion resistance at extremely high temperatures",
+    "Low density"
+  ],
+  "correcta": 2,
+  "explicacion": "Inconel is known for maintaining strength and resisting corrosion even at very high temperatures, making it ideal for aerospace applications."
+},
+{
+  "id": "ndt-126",
+  "pregunta": "Ultrasonic inspections use what type of electricity?",
+  "opciones": [
+    "Static electricity",
+    "Piezoelectricity",
+    "Direct current",
+    "Electromagnetic induction"
+  ],
+  "correcta": 1,
+  "explicacion": "Ultrasonic inspection uses piezoelectric crystals to generate and receive high-frequency sound waves."
+},
+{
+  "id": "systems-127",
+  "pregunta": "What is the color of an MS fitting?",
+  "opciones": [
+    "Red",
+    "Black",
+    "Blue",
+    "Green"
+  ],
+  "correcta": 2,
+  "explicacion": "MS (Military Standard) fittings are typically identified by a blue color, while steel fittings are usually black. These fittings commonly use a 37° flare."
+},
+{
+  "id": "electronics-129",
+  "pregunta": "How many terminals are permitted on each stud on a terminal strip?",
+  "opciones": [
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "correcta": 2,
+  "explicacion": "A maximum of four terminals are typically permitted on each stud of a terminal strip to ensure proper electrical contact and safety."
+},
+{
+  "id": "electronics-130",
+  "pregunta": "What determines the wire size in an electrical installation?",
+  "opciones": [
+    "Wire color",
+    "Length only",
+    "The current carrying capability and acceptable voltage drop",
+    "Connector type"
+  ],
+  "correcta": 2,
+  "explicacion": "Wire size is determined by its ability to safely carry current and maintain voltage drop within acceptable limits."
+},
+{
+  "id": "hardware-131",
+  "pregunta": "What is a cushion clamp?",
+  "opciones": [
+    "A clamp used only for rigid mounting",
+    "A clamp used to secure lines subject to vibration",
+    "A clamp for electrical grounding",
+    "A clamp used for high-temperature zones only"
+  ],
+  "correcta": 1,
+  "explicacion": "A cushion clamp is designed with a rubber or similar lining to secure lines and reduce the effects of vibration."
+},
+{
+  "id": "electronics-134",
+  "pregunta": "What is a block diagram?",
+  "opciones": [
+    "A diagram showing only physical components",
+    "A diagram showing wiring connections only",
+    "A diagram showing the various operations rather than the components",
+    "A diagram showing dimensions of parts"
+  ],
+  "correcta": 2,
+  "explicacion": "A block diagram represents system functions and operations rather than detailed physical components."
+},
+{
+  "id": "systems-135",
+  "pregunta": "What is a lay line?",
+  "opciones": [
+    "A line used for measuring pressure",
+    "A line indicating flow direction only",
+    "A line on flexible hoses to indicate if the hose has been twisted",
+    "A marking for temperature limits"
+  ],
+  "correcta": 2,
+  "explicacion": "A lay line is a marking on flexible hoses used to detect twisting during installation."
+},
+{
+  "id": "materials-136",
+  "pregunta": "What is retentivity?",
+  "opciones": [
+    "Ability to resist corrosion",
+    "Ability to conduct electricity",
+    "Ability to retain residual magnetism after magnetizing force is removed",
+    "Ability to expand with heat"
+  ],
+  "correcta": 2,
+  "explicacion": "Retentivity is the property of a material to retain some magnetism after the external magnetizing force is removed."
+},
+{
+  "id": "welding-137",
+  "pregunta": "What is a welding rod made of used in gas welding?",
+  "opciones": [
+    "Aluminum only",
+    "Mild steel coated with copper",
+    "Stainless steel only",
+    "Titanium alloy"
+  ],
+  "correcta": 1,
+  "explicacion": "Gas welding rods are typically made of mild steel with a copper coating to improve conductivity and prevent rust."
+},
+{
+  "id": "physics-138",
+  "pregunta": "What is the power formula?",
+  "opciones": [
+    "P = F × d / t",
+    "P = V × I",
+    "P = m × a",
+    "P = W × t"
+  ],
+  "correcta": 0,
+  "explicacion": "Power is defined as work done over time. Since work = force × distance, power = (force × distance) / time."
+},
+{
+  "id": "physics-139",
+  "pregunta": "What is the work formula?",
+  "opciones": [
+    "Work = force × distance",
+    "Work = force × time",
+    "Work = pressure × area",
+    "Work = mass × acceleration"
+  ],
+  "correcta": 0,
+  "explicacion": "Work is defined as force multiplied by the distance over which it is applied."
+},
+{
+  "id": "electronics-140",
+  "pregunta": "What is an intermittent load in an electrical circuit?",
+  "opciones": [
+    "A load that operates continuously",
+    "A load that operates for 2 minutes or less",
+    "A load that operates for more than 1 hour",
+    "A load that never turns off"
+  ],
+  "correcta": 1,
+  "explicacion": "An intermittent load is typically defined as one that operates for short durations, generally 2 minutes or less."
+},
+{
+  "id": "structures-141",
+  "pregunta": "What is a proof load test?",
+  "opciones": [
+    "100% of breaking strength for 1 minute",
+    "60% of its breaking strength applied for 3 minutes",
+    "50% of breaking strength for 10 minutes",
+    "25% of breaking strength indefinitely"
+  ],
+  "correcta": 1,
+  "explicacion": "A proof load test involves applying a specified percentage (commonly 60%) of the breaking strength for a set time to verify integrity without causing permanent deformation."
+},
+{
+  "id": "systems-143",
+  "pregunta": "What are the two basic ways a fluid line fitting is attached to a component?",
+  "opciones": [
+    "Flanged fitting and welded fitting",
+    "Compression fitting and flare fitting",
+    "Tapered pipe thread and universal bulkhead fitting",
+    "Clamped fitting and bonded fitting"
+  ],
+  "correcta": 2,
+  "explicacion": "Fluid line fittings are commonly attached using tapered pipe threads or universal bulkhead fittings depending on the installation."
+},
+{
+  "id": "structures-144",
+  "pregunta": "What limits should be observed when bending a tube?",
+  "opciones": [
+    "The bend radius should be maximum only",
+    "The minor diameter in the bend should be no less than 75%",
+    "The tube must always be heated",
+    "The bend must be less than 30°"
+  ],
+  "correcta": 1,
+  "explicacion": "When bending a tube, the minor diameter should not be reduced below 75% of the original diameter to prevent collapse or weakening."
+},
+{
+  "id": "systems-146",
+  "pregunta": "How is a fuel line identified?",
+  "opciones": [
+    "Blue bands",
+    "Green stripes",
+    "Red stripes and stars",
+    "Yellow solid line"
+  ],
+  "correcta": 2,
+  "explicacion": "Fuel lines are identified by red stripes and stars to clearly distinguish them from other aircraft systems."
+},
+{
+  "id": "drawings-147",
+  "pregunta": "What type of diagram identifies each component and shows its location?",
+  "opciones": [
+    "Schematic diagram",
+    "Block diagram",
+    "Installation diagram",
+    "Wiring diagram"
+  ],
+  "correcta": 2,
+  "explicacion": "An installation diagram identifies components and shows their physical location within the system or aircraft."
+},
+{
+  "id": "hardware-151",
+  "pregunta": "An AN3DD5 aircraft bolt is made of what material and what length?",
+  "opciones": [
+    "2024 aluminum, 5/16 inch long",
+    "Steel, 5/16 inch long",
+    "2024 aluminum, 5/8 inch long",
+    "Steel, 5/8 inch long"
+  ],
+  "correcta": 0,
+  "explicacion": "AN3 indicates a 3/16 inch diameter bolt, DD indicates 2024 aluminum alloy, and the number 5 indicates a length of 5/16 inch."
+},
+{
+  "id": "structures-152",
+  "pregunta": "Describe the following rivet: AN430AD4-8?",
+  "opciones": [
+    "Flush head rivet made of 2024 aluminum, 4/16 diameter, 8/32 long",
+    "Round head rivet made of 2117 aluminum, 4/32 diameter, 8/16 long",
+    "Round head rivet made of steel, 4/32 diameter, 8/8 long",
+    "Countersunk rivet made of 1100 aluminum, 4/32 diameter, 8/16 long"
+  ],
+  "correcta": 1,
+  "explicacion": "AN430 indicates a round head rivet, AD indicates 2117 aluminum alloy, 4 means 4/32 inch diameter, and 8 means 8/16 inch length."
+},
+{
+  "id": "structures-153",
+  "pregunta": "In what increment is a rivet diameter measured?",
+  "opciones": [
+    "1/16 of an inch",
+    "1/32 of an inch",
+    "1/8 of an inch",
+    "1/64 of an inch"
+  ],
+  "correcta": 1,
+  "explicacion": "Rivet diameters are measured in 1/32 inch increments."
+},
+{
+  "id": "materials-156",
+  "pregunta": "Why is nitriding preferred?",
+  "opciones": [
+    "It increases weight of the material",
+    "It requires rapid quenching",
+    "It causes minimum distortion and requires no quenching",
+    "It reduces surface hardness"
+  ],
+  "correcta": 2,
+  "explicacion": "Nitriding is preferred because it produces a hard surface with minimal distortion and does not require quenching."
+},
+{
+  "id": "structures-159",
+  "pregunta": "Which of the following rivets should be selected to join 2 sheets of .032 aluminum?",
+  "opciones": [
+    "AN425D4-3",
+    "AN470AD4-4",
+    "AN455DD5-3",
+    "AN430-5-4"
+  ],
+  "correcta": 1,
+  "explicacion": "Total thickness is .032 + .032 = .064. Required rivet length is approximately 1.5D to 3D; for a 4/32 (1/8) rivet, .192 is appropriate, corresponding to AN470AD4-4."
+},
+{
+  "id": "welding-160",
+  "pregunta": "What must be considered when selecting a welding rod or electrode?",
+  "opciones": [
+    "Color of the rod",
+    "Type of material to be welded",
+    "Ambient temperature only",
+    "Operator preference"
+  ],
+  "correcta": 1,
+  "explicacion": "The welding rod or electrode must be compatible with the base material to ensure proper bonding and strength."
+},
+{
+  "id": "structures-161",
+  "pregunta": "Where is 7x19 cable used?",
+  "opciones": [
+    "Static structures only",
+    "Primary flight controls",
+    "Electrical grounding",
+    "Fuel systems"
+  ],
+  "correcta": 1,
+  "explicacion": "7x19 cable is extra flexible and is commonly used in primary flight control systems."
+},
+{
+  "id": "structures-162",
+  "pregunta": "What percentage of the cable strength will a 5 tuck woven splice develop?",
+  "opciones": [
+    "50%",
+    "75%",
+    "90%",
+    "100%"
+  ],
+  "correcta": 1,
+  "explicacion": "A properly made 5 tuck woven splice typically develops about 75% of the cable's original strength."
+},
+{
+  "id": "structures-163",
+  "pregunta": "What percentage of the cable strength will a wrap soldered terminal develop?",
+  "opciones": [
+    "50%",
+    "75%",
+    "90%",
+    "100%"
+  ],
+  "correcta": 2,
+  "explicacion": "Wrap soldered terminals can develop approximately 90% of the cable's rated strength when properly installed."
+},
+{
+  "id": "structures-164",
+  "pregunta": "If all instructions are observed, a swaged type terminal should develop what percentage of the rated cable strength?",
+  "opciones": [
+    "75%",
+    "85%",
+    "90%",
+    "100%"
+  ],
+  "correcta": 3,
+  "explicacion": "A properly installed swaged terminal should develop 100% of the cable's rated strength."
+},
+{
+  "id": "electronics-168",
+  "pregunta": "What happens to voltage across resistors in a series circuit?",
+  "opciones": [
+    "Stays the same",
+    "Increases",
+    "Drops",
+    "Becomes zero"
+  ],
+  "correcta": 2,
+  "explicacion": "In a series circuit, the total voltage is divided across the resistors, so the voltage drops across each component."
+},
+{
+  "id": "electronics-169",
+  "pregunta": "What happens to voltage across a resistor in a parallel circuit?",
+  "opciones": [
+    "Drops",
+    "Stays the same",
+    "Becomes zero",
+    "Varies randomly"
+  ],
+  "correcta": 1,
+  "explicacion": "In a parallel circuit, the voltage across each branch is the same as the source voltage."
+},
+{
+  "id": "electronics-170",
+  "pregunta": "What happens to current as resistance increases in a parallel circuit?",
+  "opciones": [
+    "Increases",
+    "Stays the same",
+    "Decreases",
+    "Becomes zero"
+  ],
+  "correcta": 2,
+  "explicacion": "According to Ohm's law (I = V/R), as resistance increases, current decreases if voltage remains constant."
+},
+{
+  "id": "electronics-172",
+  "pregunta": "What is true about current in a parallel circuit?",
+  "opciones": [
+    "Current is the same in all branches",
+    "Total current is equal to the sum of the currents in each branch",
+    "Current decreases in each branch",
+    "Current is zero in parallel circuits"
+  ],
+  "correcta": 1,
+  "explicacion": "In a parallel circuit, the total current equals the sum of the currents flowing through each individual branch (IT = I1 + I2 + I3)."
+},
+{
+  "id": "electronics-173",
+  "pregunta": "What happens to current in a capacitive circuit?",
+  "opciones": [
+    "Lags voltage by 90°",
+    "Leads voltage by 90°",
+    "Is equal to voltage",
+    "Is zero"
+  ],
+  "correcta": 1,
+  "explicacion": "In a capacitive circuit, current leads voltage by 90 degrees."
+},
+{
+  "id": "electronics-174",
+  "pregunta": "What should be the working voltage of a capacitor?",
+  "opciones": [
+    "Equal to the applied voltage",
+    "25% more than the applied voltage",
+    "50% more than the highest applied voltage",
+    "Double the applied voltage"
+  ],
+  "correcta": 2,
+  "explicacion": "Capacitors should be rated at least 50% higher than the maximum applied voltage to ensure safe operation."
+},
+{
+  "id": "hydraulics-175",
+  "pregunta": "What law states that pressure set up in a fluid acts equally in all directions?",
+  "opciones": [
+    "Bernoulli's principle",
+    "Ohm's law",
+    "Pascal's law",
+    "Newton's law"
+  ],
+  "correcta": 2,
+  "explicacion": "Pascal's law states that pressure applied to a confined fluid is transmitted equally in all directions."
+},
+{
+  "id": "aero-176",
+  "pregunta": "Who stated that the pressure of a fluid decreases at points where the velocity of the fluid increases?",
+  "opciones": [
+    "Newton",
+    "Pascal",
+    "Bernoulli",
+    "Archimedes"
+  ],
+  "correcta": 2,
+  "explicacion": "Bernoulli stated that as fluid velocity increases, pressure decreases."
+},
+{
+  "id": "structures-178",
+  "pregunta": "What are the five types of stresses?",
+  "opciones": [
+    "Tension, compression, bending, torsion, shear",
+    "Heat, pressure, force, motion, load",
+    "Static, dynamic, thermal, electrical, chemical",
+    "Push, pull, twist, bend, stretch"
+  ],
+  "correcta": 0,
+  "explicacion": "The five basic types of stress are tension, compression, bending, torsion, and shear."
+},
+{
+  "id": "physics-179",
+  "pregunta": "In a cylinder, both the volume and temperature are doubled, what happens to the pressure?",
+  "opciones": [
+    "Doubles",
+    "Halves",
+    "Stays the same",
+    "Becomes zero"
+  ],
+  "correcta": 2,
+  "explicacion": "From the ideal gas law (P ∝ T/V), if both temperature and volume double, their effects cancel out and pressure remains the same."
+},
+{
+  "id": "structures-180",
+  "pregunta": "The sharpest curve or bend of a sheet that can be made without critically weakening the metal is called?",
+  "opciones": [
+    "Bend allowance",
+    "Minimum radius",
+    "Neutral axis",
+    "Elastic limit"
+  ],
+  "correcta": 1,
+  "explicacion": "The minimum radius is the smallest bend that can be made without causing structural damage to the material."
+},
+{
+  "id": "structures-181",
+  "pregunta": "The radius of bend of a sheet of material measured on the inside of the curve is called?",
+  "opciones": [
+    "Neutral radius",
+    "Outside radius",
+    "Bend radius",
+    "Form radius"
+  ],
+  "correcta": 2,
+  "explicacion": "The bend radius refers to the inside radius of a bent sheet of material."
+},
+{
+  "id": "electronics-182",
+  "pregunta": "What type of logic gate would only give an output when both inputs are zero?",
+  "opciones": [
+    "AND",
+    "OR",
+    "NAND",
+    "NOR"
+  ],
+  "correcta": 3,
+  "explicacion": "A NOR gate outputs true (1) only when both inputs are zero."
+},
+{
+  "id": "electronics-183",
+  "pregunta": "What happens to the semiconductor material of a transistor when it is heated beyond its normal operating range?",
+  "opciones": [
+    "It becomes more efficient",
+    "Its resistance decreases permanently",
+    "It can be permanently damaged by heat or by reverse polarity of the power supply",
+    "It improves conductivity without damage"
+  ],
+  "correcta": 2,
+  "explicacion": "Excessive heat or reverse polarity can permanently damage the semiconductor material of a transistor."
+},
+{
+  "id": "drawings-184",
+  "pregunta": "What is an isometric drawing?",
+  "opciones": [
+    "All lines are drawn at 90° angles",
+    "All vertical lines are straight up and down and all horizontal lines are at 30°",
+    "Only one view is shown in detail",
+    "All lines are curved"
+  ],
+  "correcta": 1,
+  "explicacion": "In an isometric drawing, vertical lines remain vertical and horizontal edges are drawn at 30° to represent a 3D object."
+},
+{
+  "id": "systems-185",
+  "pregunta": "What are two types of fittings used on lines?",
+  "opciones": [
+    "Flared fittings and flareless fittings",
+    "Welded fittings and glued fittings",
+    "Threaded fittings and riveted fittings",
+    "Compression fittings and soldered fittings"
+  ],
+  "correcta": 0,
+  "explicacion": "The two common types of fittings used on aircraft fluid lines are flared and flareless fittings."
+},
+{
+  "id": "structures-188",
+  "pregunta": "Why are rivets refrigerated after heat treating?",
+  "opciones": [
+    "To increase their weight",
+    "To slow down the aging process and keep them soft for installation",
+    "To harden them immediately",
+    "To remove surface corrosion"
+  ],
+  "correcta": 1,
+  "explicacion": "Refrigeration slows down the natural aging process of heat-treated rivets, keeping them soft and workable until they are installed."
+},
+{
+  "id": "structures-191",
+  "pregunta": "A dent on a wire should not exceed?",
+  "opciones": [
+    "5% of the wire diameter",
+    "10% of the wire diameter",
+    "15% of the wire diameter",
+    "20% of the wire diameter"
+  ],
+  "correcta": 3,
+  "explicacion": "A dent in a wire should not exceed 20% of the wire diameter to maintain its strength and safety."
+},
+{
+  "id": "ndt-193",
+  "pregunta": "What temperature should the parts be when using liquid dye penetrant inspection?",
+  "opciones": [
+    "0°C",
+    "20°C",
+    "50°C",
+    "100°C"
+  ],
+  "correcta": 1,
+  "explicacion": "Liquid dye penetrant inspection is typically performed at around 20°C to ensure proper penetrant flow and accurate results."
+},
+{
+  "id": "ndt-195",
+  "pregunta": "What is the simplest type of NDT inspection?",
+  "opciones": [
+    "Radiographic inspection",
+    "Ultrasonic inspection",
+    "Eddy current inspection",
+    "Visual inspection"
+  ],
+  "correcta": 3,
+  "explicacion": "Visual inspection is the simplest form of NDT, as it requires minimal equipment and preparation."
+}
+
+
+]
