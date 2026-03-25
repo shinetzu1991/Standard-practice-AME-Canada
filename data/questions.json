@@ -2768,6 +2768,174 @@
   ],
   " correcta": 0,
   "explicacion": "A fully charged lead-acid battery has a specific gravity of approximately 1.275. Lower values indicate a discharged battery."
+},
+{
+  "id": "math-201",
+  "pregunta": "What is the volume on CUBIC FEET of a fuel tank measuring 120 inches long, 60 inches high, and 20 inches deep?",
+  "opciones": [
+    "83.33 cubic feet",
+    "120 cubic feet",
+    "60 cubic feet",
+    "8.33 cubic feet"
+  ],
+  "correcta": 0,
+  "tema": "Math",
+  "explicacion": "Convert each dimension to feet: 120 in = 10 ft, 60 in = 5 ft, 20 in = 1.67 ft. Then volume = 10 × 5 × 1.67 = 83.33 cubic feet."
+},
+{
+  "id": "materials-200",
+  "pregunta": "What does the first number \"2\" in 2024-T3 aluminum indicate?",
+  "opciones": [
+    "It indicates the aluminum-copper alloy series",
+    "It indicates the material is 2% copper",
+    "It indicates the temper condition of the material",
+    "It indicates the thickness of the material"
+  ],
+  "correcta": 0,
+  "tema": "Materials",
+  "explicacion": "The first digit in the aluminum designation identifies the alloy series. The number 2 indicates a 2000 series aluminum alloy, which is primarily alloyed with copper."
+},
+{
+  "id": "hardware-200",
+  "pregunta": "In the designation AN3D4, what does the letter \"D\" indicate?",
+  "opciones": [
+    "The bolt is made of 2017-T aluminum alloy",
+    "The bolt has a diameter of 3/16 inch",
+    "The bolt is corrosion-resistant steel",
+    "The bolt has a drilled shank"
+  ],
+  "correcta": 0,
+  "tema": "Hardware",
+  "explicacion": "In AN bolt designations, the letter \"D\" indicates that the bolt is made from 2017-T aluminum alloy."
+},
+{
+  "id": "hydraulics-200",
+  "pregunta": "A hydraulic piston has an area of 3 square inches and is subjected to a pressure of 1000 psi. What is the total force exerted by the piston?",
+  "opciones": [
+    "334 PSI",
+    "1000 lbs",
+    "1000 PSI",
+    "3,000 lbs"
+  ],
+  "correcta": 3,
+  "tema": "Hydraulics",
+  "explicacion": "Force = Pressure × Area = 1000 psi × 3 in² = 3000 pounds."
+},
+{
+  "id": "materials-201",
+  "pregunta": "Brass is an alloy made primarily of:",
+  "opciones": [
+    "Copper and zinc",
+    "Copper and tin",
+    "Aluminum and magnesium",
+    "Iron and carbon"
+  ],
+  "correcta": 0,
+  "tema": "Materials",
+  "explicacion": "Brass is an alloy primarily composed of copper and zinc. The proportion of zinc can vary to achieve different properties."
+},
+{
+  "id": "systems-202",
+  "pregunta": "Which type of bearing is most suitable for carrying thrust loads?",
+  "opciones": [
+    "Angular contact ball bearing",
+    "Tapered roller bearing",
+    "Plain bearing",
+    "Thrust bearing"
+  ],
+  "correcta": 3,
+  "tema": "Systems",
+  "explicacion": "Thrust bearings are specifically designed to carry axial (thrust) loads. Other bearings may handle combined loads, but thrust bearings are the primary choice for pure axial loads."
+},
+{
+  "id": "hydraulics-202",
+  "pregunta": "How can a high-pressure flexible hydraulic line be identified?",
+  "opciones": [
+    "Green",
+    "Black ",
+    "Green with smooth cover",
+    "Blue lines"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "High-pressure flexible hydraulic lines are typically black and reinforced with multiple layers (braided), unlike low-pressure lines which may have a softer outer covering."
+},
+{
+  "id": "weightbalance-200",
+  "pregunta": "What formula is used to calculate the center of gravity (CG) of an aircraft?",
+  "opciones": [
+    "CG = Total weight × Total arm",
+    "CG = Total arm ÷ Total moment",
+    "CG = Total moment ÷ Total weight",
+    "CG = Total weight ÷ Total moment"
+  ],
+  "correcta": 2,
+  "tema": "Weight and Balance",
+  "explicacion": "The center of gravity is calculated by dividing the total moment by the total weight. Moment is the product of weight and arm (distance from datum)."
+},
+{
+  "id": "weightbalance-201",
+  "pregunta": "How is the moment of a weight calculated in aircraft weight and balance?",
+  "opciones": [
+    "Moment = Weight ÷ Arm",
+    "Moment = Weight × Arm",
+    "Moment = Arm ÷ Weight",
+    "Moment = Weight + Arm"
+  ],
+  "correcta": 1,
+  "tema": "Weight and Balance",
+  "explicacion": "Moment is calculated by multiplying the weight by its arm (distance from the datum)."
+},
+{
+  "id": "hydraulics-203",
+  "pregunta": "What is the color of MIL-H-5606 hydraulic fluid and which type of seals is it compatible with?",
+  "opciones": [
+    "Purple and butyl rubber seals",
+    "Blue and natural rubber seals",
+    "Red and Buna-N (nitrile) or neoprene seals",
+    "Green and silicone seals"
+  ],
+  "correcta": 2,
+  "tema": "Hydraulics",
+  "explicacion": "MIL-H-5606 is a mineral-based hydraulic fluid that is dyed red and is compatible with Buna-N (nitrile) and neoprene seals."
+},
+{
+  "id": "drawings-200",
+  "pregunta": "Which type of drawing represents a three-dimensional view of an object?",
+  "opciones": [
+    "Orthographic projection",
+    "Schematic diagram",
+    "Isometric drawing",
+    "Block diagram"
+  ],
+  "correcta": 2,
+  "tema": "Drawings",
+  "explicacion": "An isometric drawing represents a three-dimensional view, showing height, width, and depth in a single image, typically with lines drawn at 30° angles."
+},
+{
+  "id": "structures-200",
+  "pregunta": "In a sheet metal drawing, dashed lines are often used to indicate:",
+  "opciones": [
+    "Hidden edges behind the surface",
+    "Locations where the metal is to be bent",
+    "Centerlines of holes",
+    "Areas to be removed"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "In sheet metal drawings, dashed lines commonly indicate bend lines, showing where the material is to be formed or bent during fabrication."
+},
+{
+  "id": "electrical-200",
+  "pregunta": "What is the current of 400 watts flowing through a 200 ohm resistor?",
+  "opciones": [
+    "2.0 amperes",
+    "1.41 amperes",
+    "0.2 amperes",
+    "14.1 amperes"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Use P = I²R → I = √(P/R) = √(400/200) = √2 ≈ 1.41 amperes."
 }
-
 ]
