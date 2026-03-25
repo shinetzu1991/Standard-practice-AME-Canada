@@ -100,7 +100,7 @@
   ],
   "correcta": 1,
   "tema": "Mechanical",
-  "explicacion": "For a planetary gear with fixed sun gear (50 teeth) and ring gear (100 teeth), the gear ratio is 2:1.",
+  "explicacion": "Sun gear 50 teeth and ring gear 100 teeth. Gear ratio = (ring+sun) / Ring, = 1.5:1 or 3:2 .",
   "imagen": "/images/planetarygear.png"
   },
   {
