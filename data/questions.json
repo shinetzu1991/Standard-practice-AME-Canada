@@ -2648,7 +2648,102 @@
   ],
   "respuesta": 3,
   "explicacion": "The Brinell hardness test uses a hardened steel or carbide ball, producing a spherical indentation in the material."
+},
+ {
+    "id": "hydraulics-086",
+    "pregunta": "What type of O-ring is used with a synthetic based hydraulic fluid?",
+    "opciones": [
+      "Polyvinyl chloride rubber",
+      "Natural rubber",
+      "Neoprene or Buna-N",
+      "Butyl synthetic rubber"
+    ],
+    "respuesta": 3,
+    "explicacion": "Synthetic hydraulic fluids such as phosphate ester (e.g., Skydrol) require butyl rubber seals because they are resistant to this type of fluid."
+  },
+  {
+    "id": "hydraulics-087",
+    "pregunta": "What would you use to flush a mineral based hydraulic fluid?",
+    "opciones": [
+      "Trichlorethylene",
+      "Alcohol",
+      "Boric acid",
+      "Varsol"
+    ],
+    "respuesta": 3,
+    "explicacion": "Mineral-based hydraulic systems are flushed using petroleum-based solvents such as Varsol."
+  },
+  {
+    "id": "hydraulics-088",
+    "pregunta": "What colour is vegetable based hydraulic fluid?",
+    "opciones": [
+      "Clear",
+      "Purple",
+      "Red",
+      "Blue"
+    ],
+    "respuesta": 3,
+    "explicacion": "Vegetable-based hydraulic fluid is typically blue and uses natural rubber seals."
+  },
+  {
+  "id": "materials-089",
+  "pregunta": "A tensile strength of 70,000 is measured as?",
+  "opciones": [
+    "70 psi",
+    "70 lbs./square ft.",
+    "700 KSI",
+    "70 KSI"
+  ],
+  "respuesta": 3,
+  "explicacion": "Tensile strength values like 70,000 psi are commonly expressed as 70 KSI (kilo pounds per square inch)."
+},
+ {
+    "id": "materials-090",
+    "pregunta": "What is nitriding?",
+    "opciones": [
+      "Casehardens part for increased wear with carbon added to the surface of the part",
+      "Casehardens part for increased wear resistance, part is heat-treated beforehand, no quenching required with minimal distortion",
+      "Is a form of removing internal stresses set up by heat treatment",
+      "Metal is heated just above a critical point, soaked at that temperature and cooled very slowly in a furnace"
+    ],
+    "respuesta": 1,
+    "explicacion": "Nitriding is a case hardening process that diffuses nitrogen into the surface of a metal. It increases wear resistance, requires no quenching, and results in minimal distortion."
+  },
+  {
+    "id": "materials-091",
+    "pregunta": "A type of heat treatment of aluminum alloy that may not lock the grain structure together very well and may set up conditions for intergranular corrosion is called?",
+    "opciones": [
+      "Precipitation hardening",
+      "Age hardening",
+      "Strain hardening",
+      "Solution heat treatment"
+    ],
+    "respuesta": 1,
+    "explicacion": "Age hardening (precipitation hardening) can, if not properly controlled, lead to intergranular corrosion due to precipitate formation along grain boundaries."
+  },
+  {
+  "id": "structures-098",
+  "pregunta": "Holes drilled in acrylic plastic should be made using?",
+  "opciones": [
+    "A twist bit with an included angle of 59°",
+    "A unibit (step drill)",
+    "A unibit or twist bit with an included angle of approx. 150°",
+    "A high-speed steel drill with a 90° included angle"
+  ],
+  "respuesta": 2,
+  "explicacion": "Acrylic plastic should be drilled using a unibit or a modified twist drill with a larger included angle (~150°) to prevent cracking and reduce stress."
+},
+{
+  "id": "ndt-108",
+  "pregunta": "Which NDT method shows a 'blip or pulse' on an oscilloscope?",
+  "opciones": [
+    "Computed tomography (CT)",
+    "X-ray",
+    "Eddy current",
+    "Ultrasonic"
+  ],
+  "respuesta": 3,
+  "explicacion": "Ultrasonic testing displays reflections as pulses or 'blips' on an oscilloscope, indicating discontinuities within the material."
 }
-
 
 ]
