@@ -81,15 +81,12 @@ export default function Home() {
     const updated = [...selectedAnswers];
     updated[current] = index;
     setSelectedAnswers(updated);
-  };
 
-  const handleCheck = () => {
-    if (selected === null || finished) return;
-    if (mode === "test") return;
-
-    const updatedChecked = [...checkedAnswers];
-    updatedChecked[current] = true;
-    setCheckedAnswers(updatedChecked);
+    if (mode === "study") {
+      const updatedChecked = [...checkedAnswers];
+      updatedChecked[current] = true;
+      setCheckedAnswers(updatedChecked);
+    }
   };
 
   const nextQuestion = () => {
@@ -217,112 +214,102 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-100 px-3 py-4 sm:p-6">
-    <div className="mx-auto w-full max-w-3xl rounded-2xl bg-white p-4 shadow-lg sm:p-8">
-      <h1 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl">
-        STANDARD PRACTICES AME CANADA
-      </h1>
+      <div className="mx-auto w-full max-w-3xl rounded-2xl bg-white p-4 shadow-lg sm:p-8">
+        <h1 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl">
+          STANDARD PRACTICES AME CANADA
+        </h1>
 
-      <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm text-gray-700">
-          Question {current + 1} / {order.length}
+        <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm text-gray-700">
+            Question {current + 1} / {order.length}
+          </p>
+
+          <div className="flex flex-wrap items-center gap-2">
+            <p className="text-sm font-semibold text-blue-700">
+              Selected:{" "}
+              {selectedAnswers.filter((answer) => answer !== null).length} / {order.length}
+            </p>
+            <span className="rounded-full bg-gray-200 px-3 py-1 text-xs font-medium text-gray-800">
+              {mode === "test" ? "TEST MODE" : "STUDY MODE"}
+            </span>
+          </div>
+        </div>
+
+        <p className="mb-5 text-base font-medium leading-relaxed text-gray-900 sm:mb-6 sm:text-lg">
+          {question.pregunta}
         </p>
 
-        <div className="flex flex-wrap items-center gap-2">
-          <p className="text-sm font-semibold text-blue-700">
-            Selected:{" "}
-            {selectedAnswers.filter((answer) => answer !== null).length} / {order.length}
-          </p>
-          <span className="rounded-full bg-gray-200 px-3 py-1 text-xs font-medium text-gray-800">
-            {mode === "test" ? "TEST MODE" : "STUDY MODE"}
-          </span>
-        </div>
-      </div>
-
-      <p className="mb-5 text-base font-medium leading-relaxed text-gray-900 sm:mb-6 sm:text-lg">
-        {question.pregunta}
-      </p>
-
-      {question.imagen && (
-        <div className="mb-5 sm:mb-6">
-          <Image
-            src={question.imagen}
-            alt="Question figure"
-            width={800}
-            height={500}
-            className="h-auto w-full rounded-lg border"
-          />
-        </div>
-      )}
-
-      <div className="space-y-3">
-        {question.opciones?.map((op, i) => (
-          <button
-            key={i}
-            onClick={() => handleSelect(i)}
-            className={`w-full rounded-lg border p-3 text-left text-sm text-gray-900 transition sm:p-4 sm:text-base ${getOptionClass(i)}`}
-          >
-            {op}
-          </button>
-        ))}
-      </div>
-
-      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-        {mode === "study" && (
-          <button
-            onClick={handleCheck}
-            disabled={selected === null || showAnswer}
-            className="w-full rounded-lg bg-blue-600 px-5 py-3 text-sm font-medium text-white disabled:opacity-50 sm:w-auto sm:text-base"
-          >
-            Check Answer
-          </button>
+        {question.imagen && (
+          <div className="mb-5 sm:mb-6">
+            <Image
+              src={question.imagen}
+              alt="Question figure"
+              width={800}
+              height={500}
+              className="h-auto w-full rounded-lg border"
+            />
+          </div>
         )}
 
-        <button
-          onClick={prevQuestion}
-          disabled={current === 0}
-          className="w-full rounded-lg bg-gray-600 px-5 py-3 text-sm font-medium text-white disabled:opacity-50 sm:w-auto sm:text-base"
-        >
-          Previous
-        </button>
+        <div className="space-y-3">
+          {question.opciones?.map((op, i) => (
+            <button
+              key={i}
+              onClick={() => handleSelect(i)}
+              className={`w-full rounded-lg border p-3 text-left text-sm text-gray-900 transition sm:p-4 sm:text-base ${getOptionClass(i)}`}
+            >
+              {op}
+            </button>
+          ))}
+        </div>
 
-        <button
-          onClick={nextQuestion}
-          disabled={current === order.length - 1}
-          className="w-full rounded-lg bg-green-600 px-5 py-3 text-sm font-medium text-white disabled:opacity-50 sm:w-auto sm:text-base"
-        >
-          Next
-        </button>
-
-        <button
-          onClick={() => startQuiz(mode)}
-          className="w-full rounded-lg bg-purple-600 px-5 py-3 text-sm font-medium text-white sm:w-auto sm:text-base"
-        >
-          Restart
-        </button>
-
-        {mode === "test" && (
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <button
-            onClick={finishTest}
-            className="w-full rounded-lg bg-red-600 px-5 py-3 text-sm font-medium text-white sm:w-auto sm:text-base"
+            onClick={prevQuestion}
+            disabled={current === 0}
+            className="w-full rounded-lg bg-gray-600 px-5 py-3 text-sm font-medium text-white disabled:opacity-50 sm:w-auto sm:text-base"
           >
-            Finish Test
+            Previous
           </button>
-        )}
-      </div>
 
-      {mode === "study" && showAnswer && (
-        <div className="mt-6 rounded-lg bg-gray-50 p-4">
-          <p className="text-base font-semibold text-gray-900 sm:text-lg">
-            {selected === question.correcta ? "✅ Correct" : "❌ Incorrect"}
-          </p>
+          <button
+            onClick={nextQuestion}
+            disabled={current === order.length - 1}
+            className="w-full rounded-lg bg-green-600 px-5 py-3 text-sm font-medium text-white disabled:opacity-50 sm:w-auto sm:text-base"
+          >
+            Next
+          </button>
 
-          <p className="mt-2 text-sm text-gray-800 sm:text-base">
-            Correct answer: {question.opciones[question.correcta]}
-          </p>
+          <button
+            onClick={() => startQuiz(mode)}
+            className="w-full rounded-lg bg-purple-600 px-5 py-3 text-sm font-medium text-white sm:w-auto sm:text-base"
+          >
+            Restart
+          </button>
 
-          {question.explicacion && (
+          {mode === "test" && (
+            <button
+              onClick={finishTest}
+              className="w-full rounded-lg bg-red-600 px-5 py-3 text-sm font-medium text-white sm:w-auto sm:text-base"
+            >
+              Finish Test
+            </button>
+          )}
+        </div>
+
+        {mode === "study" && showAnswer && (
+          <div className="mt-6 rounded-lg bg-gray-50 p-4">
+            <p className="text-base font-semibold text-gray-900 sm:text-lg">
+              {selected === question.correcta ? "✅ Correct" : "❌ Incorrect"}
+            </p>
+
             <p className="mt-2 text-sm text-gray-800 sm:text-base">
-              Explanation: {question.explicacion}
+              Correct answer: {question.opciones[question.correcta]}
+            </p>
+
+            {question.explicacion && (
+              <p className="mt-2 text-sm text-gray-800 sm:text-base">
+                Explanation: {question.explicacion}
               </p>
             )}
           </div>
