@@ -2612,6 +2612,42 @@
   ],
   "correcta": 3,
   "explicacion": "Visual inspection is the simplest form of NDT, as it requires minimal equipment and preparation."
+},
+  {
+    "id": "gas-029",
+    "pregunta": "Whose law states: 'A change in volume of a confined gas when held at a constant temperature would create an opposite change in the pressure of the gas'?",
+    "opciones": [
+      "Boyle's law",
+      "Charles law",
+      "Bernoulli's law",
+      "Pascal's law"
+    ],
+    "respuesta": 0,
+    "explicacion": "Boyle's Law states that pressure and volume are inversely proportional when temperature is constant (P1V1 = P2V2)."
+  },
+  {
+    "id": "gas-030",
+    "pregunta": "Whose law states: 'If the volume of a confined gas is held constant, the pressure will vary in the same way as the absolute temperature of the gas'?",
+    "opciones": [
+      "Newton's law",
+      "Avogadro's law",
+      "Dalton's law",
+      "Charles law"
+    ],
+    "respuesta": 3,
+    "explicacion": "Charles' Law (or Gay-Lussac’s pressure law in this form) states that pressure is directly proportional to temperature when volume is constant (P/T = constant)."
+  },
+  {
+  "id": "materials-063",
+  "pregunta": "What type of tester leaves a spherical indentation in the metal being tested?",
+  "opciones": [
+    "Vickers",
+    "Saybolt",
+    "Rockwell",
+    "Brinell"
+  ],
+  "respuesta": 3,
+  "explicacion": "The Brinell hardness test uses a hardened steel or carbide ball, producing a spherical indentation in the material."
 }
 
 
