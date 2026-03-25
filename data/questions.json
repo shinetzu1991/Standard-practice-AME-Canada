@@ -1330,18 +1330,6 @@
   "explicacion": "Fluorescent penetrant inspection uses ultraviolet (black) light to make defects visible."
 },
 {
-  "id": "ndt-030",
-  "pregunta": "Fluorescent penetrant inspection uses?",
-  "opciones": [
-    "White light",
-    "Ultraviolet (black) light",
-    "Infrared light",
-    "X-ray radiation"
-  ],
-  "correcta": 1,
-  "explicacion": "Fluorescent penetrant inspection uses ultraviolet (black) light to make defects visible."
-},
-{
   "id": "ndt-031",
   "pregunta": "Longer dwell time is necessary for small cracks to be visible with?",
   "opciones": [
