@@ -1,0 +1,46 @@
+[
+  {
+  "pregunta": "As airflow moves towards trailing edge, boundary layer becomes",
+  "opciones": [
+    "thicker and laminar flow diminishes",
+    "thinner and laminar flow increases",
+    "thinner and turbulence disappears completely",
+    "remains constant in thickness and flow type"
+  ],
+  "correcta": 0,
+  "explicacion": "As air flows over a surface, the boundary layer grows in thickness due to friction, and laminar flow transitions into turbulent flow toward the trailing edge."
+  },
+  {
+    "pregunta": "What is aileron differential?",
+    "opciones": [
+      "Ailerons move up more than down",
+      "Ailerons move equally up and down",
+      "Ailerons only move downward",
+      "Ailerons move only at high speed"
+    ],
+    "correcta": 0,
+    "explicacion": "Aileron differential means the up-going aileron deflects more than the down-going one to reduce adverse yaw."
+  },
+  {
+    "pregunta": "What keeps the nose wheel from getting cocked before entering the wheel well?",
+    "opciones": [
+      "Centering cam",
+      "Torque link",
+      "Steering actuator",
+      "Shimmy damper"
+    ],
+    "correcta": 0,
+    "explicacion": "A centering cam aligns the nose wheel straight before retraction to ensure proper stowage in the wheel well."
+  },
+  {
+    "pregunta": "What is the angle of the wing to the horizontal plane?",
+    "opciones": [
+      "Dihedral angle",
+      "Angle of attack",
+      "Angle of incidence",
+      "Sweepback angle"
+    ],
+    "correcta": 0,
+    "explicacion": "The dihedral angle is the upward angle of the wings relative to the horizontal plane, contributing to lateral stability."
+  }
+]

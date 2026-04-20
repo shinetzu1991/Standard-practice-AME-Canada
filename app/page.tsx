@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import rawQuestions from "../data/questions.json";
+import rawStandardQuestions from "../data/questions.json";
+import rawAirframeQuestions from "../data/airframe.json";
 
 type Question = {
   pregunta: string;
@@ -12,13 +13,19 @@ type Question = {
   imagen?: string;
 };
 
-const questions = rawQuestions as Question[];
+type Category = "standard" | "airframe";
+
+const questionBanks: Record<Category, Question[]> = {
+  standard: rawStandardQuestions as Question[],
+  airframe: rawAirframeQuestions as Question[],
+};
 
 function shuffleArray<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
 export default function Home() {
+  const [category, setCategory] = useState<Category>("standard");
   const [mode, setMode] = useState<"test" | "study">("test");
   const [order, setOrder] = useState<Question[]>([]);
   const [current, setCurrent] = useState(0);
@@ -26,11 +33,18 @@ export default function Home() {
   const [checkedAnswers, setCheckedAnswers] = useState<boolean[]>([]);
   const [finished, setFinished] = useState(false);
 
-  const startQuiz = (selectedMode: "test" | "study") => {
+  const currentBank = questionBanks[category];
+
+  const startQuiz = (
+    selectedMode: "test" | "study",
+    selectedCategory: Category = category
+  ) => {
+    const sourceQuestions = questionBanks[selectedCategory];
+
     const loadedQuestions =
       selectedMode === "test"
-        ? shuffleArray(questions).slice(0, 90)
-        : [...questions];
+        ? shuffleArray(sourceQuestions).slice(0, Math.min(90, sourceQuestions.length))
+        : [...sourceQuestions];
 
     setMode(selectedMode);
     setOrder(loadedQuestions);
@@ -41,8 +55,8 @@ export default function Home() {
   };
 
   useEffect(() => {
-    startQuiz("test");
-  }, []);
+    startQuiz("test", category);
+  }, [category]);
 
   if (order.length === 0 || !order[current]) {
     return <div className="p-6">Loading...</div>;
@@ -75,7 +89,6 @@ export default function Home() {
 
   const handleSelect = (index: number) => {
     if (finished) return;
-
     if (mode === "study" && showAnswer) return;
 
     const updated = [...selectedAnswers];
@@ -129,11 +142,35 @@ export default function Home() {
     return "border-gray-300 bg-white";
   };
 
+  const categoryTitle =
+    category === "standard" ? "STANDARD PRACTICES" : "AIRFRAME";
+
   if (finished && mode === "test") {
     return (
       <div className="min-h-screen bg-gray-100 p-6">
         <div className="mx-auto w-full max-w-4xl rounded-2xl bg-white p-8 shadow-lg">
-          <h1 className="mb-4 text-3xl font-bold">TEST RESULTS</h1>
+          <div className="mb-6 flex flex-wrap gap-3">
+            <button
+              onClick={() => setCategory("standard")}
+              className={`rounded-lg px-5 py-3 text-white ${
+                category === "standard" ? "bg-blue-700" : "bg-blue-500"
+              }`}
+            >
+              Standard Practices
+            </button>
+
+            <button
+              onClick={() => setCategory("airframe")}
+              className={`rounded-lg px-5 py-3 text-white ${
+                category === "airframe" ? "bg-green-700" : "bg-green-500"
+              }`}
+            >
+              Airframe
+            </button>
+          </div>
+
+          <h1 className="mb-2 text-3xl font-bold">TEST RESULTS</h1>
+          <p className="mb-4 text-sm font-medium text-gray-600">{categoryTitle}</p>
 
           <div className="mb-6 rounded-xl border bg-gray-50 p-4">
             <p className="text-xl font-semibold">
@@ -199,7 +236,7 @@ export default function Home() {
                   </p>
 
                   {item.explicacion && (
-                    <p className="mt-2 text-sm text-gray-700">
+                    <p className="mt-2 text-sm text-gray-800">
                       Explanation: {item.explicacion}
                     </p>
                   )}
@@ -213,21 +250,65 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 px-3 py-4 sm:p-6">
-      <div className="mx-auto w-full max-w-3xl rounded-2xl bg-white p-4 shadow-lg sm:p-8">
-        <h1 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl">
-          STANDARD PRACTICES AME CANADA
-        </h1>
+    <div className="min-h-screen bg-gray-100 p-6">
+      <div className="mx-auto w-full max-w-4xl rounded-2xl bg-white p-6 shadow-lg sm:p-8">
+        <div className="mb-6 flex flex-wrap gap-3">
+          <button
+            onClick={() => setCategory("standard")}
+            className={`rounded-lg px-5 py-3 text-white ${
+              category === "standard" ? "bg-blue-700" : "bg-blue-500"
+            }`}
+          >
+            Standard Practices
+          </button>
 
-        <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm text-gray-700">
+          <button
+            onClick={() => setCategory("airframe")}
+            className={`rounded-lg px-5 py-3 text-white ${
+              category === "airframe" ? "bg-green-700" : "bg-green-500"
+            }`}
+          >
+            Airframe
+          </button>
+        </div>
+
+        <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h1 className="text-2xl font-bold sm:text-3xl">{categoryTitle}</h1>
+            <p className="mt-1 text-sm text-gray-600">
+              Total questions: {currentBank.length}
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            <button
+              onClick={() => startQuiz("test")}
+              className={`rounded-lg px-5 py-3 text-white ${
+                mode === "test" ? "bg-blue-700" : "bg-blue-600"
+              }`}
+            >
+              Test Mode
+            </button>
+
+            <button
+              onClick={() => startQuiz("study")}
+              className={`rounded-lg px-5 py-3 text-white ${
+                mode === "study" ? "bg-green-700" : "bg-green-600"
+              }`}
+            >
+              Study Mode
+            </button>
+          </div>
+        </div>
+
+        <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm font-semibold text-gray-700">
             Question {current + 1} / {order.length}
           </p>
 
           <div className="flex flex-wrap items-center gap-2">
             <p className="text-sm font-semibold text-blue-700">
-              Selected:{" "}
-              {selectedAnswers.filter((answer) => answer !== null).length} / {order.length}
+              Selected: {selectedAnswers.filter((answer) => answer !== null).length} / {order.length}
             </p>
             <span className="rounded-full bg-gray-200 px-3 py-1 text-xs font-medium text-gray-800">
               {mode === "test" ? "TEST MODE" : "STUDY MODE"}
