@@ -344,39 +344,39 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <button
-            onClick={prevQuestion}
-            disabled={current === 0}
-            className="w-full rounded-lg bg-gray-600 px-5 py-3 text-sm font-medium text-white disabled:opacity-50 sm:w-auto sm:text-base"
-          >
-            Previous
-          </button>
+<div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+  <button
+    onClick={prevQuestion}
+    disabled={current === 0}
+    className="w-full rounded-lg bg-gray-600 px-5 py-3 text-sm font-medium text-white disabled:opacity-50 sm:w-auto sm:text-base"
+  >
+    Previous
+  </button>
 
-          <button
-            onClick={nextQuestion}
-            disabled={current === order.length - 1}
-            className="w-full rounded-lg bg-green-600 px-5 py-3 text-sm font-medium text-white disabled:opacity-50 sm:w-auto sm:text-base"
-          >
-            Next
-          </button>
+  <button
+    onClick={nextQuestion}
+    disabled={current === order.length - 1}
+    className="w-full rounded-lg bg-green-600 px-5 py-3 text-sm font-medium text-white disabled:opacity-50 sm:w-auto sm:text-base"
+  >
+    Next
+  </button>
 
-          <button
-            onClick={() => startQuiz(mode)}
-            className="w-full rounded-lg bg-purple-600 px-5 py-3 text-sm font-medium text-white sm:w-auto sm:text-base"
-          >
-            Restart
-          </button>
+  {mode === "test" && (
+    <button
+      onClick={finishTest}
+      className="w-full rounded-lg bg-red-600 px-5 py-3 text-sm font-medium text-white sm:w-auto sm:text-base"
+    >
+      Finish Test
+    </button>
+  )}
 
-          {mode === "test" && (
-            <button
-              onClick={finishTest}
-              className="w-full rounded-lg bg-red-600 px-5 py-3 text-sm font-medium text-white sm:w-auto sm:text-base"
-            >
-              Finish Test
-            </button>
-          )}
-        </div>
+  <button
+    onClick={() => startQuiz(mode)}
+    className="w-full rounded-lg bg-purple-600 px-5 py-3 text-sm font-medium text-white sm:w-auto sm:text-base"
+  >
+    Restart
+  </button>
+</div>
 
         {mode === "study" && showAnswer && (
           <div className="mt-6 rounded-lg bg-gray-50 p-4">

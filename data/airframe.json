@@ -10,37 +10,37 @@
   "correcta": 0,
   "explicacion": "As air flows over a surface, the boundary layer grows in thickness due to friction, and laminar flow transitions into turbulent flow toward the trailing edge."
   },
-  {
+ {
     "pregunta": "What is aileron differential?",
     "opciones": [
-      "Ailerons move up more than down",
       "Ailerons move equally up and down",
+      "Ailerons move up more than down",
       "Ailerons only move downward",
       "Ailerons move only at high speed"
     ],
-    "correcta": 0,
-    "explicacion": "Aileron differential means the up-going aileron deflects more than the down-going one to reduce adverse yaw."
+    "correcta": 1,
+    "explicacion": "Aileron differential reduces adverse yaw by having the up-going aileron deflect more than the down-going aileron."
   },
   {
     "pregunta": "What keeps the nose wheel from getting cocked before entering the wheel well?",
     "opciones": [
-      "Centering cam",
       "Torque link",
       "Steering actuator",
+      "Centering cam",
       "Shimmy damper"
     ],
-    "correcta": 0,
-    "explicacion": "A centering cam aligns the nose wheel straight before retraction to ensure proper stowage in the wheel well."
+    "correcta": 2,
+    "explicacion": "A centering cam aligns the nose wheel straight before retraction into the wheel well."
   },
   {
     "pregunta": "What is the angle of the wing to the horizontal plane?",
     "opciones": [
-      "Dihedral angle",
       "Angle of attack",
       "Angle of incidence",
-      "Sweepback angle"
+      "Sweepback angle",
+      "Dihedral angle"
     ],
-    "correcta": 0,
-    "explicacion": "The dihedral angle is the upward angle of the wings relative to the horizontal plane, contributing to lateral stability."
+    "correcta": 3,
+    "explicacion": "The dihedral angle is the upward angle of the wings relative to the horizontal plane."
   }
 ]
