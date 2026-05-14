@@ -42,5 +42,475 @@
     ],
     "correcta": 3,
     "explicacion": "The dihedral angle is the upward angle of the wings relative to the horizontal plane."
-  }
+  },
+  {
+  "id": "electrical-201",
+  "pregunta": "Why do we have to ground electrical equipment?",
+  "opciones": [
+    "To reduce radio frequency potential",
+    "To increase voltage output",
+    "To prevent hydraulic pressure loss",
+    "To increase circuit resistance"
+  ],
+  "correcta": 0,
+  "tema": "Electrical",
+  "explicacion": "Electrical equipment is grounded to reduce radio frequency interference and provide a safe path for unwanted electrical currents."
+},
+{
+  "id": "structures-201",
+  "pregunta": "What is the maximum size dope patch allowed?",
+  "opciones": [
+    "8 inches in any direction",
+    "12 inches in any direction",
+    "16 inches in any direction",
+    "24 inches in any direction"
+  ],
+  "correcta": 2,
+  "tema": "Structures",
+  "explicacion": "The maximum allowable size for a dope patch is typically 16 inches in any direction."
+},
+{
+  "id": "fuel-201",
+  "pregunta": "What is the purpose of the flapper valve in an integral fuel tank?",
+  "opciones": [
+    "To increase fuel pressure",
+    "To prevent the fuel from flowing away from the boost pumps",
+    "To cool the fuel before entering the engine",
+    "To prevent fuel contamination"
+  ],
+  "correcta": 1,
+  "tema": "Fuel Systems",
+  "explicacion": "Flapper valves help keep fuel around the boost pump area and prevent fuel from flowing away during aircraft maneuvers."
+},
+{
+  "id": "environmental-201",
+  "pregunta": "Where is the cooling air taken from for a Freon system (vapor cycle air conditioning system) on the ground?",
+  "opciones": [
+    "Bleed air",
+    "Cabin recirculated air",
+    "Ambient air",
+    "Ram air only"
+  ],
+  "correcta": 2,
+  "tema": "Environmental Systems",
+  "explicacion": "On the ground, a vapor cycle (Freon) cooling system uses ambient air supplied by a cooling fan."
+},
+{
+  "id": "landinggear-201",
+  "pregunta": "What absorbs the first shock in an oleo during landing?",
+  "opciones": [
+    "The compressed air chamber",
+    "The metering pin",
+    "Oil transfers from the oil chamber into the air chamber around the tapered metering pin",
+    "The torque links"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "The initial landing shock is absorbed as hydraulic oil flows through the metering orifice around the tapered metering pin into the air chamber."
+},
+{
+  "id": "aero-201",
+  "pregunta": "The difference in wash-in and wash-out of an aircraft compensates for:",
+  "opciones": [
+    "Propeller torque",
+    "Adverse yaw",
+    "Gyroscopic precession",
+    "Engine vibration"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Wash-in and wash-out differences are used to help compensate for propeller torque effects and improve stall characteristics."
+},
+{
+  "id": "structures-202",
+  "pregunta": "Where is the buttock line or buttline of an aircraft?",
+  "opciones": [
+    "A height measurement above or below the horizontal reference line",
+    "A length measurement forward or aft of the datum",
+    "A width measurement left or right of, and parallel to the vertical centerline",
+    "A measurement along the wing chord from leading edge to trailing edge"
+  ],
+  "correcta": 2,
+  "tema": "Structures",
+  "explicacion": "A buttock line is a width reference line measured left or right of the aircraft vertical centerline."
+},
+{
+  "id": "environmental-202",
+  "pregunta": "Where does the last stage of cooling in an air cycle air conditioning system occur?",
+  "opciones": [
+    "In the primary heat exchanger",
+    "In the expansion turbine",
+    "In the cabin air filter",
+    "In the compressor inlet"
+  ],
+  "correcta": 1,
+  "tema": "Environmental Systems",
+  "explicacion": "In an air cycle system, the final cooling occurs as air expands through the expansion turbine."
+},
+{
+  "id": "electrical-202",
+  "pregunta": "Grounding is electrically connecting a conductive object to the primary structure in order to prevent:",
+  "opciones": [
+    "Development of radio frequency and static buildup",
+    "Loss of hydraulic pressure",
+    "Excessive cabin altitude",
+    "Reduction of battery capacity"
+  ],
+  "correcta": 0,
+  "tema": "Electrical",
+  "explicacion": "Grounding helps prevent radio frequency interference and static electricity buildup by providing an electrical path to the primary structure."
+},
+{
+  "id": "brakes-202",
+  "pregunta": "What is the purpose of the compensating port in a brake master cylinder?",
+  "opciones": [
+    "To increase brake pressure during landing",
+    "To relieve excess pressure or fluid volume back to the reservoir when the brake is released",
+    "To prevent air from entering the brake line during bleeding",
+    "To lock the brake piston in the applied position"
+  ],
+  "correcta": 1,
+  "tema": "Brakes",
+  "explicacion": "The compensating port allows excess pressure or fluid volume to return to the reservoir when the brake is released."
+},
+{
+  "id": "pressurization-202",
+  "pregunta": "If an aircraft is at 8000 feet and the cabin pressurization is set on manual at 3500 feet, and the aircraft climbs 500 feet, what cabin pressure altitude will remain indicated?",
+  "opciones": [
+    "3000 feet",
+    "3500 feet",
+    "4000 feet",
+    "8500 feet"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "If the cabin pressurization is manually set to maintain 3500 feet, the cabin pressure altitude remains at 3500 feet while the aircraft climbs, assuming the system can maintain it."
+},
+{
+  "id": "autopilot-202",
+  "pregunta": "A fully integrated autopilot controls the aircraft around how many axes?",
+  "opciones": [
+    "One",
+    "Two",
+    "Three",
+    "Four"
+  ],
+  "correcta": 2,
+  "tema": "Autopilot",
+  "explicacion": "A fully integrated autopilot controls the aircraft around three axes: pitch, roll, and yaw."
+},
+{
+  "id": "hydraulics-204",
+  "pregunta": "Micron-type filters in a hydraulic system are designed to prevent the passage of solid particles greater than:",
+  "opciones": [
+    "5 microns",
+    "10 microns",
+    "25 microns",
+    "100 microns"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "Micron-type hydraulic filters are commonly used to prevent passage of solid particles greater than 10 microns."
+},
+{
+  "id": "aero-202",
+  "pregunta": "For most airfoil sections, if the chord of an aircraft wing is 100 inches, the most forward center of pressure will be located approximately:",
+  "opciones": [
+    "10 inches from the leading edge",
+    "20 inches from the leading edge",
+    "30 inches from the leading edge",
+    "50 inches from the leading edge"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "For many airfoils, the most forward center of pressure is approximately 30% of the chord. For a 100-inch chord, that is about 30 inches from the leading edge."
+},
+{
+  "id": "aero-203",
+  "pregunta": "What is the aspect ratio of a wing with a span of 24 feet and an area of 144 square feet?",
+  "opciones": [
+    "2",
+    "4",
+    "6",
+    "8"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Aspect ratio = span² ÷ wing area = 24² ÷ 144 = 576 ÷ 144 = 4."
+},
+{
+  "id": "aero-204",
+  "pregunta": "What type of load occurs when forward pressure is applied to the elevator control and centrifugal force acts opposite to the force of weight?",
+  "opciones": [
+    "Positive load",
+    "Negative load",
+    "Side load",
+    "Torsional load"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "A negative load occurs when the aircraft is subjected to acceleration opposite to the normal force of weight, such as during forward elevator pressure."
+},
+{
+  "id": "flightcontrols-203",
+  "pregunta": "Smooth and easy response of an airplane to its controls is called:",
+  "opciones": [
+    "Stability",
+    "Controllability",
+    "Maneuverability",
+    "Coordination"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "Controllability is the quality that allows an aircraft to respond smoothly and easily to control inputs."
+},
+{
+  "id": "landinggear-202",
+  "pregunta": "What two components make up a shimmy damper?",
+  "opciones": [
+    "Cam and damper assembly",
+    "Torque links and axle",
+    "Spring and piston",
+    "Hydraulic pump and actuator"
+  ],
+  "correcta": 0,
+  "tema": "Landing Gear",
+  "explicacion": "A shimmy damper system commonly consists of a cam mechanism and a damping assembly to reduce nose wheel oscillations."
+},
+{
+  "id": "brakes-203",
+  "pregunta": "What is the function of the compensator port in a brake master cylinder?",
+  "opciones": [
+    "To trap hydraulic pressure in the brake line",
+    "To permit reservoir fluid to enter the master cylinder",
+    "To increase brake pedal force",
+    "To cool the brake fluid during operation"
+  ],
+  "correcta": 1,
+  "tema": "Brakes",
+  "explicacion": "The compensator port allows hydraulic fluid from the reservoir to enter the master cylinder and also relieves excess pressure when brakes are released."
+},
+{
+  "id": "hydraulics-205",
+  "pregunta": "Which valve installed in a hydraulic system normally has the highest pressure setting?",
+  "opciones": [
+    "Check valve",
+    "Sequence valve",
+    "Thermal relief valve",
+    "Pressure regulator valve"
+  ],
+  "correcta": 2,
+  "tema": "Hydraulics",
+  "explicacion": "Thermal relief valves are set at very high pressures to protect the system from pressure increases caused by thermal expansion of trapped fluid."
+},
+{
+  "id": "brakes-204",
+  "pregunta": "A multi-disk brake system is sluggish and jerky during operation. What corrective action should be taken?",
+  "opciones": [
+    "Replace the hydraulic reservoir",
+    "Increase tire pressure",
+    "Clean the automatic adjusters",
+    "Install a larger master cylinder"
+  ],
+  "correcta": 2,
+  "tema": "Brakes",
+  "explicacion": "Dirty or sticking automatic adjusters can cause sluggish and jerky brake operation in multi-disk brake systems."
+},
+{
+  "id": "electronics-203",
+  "pregunta": "Proximity sensors are inductive coils that operate in conjunction with:",
+  "opciones": [
+    "Copper contact plates",
+    "Steel target plates",
+    "Magnetic relays",
+    "Capacitive diaphragms"
+  ],
+  "correcta": 1,
+  "tema": "Electronics",
+  "explicacion": "Inductive proximity sensors detect the presence of metal objects such as steel target plates."
+},
+{
+  "id": "oxygen-203",
+  "pregunta": "What component reduces oxygen pressure from the storage bottle to the pilot supply system?",
+  "opciones": [
+    "Pressure reducing valve",
+    "Check valve",
+    "Relief valve",
+    "Metering jet"
+  ],
+  "correcta": 0,
+  "tema": "Oxygen Systems",
+  "explicacion": "A pressure reducing valve lowers the high bottle pressure to a safe and usable pressure for the oxygen system."
+},
+{
+  "id": "structures-203",
+  "pregunta": "In monocoque construction, primary bending loads are carried by the:",
+  "opciones": [
+    "Bulkheads",
+    "Stringers",
+    "Skin",
+    "Longerons"
+  ],
+  "correcta": 2,
+  "tema": "Structures",
+  "explicacion": "In monocoque construction, the skin carries most of the structural loads, including bending stresses."
+},
+{
+  "id": "aero-205",
+  "pregunta": "Form drag is classified as:",
+  "opciones": [
+    "Induced drag",
+    "Parasite drag",
+    "Interference drag",
+    "Lift drag"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Form drag is a type of parasite drag caused by the shape and airflow separation around an object."
+},
+{
+  "id": "aero-206",
+  "pregunta": "Where does a stall normally occur first on a wing?",
+  "opciones": [
+    "At the wing tip",
+    "At the trailing edge",
+    "At the wing root",
+    "At the ailerons"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "Aircraft wings are designed so the wing root stalls first, maintaining aileron effectiveness near the tips."
+},
+{
+  "id": "landinggear-203",
+  "pregunta": "The landing gear and their doors are controlled by a:",
+  "opciones": [
+    "Pressure regulator valve",
+    "Sequence valve",
+    "Check valve",
+    "Thermal relief valve"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "Sequence valves control the order of operation of landing gear and gear doors during extension and retraction."
+},
+{
+  "id": "tools-203",
+  "pregunta": "When checking cable tension with a tensiometer, the correct _____ must be used for the specified cable size.",
+  "opciones": [
+    "Anvil",
+    "Scale",
+    "Riser",
+    "Dial"
+  ],
+  "correcta": 2,
+  "tema": "Tools",
+  "explicacion": "The correct riser must be installed on a tensiometer to accurately measure the tension of a specific cable size."
+},
+{
+  "id": "electrical-203",
+  "pregunta": "Aircraft components are bonded primarily to:",
+  "opciones": [
+    "Reduce hydraulic pressure",
+    "Increase electrical resistance",
+    "Prevent accumulation of static charges",
+    "Improve radio transmission strength"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "Bonding prevents the buildup of static electricity by electrically connecting aircraft components together."
+},
+{
+  "id": "hydraulics-206",
+  "pregunta": "What type of valve automatically directs fluid from a normal or emergency source to an actuating cylinder?",
+  "opciones": [
+    "Sequence valve",
+    "Relief valve",
+    "Shuttle valve",
+    "Bypass valve"
+  ],
+  "correcta": 2,
+  "tema": "Hydraulics",
+  "explicacion": "A shuttle valve automatically selects fluid from either the normal or emergency hydraulic source."
+},
+{
+  "id": "iceprotection-203",
+  "pregunta": "Why are tubes in deicer boots inflated alternately?",
+  "opciones": [
+    "To reduce hydraulic pressure",
+    "To increase lift",
+    "To keep disturbance of airflow to a minimum",
+    "To prevent ice from melting too quickly"
+  ],
+  "correcta": 2,
+  "tema": "Ice and Rain Protection",
+  "explicacion": "Alternating inflation of deicer boot tubes minimizes airflow disturbance while breaking ice accumulation."
+},
+{
+  "id": "aero-207",
+  "pregunta": "An airplane with good longitudinal stability should have a minimum tendency:",
+  "opciones": [
+    "To roll",
+    "To yaw",
+    "To pitch",
+    "To sideslip"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "Longitudinal stability refers to stability about the lateral axis and resistance to pitching motions."
+},
+{
+  "id": "autopilot-203",
+  "pregunta": "Which two functions are commonly used to control altitude in an autopilot system?",
+  "opciones": [
+    "Yaw damper and heading hold",
+    "Altitude hold and altitude select",
+    "Pitch trim and roll trim",
+    "Navigation hold and glide slope"
+  ],
+  "correcta": 1,
+  "tema": "Autopilot",
+  "explicacion": "Altitude hold maintains a selected altitude, while altitude select captures and levels the aircraft at a preselected altitude."
+},
+{
+  "id": "aero-208",
+  "pregunta": "What is the formula for wing loading?",
+  "opciones": [
+    "Wing area ÷ aircraft weight",
+    "Aircraft maximum gross weight ÷ total wing area",
+    "Wing span² ÷ wing area",
+    "Lift ÷ drag"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Wing loading is calculated by dividing the aircraft maximum gross weight by the total wing area."
+},
+{
+  "id": "aero-209",
+  "pregunta": "A _____ reduces the crossflow on a wing, thereby reducing the strength of the trailing vortex.",
+  "opciones": [
+    "Winglet",
+    "Spoiler",
+    "Wing fence",
+    "Vortex generator"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "A wing fence reduces spanwise airflow (crossflow) on the wing, helping control airflow and reducing vortex strength."
+},
+{
+  "id": "electrical-204",
+  "pregunta": "What are the two common types of AC motors used in aircraft?",
+  "opciones": [
+    "Series and shunt",
+    "Brushless and universal",
+    "Induction and synchronous",
+    "Stepper and servo"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "Induction and synchronous motors are the two most common types of AC motors used in aircraft systems."
+},
+
+
 ]
