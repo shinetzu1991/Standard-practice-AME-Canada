@@ -1173,6 +1173,4009 @@
   "correcta": 2,
   "tema": "Helicopters",
   "explicacion": "In steady vertical flight at a constant rate, lift equals weight and forces remain balanced."
+},
+{
+  "id": "flightcontrols-207",
+  "pregunta": "What kind of tab follows the movement of the control surface but in the opposite direction?",
+  "opciones": [
+    "Servo tab",
+    "Anti-servo tab",
+    "Trim tab",
+    "Spring tab"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "An anti-servo (or balance) tab moves in the opposite direction of the control surface to increase control forces and improve stability."
+},
+{
+  "id": "flightcontrols-208",
+  "pregunta": "What is aileron differential?",
+  "opciones": [
+    "Ailerons move equally up and down",
+    "Ailerons move up more than down",
+    "Only one aileron moves",
+    "Ailerons move down more than up"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "Aileron differential reduces adverse yaw by allowing the up-going aileron to deflect more than the down-going aileron."
+},
+{
+  "id": "landinggear-208",
+  "pregunta": "What keeps the nose wheel centered before entering the wheel well?",
+  "opciones": [
+    "Shimmy damper",
+    "Torque link",
+    "Centering cam",
+    "Steering actuator"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "A centering cam aligns the nose wheel straight before it retracts into the wheel well."
+},
+{
+  "id": "aero-210",
+  "pregunta": "What is the angle of the wing to the horizontal plane?",
+  "opciones": [
+    "Angle of attack",
+    "Angle of incidence",
+    "Sweepback angle",
+    "Dihedral angle"
+  ],
+  "correcta": 3,
+  "tema": "Aerodynamics",
+  "explicacion": "The dihedral angle is the upward angle of the wings relative to the aircraft's horizontal plane."
+},
+{
+  "id": "electrical-208",
+  "pregunta": "Why do we have to ground electrical equipment?",
+  "opciones": [
+    "To eliminate radio frequency potential",
+    "To increase electrical resistance",
+    "To improve battery charging",
+    "To prevent hydraulic leaks"
+  ],
+  "correcta": 0,
+  "tema": "Electrical",
+  "explicacion": "Grounding provides a safe electrical path and minimizes static electricity and radio frequency interference."
+},
+{
+  "id": "structures-204",
+  "pregunta": "What is the maximum allowable size of a dope patch?",
+  "opciones": [
+    "8 inches in any direction",
+    "12 inches in any direction",
+    "16 inches in any direction",
+    "20 inches in any direction"
+  ],
+  "correcta": 2,
+  "tema": "Structures",
+  "explicacion": "The maximum allowable size of a dope patch is 16 inches in any direction."
+},
+{
+  "id": "fuel-202",
+  "pregunta": "What is the purpose of the flapper valve in an integral fuel tank?",
+  "opciones": [
+    "To cool the fuel",
+    "To increase fuel pressure",
+    "To prevent the fuel from flowing away from the boost pumps",
+    "To remove fuel contamination"
+  ],
+  "correcta": 2,
+  "tema": "Fuel Systems",
+  "explicacion": "Flapper valves help retain fuel around the boost pumps during aircraft maneuvers."
+},
+{
+  "id": "environmental-203",
+  "pregunta": "Where is the cooling air taken from for a Freon (vapor-cycle) air conditioning system while the aircraft is on the ground?",
+  "opciones": [
+    "Cabin recirculated air",
+    "Engine bleed air",
+    "Ambient air",
+    "Ram air"
+  ],
+  "correcta": 2,
+  "tema": "Environmental Systems",
+  "explicacion": "On the ground, the condenser cooling fan draws ambient air through the vapor-cycle air conditioning system."
+},
+{
+  "id": "landinggear-209",
+  "pregunta": "What absorbs the first shock in an oleo strut during landing?",
+  "opciones": [
+    "The compressed air chamber",
+    "The torque links",
+    "Oil transfers from the oil chamber into the air chamber around the tapered metering pin",
+    "The upper bearing assembly"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "The initial impact is absorbed as hydraulic oil flows through the metering orifice around the tapered metering pin into the air chamber."
+},
+{
+  "id": "aero-211",
+  "pregunta": "If a propeller is turning clockwise (viewed from the cockpit), how is the torque created by rotation of the propeller counteracted?",
+  "opciones": [
+    "Wash-in of the left wing",
+    "Wash-in of the right wing",
+    "Increasing wing dihedral",
+    "Increasing wing sweepback"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Wash-in of the left wing helps compensate for the rolling tendency produced by clockwise propeller torque."
+},
+{
+  "id": "structures-205",
+  "pregunta": "Where is the buttock line or buttline of an aircraft?",
+  "opciones": [
+    "A height measurement above or below the horizontal reference line",
+    "A length measurement forward or aft of the datum",
+    "A width measurement left or right of, and parallel to the vertical centerline",
+    "A measurement along the wing chord"
+  ],
+  "correcta": 2,
+  "tema": "Structures",
+  "explicacion": "A buttock line is a width reference measured left or right of, and parallel to, the aircraft vertical centerline."
+},
+{
+  "id": "environmental-204",
+  "pregunta": "Where does the last stage of cooling in an air cycle air conditioning system occur?",
+  "opciones": [
+    "Primary heat exchanger",
+    "Secondary heat exchanger",
+    "Expansion turbine",
+    "Compressor"
+  ],
+  "correcta": 2,
+  "tema": "Environmental Systems",
+  "explicacion": "The final cooling in an air cycle system occurs as the air expands through the expansion turbine."
+},
+{
+  "id": "electrical-209",
+  "pregunta": "Grounding electrically connects a conductive object to the primary structure in order to prevent:",
+  "opciones": [
+    "Battery discharge",
+    "Development of radio frequency interference and static buildup",
+    "Hydraulic pressure loss",
+    "Circuit overload"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Grounding prevents the accumulation of static electricity and minimizes radio frequency interference."
+},
+{
+  "id": "brakes-205",
+  "pregunta": "What is the purpose of the compensating port in a brake master cylinder?",
+  "opciones": [
+    "To increase brake pressure",
+    "To allow air to escape during bleeding",
+    "To relieve excess pressure or fluid back to the reservoir when the brake is released",
+    "To prevent brake fluid contamination"
+  ],
+  "correcta": 2,
+  "tema": "Brakes",
+  "explicacion": "The compensating port relieves excess pressure and returns excess fluid to the reservoir when the brakes are released."
+},
+{
+  "id": "pressurization-205",
+  "pregunta": "If an aircraft is at 8,000 feet and the cabin pressurization is manually set to 3,500 feet, then the aircraft climbs another 500 feet, what cabin pressure altitude will remain indicated?",
+  "opciones": [
+    "3,000 feet",
+    "3,500 feet",
+    "4,000 feet",
+    "8,500 feet"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "In manual mode, if the system is set to maintain a cabin altitude of 3,500 feet, the cabin remains at that pressure altitude while the aircraft climbs."
+},
+{
+  "id": "autopilot-205",
+  "pregunta": "A fully integrated autopilot controls the aircraft around how many axes?",
+  "opciones": [
+    "One",
+    "Two",
+    "Three",
+    "Four"
+  ],
+  "correcta": 2,
+  "tema": "Autopilot",
+  "explicacion": "A fully integrated autopilot controls the aircraft in pitch, roll, and yaw (three axes)."
+},
+{
+  "id": "hydraulics-211",
+  "pregunta": "Micron-type hydraulic filters are designed to prevent the passage of solid particles larger than:",
+  "opciones": [
+    "5 microns",
+    "10 microns",
+    "25 microns",
+    "40 microns"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "Many aircraft hydraulic systems use 10-micron filters to prevent damaging contaminants from circulating."
+},
+{
+  "id": "aero-212",
+  "pregunta": "For most airfoil sections, if the wing chord is 100 inches, the most forward center of pressure is located approximately:",
+  "opciones": [
+    "20 inches from the leading edge",
+    "25 inches from the leading edge",
+    "30 inches from the leading edge",
+    "40 inches from the leading edge"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "For many conventional airfoils, the most forward center of pressure is approximately 30% of the chord."
+},
+{
+  "id": "aero-213",
+  "pregunta": "What is the formula for aspect ratio?",
+  "opciones": [
+    "Wing span × 2 ÷ wing area",
+    "Wing span² ÷ wing area",
+    "Wing area ÷ wing span",
+    "Wing area × wing span"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Aspect ratio is calculated as the square of the wing span divided by the wing area (AR = b²/S)."
+},
+{
+  "id": "aero-214",
+  "pregunta": "What type of load occurs when forward elevator control input causes centrifugal force to act opposite to the force of weight?",
+  "opciones": [
+    "Positive load",
+    "Negative load",
+    "Torsional load",
+    "Shear load"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "A negative load occurs when the aircraft experiences acceleration opposite to the normal direction of weight, such as during negative-G maneuvers."
+},
+{
+  "id": "flightcontrols-209",
+  "pregunta": "Smooth and easy response of an airplane to its controls is called:",
+  "opciones": [
+    "Stability",
+    "Controllability",
+    "Maneuverability",
+    "Coordination"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "Controllability is the ability of an aircraft to respond smoothly and easily to pilot control inputs."
+},
+{
+  "id": "landinggear-210",
+  "pregunta": "What two components make up a hydraulic shimmy damper?",
+  "opciones": [
+    "Piston and cylinder",
+    "Piston and vane",
+    "Spring and cam",
+    "Torque link and axle"
+  ],
+  "correcta": 0,
+  "tema": "Landing Gear",
+  "explicacion": "The most common hydraulic shimmy damper consists of a piston operating inside a cylinder. (Some designs use vane-type dampers, but piston-and-cylinder is the standard answer.)"
+},
+{
+  "id": "brakes-206",
+  "pregunta": "What is the function of the compensator port in a brake master cylinder?",
+  "opciones": [
+    "To increase brake pressure",
+    "To permit reservoir fluid to enter the master cylinder",
+    "To trap pressure in the brake lines",
+    "To cool the brake fluid"
+  ],
+  "correcta": 1,
+  "tema": "Brakes",
+  "explicacion": "The compensating port allows fluid to enter the master cylinder from the reservoir and also relieves excess pressure when the brakes are released."
+},
+{
+  "id": "hydraulics-212",
+  "pregunta": "Which valve in a hydraulic system normally has the highest pressure setting?",
+  "opciones": [
+    "Pressure regulator valve",
+    "Relief valve",
+    "Thermal relief valve",
+    "Sequence valve"
+  ],
+  "correcta": 2,
+  "tema": "Hydraulics",
+  "explicacion": "The thermal relief valve has the highest pressure setting because it protects trapped hydraulic fluid from pressure increases caused by thermal expansion."
+},
+{
+  "id": "brakes-207",
+  "pregunta": "A multi-disk brake system operates sluggishly and jerks during braking. What corrective action should be taken?",
+  "opciones": [
+    "Replace the master cylinder",
+    "Increase tire pressure",
+    "Clean the automatic adjusters",
+    "Replace the brake linings"
+  ],
+  "correcta": 2,
+  "tema": "Brakes",
+  "explicacion": "Dirty or sticking automatic adjusters commonly cause sluggish and jerky operation in multi-disk brake systems."
+},
+{
+  "id": "electronics-204",
+  "pregunta": "Proximity sensors are inductive coils that operate in conjunction with:",
+  "opciones": [
+    "Steel target plates",
+    "Copper contacts",
+    "Permanent magnets",
+    "Capacitive sensors"
+  ],
+  "correcta": 0,
+  "tema": "Electrical",
+  "explicacion": "Inductive proximity sensors detect the presence of ferrous metal, typically steel target plates."
+},
+{
+  "id": "oxygen-204",
+  "pregunta": "What component reduces oxygen pressure from the storage bottle before it reaches the pilot?",
+  "opciones": [
+    "Relief valve",
+    "Pressure reducing valve",
+    "Check valve",
+    "Demand regulator"
+  ],
+  "correcta": 1,
+  "tema": "Oxygen Systems",
+  "explicacion": "A pressure reducing valve lowers the high bottle pressure to a safe pressure for the aircraft oxygen system."
+},
+{
+  "id": "aero-215",
+  "pregunta": "What is dihedral?",
+  "opciones": [
+    "The angle between the wing and the aircraft lateral (pitch) axis",
+    "The angle between the wing chord and the relative wind",
+    "The angle between the wing and the longitudinal axis",
+    "The angle between the vertical stabilizer and the fuselage"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Dihedral is the upward angle of the wings relative to the aircraft lateral (horizontal) axis, providing lateral stability."
+},
+{
+  "id": "aero-216",
+  "pregunta": "An aircraft with good directional stability has less tendency to:",
+  "opciones": [
+    "Roll",
+    "Pitch",
+    "Yaw",
+    "Stall"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "Directional stability refers to stability about the vertical axis and resistance to yawing."
+},
+{
+  "id": "aero-217",
+  "pregunta": "Where does a stall normally occur first on a wing?",
+  "opciones": [
+    "At the wing tip",
+    "At the wing root",
+    "At the ailerons",
+    "At the trailing edge"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Most aircraft are designed so the wing root stalls first, preserving aileron effectiveness near the wing tips."
+},
+{
+  "id": "landinggear-211",
+  "pregunta": "What absorbs the first impact of landing on an aircraft oleo strut?",
+  "opciones": [
+    "Compressed air",
+    "Oil flowing through the metering pin",
+    "Torque links",
+    "The upper bearing"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "The initial landing impact is absorbed by hydraulic oil passing through the metering pin, while the compressed air cushions subsequent movement."
+},
+{
+  "id": "aero-218",
+  "pregunta": "What is lateral stability?",
+  "opciones": [
+    "Stability about the longitudinal axis",
+    "Stability about the lateral axis",
+    "Stability about the vertical axis",
+    "Stability during yaw"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Lateral stability is stability about the aircraft's longitudinal axis and resists rolling motions."
+},
+{
+  "id": "fuel-203",
+  "pregunta": "What is the function of the flapper valve in an aircraft fuel tank?",
+  "opciones": [
+    "To increase fuel pressure",
+    "To cool the fuel",
+    "To act as a check valve and prevent fuel from flowing away from the boost pump during maneuvers",
+    "To remove contaminants from the fuel"
+  ],
+  "correcta": 2,
+  "tema": "Fuel Systems",
+  "explicacion": "A flapper valve acts as a check valve to keep fuel near the boost pumps during turns, climbs, and other maneuvers."
+},
+{
+  "id": "hydraulics-213",
+  "pregunta": "Which valve normally has the highest pressure setting in an aircraft hydraulic system?",
+  "opciones": [
+    "Relief valve",
+    "Thermal relief valve",
+    "Check valve",
+    "Sequence valve"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "The thermal relief valve is normally set higher than the system relief valve to protect trapped hydraulic fluid from thermal expansion."
+},
+{
+  "id": "iceprotection-204",
+  "pregunta": "Why are tubes in deicer boots inflated alternately?",
+  "opciones": [
+    "To increase lift",
+    "To reduce hydraulic pressure",
+    "To keep airflow disturbance to a minimum",
+    "To prevent the boots from freezing"
+  ],
+  "correcta": 2,
+  "tema": "Ice and Rain Protection",
+  "explicacion": "Alternating inflation minimizes airflow disturbance while effectively breaking accumulated ice."
+},
+{
+  "id": "aero-219",
+  "pregunta": "An airplane with good longitudinal stability has a minimum tendency to:",
+  "opciones": [
+    "Roll",
+    "Yaw",
+    "Pitch",
+    "Sideslip"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "Longitudinal stability is stability about the lateral axis and minimizes pitching tendencies."
+},
+{
+  "id": "flightcontrols-210",
+  "pregunta": "An airplane is controlled directionally about its vertical axis by the:",
+  "opciones": [
+    "Elevator",
+    "Ailerons",
+    "Rudder",
+    "Spoilers"
+  ],
+  "correcta": 2,
+  "tema": "Flight Controls",
+  "explicacion": "The rudder controls yaw about the aircraft's vertical axis."
+},
+{
+  "id": "aero-220",
+  "pregunta": "What is the formula for wing loading?",
+  "opciones": [
+    "Wing span² ÷ wing area",
+    "Weight ÷ wing area",
+    "Wing area ÷ weight",
+    "Lift ÷ drag"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Wing loading is calculated by dividing the aircraft weight by the wing area."
+},
+{
+  "id": "aero-221",
+  "pregunta": "What device reduces crossflow (spanwise flow) over a wing?",
+  "opciones": [
+    "Winglet",
+    "Spoiler",
+    "Wing fence",
+    "Flap"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "A wing fence reduces spanwise airflow, improving airflow control and delaying tip stall."
+},
+{
+  "id": "electrical-210",
+  "pregunta": "What are the two common types of AC motors used in aircraft?",
+  "opciones": [
+    "Universal and series",
+    "Stepper and servo",
+    "Induction and synchronous",
+    "Brushless and shunt"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "The two common AC motor types used in aircraft are induction motors and synchronous motors."
+},
+{
+  "id": "pressurization-206",
+  "pregunta": "Which cabin pressurization mode maintains a constant cabin altitude regardless of changes in aircraft altitude?",
+  "opciones": [
+    "Constant differential mode",
+    "Unpressurized mode",
+    "Isobaric mode",
+    "Manual dump mode"
+  ],
+  "correcta": 2,
+  "tema": "Pressurization",
+  "explicacion": "In the isobaric mode, the cabin pressure altitude remains constant while the aircraft changes altitude, provided the system can maintain that cabin altitude."
+},
+{
+  "id": "pressurization-208",
+  "pregunta": "What are the three basic cabin pressurization modes of operation?",
+  "opciones": [
+    "Automatic, manual, and standby",
+    "Differential, unpressurized, and isobaric",
+    "Normal, emergency, and dump",
+    "Ground, climb, and cruise"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "The three basic pressurization modes are Differential, Unpressurized, and Isobaric."
+},
+{
+  "id": "landinggear-212",
+  "pregunta": "The pressure required to service aircraft wheels and tires is specified in the:",
+  "opciones": [
+    "IPC",
+    "AMM",
+    "SRM",
+    "WDM"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "The Aircraft Maintenance Manual (AMM) specifies the correct servicing pressure for aircraft tires."
+},
+{
+  "id": "landinggear-213",
+  "pregunta": "What should be used to clean tire bead seats before installing a tire?",
+  "opciones": [
+    "Soap and water",
+    "Mineral spirits",
+    "Isopropyl alcohol",
+    "Hydraulic fluid"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "Isopropyl alcohol is recommended for cleaning tire bead seats before installation."
+},
+{
+  "id": "hydraulics-214",
+  "pregunta": "If phosphate ester-based hydraulic fluid is spilled on an aircraft tire, what should be used to clean it?",
+  "opciones": [
+    "Mineral spirits",
+    "Isopropyl alcohol",
+    "Soap and water",
+    "MEK"
+  ],
+  "correcta": 2,
+  "tema": "Hydraulics",
+  "explicacion": "Phosphate ester fluids such as Skydrol should be washed off tires with soap and water."
+},
+{
+  "id": "landinggear-214",
+  "pregunta": "What is the best safeguard against heat buildup in aircraft tires?",
+  "opciones": [
+    "High taxi speeds",
+    "Frequent heavy braking",
+    "Short ground rolls, slow taxi speeds, minimum braking, and proper tire inflation",
+    "Reducing tire pressure"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "Proper operating techniques and correct tire inflation minimize heat buildup."
+},
+{
+  "id": "weightbalance-203",
+  "pregunta": "What is Station 0 on an aircraft?",
+  "opciones": [
+    "Center of gravity",
+    "Nose landing gear",
+    "Datum line",
+    "Firewall"
+  ],
+  "correcta": 2,
+  "tema": "Weight and Balance",
+  "explicacion": "Station 0 is the aircraft datum from which all longitudinal measurements are referenced."
+},
+{
+  "id": "communications-203",
+  "pregunta": "Long-range communication between an aircraft and a ground station controller is commonly accomplished using:",
+  "opciones": [
+    "VHF transmitter",
+    "HF transmitter",
+    "ADF",
+    "Marker beacon"
+  ],
+  "correcta": 1,
+  "tema": "Communications",
+  "explicacion": "HF communication is commonly used for long-range aircraft-to-ground communication."
+},
+{
+  "id": "electrical-211",
+  "pregunta": "What unit converts AC generator output into DC current to charge the aircraft battery?",
+  "opciones": [
+    "Inverter",
+    "Transformer",
+    "Rectifier",
+    "Voltage regulator"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "Rectifiers convert AC power to DC power for charging the aircraft battery."
+},
+{
+  "id": "electrical-212",
+  "pregunta": "What two types of electrical loads are normally considered during aircraft electrical load analysis?",
+  "opciones": [
+    "AC and DC loads",
+    "Continuous and intermittent loads",
+    "Primary and secondary loads",
+    "Essential and emergency loads"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Electrical load analysis classifies equipment as continuous or intermittent to determine total system demand."
+},
+{
+  "id": "electrical-213",
+  "pregunta": "During inspection of terminal strips in an aircraft electrical system, it should be verified that:",
+  "opciones": [
+    "Terminal studs are free to rotate",
+    "Terminal studs are lubricated",
+    "Terminal studs are anchored against rotation",
+    "Terminal studs are painted"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "Terminal studs must be securely anchored to prevent rotation and damage to the wiring."
+},
+{
+  "id": "hydraulics-215",
+  "pregunta": "Air is generally removed from an aircraft hydraulic system by:",
+  "opciones": [
+    "Draining the reservoir",
+    "Operating the hydraulic components through several cycles",
+    "Heating the hydraulic fluid",
+    "Replacing all hydraulic lines"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "Cycling the hydraulic components allows trapped air to return to the reservoir."
+},
+{
+  "id": "hydraulics-216",
+  "pregunta": "Two hydraulic actuating cylinders of different diameters but equal stroke are connected to the same pressure source. They will have:",
+  "opciones": [
+    "Different pressure and the same force",
+    "The same pressure but different force",
+    "The same force and the same pressure",
+    "Different pressure and different stroke"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "Hydraulic pressure is equal throughout the system, but force depends on piston area (Force = Pressure × Area)."
+},
+{
+  "id": "landinggear-215",
+  "pregunta": "In an anti-skid brake system, what happens when one wheel locks during landing?",
+  "opciones": [
+    "Brake pressure is increased",
+    "Hydraulic pressure to that brake is released",
+    "The opposite brake is released",
+    "The wheel is mechanically unlocked"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "The anti-skid system reduces or releases brake pressure to the locked wheel until it resumes rotating."
+},
+{
+  "id": "instruments-206",
+  "pregunta": "Which instruments are connected to the aircraft pitot-static system?",
+  "opciones": [
+    "Altimeter, Airspeed Indicator, and Vertical Speed Indicator",
+    "Attitude Indicator, Heading Indicator, and VSI",
+    "Turn Coordinator, Airspeed Indicator, and Altimeter",
+    "ADF Indicator, VSI, and Altimeter"
+  ],
+  "correcta": 0,
+  "tema": "Instruments",
+  "explicacion": "The pitot-static system supplies pressure information to the altimeter, airspeed indicator, and vertical speed indicator."
+},
+{
+  "id": "instruments-207",
+  "pregunta": "What is the maximum allowable altitude loss during an aircraft static system leakage test?",
+  "opciones": [
+    "50 feet per minute",
+    "100 feet per minute",
+    "150 feet per minute",
+    "200 feet per minute"
+  ],
+  "correcta": 1,
+  "tema": "Instruments",
+  "explicacion": "The commonly accepted maximum leakage rate during a static system test is 100 feet per minute."
+},
+{
+  "id": "autopilot-206",
+  "pregunta": "Which component allows the pilot to manually maneuver the aircraft while the autopilot remains engaged?",
+  "opciones": [
+    "Servo actuator",
+    "Flight controller",
+    "Trim tab",
+    "Yaw damper"
+  ],
+  "correcta": 1,
+  "tema": "Autopilot",
+  "explicacion": "The flight controller allows manual maneuvering while the autopilot remains engaged."
+},
+{
+  "id": "flightcontrols-211",
+  "pregunta": "Which tab moves in the same direction as the flight control surface?",
+  "opciones": [
+    "Trim tab",
+    "Balance tab",
+    "Servo tab",
+    "Anti-servo tab"
+  ],
+  "correcta": 2,
+  "tema": "Flight Controls",
+  "explicacion": "A servo tab moves in the same direction as the control surface to assist pilot input."
+},
+{
+  "id": "helicopter-230",
+  "pregunta": "A conical elastomeric bearing is designed to carry which type of loads?",
+  "opciones": [
+    "Axial loads only",
+    "Radial loads only",
+    "High radial and axial loads",
+    "Torsional loads only"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Conical elastomeric bearings are designed to support both high radial and axial loads while providing vibration damping."
+},
+{
+  "id": "helicopter-231",
+  "pregunta": "If the freewheeling unit fails during autorotation, what will occur?",
+  "opciones": [
+    "The engine will continue to drive the main rotor normally",
+    "The main rotor will drive the engine",
+    "The tail rotor will stop immediately",
+    "The rotor brake will automatically engage"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "If the freewheeling unit seizes or fails to disengage during autorotation, the main rotor will drive the engine instead of rotating freely."
+},
+{
+  "id": "helicopter-232",
+  "pregunta": "A helicopter vibration that remains constant throughout the entire RPM range is usually caused by:",
+  "opciones": [
+    "Mass imbalance",
+    "Blade tracking error",
+    "Chordwise imbalance",
+    "Ground resonance"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Chordwise imbalance typically produces a vibration whose amplitude remains nearly constant throughout the operating RPM range."
+},
+{
+  "id": "helicopter-233",
+  "pregunta": "At approximately what airspeed does effective translational lift occur?",
+  "opciones": [
+    "5–10 mph",
+    "15–20 mph",
+    "30–35 mph",
+    "45–50 mph"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Effective translational lift is normally experienced between 15 and 20 mph."
+},
+{
+  "id": "helicopter-234",
+  "pregunta": "Most European helicopters require which pedal input when increasing power?",
+  "opciones": [
+    "Left pedal",
+    "Right pedal",
+    "Forward cyclic",
+    "Aft cyclic"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Most European helicopters rotate in the opposite direction to American helicopters, requiring right pedal when power is increased."
+},
+{
+  "id": "hydraulics-217",
+  "pregunta": "What type of pump is commonly used in high-pressure aircraft hydraulic systems?",
+  "opciones": [
+    "Gear pump",
+    "Vane pump",
+    "Piston pump",
+    "Centrifugal pump"
+  ],
+  "correcta": 2,
+  "tema": "Hydraulics",
+  "explicacion": "Piston pumps are used in high-pressure hydraulic systems because they can efficiently produce very high operating pressures."
+},
+{
+  "id": "helicopter-235",
+  "pregunta": "A dual tachometer in a single-engine helicopter indicates:",
+  "opciones": [
+    "Engine RPM and tail rotor RPM",
+    "Main rotor RPM and tail rotor RPM",
+    "Engine RPM and main rotor RPM",
+    "Transmission RPM and engine RPM"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "A dual tachometer displays both engine RPM and main rotor RPM."
+},
+{
+  "id": "helicopter-236",
+  "pregunta": "During autorotation, airflow through the main rotor is:",
+  "opciones": [
+    "Downward",
+    "Horizontal",
+    "Upward",
+    "Circular"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "During autorotation, air flows upward through the rotor system, keeping the rotor turning."
+},
+{
+  "id": "helicopter-237",
+  "pregunta": "Why is a semirigid rotor head underslung?",
+  "opciones": [
+    "To reduce drag",
+    "To increase stability",
+    "To eliminate lead-lag motion",
+    "To increase rotor RPM"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "An underslung rotor head reduces stresses caused by blade flapping and improves rotor stability."
+},
+{
+  "id": "helicopter-238",
+  "pregunta": "An overstable helicopter with delayed control response is commonly caused by:",
+  "opciones": [
+    "Hard dampers",
+    "Soft stabilizer bar",
+    "High rotor RPM",
+    "Blade tracking error"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "A soft stabilizer bar can produce an overstable helicopter with sluggish control response."
+},
+{
+  "id": "helicopter-239",
+  "pregunta": "Which rotor head incorporates flapping hinges?",
+  "opciones": [
+    "Rigid rotor",
+    "Semirigid rotor",
+    "Fully articulated rotor",
+    "Bearingless rotor"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "A fully articulated rotor head has individual flapping hinges for each rotor blade."
+},
+{
+  "id": "helicopter-240",
+  "pregunta": "Failure of a rotor damper most commonly results in:",
+  "opciones": [
+    "A 1:1 beat or shuttle vibration",
+    "Ground resonance",
+    "Mast bumping",
+    "Blade coning"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "A failed lead-lag damper commonly produces a noticeable 1:1 beat or shuttle vibration."
+},
+{
+  "id": "helicopter-241",
+  "pregunta": "Which system is the most widely used for dynamic helicopter rotor balancing?",
+  "opciones": [
+    "Phasor",
+    "Chadwick-Helmuth",
+    "LaserTrack",
+    "OptiBalance"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Chadwick-Helmuth equipment is the industry standard for helicopter rotor dynamic balancing."
+},
+{
+  "id": "flightcontrols-212",
+  "pregunta": "In a hydraulically boosted flight control system, artificial feel is provided by:",
+  "opciones": [
+    "Servo tab",
+    "Gradient unit",
+    "Trim actuator",
+    "Balance tab"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "A gradient unit provides artificial control feel in hydraulic boosted flight control systems."
+},
+{
+  "id": "helicopter-242",
+  "pregunta": "The Coriolis effect in a helicopter results from:",
+  "opciones": [
+    "Blade flapping",
+    "Ground resonance",
+    "Blade tracking",
+    "Transverse flow"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "As blades flap up and down, their distance from the axis of rotation changes, producing the Coriolis effect (lead-lag motion)."
+},
+{
+  "id": "helicopter-243",
+  "pregunta": "The airflow at the rear of the rotor disc having a greater downward angle than at the front is known as:",
+  "opciones": [
+    "Effective translational lift",
+    "Dissymmetry of lift",
+    "Transverse flow effect",
+    "Blade coning"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "The transverse flow effect results from different induced airflow across the front and rear portions of the rotor disc."
+},
+{
+  "id": "helicopter-244",
+  "pregunta": "What is the purpose of a movable horizontal stabilizer on a helicopter?",
+  "opciones": [
+    "Increase tail rotor thrust",
+    "Improve longitudinal stability and increase the center of gravity range",
+    "Reduce rotor RPM",
+    "Prevent mast bumping"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "A movable horizontal stabilizer improves longitudinal stability and expands the allowable center of gravity range."
+},
+{
+  "id": "helicopter-245",
+  "pregunta": "The horizontal stabilizer on many helicopters is shaped as an:",
+  "opciones": [
+    "Symmetrical airfoil",
+    "Flat plate",
+    "Inverted asymmetrical airfoil",
+    "Circular airfoil"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Many helicopter horizontal stabilizers use an inverted asymmetrical airfoil to provide stabilizing forces."
+},
+{
+  "id": "helicopter-246",
+  "pregunta": "Which flight control changes the blade pitch angle continuously throughout each revolution of the rotor disc?",
+  "opciones": [
+    "Collective control",
+    "Throttle",
+    "Change pitch on tail rotor",
+    "Tail rotor pedals"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": ""
+},
+{
+  "id": "helicopter-247",
+  "pregunta": "Ground resonance is primarily associated with which rotor head type?",
+  "opciones": [
+    "Rigid rotor",
+    "Semirigid rotor",
+    "Fully articulated rotor",
+    "Bearingless rotor"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Ground resonance is a characteristic hazard of fully articulated rotor systems and results from geometric imbalance."
+},
+{
+  "id": "helicopter-248",
+  "pregunta": "Tail rotor dynamic balancing is commonly performed using:",
+  "opciones": [
+    "Dial indicator and tensiometer",
+    "Strobex and Phasor",
+    "Laser tracker",
+    "Pitot-static test equipment"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Strobex and Phasor (or similar Chadwick-Helmuth equipment) are commonly used for dynamic tail rotor balancing."
+},
+{
+  "id": "aero-222",
+  "pregunta": "What is laminar flow?",
+  "opciones": [
+    "Smooth, orderly airflow in the boundary layer",
+    "Turbulent airflow behind the wing",
+    "Airflow moving perpendicular to the wing",
+    "Airflow that produces induced drag"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Laminar flow is smooth, orderly airflow in which adjacent layers of air move parallel with very little mixing."
+},
+{
+  "id": "landinggear-216",
+  "pregunta": "What are the pieces of rubberized fabric that protect aircraft tire beads called?",
+  "opciones": [
+    "Chafers",
+    "Flippers",
+    "Bead locks",
+    "Liners"
+  ],
+  "correcta": 0,
+  "tema": "Landing Gear",
+  "explicacion": "Chafers are layers of rubberized fabric that protect the tire bead from wear and damage where it contacts the wheel."
+},
+{
+  "id": "communications-204",
+  "pregunta": "After installing an ADF loop antenna, what maintenance procedure should be performed?",
+  "opciones": [
+    "Calibrate the loop antenna",
+    "Adjust the VOR receiver",
+    "Synchronize the transponder",
+    "Tune the ELT"
+  ],
+  "correcta": 0,
+  "tema": "Communications",
+  "explicacion": "After installation, the ADF loop antenna should be calibrated to ensure accurate bearing indications."
+},
+{
+  "id": "landinggear-217",
+  "pregunta": "Which condition could prevent an aircraft landing gear from fully retracting?",
+  "opciones": [
+    "Low hydraulic fluid level",
+    "High tire pressure",
+    "Low engine oil pressure",
+    "Incorrect pitot pressure"
+  ],
+  "correcta": 0,
+  "tema": "Landing Gear",
+  "explicacion": "Insufficient hydraulic fluid may prevent the landing gear actuators from completing the retraction cycle."
+},
+{
+  "id": "hydraulics-218",
+  "pregunta": "Which hydraulic component directs fluid to the selected actuator?",
+  "opciones": [
+    "Selector valve",
+    "Check valve",
+    "Thermal relief valve",
+    "Sequence valve"
+  ],
+  "correcta": 0,
+  "tema": "Hydraulics",
+  "explicacion": "A selector valve directs hydraulic fluid to the desired actuator for extension or retraction."
+},
+{
+  "id": "flightcontrols-213",
+  "pregunta": "What is the maximum recommended control cable deflection through a fairlead?",
+  "opciones": [
+    "3°",
+    "5°",
+    "7°",
+    "10°"
+  ],
+  "correcta": 0,
+  "tema": "Flight Controls",
+  "explicacion": "A fairlead should not deflect a control cable more than 3° to minimize friction and wear."
+},
+{
+  "id": "flightcontrols-214",
+  "pregunta": "After a flight control cable is manufactured, what test is performed to verify its strength?",
+  "opciones": [
+    "Proof load test",
+    "Hardness test",
+    "Tensile fatigue test",
+    "Impact test"
+  ],
+  "correcta": 0,
+  "tema": "Flight Controls",
+  "explicacion": "A proof load test verifies the cable by applying approximately 60% of its minimum breaking strength without causing permanent deformation."
+},
+{
+  "id": "flightcontrols-215",
+  "pregunta": "Movement of the ailerons rotates the aircraft about which axis?",
+  "opciones": [
+    "Longitudinal axis",
+    "Lateral axis",
+    "Vertical axis",
+    "Thrust axis"
+  ],
+  "correcta": 0,
+  "tema": "Flight Controls",
+  "explicacion": "The ailerons control roll about the aircraft's longitudinal axis."
+},
+{
+  "id": "weightbalance-204",
+  "pregunta": "What is load factor?",
+  "opciones": [
+    "The ratio of lift supported by the wings to the aircraft weight",
+    "The aircraft weight divided by wing area",
+    "The ratio of drag to lift",
+    "The total weight carried by the landing gear"
+  ],
+  "correcta": 0,
+  "tema": "Weight and Balance",
+  "explicacion": "Load factor is the ratio of the aerodynamic load (lift) supported by the wings to the actual weight of the aircraft, commonly expressed in Gs."
+},
+{
+  "id": "fuel-204",
+  "pregunta": "Where is the main fuel filter normally located in an aircraft fuel system?",
+  "opciones": [
+    "At the lowest point between the fuel tank and the fuel control unit",
+    "Inside the fuel tank",
+    "Immediately after the engine-driven fuel pump",
+    "At the fuel vent"
+  ],
+  "correcta": 0,
+  "tema": "Fuel Systems",
+  "explicacion": "The main fuel filter is normally installed at the lowest practical point between the fuel tank and the fuel control unit to remove contaminants before they reach the engine."
+},
+{
+  "id": "structures-206",
+  "pregunta": "What is the purpose of drag and anti-drag wires in a wing structure?",
+  "opciones": [
+    "To transmit loads to the spars and prevent structural distortion",
+    "To reduce aerodynamic drag",
+    "To support the control cables",
+    "To reinforce the wing skin"
+  ],
+  "correcta": 0,
+  "tema": "Structures",
+  "explicacion": "Drag and anti-drag wires brace the wing structure, transferring loads to the spars and preventing fore-and-aft distortion."
+},
+{
+  "id": "structures-207",
+  "pregunta": "When using a wood auger, what should be placed on the opposite side of the wood?",
+  "opciones": [
+    "A steel backing plate",
+    "A piece of wood",
+    "A rubber pad",
+    "A sheet of aluminum"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "A backing piece of wood helps prevent splintering as the auger exits the workpiece."
+},
+{
+  "id": "brakes-208",
+  "pregunta": "Air trapped in an aircraft brake hydraulic system will usually cause:",
+  "opciones": [
+    "Hard brakes",
+    "Spongy brakes",
+    "Locked brakes",
+    "Uneven tire wear"
+  ],
+  "correcta": 1,
+  "tema": "Brakes",
+  "explicacion": "Air is compressible, causing the brake pedal to feel soft or spongy and reducing braking effectiveness."
+},
+{
+  "id": "landinggear-218",
+  "pregunta": "The red dot marked on an aircraft tire should be aligned with the:",
+  "opciones": [
+    "Valve stem",
+    "Wheel balance mark",
+    "Tube yellow stripe",
+    "Wheel drain hole"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "When a tube is installed, the tire's red dot is aligned with the tube's yellow stripe as specified by the manufacturer."
+},
+{
+  "id": "oxygen-205",
+  "pregunta": "The majority of aircraft oxygen systems are:",
+  "opciones": [
+    "Continuous-flow systems only",
+    "Flow-diluter demand or pressure-demand systems",
+    "Chemical oxygen systems only",
+    "Liquid oxygen systems only"
+  ],
+  "correcta": 1,
+  "tema": "Oxygen Systems",
+  "explicacion": "Most transport aircraft use either diluter-demand or pressure-demand oxygen systems."
+},
+{
+  "id": "aero-223",
+  "pregunta": "What is the angle of incidence?",
+  "opciones": [
+    "The angle between the wing chord and the relative wind",
+    "The angle between the wing chord line and the aircraft longitudinal axis",
+    "The angle between the wing and the horizontal plane",
+    "The angle between the stabilizer and the fuselage"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "The angle of incidence is the fixed angle between the wing chord line and the aircraft longitudinal axis."
+},
+{
+  "id": "landinggear-219",
+  "pregunta": "How long should you wait after flight before checking aircraft tire pressure?",
+  "opciones": [
+    "Immediately after landing",
+    "30 minutes",
+    "At least 2 hours (about 3 hours in warm weather)",
+    "24 hours"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "Tire pressure should be checked after the tires have cooled to obtain an accurate pressure reading."
+},
+{
+  "id": "aero-224",
+  "pregunta": "Where does laminar airflow begin on an airfoil?",
+  "opciones": [
+    "At the trailing edge",
+    "Near the center of pressure",
+    "At the leading edge",
+    "Behind the flap"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "The boundary layer begins at the leading edge and is initially laminar before transitioning to turbulent flow."
+},
+{
+  "id": "flightcontrols-216",
+  "pregunta": "When the elevator is deflected downward, the aircraft nose will:",
+  "opciones": [
+    "Move down",
+    "Move up",
+    "Remain level",
+    "Yaw left"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "Deflecting the elevator downward increases tail lift, causing the aircraft nose to pitch upward."
+},
+{
+  "id": "aero-225",
+  "pregunta": "What is the angle of attack?",
+  "opciones": [
+    "The angle between the wing chord line and the aircraft longitudinal axis",
+    "The angle between the wing chord line and the relative wind",
+    "The angle between the wing and the horizontal plane",
+    "The angle between the stabilizer and the relative wind"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Angle of attack is the angle between the wing chord line and the relative wind."
+},
+{
+  "id": "aero-226",
+  "pregunta": "What is the purpose of vortex generators?",
+  "opciones": [
+    "Increase parasite drag",
+    "Reduce wing loading",
+    "Energize the boundary layer to delay airflow separation",
+    "Increase propeller efficiency"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "Vortex generators create small vortices that bring high-energy air into the boundary layer, delaying airflow separation and improving control effectiveness at high angles of attack."
+},
+{
+  "id": "structures-208",
+  "pregunta": "What is monocoque construction?",
+  "opciones": [
+    "A structure in which the skin carries most of the structural loads",
+    "A structure supported entirely by internal trusses",
+    "A structure using only bulkheads for strength",
+    "A structure reinforced exclusively with stringers"
+  ],
+  "correcta": 0,
+  "tema": "Structures",
+  "explicacion": "In monocoque construction, the skin carries most of the structural loads with minimal internal reinforcement."
+},
+{
+  "id": "autopilot-207",
+  "pregunta": "What does an aircraft autopilot primarily sense?",
+  "opciones": [
+    "Fuel pressure",
+    "Aircraft attitude and deviation from the selected flight path",
+    "Hydraulic pressure",
+    "Cabin altitude"
+  ],
+  "correcta": 1,
+  "tema": "Autopilot",
+  "explicacion": "The autopilot receives information from gyros, attitude sensors, heading systems, navigation sources, and air data to detect deviations from the selected flight path."
+},
+{
+  "id": "electrical-214",
+  "pregunta": "Why are the pole shoes of a DC generator laminated?",
+  "opciones": [
+    "To increase magnetic flux",
+    "To reduce eddy current losses",
+    "To increase output voltage",
+    "To improve cooling"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Laminating the pole shoes reduces eddy current losses, improving generator efficiency."
+},
+{
+  "id": "flightcontrols-217",
+  "pregunta": "Why are Micarta fairleads commonly used for aircraft control cables?",
+  "opciones": [
+    "They increase cable tension",
+    "They wear instead of the control cable",
+    "They eliminate lubrication requirements",
+    "They prevent cable stretching"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "Micarta fairleads are softer than steel control cables, allowing the fairlead to wear instead of damaging the cable."
+},
+{
+  "id": "pressurization-209",
+  "pregunta": "The air used for cabin pressurization in most turbine aircraft is supplied from:",
+  "opciones": [
+    "Ram air only",
+    "Engine bleed air",
+    "Cabin recirculation fans",
+    "The air conditioning condenser"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "Most turbine aircraft use compressed engine bleed air as the source of cabin pressurization."
+},
+{
+  "id": "pressurization-210",
+  "pregunta": "If the cabin rate of climb is excessive, what adjustment should be made?",
+  "opciones": [
+    "Open the outflow valve faster",
+    "Close the outflow valve faster",
+    "Increase bleed air temperature",
+    "Reduce cabin airflow"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "Closing the outflow valve more quickly slows the cabin rate of climb by retaining cabin pressure."
+},
+{
+  "id": "pressurization-211",
+  "pregunta": "In the isobaric mode, what happens if the isobaric metering valve moves off its seat?",
+  "opciones": [
+    "Cabin pressure increases",
+    "Cabin pressure decreases",
+    "Cabin altitude remains unchanged",
+    "The safety valve opens immediately"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "When the isobaric metering valve moves off its seat, additional reference air is vented, causing the outflow valve to open and cabin pressure to decrease."
+},
+{
+  "id": "pressurization-212",
+  "pregunta": "How is cabin pressure maintained during isobaric operation?",
+  "opciones": [
+    "By continuously increasing bleed air pressure",
+    "By modulating the outflow valve in response to reference chamber pressure",
+    "By varying engine RPM",
+    "By cycling the safety valve open and closed"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "The isobaric control system senses changes in reference chamber pressure and modulates the outflow valve to maintain a constant cabin pressure."
+},
+{
+  "id": "aero-227",
+  "pregunta": "Why are wings swept back on high-speed aircraft?",
+  "opciones": [
+    "To increase induced drag",
+    "To delay the onset of compressibility effects at high speeds",
+    "To improve engine cooling",
+    "To reduce aircraft weight"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Swept wings reduce the component of airflow perpendicular to the leading edge, delaying critical Mach effects and improving high-speed performance."
+},
+{
+  "id": "flightcontrols-218",
+  "pregunta": "What are the three primary flight controls of an aircraft?",
+  "opciones": [
+    "Ailerons, elevators, and rudder",
+    "Flaps, spoilers, and trim tab",
+    "Elevators, flaps, and rudder",
+    "Ailerons, spoilers, and speed brakes"
+  ],
+  "correcta": 0,
+  "tema": "Flight Controls",
+  "explicacion": "The three primary flight controls are the ailerons (roll), elevators (pitch), and rudder (yaw)."
+},
+{
+  "id": "instruments-208",
+  "pregunta": "Which aircraft instrument requires both pitot and static pressure to operate?",
+  "opciones": [
+    "Altimeter",
+    "Vertical Speed Indicator",
+    "Airspeed Indicator",
+    "Turn Coordinator"
+  ],
+  "correcta": 2,
+  "tema": "Instruments",
+  "explicacion": "The airspeed indicator compares pitot pressure with static pressure to determine the aircraft's indicated airspeed."
+},
+{
+  "id": "aero-228",
+  "pregunta": "As the angle of attack increases, the center of pressure generally moves:",
+  "opciones": [
+    "Toward the leading edge",
+    "Toward the trailing edge",
+    "It remains fixed at 25% chord",
+    "To the wing tip"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "For most conventional airfoils operating below the critical angle of attack, the center of pressure moves forward as the angle of attack increases."
+},
+{
+  "id": "flightcontrols-219",
+  "pregunta": "If an aircraft consistently flies left-wing heavy, which adjustment would help correct the condition?",
+  "opciones": [
+    "Wash in the left wing or wash out the right wing",
+    "Wash out the left wing only",
+    "Increase rudder trim",
+    "Increase elevator travel"
+  ],
+  "correcta": 0,
+  "tema": "Flight Controls",
+  "explicacion": "A wing-heavy condition can often be corrected by adjusting the wing rigging, such as washing in the heavy wing or washing out the opposite wing."
+},
+{
+  "id": "aero-229",
+  "pregunta": "What is wing loading?",
+  "opciones": [
+    "Aircraft maximum gross weight divided by the total wing area",
+    "Wing span squared divided by wing area",
+    "Lift divided by drag",
+    "Aircraft weight divided by fuselage length"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Wing loading is calculated by dividing the aircraft's weight by the total wing area."
+},
+{
+  "id": "flightcontrols-220",
+  "pregunta": "If flight control cables are rigged too tight, what is the most likely result?",
+  "opciones": [
+    "Heavy flight controls",
+    "Reduced cable tension",
+    "Increased flutter",
+    "Lighter control forces"
+  ],
+  "correcta": 0,
+  "tema": "Flight Controls",
+  "explicacion": "Excessively tight control cables increase friction and control forces, resulting in heavy flight controls."
+},
+{
+  "id": "aero-230",
+  "pregunta": "A wing that has a greater angle of incidence at the root than at the tip is commonly called:",
+  "opciones": [
+    "Wash-in",
+    "Washout",
+    "Anhedral",
+    "Sweepback"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Wash-in means the wing root has a greater angle of incidence than the wing tip."
+},
+{
+  "id": "aero-231",
+  "pregunta": "What is the primary purpose of washout on a wing?",
+  "opciones": [
+    "To ensure the wing root stalls before the wing tip",
+    "To increase parasite drag",
+    "To increase maximum aircraft speed",
+    "To reduce wing loading"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Washout reduces the angle of incidence toward the wing tip, helping the wing root stall first and maintaining aileron effectiveness."
+},
+{
+  "id": "electrical-215",
+  "pregunta": "Why are generator pole shoes laminated?",
+  "opciones": [
+    "To reduce eddy current losses",
+    "To increase electrical resistance",
+    "To improve cooling",
+    "To increase magnetic leakage"
+  ],
+  "correcta": 0,
+  "tema": "Electrical",
+  "explicacion": "Laminating generator pole shoes minimizes eddy current losses and improves generator efficiency."
+},
+{
+  "id": "pressurization-213",
+  "pregunta": "The primary source of cabin pressurization air in turbine-powered aircraft is:",
+  "opciones": [
+    "Engine bleed air",
+    "Ram air",
+    "Cabin recirculation air",
+    "Electric compressors only"
+  ],
+  "correcta": 0,
+  "tema": "Pressurization",
+  "explicacion": "Compressed bleed air extracted from the engine compressor section is the primary source of cabin pressurization in turbine aircraft."
+},
+{
+  "id": "helicopter-264",
+  "pregunta": "In autorotation, the American tail rotor normally has:",
+  "opciones": [
+    "Positive pitch",
+    "Negative pitch",
+    "Zero pitch",
+    "Collective pitch"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "In autorotation, the tail rotor may operate with negative pitch depending on rotor direction and anti-torque requirements."
+},
+{
+  "id": "helicopter-265",
+  "pregunta": "A conical elastomeric bearing is designed to carry:",
+  "opciones": [
+    "Radial loads only",
+    "Axial loads only",
+    "High radial and axial loads",
+    "Torsional loads only"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Conical elastomeric bearings are designed to carry both high radial and axial loads."
+},
+{
+  "id": "helicopter-266",
+  "pregunta": "What type of bearing is commonly used on the end of pitch links?",
+  "opciones": [
+    "Needle bearing",
+    "Spherical bearing",
+    "Tapered roller bearing",
+    "Plain bearing"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Pitch links commonly use spherical bearings to allow angular movement during blade pitch changes."
+},
+{
+  "id": "helicopter-267",
+  "pregunta": "What forces act on a helicopter mast?",
+  "opciones": [
+    "Compression and bending only",
+    "Tension and torsion loads",
+    "Shear and drag loads only",
+    "Hydraulic and pneumatic loads"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "A helicopter mast is subjected mainly to tension and torsion loads from rotor lift and torque transmission."
+},
+{
+  "id": "electrical-217",
+  "pregunta": "A battery that delivers 7.0 amperes for 5 hours has what capacity?",
+  "opciones": [
+    "12 ampere-hours",
+    "35 ampere-hours",
+    "42 ampere-hours",
+    "70 ampere-hours"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Battery capacity = current × time = 7.0 A × 5 h = 35 ampere-hours."
+},
+{
+  "id": "communications-206",
+  "pregunta": "What kind of antenna is commonly used for VOR?",
+  "opciones": [
+    "Loop antenna",
+    "Special form of dipole antenna",
+    "Marker beacon antenna",
+    "Long wire antenna"
+  ],
+  "correcta": 1,
+  "tema": "Communications",
+  "explicacion": "A VOR receiver commonly uses a special form of dipole antenna, often called a V-type or cat-whisker antenna."
+},
+{
+  "id": "helicopter-268",
+  "pregunta": "For vertical flight at a constant upward rate, the relationship of forces is:",
+  "opciones": [
+    "Thrust plus lift is greater than weight plus drag",
+    "Weight plus drag is greater than thrust plus lift",
+    "Thrust equals drag only",
+    "Lift equals zero"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "For a vertical ascent, thrust/lift must overcome the opposing forces of weight and drag."
+},
+{
+  "id": "instruments-209",
+  "pregunta": "The altimeter setting is adjusted using:",
+  "opciones": [
+    "Barometric pressure",
+    "Pitot pressure",
+    "Gyroscopic pressure",
+    "Hydraulic pressure"
+  ],
+  "correcta": 0,
+  "tema": "Instruments",
+  "explicacion": "The altimeter is set using the local barometric pressure setting."
+},
+{
+  "id": "helicopter-269",
+  "pregunta": "A lateral vibration in a helicopter is commonly caused by:",
+  "opciones": [
+    "Blade tracking error",
+    "Chordwise imbalance",
+    "Tail rotor overspeed",
+    "Collective misrigging"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Chordwise imbalance commonly produces lateral vibration in a helicopter."
+},
+{
+  "id": "helicopter-270",
+  "pregunta": "In a semirigid rotor, the effects of advancing and retreating blades are compensated by:",
+  "opciones": [
+    "The seesaw effect",
+    "Ground resonance",
+    "Rotor brake action",
+    "Tail rotor pitch change"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "A semirigid rotor uses a seesaw teetering action to compensate for dissymmetry of lift between advancing and retreating blades."
+},
+{
+  "id": "helicopter-271",
+  "pregunta": "On a free-turbine helicopter engine, what does the twist grip control?",
+  "opciones": [
+    "Main rotor RPM",
+    "Compressor RPM",
+    "Tail rotor pitch",
+    "Fuel pressure"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "On most free-turbine helicopter engines, the twist grip controls engine (gas generator/compressor) RPM."
+},
+{
+  "id": "helicopter-272",
+  "pregunta": "If the freewheeling unit fails to disengage during autorotation, what will occur?",
+  "opciones": [
+    "The engine will drive the rotor",
+    "The main rotor will drive the engine",
+    "The rotor brake will engage",
+    "The tail rotor will stop"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "If the freewheeling unit fails, the main rotor remains mechanically connected and drives the engine during autorotation."
+},
+{
+  "id": "aero-232",
+  "pregunta": "What is the angle of attack?",
+  "opciones": [
+    "The angle between the wing chord line and the relative wind",
+    "The angle between the wing chord line and the aircraft longitudinal axis",
+    "The angle between the wing and the horizontal plane",
+    "The angle between the stabilizer and the fuselage"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Angle of attack is the acute angle between the chord line of an airfoil and the relative wind."
+},
+{
+  "id": "helicopter-273",
+  "pregunta": "Compared with the retreating blade, the advancing rotor blade normally has:",
+  "opciones": [
+    "A higher angle of attack",
+    "A lower angle of attack",
+    "The same angle of attack",
+    "No measurable angle of attack"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The advancing blade experiences higher airspeed, so it operates at a lower angle of attack than the retreating blade."
+},
+{
+  "id": "helicopter-274",
+  "pregunta": "Lead-lag hinges are characteristic of which rotor head type?",
+  "opciones": [
+    "Rigid rotor",
+    "Semirigid rotor",
+    "Fully articulated rotor",
+    "Bearingless rotor"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Fully articulated rotor heads incorporate lead-lag and flapping hinges for each blade."
+},
+{
+  "id": "helicopter-275",
+  "pregunta": "The amount of rotor blade coning is primarily determined by the relationship between:",
+  "opciones": [
+    "Rotor RPM and tail rotor thrust",
+    "Lift and centrifugal force",
+    "Drag and blade twist",
+    "Pitch angle and fuselage weight"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Coning angle is determined by the balance between upward aerodynamic lift and outward centrifugal force."
+},
+{
+  "id": "helicopter-276",
+  "pregunta": "A helicopter vibration that remains nearly constant throughout the RPM range usually indicates:",
+  "opciones": [
+    "Blade tracking error",
+    "Ground resonance",
+    "Chordwise imbalance",
+    "Rotor overspeed"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Chordwise imbalance typically produces a vibration whose amplitude changes very little with rotor RPM."
+},
+{
+  "id": "electrical-218",
+  "pregunta": "What is the function of an inverter in an aircraft electrical system?",
+  "opciones": [
+    "Converts AC to DC",
+    "Converts DC to AC",
+    "Increases DC voltage",
+    "Stores electrical energy"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "An inverter converts direct current (DC) into alternating current (AC)."
+},
+{
+  "id": "navigation-202",
+  "pregunta": "During an ILS approach, which component provides lateral guidance to align the aircraft with the runway?",
+  "opciones": [
+    "Glide slope",
+    "Marker beacon",
+    "Localizer",
+    "ADF"
+  ],
+  "correcta": 2,
+  "tema": "Navigation",
+  "explicacion": "The localizer provides left-right (lateral) guidance to align the aircraft with the runway centerline."
+},
+{
+  "id": "instruments-210",
+  "pregunta": "The Vertical Speed Indicator (VSI) operates using:",
+  "opciones": [
+    "Pitot pressure only",
+    "Static pressure",
+    "Hydraulic pressure",
+    "Ram air pressure"
+  ],
+  "correcta": 1,
+  "tema": "Instruments",
+  "explicacion": "The VSI measures the rate of change of static pressure to indicate the aircraft's rate of climb or descent."
+},
+{
+  "id": "helicopter-277",
+  "pregunta": "At approximately what airspeed does effective translational lift become noticeable?",
+  "opciones": [
+    "5–10 mph",
+    "15–20 mph",
+    "30–35 mph",
+    "45–50 mph"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Effective translational lift (ETL) is normally experienced between 15 and 20 mph."
+},
+{
+  "id": "helicopter-278",
+  "pregunta": "A vertical vibration in a helicopter is most commonly caused by:",
+  "opciones": [
+    "Chordwise imbalance",
+    "Out-of-track rotor blades",
+    "Tail rotor imbalance",
+    "Lead-lag imbalance"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Rotor blades that are out of track produce a characteristic vertical vibration."
+},
+{
+  "id": "navigation-203",
+  "pregunta": "Which components make up a conventional Instrument Landing System (ILS)?",
+  "opciones": [
+    "ADF, DME and Marker Beacon",
+    "Localizer, Glide Slope and Marker Beacons",
+    "VOR and DME",
+    "GPS and Localizer"
+  ],
+  "correcta": 1,
+  "tema": "Navigation",
+  "explicacion": "A conventional ILS consists of a localizer, glide slope, and marker beacons."
+},
+{
+  "id": "hydraulics-221",
+  "pregunta": "A hydraulic priority valve is normally operated by:",
+  "opciones": [
+    "Mechanical linkage",
+    "Electrical power",
+    "Hydraulic pressure",
+    "Pneumatic pressure"
+  ],
+  "correcta": 2,
+  "tema": "Hydraulics",
+  "explicacion": "Priority valves are hydraulically actuated to ensure essential systems receive pressure first."
+},
+{
+  "id": "helicopter-279",
+  "pregunta": "Most European helicopters require which pedal input when power is increased?",
+  "opciones": [
+    "Left pedal",
+    "Right pedal",
+    "No pedal input",
+    "Alternating pedal input"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Most European helicopters rotate opposite to most U.S.-built helicopters, requiring right pedal when power is increased."
+},
+{
+  "id": "hydraulics-222",
+  "pregunta": "What type of pump is commonly used in high-pressure aircraft hydraulic systems?",
+  "opciones": [
+    "Gear pump",
+    "Vane pump",
+    "Piston pump",
+    "Centrifugal pump"
+  ],
+  "correcta": 2,
+  "tema": "Hydraulics",
+  "explicacion": "Piston pumps are capable of producing the high pressures required in aircraft hydraulic systems."
+},
+{
+  "id": "hydraulics-223",
+  "pregunta": "What is the primary function of a hydraulic pump?",
+  "opciones": [
+    "Increase hydraulic pressure",
+    "Move hydraulic fluid",
+    "Store hydraulic energy",
+    "Reduce fluid temperature"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "A hydraulic pump creates flow. Pressure is produced only when the flow encounters resistance."
+},
+{
+  "id": "helicopter-280",
+  "pregunta": "In forward flight, a helicopter turns primarily by:",
+  "opciones": [
+    "Changing tail rotor pitch",
+    "Tilting the rotor disc with cyclic control",
+    "Increasing collective pitch",
+    "Changing engine RPM"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The cyclic control tilts the rotor disc, changing the direction of the lift vector and turning the helicopter."
+},
+{
+  "id": "helicopter-281",
+  "pregunta": "A dual tachometer in a single-engine helicopter normally indicates:",
+  "opciones": [
+    "Main rotor RPM and tail rotor RPM",
+    "Engine RPM and main rotor RPM",
+    "Engine RPM and transmission RPM",
+    "Main rotor RPM and oil pressure"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The dual tachometer displays both engine RPM and main rotor RPM."
+},
+{
+  "id": "helicopter-282",
+  "pregunta": "Why are composite helicopter rotor blades often preferred over metal blades?",
+  "opciones": [
+    "They are heavier",
+    "They have a longer service life",
+    "They require more maintenance",
+    "They produce more lift"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Composite rotor blades generally provide a longer service life due to improved fatigue and corrosion resistance."
+},
+{
+  "id": "helicopter-283",
+  "pregunta": "What is the torque effect in a helicopter?",
+  "opciones": [
+    "The fuselage turns in the same direction as the main rotor",
+    "Force and reaction cause the fuselage to rotate opposite the main rotor",
+    "The tail rotor increases lift",
+    "The rotor disc tilts forward"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "According to Newton's Third Law, the fuselage tends to rotate in the opposite direction of the main rotor."
+},
+{
+  "id": "helicopter-284",
+  "pregunta": "During autorotation, airflow through the main rotor system is:",
+  "opciones": [
+    "Downward",
+    "Horizontal",
+    "Upward",
+    "Circular"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "During autorotation, air flows upward through the rotor system, keeping the rotor turning."
+},
+{
+  "id": "helicopter-285",
+  "pregunta": "Why is a semirigid rotor head underslung?",
+  "opciones": [
+    "To reduce drag",
+    "To increase stability",
+    "To eliminate lead-lag motion",
+    "To increase rotor RPM"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The underslung design reduces stresses caused by blade flapping and improves rotor stability."
+},
+{
+  "id": "helicopter-286",
+  "pregunta": "The collective control changes the pitch of the rotor blades:",
+  "opciones": [
+    "Differently on each blade",
+    "Only on the advancing blade",
+    "Equally on all blades",
+    "Only during autorotation"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "The collective changes the pitch angle equally on all rotor blades, increasing or decreasing total rotor thrust."
+},
+{
+  "id": "helicopter-287",
+  "pregunta": "A hard rotor damper generally results in:",
+  "opciones": [
+    "A sluggish but stable helicopter",
+    "A fast response but less stable helicopter",
+    "Ground resonance",
+    "Reduced tail rotor effectiveness"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "A hard damper increases control response but can make the helicopter less stable."
+},
+{
+  "id": "helicopter-288",
+  "pregunta": "The drive links connect the:",
+  "opciones": [
+    "Tail rotor gearbox to the driveshaft",
+    "Rotating swashplate to the rotor mast",
+    "Collective lever to the transmission",
+    "Main gearbox to the engine"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Drive links transmit cyclic and collective inputs from the rotating swashplate to the rotor hub."
+},
+{
+  "id": "hydraulics-224",
+  "pregunta": "An isolation valve in a hydraulic system is commonly operated:",
+  "opciones": [
+    "Electrically",
+    "Hydraulically",
+    "Mechanically",
+    "Pneumatically"
+  ],
+  "correcta": 2,
+  "tema": "Hydraulics",
+  "explicacion": "Many isolation valves are mechanically actuated to isolate sections of the hydraulic system."
+},
+{
+  "id": "instruments-211",
+  "pregunta": "The Vertical Speed Indicator (VSI) measures the rate of climb or descent using:",
+  "opciones": [
+    "Pitot pressure",
+    "Static pressure",
+    "Hydraulic pressure",
+    "Differential fuel pressure"
+  ],
+  "correcta": 1,
+  "tema": "Instruments",
+  "explicacion": "The VSI senses the rate of change of static pressure to indicate vertical speed."
+},
+{
+  "id": "helicopter-289",
+  "pregunta": "What is the purpose of a freewheeling unit in a helicopter?",
+  "opciones": [
+    "Disconnect the engine from the main rotor during autorotation",
+    "Increase tail rotor thrust",
+    "Reduce rotor RPM",
+    "Lock the transmission during landing"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "The freewheeling unit allows the rotor system to continue turning independently of the engine during autorotation."
+},
+{
+  "id": "helicopter-290",
+  "pregunta": "Which rotor head incorporates flapping hinges?",
+  "opciones": [
+    "Rigid rotor",
+    "Semirigid rotor",
+    "Fully articulated rotor",
+    "Bearingless rotor"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "A fully articulated rotor head uses individual flapping hinges for each rotor blade."
+},
+{
+  "id": "helicopter-291",
+  "pregunta": "A fully articulated rotor head incorporates which type of hinge?",
+  "opciones": [
+    "Lead-lag hinge only",
+    "Flapping hinge",
+    "Feathering bearing only",
+    "Elastomeric bearing only"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Each blade of a fully articulated rotor head has a flapping hinge that allows independent vertical movement."
+},
+{
+  "id": "helicopter-292",
+  "pregunta": "Failure of a rotor damper most commonly produces:",
+  "opciones": [
+    "Ground resonance",
+    "High-frequency tail rotor vibration",
+    "A 1-per-revolution (1:1) beat or shuffle",
+    "Rotor overspeed"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "A failed lead-lag damper commonly produces a noticeable 1-per-revolution (1:1) beat or shuffle."
+},
+{
+  "id": "fuel-205",
+  "pregunta": "Most turbine helicopter fuel systems are:",
+  "opciones": [
+    "Gravity feed",
+    "Pressure feed",
+    "Forced feed",
+    "Vacuum feed"
+  ],
+  "correcta": 2,
+  "tema": "Fuel Systems",
+  "explicacion": "Most turbine helicopters use forced-feed fuel systems to ensure a continuous supply of fuel under all flight conditions."
+},
+{
+  "id": "helicopter-293",
+  "pregunta": "What is the most widely used helicopter dynamic balancing system?",
+  "opciones": [
+    "Vibrex",
+    "Strobex",
+    "Chadwick-Helmuth",
+    "Phasor"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "The Chadwick-Helmuth system is one of the most widely used helicopter rotor dynamic balancing systems."
+},
+{
+  "id": "hydraulics-225",
+  "pregunta": "In a closed hydraulic system, hydraulic pressure is:",
+  "opciones": [
+    "Variable while force remains constant",
+    "Constant while force varies with piston area",
+    "Always equal to pump output",
+    "Independent of piston area"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "Hydraulic pressure remains essentially constant throughout the system, while output force depends on piston area."
+},
+{
+  "id": "weightbalance-205",
+  "pregunta": "On many helicopters, Station X commonly refers to the:",
+  "opciones": [
+    "Datum line",
+    "Main rotor mast",
+    "Front jacking point",
+    "Tail rotor gearbox"
+  ],
+  "correcta": 2,
+  "tema": "Weight and Balance",
+  "explicacion": "Station X is commonly used to identify the front jacking point on many helicopter maintenance drawings."
+},
+{
+  "id": "flightcontrols-221",
+  "pregunta": "In a hydraulically boosted flight control system, artificial feel is normally provided by:",
+  "opciones": [
+    "A trim actuator",
+    "A servo tab",
+    "A gradient unit",
+    "A balance spring"
+  ],
+  "correcta": 2,
+  "tema": "Flight Controls",
+  "explicacion": "A gradient unit provides artificial control feel so the pilot can sense control forces in a hydraulically boosted system."
+},
+{
+  "id": "helicopter-294",
+  "pregunta": "The magnitude of the rotor blade coning angle depends primarily on the relationship between:",
+  "opciones": [
+    "Rotor RPM and drag",
+    "Lift and centrifugal force",
+    "Weight and tail rotor thrust",
+    "Blade twist and flapping angle"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Coning angle increases as aerodynamic lift increases relative to centrifugal force."
+},
+{
+  "id": "helicopter-295",
+  "pregunta": "Why are semirigid rotor systems designed with an underslung rotor head?",
+  "opciones": [
+    "To increase rotor RPM",
+    "To reduce the effects of Coriolis forces during blade flapping",
+    "To increase tail rotor effectiveness",
+    "To reduce parasite drag"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The underslung design minimizes changes in the center of mass during blade flapping, reducing Coriolis-induced stresses."
+},
+{
+  "id": "helicopter-296",
+  "pregunta": "Where is the helicopter rotor brake normally installed?",
+  "opciones": [
+    "Inside the main rotor hub",
+    "Between the engine and the main transmission input",
+    "Inside the tail rotor gearbox",
+    "On the swashplate"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The rotor brake is typically mounted between the engine output and the main transmission input shaft."
+},
+{
+  "id": "helicopter-297",
+  "pregunta": "What is the primary purpose of blade twist on a helicopter rotor blade?",
+  "opciones": [
+    "To reduce centrifugal force",
+    "To improve lift distribution along the blade",
+    "To increase blade rigidity",
+    "To reduce rotor RPM"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Blade twist provides a more uniform angle of attack from root to tip, improving lift distribution and rotor efficiency."
+},
+{
+  "id": "helicopter-298",
+  "pregunta": "The Coriolis effect causes the blade center of mass to:",
+  "opciones": [
+    "Move farther away from the axis of rotation",
+    "Move closer to the axis of rotation during flapping",
+    "Remain fixed relative to the hub",
+    "Move only vertically"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "During blade flapping, the blade's center of mass moves closer to or farther from the axis of rotation, producing the Coriolis (lead-lag) effect."
+},
+{
+  "id": "helicopter-299",
+  "pregunta": "The Coriolis effect in a helicopter rotor system is primarily caused by:",
+  "opciones": [
+    "Blade flapping",
+    "Ground resonance",
+    "Rotor overspeed",
+    "Tail rotor thrust"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "Blade flapping changes the blade's distance from the axis of rotation, producing lead-lag motion known as the Coriolis effect."
+},
+{
+  "id": "helicopter-300",
+  "pregunta": "The greater downward airflow at the rear of the rotor disc compared with the front is known as:",
+  "opciones": [
+    "Dissymmetry of lift",
+    "Coning",
+    "Transverse flow effect",
+    "Retreating blade stall"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "The transverse flow effect results from unequal induced airflow across the rotor disc during forward flight."
+},
+{
+  "id": "helicopter-301",
+  "pregunta": "What is the primary purpose of a movable horizontal stabilizer on a helicopter?",
+  "opciones": [
+    "Reduce rotor drag",
+    "Improve longitudinal stability and extend the center of gravity range",
+    "Increase tail rotor thrust",
+    "Reduce engine torque"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "A movable horizontal stabilizer improves longitudinal stability and increases the allowable center of gravity range."
+},
+{
+  "id": "helicopter-302",
+  "pregunta": "The horizontal stabilizer on many helicopters is shaped as an:",
+  "opciones": [
+    "Symmetrical airfoil",
+    "Flat plate",
+    "Inverted asymmetrical airfoil",
+    "Circular airfoil"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Many helicopters use an inverted asymmetrical airfoil to provide stabilizing downforce during forward flight."
+},
+{
+  "id": "helicopter-303",
+  "pregunta": "Which flight control continuously changes rotor blade pitch during each revolution of the rotor disc?",
+  "opciones": [
+    "Collective control",
+    "Throttle",
+    "Cyclic control",
+    "Anti-torque pedals"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "The cyclic control changes blade pitch at specific points during each revolution, tilting the rotor disc."
+},
+{
+  "id": "helicopter-304",
+  "pregunta": "Ground resonance is primarily associated with which rotor system?",
+  "opciones": [
+    "Rigid rotor",
+    "Semirigid rotor",
+    "Fully articulated rotor",
+    "Bearingless rotor"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Ground resonance is a phenomenon associated primarily with fully articulated rotor systems and results from geometric imbalance."
+},
+{
+  "id": "helicopter-305",
+  "pregunta": "Which equipment is commonly used to dynamically balance helicopter tail rotor blades?",
+  "opciones": [
+    "Dial indicator",
+    "Laser alignment system",
+    "Strobex",
+    "Tensiometer"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Strobex is commonly used for dynamic balancing and tracking of helicopter rotor systems."
+},
+{
+  "id": "helicopter-306",
+  "pregunta": "Blade alignment on a semirigid rotor system is commonly referred to as:",
+  "opciones": [
+    "Spanwise balance",
+    "Blade tracking",
+    "Chordwise balance",
+    "Static balance"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Blade alignment on semirigid rotor systems is commonly referred to as chordwise balance."
+},
+{
+  "id": "helicopter-307",
+  "pregunta": "Vertical flight of a helicopter is primarily controlled by:",
+  "opciones": [
+    "Cyclic pitch",
+    "Tail rotor pitch",
+    "Collective pitch",
+    "Engine RPM"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "The collective changes the pitch of all main rotor blades equally, increasing or decreasing total lift."
+},
+{
+  "id": "helicopter-308",
+  "pregunta": "The tendency of anti-torque pedals to slowly move away from the neutral position is called:",
+  "opciones": [
+    "Pedal feedback",
+    "Pedal creep",
+    "Pedal oscillation",
+    "Pedal preload"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Pedal creep is the gradual movement of the anti-torque pedals away from neutral due to hydraulic servo characteristics."
+},
+{
+  "id": "helicopter-309",
+  "pregunta": "The torque effect causes the helicopter fuselage to:",
+  "opciones": [
+    "Rotate in the same direction as the main rotor",
+    "Rotate opposite to the direction of the main rotor",
+    "Pitch nose down",
+    "Roll toward the advancing blade"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "According to Newton's Third Law, the fuselage tends to rotate opposite the direction of the main rotor."
+},
+{
+  "id": "helicopter-310",
+  "pregunta": "On most U.S.-built helicopters, increasing left anti-torque pedal will:",
+  "opciones": [
+    "Increase tail rotor thrust",
+    "Decrease tail rotor thrust",
+    "Reduce main rotor RPM",
+    "Increase collective pitch"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "On most U.S.-built helicopters, pressing the left pedal increases tail rotor blade pitch, increasing anti-torque thrust."
+},
+{
+  "id": "helicopter-311",
+  "pregunta": "During manufacture, each wooden rotor blade is matched to:",
+  "opciones": [
+    "The main rotor hub",
+    "A master blade and its matching blade",
+    "The transmission",
+    "The tail rotor blade"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Wooden rotor blades are carefully matched to a master blade and to their companion blade to ensure balance."
+},
+{
+  "id": "helicopter-312",
+  "pregunta": "Regardless of the balancing method used, helicopter rotor balancing always includes:",
+  "opciones": [
+    "Static and dynamic balancing only",
+    "Spanwise and chordwise balancing",
+    "Lead-lag adjustment only",
+    "Tracking only"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Rotor balancing always includes spanwise and chordwise balance before dynamic balancing is performed."
+},
+{
+  "id": "helicopter-313",
+  "pregunta": "On a metal helicopter rotor blade, the skin primarily:",
+  "opciones": [
+    "Carries all centrifugal loads",
+    "Provides the aerodynamic shape by wrapping around the internal structure",
+    "Contains hydraulic passages",
+    "Supports the pitch links"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The metal skin wraps around the blade structure to form its aerodynamic profile."
+},
+{
+  "id": "helicopter-314",
+  "pregunta": "Which helicopter rotor system is susceptible to mast bumping?",
+  "opciones": [
+    "Fully articulated",
+    "Rigid",
+    "Semirigid",
+    "Bearingless"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Mast bumping is primarily associated with semirigid (teetering) rotor systems."
+},
+{
+  "id": "helicopter-315",
+  "pregunta": "The rotor brake on many helicopters is supplied by:",
+  "opciones": [
+    "The main aircraft hydraulic system",
+    "An independent hydraulic system",
+    "The engine oil system",
+    "The tail rotor gearbox"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Many helicopter rotor brakes are powered by an independent hydraulic system."
+},
+{
+  "id": "helicopter-316",
+  "pregunta": "A helicopter that is very stable but slow to respond to control inputs most likely has:",
+  "opciones": [
+    "A hard stabilizer bar",
+    "A soft stabilizer bar or soft damper",
+    "Excessive rotor RPM",
+    "Improper blade tracking"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "A soft stabilizer bar or soft damper results in an overstable helicopter with delayed control response."
+},
+{
+  "id": "helicopter-317",
+  "pregunta": "For a helicopter climbing vertically at a constant rate, the combined thrust and lift must be:",
+  "opciones": [
+    "Equal to the combined weight and drag",
+    "Greater than the combined weight and drag",
+    "Less than the combined weight and drag",
+    "Independent of drag"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "To maintain a positive rate of climb, the upward forces (thrust/lift) must exceed the opposing forces (weight and drag)."
+},
+{
+  "id": "helicopter-318",
+  "pregunta": "The magnitude of the rotor blade coning angle is primarily determined by the relationship between:",
+  "opciones": [
+    "Rotor RPM and drag",
+    "Lift produced by the blade and centrifugal force",
+    "Blade twist and collective pitch",
+    "Main rotor and tail rotor thrust"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Coning angle is established by the balance between centrifugal force pulling the blade outward and aerodynamic lift pulling it upward."
+},
+{
+  "id": "fuel-206",
+  "pregunta": "Most turbine-powered helicopters use what type of fuel system?",
+  "opciones": [
+    "Gravity-feed",
+    "Vacuum-feed",
+    "Forced-feed",
+    "Pressure carburetor"
+  ],
+  "correcta": 2,
+  "tema": "Fuel Systems",
+  "explicacion": "Most turbine helicopters use a forced-feed fuel system to provide a continuous fuel supply under all operating conditions."
+},
+{
+  "id": "helicopter-319",
+  "pregunta": "What is the primary purpose of a horizontal stabilizer on a helicopter?",
+  "opciones": [
+    "Increase tail rotor thrust",
+    "Improve longitudinal stability and increase the allowable center of gravity range",
+    "Reduce rotor RPM",
+    "Reduce induced drag"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The horizontal stabilizer improves pitch stability and extends the allowable CG range during forward flight."
+},
+{
+  "id": "helicopter-320",
+  "pregunta": "A helicopter rotor system that is out of track will most commonly produce:",
+  "opciones": [
+    "A lateral vibration",
+    "A vertical vibration",
+    "A pedal vibration only",
+    "Ground resonance"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Out-of-track rotor blades produce a vertical vibration because the blades are not rotating in the same plane."
+},
+{
+  "id": "helicopter-321",
+  "pregunta": "A helicopter rotor with chordwise imbalance typically produces:",
+  "opciones": [
+    "Vertical vibration",
+    "Lateral vibration",
+    "Ground resonance",
+    "Tail rotor vibration"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Chordwise imbalance typically results in a lateral vibration that remains relatively constant throughout the RPM range."
+},
+{
+  "id": "helicopter-323",
+  "pregunta": "What is the Coriolis effect in a helicopter rotor system?",
+  "opciones": [
+    "Blade lead and lag caused by changes in the blade's distance from the axis of rotation during flapping",
+    "Unequal lift between the advancing and retreating blades",
+    "Vertical vibration caused by blade tracking errors",
+    "The tendency of the fuselage to rotate opposite the main rotor"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "As a rotor blade flaps, its center of mass moves closer to or farther from the mast. To conserve angular momentum, the blade leads or lags. This is known as the Coriolis effect."
+},
+{
+  "id": "helicopter-324",
+  "pregunta": "What motion is commonly associated with the Coriolis effect?",
+  "opciones": [
+    "Blade coning",
+    "Blade lead and lag (hunting)",
+    "Blade tracking",
+    "Ground resonance"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The Coriolis effect causes the blades to lead and lag (hunt fore and aft) as they flap."
+},
+{
+  "id": "helicopter-325",
+  "pregunta": "What causes a helicopter fuselage to rotate opposite the direction of the main rotor?",
+  "opciones": [
+    "Transverse flow effect",
+    "Torque reaction",
+    "Gyroscopic precession",
+    "Ground resonance"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Torque reaction is the equal and opposite reaction produced by the rotating main rotor, as described by Newton's Third Law."
+},
+{
+  "id": "helicopter-326",
+  "pregunta": "What type of vibration is most commonly associated with rotor blades that are out of track?",
+  "opciones": [
+    "Lateral vibration",
+    "Vertical vibration",
+    "Pedal vibration",
+    "Chordwise vibration"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Rotor blades that do not rotate in the same plane produce a characteristic vertical vibration."
+},
+{
+  "id": "helicopter-327",
+  "pregunta": "A helicopter rotor with chordwise imbalance will normally produce:",
+  "opciones": [
+    "Ground resonance",
+    "Lateral vibration",
+    "Vertical vibration",
+    "Tail rotor overspeed"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Chordwise imbalance typically produces a lateral vibration whose amplitude changes very little with rotor RPM."
+},
+{
+  "id": "helicopter-328",
+  "pregunta": "What is the primary purpose of blade twist in a helicopter rotor blade?",
+  "opciones": [
+    "Increase centrifugal force",
+    "Improve lift distribution from root to tip",
+    "Reduce rotor diameter",
+    "Increase blade rigidity"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Blade twist compensates for the increase in rotational speed toward the blade tip, resulting in a more uniform angle of attack and lift distribution."
+},
+{
+  "id": "helicopter-329",
+  "pregunta": "The artificial feel system in a hydraulically boosted helicopter flight control system is usually provided by a:",
+  "opciones": [
+    "Servo tab",
+    "Gradient unit",
+    "Trim actuator",
+    "Boost pump"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "A gradient unit provides artificial control forces so the pilot can feel control inputs despite hydraulic boosting."
+},
+{
+  "id": "helicopter-330",
+  "pregunta": "Which helicopter rotor system is most susceptible to mast bumping?",
+  "opciones": [
+    "Fully articulated",
+    "Semirigid",
+    "Rigid",
+    "Bearingless"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Mast bumping is a hazard associated primarily with semirigid (teetering) rotor systems."
+},
+{
+  "id": "helicopter-331",
+  "pregunta": "The transverse flow effect is caused by:",
+  "opciones": [
+    "Unequal induced airflow across the rotor disc during forward flight",
+    "Rotor overspeed",
+    "Tail rotor imbalance",
+    "Blade coning"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "In forward flight, the rear portion of the rotor disc experiences greater induced flow than the front, producing the transverse flow effect."
+},
+{
+  "id": "helicopter-332",
+  "pregunta": "The horizontal stabilizer on a helicopter primarily improves:",
+  "opciones": [
+    "Directional stability",
+    "Longitudinal stability",
+    "Lateral stability",
+    "Rotor RPM"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The horizontal stabilizer improves longitudinal stability and helps maintain proper pitch attitude during forward flight."
+},
+{
+  "id": "helicopter-333",
+  "pregunta": "The Coriolis effect causes rotor blades to:",
+  "opciones": [
+    "Lead and lag as they flap",
+    "Increase collective pitch",
+    "Decrease rotor RPM",
+    "Increase coning angle"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "As a blade flaps, its distance from the axis of rotation changes. To conserve angular momentum, the blade leads or lags. This is known as the Coriolis effect."
+},
+{
+  "id": "aero-233",
+  "pregunta": "Angle of attack is defined as the angle between the:",
+  "opciones": [
+    "Wing chord line and the relative wind",
+    "Wing chord line and the aircraft longitudinal axis",
+    "Wing and the horizontal plane",
+    "Relative wind and the aircraft longitudinal axis"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Angle of attack is the acute angle formed between the chord line of an airfoil and the relative wind."
+},
+{
+  "id": "helicopter-334",
+  "pregunta": "Rotor blade coning occurs because of the balance between:",
+  "opciones": [
+    "Lift and centrifugal force",
+    "Torque and drag",
+    "Weight and tail rotor thrust",
+    "Engine power and blade twist"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "The coning angle is established by the balance between aerodynamic lift acting upward and centrifugal force acting outward."
+},
+{
+  "id": "helicopter-335",
+  "pregunta": "What could cause a chordwise imbalance in a semirigid rotor head?",
+  "opciones": [
+    "Rotor blades out of track",
+    "Drag brace link incorrectly adjusted",
+    "Tail rotor imbalance",
+    "Low hydraulic pressure"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "On many semirigid rotor systems, an incorrectly adjusted drag brace link can produce a chordwise imbalance and lateral vibration."
+},
+{
+  "id": "helicopter-336",
+  "pregunta": "What is the primary function of a fixed horizontal stabilizer on a helicopter?",
+  "opciones": [
+    "Increase tail rotor thrust",
+    "Pull the tail downward to improve longitudinal stability",
+    "Reduce main rotor RPM",
+    "Prevent ground resonance"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "A fixed horizontal stabilizer produces a downward aerodynamic force on the tail, improving longitudinal stability during forward flight."
+},
+{
+  "id": "helicopter-337",
+  "pregunta": "What type of airfoil is commonly used for a helicopter horizontal stabilizer?",
+  "opciones": [
+    "Symmetrical airfoil",
+    "Cambered airfoil",
+    "Inverted airfoil",
+    "Flat plate"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Many helicopter horizontal stabilizers use an inverted airfoil to generate a stabilizing downward force in forward flight."
+},
+{
+  "id": "helicopter-338",
+  "pregunta": "Why are helicopter rotor blades permitted to flap?",
+  "opciones": [
+    "To increase rotor RPM",
+    "To compensate for dissymmetry of lift",
+    "To reduce centrifugal force",
+    "To decrease blade drag"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Blade flapping compensates for dissymmetry of lift between the advancing and retreating blades."
+},
+{
+  "id": "helicopter-339",
+  "pregunta": "What is dissymmetry of lift?",
+  "opciones": [
+    "The unequal lift produced by the advancing and retreating rotor blades",
+    "The unequal weight of rotor blades",
+    "The difference in tail rotor thrust",
+    "The unequal pitch of the main rotor blades"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "In forward flight, the advancing blade experiences higher relative airspeed than the retreating blade, producing unequal lift."
+},
+{
+  "id": "helicopter-340",
+  "pregunta": "On many metal helicopter rotor blades, the skin is attached to the spar by:",
+  "opciones": [
+    "Solid rivets",
+    "Bonding",
+    "Spot welding",
+    "Bolted joints"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Many metal rotor blades use bonded construction, where the skin is bonded directly to the spar."
+},
+{
+  "id": "helicopter-341",
+  "pregunta": "What is translational lift?",
+  "opciones": [
+    "Additional lift obtained as the helicopter moves into undisturbed air",
+    "Lift produced only during hovering",
+    "Lift produced by the tail rotor",
+    "Lift caused by blade coning"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "Effective translational lift occurs when the rotor system moves into clean, undisturbed air, increasing rotor efficiency."
+},
+{
+  "id": "helicopter-342",
+  "pregunta": "What is the primary purpose of tracking helicopter rotor blades?",
+  "opciones": [
+    "Increase rotor RPM",
+    "Ensure all blades rotate in the same tip-path plane",
+    "Balance the tail rotor",
+    "Reduce engine vibration"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Blade tracking ensures all rotor blades follow the same tip-path plane, reducing vibration."
+},
+{
+  "id": "helicopter-343",
+  "pregunta": "When the collective pitch lever is raised, what must also increase to maintain rotor RPM?",
+  "opciones": [
+    "Tail rotor pitch",
+    "Engine power",
+    "Cyclic pitch",
+    "Blade twist"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Increasing collective pitch increases blade drag, requiring additional engine power to maintain rotor RPM."
+},
+{
+  "id": "helicopter-344",
+  "pregunta": "When the collective pitch lever is lowered, the rotor blades will:",
+  "opciones": [
+    "Increase pitch angle",
+    "Move to a lower pitch angle",
+    "Increase coning angle",
+    "Enter autorotation immediately"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Lowering the collective decreases the pitch angle of all main rotor blades, reducing lift."
+},
+{
+  "id": "helicopter-345",
+  "pregunta": "What is hunting in a helicopter rotor system?",
+  "opciones": [
+    "Vertical movement of the rotor blade",
+    "Horizontal lead-lag movement of the rotor blade about its vertical hinge",
+    "Blade coning during hover",
+    "Blade tracking adjustment"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Hunting is the lead-lag (fore-and-aft) movement of the rotor blade about its drag hinge, primarily caused by the Coriolis effect."
+},
+{
+  "id": "helicopter-346",
+  "pregunta": "What could cause a centrifugal clutch to engage at too low an engine speed?",
+  "opciones": [
+    "Excessive blade twist",
+    "Weak or broken clutch springs",
+    "High hydraulic pressure",
+    "Improper cyclic rigging"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Weak or broken clutch springs allow the centrifugal clutch to engage before the proper engine RPM is reached."
+},
+{
+  "id": "helicopter-347",
+  "pregunta": "In a fully articulated rotor system, blade flapping is primarily a result of:",
+  "opciones": [
+    "Tail rotor thrust",
+    "Aerodynamic forces acting on the blades",
+    "Ground resonance",
+    "Centrifugal clutch engagement"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Aerodynamic forces acting on the rotor blades cause them to flap up and down about their flapping hinges."
+},
+{
+  "id": "helicopter-348",
+  "pregunta": "When cyclic control is applied to a rotating rotor system, the maximum rotor disc displacement occurs:",
+  "opciones": [
+    "At the point of control input",
+    "45° after the control input",
+    "90° after the control input",
+    "180° after the control input"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Due to gyroscopic precession, the maximum rotor response occurs approximately 90° later in the direction of rotation."
+},
+{
+  "id": "helicopter-349",
+  "pregunta": "What is the most likely cause of anti-torque pedal creep during a ground run?",
+  "opciones": [
+    "Tail rotor imbalance",
+    "Heavy servo counterweights",
+    "Low hydraulic pressure",
+    "Incorrect blade tracking"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Excessively heavy counterweights in the control system can contribute to pedal creep during ground operation."
+},
+{
+  "id": "helicopter-350",
+  "pregunta": "What is usually the first indication of a misaligned tail rotor shaft bearing?",
+  "opciones": [
+    "Tail rotor overspeed",
+    "Bearing overheating",
+    "Rotor blade coning",
+    "Collective pitch increase"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Bearing overheating is often the earliest indication of shaft misalignment."
+},
+{
+  "id": "helicopter-351",
+  "pregunta": "An improperly balanced tail rotor will most likely produce:",
+  "opciones": [
+    "Low-frequency vibration",
+    "High-frequency vibration",
+    "Ground resonance",
+    "Vertical fuselage vibration"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Tail rotors operate at high RPM, so imbalance is normally felt as a high-frequency vibration."
+},
+{
+  "id": "helicopter-352",
+  "pregunta": "What action is required if a metal helicopter rotor blade has a 1/8-inch crack?",
+  "opciones": [
+    "Stop-drill the crack",
+    "Blend and repaint the area",
+    "Replace the blade",
+    "Install a repair doubler"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "A crack of this magnitude in a metal rotor blade requires blade replacement in accordance with manufacturer limits."
+},
+{
+  "id": "helicopter-353",
+  "pregunta": "What is the primary purpose of a stabilizer bar on a semirigid rotor system?",
+  "opciones": [
+    "Increase rotor RPM",
+    "Provide a reference for controlling blade angle of attack",
+    "Reduce engine vibration",
+    "Increase tail rotor thrust"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The stabilizer bar acts as an aerodynamic reference, helping stabilize the rotor disc and improve control response."
+},
+{
+  "id": "helicopter-354",
+  "pregunta": "The freewheeling unit in a helicopter allows:",
+  "opciones": [
+    "The engine to drive the rotor during autorotation",
+    "The rotor to rotate independently of the engine",
+    "The rotor brake to engage automatically",
+    "The tail rotor to overspeed safely"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The freewheeling unit disconnects the engine from the rotor system during autorotation, allowing the rotor to continue turning freely."
+},
+{
+  "id": "weightbalance-206",
+  "pregunta": "If the center of gravity is outside the approved limits, the aircraft may:",
+  "opciones": [
+    "Experience increased fuel consumption only",
+    "Become uncontrollable in flight",
+    "Develop hydraulic leaks",
+    "Require higher tire pressure"
+  ],
+  "correcta": 1,
+  "tema": "Weight and Balance",
+  "explicacion": "An aircraft with its center of gravity outside the approved limits may have unsafe handling characteristics and become uncontrollable."
+},
+{
+  "id": "weightbalance-207",
+  "pregunta": "What is the reference point for all aircraft weight and balance measurements?",
+  "opciones": [
+    "Center of lift",
+    "Center of gravity",
+    "Datum",
+    "Wing root"
+  ],
+  "correcta": 2,
+  "tema": "Weight and Balance",
+  "explicacion": "The datum is the established reference point from which all arms and moments are measured."
+},
+{
+  "id": "weightbalance-208",
+  "pregunta": "How is moment determined in aircraft weight and balance calculations?",
+  "opciones": [
+    "Weight ÷ Arm",
+    "Weight × Arm",
+    "Arm ÷ Weight",
+    "Weight × Distance²"
+  ],
+  "correcta": 1,
+  "tema": "Weight and Balance",
+  "explicacion": "Moment is calculated by multiplying the item's weight by its arm (Moment = Weight × Arm)."
+},
+{
+  "id": "weightbalance-209",
+  "pregunta": "How is the aircraft center of gravity calculated?",
+  "opciones": [
+    "Total weight ÷ Total moment",
+    "Total moment ÷ Total weight",
+    "Total arm × Total weight",
+    "Total weight × Total arm"
+  ],
+  "correcta": 1,
+  "tema": "Weight and Balance",
+  "explicacion": "The center of gravity is found by dividing the total moment by the total weight."
+},
+{
+  "id": "structures-209",
+  "pregunta": "When using a straight hand reamer, what is the recommended procedure?",
+  "opciones": [
+    "Rotate only counterclockwise",
+    "Back the reamer out periodically to clear the flutes",
+    "Lubricate only after reaming",
+    "Reverse the reamer continuously"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "A hand reamer should be backed out periodically to remove chips from the flutes and prevent damage to the hole."
+},
+{
+  "id": "flightcontrols-222",
+  "pregunta": "Aircraft control travel is normally limited by:",
+  "opciones": [
+    "Cable tension",
+    "Fixed or adjustable stops",
+    "Servo tabs",
+    "Control locks"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "Control travel is limited by mechanical stops that may be fixed or adjustable depending on the aircraft design."
+},
+{
+  "id": "flightcontrols-223",
+  "pregunta": "Why is a small inspection hole drilled in an adjustable control rod end?",
+  "opciones": [
+    "To reduce weight",
+    "To allow lubrication",
+    "To verify proper thread engagement for safety",
+    "To drain moisture"
+  ],
+  "correcta": 2,
+  "tema": "Flight Controls",
+  "explicacion": "The inspection hole allows maintenance personnel to verify that the threaded rod has been screwed in far enough to ensure safe engagement."
+},
+{
+  "id": "hardware-201",
+  "pregunta": "When installing a fiber-lock nut on a bolt or stud, how many threads should extend beyond the nut?",
+  "opciones": [
+    "One thread",
+    "Two threads",
+    "At least three threads",
+    "Five threads"
+  ],
+  "correcta": 2,
+  "tema": "Hardware",
+  "explicacion": "At least three threads should extend beyond a fiber-lock nut to ensure the locking element is fully engaged."
+},
+{
+  "id": "flightcontrols-224",
+  "pregunta": "Why should vapor degreasing, steam cleaning, MEK, or similar solvents not be used on flight control cables?",
+  "opciones": [
+    "They discolor the cable",
+    "They remove the cable's internal lubricant",
+    "They increase cable tension",
+    "They soften the cable strands"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "Strong solvents remove the internal lubricant from control cables, greatly reducing their service life."
+},
+{
+  "id": "flightcontrols-225",
+  "pregunta": "When must an aircraft flight control cable be replaced?",
+  "opciones": [
+    "Only when one or more strands are broken",
+    "Only when corrosion is visible",
+    "Whenever it is distorted, worn, or corroded, even if no strands are broken",
+    "Only after reaching the manufacturer's recommended service life"
+  ],
+  "correcta": 2,
+  "tema": "Flight Controls",
+  "explicacion": "A control cable must be replaced if it is distorted, worn, or corroded, even when no broken strands are present."
+},
+{
+  "id": "electrical-219",
+  "pregunta": "If the battery relay chatters when the battery master switch is turned ON, the most likely cause is:",
+  "opciones": [
+    "A defective starter",
+    "Low battery voltage",
+    "A faulty voltage regulator",
+    "An open alternator field circuit"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "A weak battery may not provide enough voltage to hold the relay closed, causing it to chatter."
+},
+{
+  "id": "electrical-220",
+  "pregunta": "When two or more AC generators operate on the same aircraft bus, they must have the same:",
+  "opciones": [
+    "Current, resistance, and frequency",
+    "Voltage, phase sequence, and frequency",
+    "Voltage, amperage, and power factor",
+    "Frequency, amperage, and resistance"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "AC generators operating in parallel must be synchronized in voltage, frequency, and phase sequence."
+},
+{
+  "id": "electrical-221",
+  "pregunta": "Aircraft electrical wire size is selected primarily based on:",
+  "opciones": [
+    "Wire color and insulation type",
+    "Current-carrying capacity and allowable voltage drop",
+    "Length of the wire only",
+    "Available installation space"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Wire size is selected to safely carry the required current while keeping voltage drop within acceptable limits."
+},
+{
+  "id": "electrical-222",
+  "pregunta": "How is an overcharging aircraft battery normally corrected?",
+  "opciones": [
+    "Replace the battery",
+    "Adjust the voltage regulator",
+    "Increase generator RPM",
+    "Replace the battery relay"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Battery overcharging is normally corrected by adjusting or replacing the voltage regulator."
+},
+{
+  "id": "electrical-223",
+  "pregunta": "The master switch in a DC electrical system normally connects the:",
+  "opciones": [
+    "Alternator to the starter",
+    "Battery to the DC bus",
+    "External power unit to the battery",
+    "Generator directly to the battery"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "The battery master switch connects the aircraft battery to the main DC bus."
+},
+{
+  "id": "electrical-224",
+  "pregunta": "A split-bus relay may be energized by:",
+  "opciones": [
+    "The battery or an external power source",
+    "The inverter only",
+    "The voltage regulator only",
+    "The starter motor only"
+  ],
+  "correcta": 0,
+  "tema": "Electrical",
+  "explicacion": "Split-bus relays are commonly energized by either the aircraft battery or an external power source."
+},
+{
+  "id": "electrical-225",
+  "pregunta": "Why must the output of two DC generators operating in parallel be properly balanced?",
+  "opciones": [
+    "To increase battery charging rate",
+    "To prevent reverse current flow between generators",
+    "To reduce starter current",
+    "To increase bus voltage"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Balanced generator output prevents one generator from motoring or receiving reverse current from the other."
+},
+{
+  "id": "fireprotection-201",
+  "pregunta": "How is the fire warning indicator light normally tested?",
+  "opciones": [
+    "Applying external power",
+    "Pressing the outer ring of the warning light",
+    "Grounding the detector circuit",
+    "Turning on the landing lights"
+  ],
+  "correcta": 1,
+  "tema": "Fire Protection",
+  "explicacion": "Most aircraft fire warning lights incorporate a push-to-test feature by pressing the outer ring."
+},
+{
+  "id": "instruments-212",
+  "pregunta": "Which flight instrument does NOT require static pressure for operation?",
+  "opciones": [
+    "Altimeter",
+    "Vertical Speed Indicator",
+    "Turn-and-Bank Indicator",
+    "Airspeed Indicator"
+  ],
+  "correcta": 2,
+  "tema": "Instruments",
+  "explicacion": "The Turn-and-Bank Indicator is gyro driven and does not use the pitot-static system."
+},
+{
+  "id": "instruments-213",
+  "pregunta": "During a compass swing, if the aircraft is heading north and the sighting compass reads 354° while the aircraft compass reads 356°, the aircraft compass should be adjusted to indicate:",
+  "opciones": [
+    "352°",
+    "354°",
+    "356°",
+    "358°"
+  ],
+  "correcta": 1,
+  "tema": "Instruments",
+  "explicacion": "During compass compensation, north and east headings are adjusted to remove all error, so the aircraft compass should match the reference compass."
+},
+{
+  "id": "aero-234",
+  "pregunta": "As laminar airflow moves toward the trailing edge of an airfoil, what happens to the boundary layer?",
+  "opciones": [
+    "It becomes thinner",
+    "It becomes thicker and gradually transitions to turbulent flow",
+    "It disappears completely",
+    "It remains the same thickness"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "As airflow progresses toward the trailing edge, the boundary layer thickens and eventually transitions from laminar to turbulent flow."
+},
+{
+  "id": "flightcontrols-226",
+  "pregunta": "Which type of tab is designed to assist the pilot by reducing the control force required to move a flight control surface?",
+  "opciones": [
+    "Balance tab",
+    "Servo tab",
+    "Spring tab",
+    "Anti-servo tab"
+  ],
+  "correcta": 2,
+  "tema": "Flight Controls",
+  "explicacion": "A spring tab assists the pilot at higher airspeeds by reducing the force required to move the primary flight control."
+},
+{
+  "id": "structures-210",
+  "pregunta": "In a true monocoque fuselage, the primary structural loads are carried by the:",
+  "opciones": [
+    "Bulkheads",
+    "Stringers",
+    "Skin",
+    "Longerons"
+  ],
+  "correcta": 2,
+  "tema": "Structures",
+  "explicacion": "In a true monocoque structure, the skin carries nearly all of the structural loads with minimal internal reinforcement."
+},
+{
+  "id": "aero-235",
+  "pregunta": "The dihedral angle of a wing is measured between the:",
+  "opciones": [
+    "Wing chord line and the longitudinal axis",
+    "Wing centerline and the aircraft lateral axis (horizontal plane)",
+    "Wing chord line and the relative wind",
+    "Wing spar and the fuselage datum"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Dihedral is the upward angle of the wings relative to the aircraft's lateral (horizontal) reference plane."
+},
+{
+  "id": "helicopter-355",
+  "pregunta": "On many turbine helicopters, the rotor brake is actuated by:",
+  "opciones": [
+    "Bleed air",
+    "Engine oil pressure",
+    "A dedicated hydraulic system",
+    "Transmission oil pressure"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Many turbine helicopters use a dedicated hydraulic system to operate the rotor brake, although designs vary by manufacturer."
+},
+{
+  "id": "helicopter-356",
+  "pregunta": "Which equipment is commonly used for dynamic balancing of helicopter rotor systems?",
+  "opciones": [
+    "Phasor and Vibrex",
+    "Dial indicator and tensiometer",
+    "Laser tracker only",
+    "Pitot-static tester"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "Dynamic rotor balancing is commonly performed using systems such as Phasor and Vibrex (or equivalent balancing equipment)."
+},
+{
+  "id": "helicopter-357",
+  "pregunta": "Failure of one damper on a fully articulated rotor head is most likely to produce:",
+  "opciones": [
+    "A 2-per-revolution lateral vibration",
+    "A 1-per-revolution vertical vibration",
+    "Ground resonance immediately",
+    "Tail rotor overspeed"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "A failed damper on a fully articulated rotor head typically produces a characteristic 2-per-revolution lateral vibration."
+},
+{
+  "id": "instruments-214",
+  "pregunta": "The Vertical Speed Indicator (VSI) receives its pressure input from the:",
+  "opciones": [
+    "Pitot system",
+    "Static system",
+    "Pitot and static systems",
+    "Vacuum system"
+  ],
+  "correcta": 1,
+  "tema": "Instruments",
+  "explicacion": "The VSI operates solely from the static pressure system and measures the rate of change in static pressure."
+},
+{
+  "id": "helicopter-358",
+  "pregunta": "Mast bumping is most commonly associated with which rotor system?",
+  "opciones": [
+    "Fully articulated",
+    "Rigid",
+    "Semirigid (teetering)",
+    "Bearingless"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Mast bumping is a hazard unique to semirigid (teetering) rotor systems when excessive flapping occurs under low-G conditions."
+},
+{
+  "id": "helicopter-359",
+  "pregunta": "A movable horizontal stabilizer on a helicopter is primarily used to:",
+  "opciones": [
+    "Reduce tail rotor thrust",
+    "Improve longitudinal stability and extend the allowable center of gravity range",
+    "Increase rotor RPM",
+    "Reduce blade coning"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "A movable horizontal stabilizer improves pitch stability throughout the flight envelope and increases the allowable center of gravity range."
+},
+{
+  "id": "landinggear-201",
+  "pregunta": "A broken piston return spring in a brake master cylinder will most likely cause:",
+  "opciones": [
+    "Soft brakes",
+    "Brakes to drag",
+    "Loss of hydraulic fluid",
+    "Brake pedal vibration"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "A broken piston return spring may prevent the piston from fully returning, causing the brakes to drag."
+},
+{
+  "id": "landinggear-202",
+  "pregunta": "A restricted compensating port in a brake master cylinder will most likely cause:",
+  "opciones": [
+    "Rapid brake application",
+    "Slow brake release or dragging brakes",
+    "Loss of brake fluid",
+    "Unequal tire wear"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "If the compensating port is blocked, hydraulic pressure cannot return to the reservoir, causing the brakes to drag."
+},
+{
+  "id": "landinggear-203",
+  "pregunta": "What is the primary function of torque links on an aircraft landing gear?",
+  "opciones": [
+    "Absorb landing impact",
+    "Maintain wheel alignment and prevent oleo rotation",
+    "Retract the landing gear",
+    "Reduce shimmy"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "Torque links prevent the inner and outer cylinders of the shock strut from rotating relative to each other, maintaining wheel alignment."
+},
+{
+  "id": "landinggear-204",
+  "pregunta": "If a fusible plug in an aircraft wheel has melted because of excessive heat, the tire should be:",
+  "opciones": [
+    "Reinflated and reused",
+    "Repaired and balanced",
+    "Discarded and replaced",
+    "Inspected and returned to service"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "A tire exposed to sufficient heat to melt a fusible plug may have suffered structural damage and should be replaced."
+},
+{
+  "id": "landinggear-205",
+  "pregunta": "What is the primary purpose of a nose landing gear centering cam?",
+  "opciones": [
+    "Reduce shimmy",
+    "Center the nose wheel before retraction",
+    "Lock the gear down",
+    "Control steering angle"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "The centering cam aligns the nose wheel straight ahead before it retracts into the wheel well."
+},
+{
+  "id": "landinggear-206",
+  "pregunta": "The primary purpose of a nose landing gear shimmy damper is to:",
+  "opciones": [
+    "Center the nose wheel",
+    "Absorb landing impact",
+    "Prevent rapid oscillation of the nose wheel during taxi",
+    "Retract the landing gear"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "A shimmy damper prevents uncontrolled nose wheel oscillations during taxi, takeoff, and landing."
+},
+{
+  "id": "landinggear-207",
+  "pregunta": "If brakes remain partially applied after the brake pedals are released, the first item to inspect is the:",
+  "opciones": [
+    "Brake lining",
+    "Compensating port",
+    "Tire pressure",
+    "Torque links"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "A blocked compensating port is one of the most common causes of dragging brakes."
+},
+{
+  "id": "landinggear-208",
+  "pregunta": "What component primarily absorbs the landing impact in an oleo-pneumatic shock strut?",
+  "opciones": [
+    "Compressed air only",
+    "Hydraulic oil flowing through the metering orifice",
+    "Torque links",
+    "The outer cylinder"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "The restriction of hydraulic oil through the metering orifice provides the primary damping action during landing."
+},
+{
+  "id": "landinggear-209",
+  "pregunta": "Torque links are also commonly referred to as:",
+  "opciones": [
+    "Drag braces",
+    "Scissors links",
+    "Centering cams",
+    "Trunnions"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "Torque links are commonly known as scissors links because of their appearance."
+},
+{
+  "id": "landinggear-210",
+  "pregunta": "Which landing gear component prevents the inner and outer cylinders of an oleo strut from rotating relative to each other?",
+  "opciones": [
+    "Metering pin",
+    "Torque links",
+    "Axle",
+    "Shimmy damper"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "Torque links (scissors links) maintain wheel alignment by preventing rotation between the strut cylinders."
+},
+{
+  "id": "hydraulics-226",
+  "pregunta": "Hydraulic pump chatter is most commonly caused by:",
+  "opciones": [
+    "Low system pressure",
+    "Air leaking into the pump inlet line",
+    "A clogged return filter",
+    "Excessive accumulator pressure"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "Hydraulic pump chatter or cavitation is commonly caused by air entering the pump inlet or suction line."
+},
+{
+  "id": "hydraulics-227",
+  "pregunta": "What is the primary purpose of a hydraulic accumulator?",
+  "opciones": [
+    "Cool the hydraulic fluid",
+    "Store hydraulic energy and absorb pressure surges",
+    "Filter hydraulic fluid",
+    "Increase pump output pressure"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "An accumulator stores hydraulic energy under pressure and helps absorb pressure fluctuations and surges."
+},
+{
+  "id": "hydraulics-228",
+  "pregunta": "What is the primary function of a debooster valve in a brake system?",
+  "opciones": [
+    "Increase brake pressure",
+    "Reduce brake pressure",
+    "Remove air from the brake system",
+    "Equalize brake temperature"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "A debooster valve reduces hydraulic pressure before it reaches the brake assemblies."
+},
+{
+  "id": "hydraulics-229",
+  "pregunta": "The primary purpose of a surge chamber in a hydraulic system is to:",
+  "opciones": [
+    "Store hydraulic fluid",
+    "Absorb hydraulic pressure shocks",
+    "Increase system pressure",
+    "Remove contaminants"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "A surge chamber dampens pressure spikes and reduces hydraulic shock loads."
+},
+{
+  "id": "hydraulics-230",
+  "pregunta": "What is the primary purpose of a check valve in a hydraulic system?",
+  "opciones": [
+    "Regulate system pressure",
+    "Prevent reverse flow while maintaining pressure",
+    "Reduce hydraulic temperature",
+    "Filter contaminants"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "A check valve permits flow in one direction only and prevents reverse flow."
+},
+{
+  "id": "hydraulics-231",
+  "pregunta": "A power brake control valve is primarily used in systems that require:",
+  "opciones": [
+    "Low brake pressure",
+    "A large volume of hydraulic fluid",
+    "Pneumatic braking",
+    "Mechanical brake linkage"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "Power brake systems require a large volume of hydraulic fluid to operate the brake actuators."
+},
+{
+  "id": "hydraulics-232",
+  "pregunta": "Hydraulic system pressure is created when:",
+  "opciones": [
+    "The pump begins turning",
+    "Fluid flow meets resistance",
+    "The reservoir is full",
+    "The accumulator is charged"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "A hydraulic pump produces flow. Pressure develops only when that flow encounters resistance."
+},
+{
+  "id": "hydraulics-233",
+  "pregunta": "What is the purpose of a hydraulic reservoir?",
+  "opciones": [
+    "Increase system pressure",
+    "Store hydraulic fluid and compensate for volume changes",
+    "Cool the brakes",
+    "Filter hydraulic fluid"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "The reservoir stores hydraulic fluid and accommodates changes in fluid volume due to system operation and temperature."
+},
+{
+  "id": "hydraulics-234",
+  "pregunta": "Hydraulic cavitation is usually caused by:",
+  "opciones": [
+    "Excessive accumulator pressure",
+    "Restricted or leaking pump inlet",
+    "High reservoir temperature",
+    "A defective pressure gauge"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "A restriction or air leak in the pump inlet line can cause cavitation and noisy pump operation."
+},
+{
+  "id": "hydraulics-235",
+  "pregunta": "A hydraulic relief valve protects the system by:",
+  "opciones": [
+    "Maintaining reservoir level",
+    "Limiting maximum system pressure",
+    "Filtering hydraulic fluid",
+    "Removing trapped air"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "The relief valve opens when pressure reaches a preset limit to protect hydraulic components from excessive pressure."
+},
+{
+  "id": "pressurization-201",
+  "pregunta": "In differential mode, a cabin pressure regulator vents cabin air through the:",
+  "opciones": [
+    "Safety valve",
+    "Outflow valve",
+    "Differential metering valve",
+    "Negative pressure relief valve"
+  ],
+  "correcta": 2,
+  "tema": "Pressurization",
+  "explicacion": "In differential mode, the differential metering valve controls airflow to maintain the selected cabin differential pressure."
+},
+{
+  "id": "pressurization-202",
+  "pregunta": "A cabin pressure regulator primarily senses and controls:",
+  "opciones": [
+    "Engine bleed air temperature",
+    "Cabin pressure",
+    "Outside air temperature",
+    "Cabin humidity"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "The cabin pressure regulator senses cabin pressure and modulates the outflow valve to maintain the desired cabin altitude."
+},
+{
+  "id": "airconditioning-201",
+  "pregunta": "A vapor-cycle (Freon) air conditioning system will not accept a refrigerant charge. The most likely cause is a:",
+  "opciones": [
+    "Dirty condenser",
+    "Faulty expansion valve",
+    "Blocked evaporator drain",
+    "Low blower speed"
+  ],
+  "correcta": 1,
+  "tema": "Air Conditioning",
+  "explicacion": "A stuck or faulty expansion valve can prevent refrigerant from flowing properly during charging."
+},
+{
+  "id": "airconditioning-202",
+  "pregunta": "Before charging a vapor-cycle (Freon) air conditioning system, the system should be evacuated to:",
+  "opciones": [
+    "Increase refrigerant pressure",
+    "Remove air and moisture",
+    "Test compressor operation",
+    "Cool the evaporator"
+  ],
+  "correcta": 1,
+  "tema": "Air Conditioning",
+  "explicacion": "Evacuating the system removes air and moisture, preventing contamination and ice formation."
+},
+{
+  "id": "airconditioning-203",
+  "pregunta": "Which component meters the flow of refrigerant into the evaporator of a vapor-cycle air conditioning system?",
+  "opciones": [
+    "Receiver-drier",
+    "Expansion valve",
+    "Compressor",
+    "Condenser"
+  ],
+  "correcta": 1,
+  "tema": "Air Conditioning",
+  "explicacion": "The expansion valve meters refrigerant into the evaporator and produces the required pressure drop."
+},
+{
+  "id": "airconditioning-204",
+  "pregunta": "Which component removes moisture from a vapor-cycle air conditioning system?",
+  "opciones": [
+    "Compressor",
+    "Receiver-drier",
+    "Expansion valve",
+    "Evaporator"
+  ],
+  "correcta": 1,
+  "tema": "Air Conditioning",
+  "explicacion": "The receiver-drier contains desiccant that removes moisture from the refrigerant."
+},
+{
+  "id": "airconditioning-205",
+  "pregunta": "The primary purpose of the condenser in a vapor-cycle air conditioning system is to:",
+  "opciones": [
+    "Increase refrigerant pressure",
+    "Reject heat from the refrigerant",
+    "Remove moisture from the refrigerant",
+    "Meter refrigerant flow"
+  ],
+  "correcta": 1,
+  "tema": "Air Conditioning",
+  "explicacion": "The condenser removes heat from the hot, high-pressure refrigerant and condenses it into a liquid."
+},
+{
+  "id": "pressurization-203",
+  "pregunta": "The cabin outflow valve primarily controls:",
+  "opciones": [
+    "Bleed air pressure entering the cabin",
+    "The amount of air leaving the cabin",
+    "Cabin temperature",
+    "Engine compressor pressure"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "Cabin pressure is controlled primarily by regulating the amount of air leaving the cabin through the outflow valve."
+},
+{
+  "id": "pressurization-204",
+  "pregunta": "The purpose of a negative pressure relief valve is to:",
+  "opciones": [
+    "Prevent excessive positive cabin pressure",
+    "Protect the fuselage from excessive negative differential pressure",
+    "Regulate bleed air pressure",
+    "Control cabin temperature"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "A negative pressure relief valve protects the aircraft structure if outside pressure becomes greater than cabin pressure."
+},
+{
+  "id": "airconditioning-206",
+  "pregunta": "The four basic components of a vapor-cycle air conditioning system are:",
+  "opciones": [
+    "Compressor, condenser, expansion valve, evaporator",
+    "Compressor, turbine, condenser, evaporator",
+    "Receiver, blower, condenser, turbine",
+    "Compressor, intercooler, separator, evaporator"
+  ],
+  "correcta": 0,
+  "tema": "Air Conditioning",
+  "explicacion": "The basic vapor-cycle system consists of a compressor, condenser, expansion valve, and evaporator."
+},
+{
+  "id": "structures-211",
+  "pregunta": "When safetying a turnbuckle, what is the maximum number of exposed threads permitted?",
+  "opciones": [
+    "1 thread",
+    "2 threads",
+    "3 threads",
+    "5 threads"
+  ],
+  "correcta": 2,
+  "tema": "Structures",
+  "explicacion": "A properly adjusted turnbuckle should have no more than three exposed threads before being safetied."
+},
+{
+  "id": "structures-212",
+  "pregunta": "When safetying a turnbuckle barrel, the safety wire must have a minimum of:",
+  "opciones": [
+    "2 wraps",
+    "3 wraps",
+    "4 wraps",
+    "6 wraps"
+  ],
+  "correcta": 2,
+  "tema": "Structures",
+  "explicacion": "Standard turnbuckle safety requires a minimum of four wraps of safety wire."
+},
+{
+  "id": "structures-213",
+  "pregunta": "Rivet holes are normally drilled approximately:",
+  "opciones": [
+    "0.001 inch oversize",
+    "0.003 inch oversize",
+    "0.010 inch oversize",
+    "Exactly the same diameter as the rivet"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "Standard practice is to drill rivet holes approximately 0.003 inch larger than the nominal rivet diameter."
+},
+{
+  "id": "structures-214",
+  "pregunta": "When joining sheets of unequal thickness, the manufactured head of a solid rivet should normally be placed on the:",
+  "opciones": [
+    "Thicker sheet",
+    "Thinner sheet",
+    "Either sheet",
+    "Sheet with primer"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "The manufactured head is normally placed against the thinner material to reduce the chance of damaging it during riveting."
+},
+{
+  "id": "structures-215",
+  "pregunta": "After heat treatment, 2017 (17S) aluminum alloy rivets should normally be driven within:",
+  "opciones": [
+    "10 minutes",
+    "30 minutes",
+    "1 hour",
+    "24 hours"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "2017 (17S) rivets must be installed within approximately 30 minutes after removal from refrigeration following heat treatment."
+},
+{
+  "id": "structures-216",
+  "pregunta": "Which aircraft rivet alloy requires heat treatment before installation?",
+  "opciones": [
+    "1100 (A)",
+    "2117 (AD)",
+    "2017 (D or 17S)",
+    "5056 (B)"
+  ],
+  "correcta": 2,
+  "tema": "Structures",
+  "explicacion": "2017 aluminum alloy rivets require heat treatment and refrigeration before use."
+},
+{
+  "id": "structures-217",
+  "pregunta": "Cracks around the head of a driven rivet are usually caused by:",
+  "opciones": [
+    "Insufficient bucking pressure",
+    "Excessive driving or work hardening",
+    "Oversize rivet holes",
+    "Improper alloy selection"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "Driving a rivet excessively work-hardens the material and can cause cracks to form around the head."
+},
+{
+  "id": "structures-218",
+  "pregunta": "The shop head of a properly driven solid rivet should be approximately:",
+  "opciones": [
+    "One rivet diameter wide and 0.25D high",
+    "1.5 times the rivet diameter wide and 0.5D high",
+    "Two rivet diameters wide and one diameter high",
+    "The same size as the manufactured head"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "A properly formed shop head is approximately 1.5 times the rivet diameter in width and one-half the rivet diameter in height."
+},
+{
+  "id": "structures-219",
+  "pregunta": "Which aircraft structural inspection method uses fluorescent dye viewed under ultraviolet light?",
+  "opciones": [
+    "Magnetic particle inspection",
+    "Zyglo inspection",
+    "Eddy current inspection",
+    "Ultrasonic inspection"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "Zyglo is a fluorescent penetrant inspection method that uses ultraviolet light to reveal surface defects."
+},
+{
+  "id": "hardware-202",
+  "pregunta": "Fiber self-locking nuts should generally not be installed where the temperature exceeds:",
+  "opciones": [
+    "150°F (66°C)",
+    "250°F (121°C)",
+    "350°F (177°C)",
+    "500°F (260°C)"
+  ],
+  "correcta": 1,
+  "tema": "Hardware",
+  "explicacion": "The nylon insert in a fiber self-locking nut loses its locking ability at temperatures above approximately 250°F (121°C)."
+},
+{
+  "id": "electrical-226",
+  "pregunta": "Aircraft electrical junction boxes should normally be installed with the open side:",
+  "opciones": [
+    "Facing upward",
+    "Facing downward",
+    "Facing forward",
+    "Facing aft"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Junction boxes are installed with the open side down to prevent the accumulation of moisture and foreign material."
+},
+{
+  "id": "electrical-227",
+  "pregunta": "When routing aircraft electrical wiring, it should normally be installed:",
+  "opciones": [
+    "Below flammable fluid lines",
+    "Above flammable fluid lines whenever possible",
+    "Touching hydraulic lines",
+    "Beside oxygen lines without separation"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Electrical wiring should be routed above fuel, oil, and hydraulic lines whenever practical to reduce the risk of contamination in the event of a leak."
+},
+{
+  "id": "electrical-228",
+  "pregunta": "Before making an electrical bonding connection, the mating surfaces should be:",
+  "opciones": [
+    "Painted",
+    "Covered with primer",
+    "Cleaned of paint and corrosion",
+    "Coated with grease"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "Good electrical bonding requires clean metal-to-metal contact. Paint, primer, oxidation, and corrosion must be removed from the bonding surfaces."
+},
+{
+  "id": "electrical-229",
+  "pregunta": "What is the primary purpose of a reverse current relay in a DC generator system?",
+  "opciones": [
+    "Increase generator output",
+    "Prevent battery current from flowing back through the generator",
+    "Reduce generator voltage",
+    "Disconnect the voltage regulator"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "A reverse current relay disconnects the generator when its output drops below battery voltage, preventing the battery from motoring the generator."
+},
+{
+  "id": "electrical-230",
+  "pregunta": "The primary purpose of a split-bus electrical system is to:",
+  "opciones": [
+    "Increase battery capacity",
+    "Separate electrical loads into independent buses",
+    "Reduce alternator RPM",
+    "Operate only AC equipment"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "A split-bus system separates essential and non-essential electrical loads, improving reliability and fault isolation."
+},
+{
+  "id": "propeller-201",
+  "pregunta": "How should a wooden propeller be stored when not installed on an aircraft?",
+  "opciones": [
+    "Horizontally in direct sunlight",
+    "Vertically in a dry, temperature-controlled area",
+    "Immersed in oil",
+    "Outside under a protective cover"
+  ],
+  "correcta": 1,
+  "tema": "Propellers",
+  "explicacion": "Wooden propellers should be stored vertically in a dry, controlled environment to prevent moisture damage and warping."
+},
+{
+  "id": "propeller-202",
+  "pregunta": "What is the purpose of tracking a propeller?",
+  "opciones": [
+    "Increase engine RPM",
+    "Ensure all blades rotate in the same plane",
+    "Reduce fuel consumption",
+    "Increase blade pitch"
+  ],
+  "correcta": 1,
+  "tema": "Propellers",
+  "explicacion": "Propeller tracking verifies that all blade tips rotate in the same plane, minimizing vibration."
+},
+{
+  "id": "propeller-203",
+  "pregunta": "When operating a constant-speed propeller in very cold weather before shutdown, the propeller should normally be left in:",
+  "opciones": [
+    "Low pitch",
+    "High pitch",
+    "Feather",
+    "Reverse"
+  ],
+  "correcta": 1,
+  "tema": "Propellers",
+  "explicacion": "Many manufacturers recommend leaving a constant-speed propeller in the high-pitch position before shutdown in very cold weather to help prevent moisture accumulation in the hub. Always follow the aircraft maintenance manual."
+},
+{
+  "id": "batteries-201",
+  "pregunta": "The specific gravity of the electrolyte cannot be used to determine the state of charge of which battery type?",
+  "opciones": [
+    "Lead-acid battery",
+    "Nickel-cadmium battery",
+    "Flooded-cell battery",
+    "Vented lead-acid battery"
+  ],
+  "correcta": 1,
+  "tema": "Batteries",
+  "explicacion": "The electrolyte specific gravity of a nickel-cadmium battery remains essentially constant regardless of its state of charge."
+},
+{
+  "id": "identification-201",
+  "pregunta": "Aircraft fluid lines are color-coded primarily to:",
+  "opciones": [
+    "Reduce system weight",
+    "Identify the type of fluid carried",
+    "Increase corrosion resistance",
+    "Improve pressure capability"
+  ],
+  "correcta": 1,
+  "tema": "Standard Practices",
+  "explicacion": "Aircraft fluid lines are identified by color codes or markings to indicate the fluid carried, simplifying maintenance and reducing the possibility of incorrect servicing."
 }
-
 ]
