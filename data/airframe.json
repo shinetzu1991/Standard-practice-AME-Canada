@@ -4683,5 +4683,2397 @@
     "correcta": 1,
     "tema": "Standard Practices",
     "explicacion": "Aircraft fluid lines are identified by color codes or markings to indicate the fluid carried, simplifying maintenance and reducing the possibility of incorrect servicing."
-  }
+  },
+  {
+  "id": "aerodynamics-236",
+  "pregunta": "A stall warning system normally activates approximately how many knots before the actual stall?",
+  "opciones": [
+    "1 to 2 knots",
+    "3 to 5 knots",
+    "5 to 10 knots",
+    "15 to 20 knots"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "Most stall warning systems are designed to activate approximately 5 to 10 knots before the aircraft reaches the stall speed."
+},
+{
+  "id": "fuel-201",
+  "pregunta": "A capacitance-type fuel quantity indicating system normally operates on:",
+  "opciones": [
+    "28 VDC",
+    "12 VDC",
+    "115 VAC",
+    "24 VAC"
+  ],
+  "correcta": 2,
+  "tema": "Fuel Systems",
+  "explicacion": "Many aircraft capacitance fuel quantity systems use a 115-volt AC excitation source."
+},
+{
+  "id": "fuel-202",
+  "pregunta": "A capacitance-type fuel quantity system primarily measures:",
+  "opciones": [
+    "Fuel pressure",
+    "Fuel weight",
+    "Fuel capacitance, which is converted into fuel quantity",
+    "Fuel flow"
+  ],
+  "correcta": 2,
+  "tema": "Fuel Systems",
+  "explicacion": "The sensing element measures changes in capacitance caused by the dielectric properties of the fuel. Depending on the aircraft, the indication may be displayed as fuel quantity or converted to weight."
+},
+{
+  "id": "structures-220",
+  "pregunta": "Drain grommets should normally be installed after applying which coat of dope?",
+  "opciones": [
+    "First coat",
+    "Second coat",
+    "Third coat",
+    "Final finish coat"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "Drain grommets are typically installed after the second coat of dope during fabric covering."
+},
+{
+  "id": "engines-201",
+  "pregunta": "Where is the oil temperature probe normally located?",
+  "opciones": [
+    "Oil sump",
+    "Oil cooler outlet",
+    "Oil line entering the engine",
+    "Oil tank filler neck"
+  ],
+  "correcta": 2,
+  "tema": "Powerplant",
+  "explicacion": "The oil temperature bulb or probe is commonly installed in the oil line entering the engine to measure oil inlet temperature."
+},
+{
+  "id": "fuel-203",
+  "pregunta": "What is a gascolator?",
+  "opciones": [
+    "A fuel quantity transmitter",
+    "A glass sediment bowl and main fuel strainer used on many small aircraft",
+    "A fuel pressure regulator",
+    "A fuel boost pump"
+  ],
+  "correcta": 1,
+  "tema": "Fuel Systems",
+  "explicacion": "A gascolator is the main fuel strainer on many light aircraft. It removes water and sediment before fuel reaches the engine."
+},
+{
+  "id": "landinggear-211",
+  "pregunta": "Aircraft tires used at speeds of approximately 160 mph (257 km/h) or less are generally classified as:",
+  "opciones": [
+    "Type I",
+    "Type II",
+    "Type III",
+    "Type VII"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "Some aircraft tire classifications identify Type III tires for operation up to approximately 160 mph. Always verify with the manufacturer's specifications."
+},
+{
+  "id": "landinggear-212",
+  "pregunta": "Most aircraft anti-skid systems are automatically deactivated below approximately:",
+  "opciones": [
+    "5 mph",
+    "10 mph",
+    "15 to 20 mph",
+    "40 mph"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "Many anti-skid systems are disabled below approximately 15 to 20 mph to allow the aircraft to come to a complete stop. The exact value varies by aircraft manufacturer."
+},
+{
+  "id": "landinggear-213",
+  "pregunta": "If aircraft brakes grab or jerk during application, the most likely cause is:",
+  "opciones": [
+    "Low tire pressure",
+    "Contaminated or worn brake linings/discs",
+    "Low nitrogen pressure in the strut",
+    "Incorrect wheel alignment"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "Brake grabbing or jerking is commonly caused by oil contamination, worn brake linings, warped discs, or damaged brake drums."
+},
+{
+  "id": "hydraulics-236",
+  "pregunta": "Typical micron ratings for aircraft filters are:",
+  "opciones": [
+    "Hydraulic paper: 3 µm, Metal: 5 µm, Fuel: 40 µm, Pneumatic: 10 µm",
+    "Hydraulic paper: 10 µm, Metal: 25 µm, Fuel: 100 µm, Pneumatic: 40 µm",
+    "All aircraft filters are rated at 10 µm",
+    "All aircraft filters are rated at 40 µm"
+  ],
+  "correcta": 0,
+  "tema": "Hydraulics",
+  "explicacion": "These are common training values found in some study guides. Actual filter micron ratings vary depending on the aircraft manufacturer and system design."
+},
+{
+  "id": "oxygen-201",
+  "pregunta": "What component reduces the high pressure from an oxygen cylinder to a usable pressure for the flight crew?",
+  "opciones": [
+    "Pressure reducing regulator",
+    "Relief valve",
+    "Check valve",
+    "Shutoff valve"
+  ],
+  "correcta": 0,
+  "tema": "Oxygen Systems",
+  "explicacion": "In aircraft oxygen systems, a pressure-reducing regulator lowers cylinder pressure to a usable pressure. Diluter-demand systems incorporate a diluter-demand oxygen regulator."
+},
+{
+  "id": "powerplant-202",
+  "pregunta": "How can a carbon-fouled spark plug typically be identified?",
+  "opciones": [
+    "Light gray deposits on the electrodes",
+    "Black, dry, sooty deposits on the firing end",
+    "White powdery deposits",
+    "Bright blue discoloration"
+  ],
+  "correcta": 1,
+  "tema": "Powerplant",
+  "explicacion": "Carbon fouling is identified by black, dry, sooty deposits on the spark plug firing end. Oil fouling usually appears wet and oily."
+},
+{
+  "id": "structures-221",
+  "pregunta": "What is the maximum number of splices normally permitted in a single wooden spar?",
+  "opciones": [
+    "One splice",
+    "Two splices",
+    "Three splices",
+    "Unlimited if approved"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "Standard wood aircraft repair practices generally permit no more than two splices in any one spar."
+},
+{
+  "id": "hydraulics-237",
+  "pregunta": "Hydraulic system chatter is most commonly caused by:",
+  "opciones": [
+    "Excessive accumulator pressure",
+    "Air entering the hydraulic pump inlet or suction line",
+    "High hydraulic fluid temperature",
+    "Low reservoir quantity only"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "Hydraulic chatter (cavitation) is commonly caused by air entering the pump suction line or inlet."
+},
+{
+  "id": "flightcontrols-227",
+  "pregunta": "During manufacture of an aircraft control cable, the proof load applied is approximately:",
+  "opciones": [
+    "30% of the cable breaking strength for 1 minute",
+    "50% of the cable breaking strength for 2 minutes",
+    "60% of the cable breaking strength for 3 minutes",
+    "100% of the cable breaking strength for 30 seconds"
+  ],
+  "correcta": 2,
+  "tema": "Flight Controls",
+  "explicacion": "Aircraft control cables are proof-loaded to approximately 60% of their rated breaking strength for about 3 minutes during manufacture."
+},
+{
+  "id": "fuel-204",
+  "pregunta": "How is a float normally checked for leaks during maintenance?",
+  "opciones": [
+    "Apply compressed air",
+    "Immerse it in water for approximately 24 hours",
+    "Heat it with a heat gun",
+    "Fill it with fuel and inspect immediately"
+  ],
+  "correcta": 1,
+  "tema": "Fuel Systems",
+  "explicacion": "A float may be immersed in water for approximately 24 hours to determine if leakage occurs."
+},
+{
+  "id": "flightcontrols-228",
+  "pregunta": "The maximum allowable free play at the trailing edge of a trim tab is generally:",
+  "opciones": [
+    "2% of tab span if the tab is less than 35% of the control surface span, and 1% if greater than 35%",
+    "Always 5% of the tab span",
+    "Always 1 inch",
+    "No free play is permitted"
+  ],
+  "correcta": 0,
+  "tema": "Flight Controls",
+  "explicacion": "Common maintenance guidance limits trim tab free play to approximately 2% or 1% depending on the relative tab size."
+},
+{
+  "id": "hydraulics-238",
+  "pregunta": "Before removing a hydraulic pressure regulator, maintenance personnel should first:",
+  "opciones": [
+    "Increase system pressure",
+    "Relieve system pressure and cap the lines",
+    "Drain the entire hydraulic reservoir",
+    "Operate the hydraulic pump"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "Hydraulic pressure should always be relieved and open lines capped before removing a pressure regulator."
+},
+{
+  "id": "flightcontrols-229",
+  "pregunta": "A properly swaged aircraft cable terminal is rated at approximately:",
+  "opciones": [
+    "60% of the cable strength",
+    "80% of the cable strength",
+    "90% of the cable strength",
+    "100% of the cable strength"
+  ],
+  "correcta": 3,
+  "tema": "Flight Controls",
+  "explicacion": "A correctly installed swaged terminal develops essentially the full rated strength of the cable."
+},
+{
+  "id": "instruments-215",
+  "pregunta": "When is an aircraft pitot-static system leak check normally required?",
+  "opciones": [
+    "Every 12 months",
+    "Every 24 months, and whenever the system has been opened or an instrument replaced",
+    "Only after replacing the pitot tube",
+    "Only when the altimeter is inaccurate"
+  ],
+  "correcta": 1,
+  "tema": "Instruments",
+  "explicacion": "Regulations generally require pitot-static system testing every 24 months for IFR operation, and after maintenance affecting the system. A typical static leak test allows no more than 100 ft/min leakage."
+},
+{
+  "id": "instruments-216",
+  "pregunta": "During a pitot system leak test at 150 knots, the allowable leakage after one minute should not exceed:",
+  "opciones": [
+    "5 knots",
+    "10 knots",
+    "15 knots",
+    "20 knots"
+  ],
+  "correcta": 1,
+  "tema": "Instruments",
+  "explicacion": "A common maintenance specification allows a maximum loss of 10 knots during a one-minute pitot leak test at 150 knots. Always refer to the applicable maintenance manual."
+},
+{
+  "id": "electrical-231",
+  "pregunta": "How is the electrical load of an aircraft determined?",
+  "opciones": [
+    "By measuring battery voltage only",
+    "By comparing the total electrical loads to the maximum generator output",
+    "By adding only the AC electrical loads",
+    "By measuring generator RPM"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Electrical load analysis is performed by summing all aircraft electrical loads and comparing them with the maximum generator or alternator output."
+},
+{
+  "id": "autopilot-201",
+  "pregunta": "What operating principle is used by most aircraft autopilot systems?",
+  "opciones": [
+    "Open-loop control",
+    "Closed-loop control",
+    "Mechanical feedback only",
+    "Hydraulic balancing"
+  ],
+  "correcta": 1,
+  "tema": "Autopilot",
+  "explicacion": "Most aircraft autopilot systems operate as closed-loop systems, continuously sensing aircraft attitude or flight path and correcting deviations."
+},
+{
+  "id": "airconditioning-207",
+  "pregunta": "In an air-cycle air conditioning system, where does the major pressure and temperature drop occur?",
+  "opciones": [
+    "Compressor",
+    "Heat exchanger",
+    "Expansion turbine",
+    "Water separator"
+  ],
+  "correcta": 2,
+  "tema": "Air Conditioning",
+  "explicacion": "The expansion turbine extracts energy from the compressed air, producing the greatest pressure and temperature drop."
+},
+{
+  "id": "aerodynamics-237",
+  "pregunta": "The general formula for wing aspect ratio is:",
+  "opciones": [
+    "Wing span × 2 ÷ Wing area",
+    "Wing span² ÷ Wing area",
+    "Wing area ÷ Wing span",
+    "Wing chord ÷ Wing span"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "The general aerodynamic formula for aspect ratio is Wing Span² divided by Wing Area."
+},
+{
+  "id": "aerodynamics-238",
+  "pregunta": "Vortex generators are small aerodynamic surfaces installed on a wing primarily to:",
+  "opciones": [
+    "Reduce aircraft weight",
+    "Delay airflow separation by energizing the boundary layer",
+    "Increase induced drag during cruise",
+    "Reduce wing loading"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Vortex generators create small vortices that energize the boundary layer, delaying flow separation and improving low-speed control effectiveness."
+},
+{
+  "id": "pressurization-205",
+  "pregunta": "What is the primary function of the cabin outflow valve?",
+  "opciones": [
+    "Control bleed air entering the cabin",
+    "Regulate cabin pressure by controlling the amount of air leaving the cabin",
+    "Control cabin temperature",
+    "Reduce engine compressor pressure"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "The outflow valve regulates cabin pressure by controlling the rate at which cabin air is discharged overboard, either automatically or manually."
+},
+{
+  "id": "meteorology-201",
+  "pregunta": "What is the adiabatic lapse rate?",
+  "opciones": [
+    "The rate at which atmospheric pressure decreases with altitude",
+    "The increase or decrease in air temperature caused by a change in altitude without heat being added or removed",
+    "The rate at which humidity changes with altitude",
+    "The rate at which wind speed changes with altitude"
+  ],
+  "correcta": 1,
+  "tema": "Meteorology",
+  "explicacion": "An adiabatic lapse rate is the change in air temperature resulting solely from a change in altitude, with no heat added to or removed from the air."
+},
+{
+  "id": "instruments-217",
+  "pregunta": "During a compass swing, how are compass corrections normally applied?",
+  "opciones": [
+    "Correct North and South completely, East and West halfway",
+    "Correct North and East completely, then South and West halfway",
+    "Correct East and West completely only",
+    "Correct all headings equally"
+  ],
+  "correcta": 1,
+  "tema": "Instruments",
+  "explicacion": "During a compass swing, North and East headings are normally corrected completely. South and West headings are then adjusted approximately halfway to minimize overall compass deviation."
+},
+{
+  "id": "aerodynamics-239",
+  "pregunta": "A stall warning system is generally designed to activate:",
+  "opciones": [
+    "Exactly at the stall speed",
+    "Approximately 10 mph (or about 4%) before the stall",
+    "20 mph before the stall",
+    "Only after the aircraft stalls"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Many aircraft activate the stall warning approximately 5–10 knots (about 10 mph or 4–7%) before the actual stall. The exact value depends on the aircraft manufacturer."
+},
+{
+  "id": "structures-222",
+  "pregunta": "What is a cantilever wing?",
+  "opciones": [
+    "A wing supported by external struts",
+    "A wing supported by flying wires",
+    "A wing with no external external bracing, supported entirely by its internal structure",
+    "A wing with adjustable incidence"
+  ],
+  "correcta": 2,
+  "tema": "Structures",
+  "explicacion": "A cantilever wing is supported entirely by its internal structure and requires no external struts or bracing wires."
+},
+{
+  "id": "aerodynamics-240",
+  "pregunta": "What is decalage?",
+  "opciones": [
+    "The angle between the wing chord and the relative wind",
+    "The difference in angle of incidence between two lifting surfaces",
+    "The angle of dihedral",
+    "The twist built into a wing"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Decalage is the angular difference between the angle of incidence of two lifting surfaces, such as the wings of a biplane or the wing and horizontal stabilizer."
+},
+{
+  "id": "aerodynamics-241",
+  "pregunta": "What is the camber of an airfoil?",
+  "opciones": [
+    "The angle between the chord line and the relative wind",
+    "The curvature of the mean camber line",
+    "The thickness of the airfoil",
+    "The angle of incidence"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Camber is the curvature of the mean camber line of an airfoil."
+},
+{
+  "id": "aerodynamics-242",
+  "pregunta": "What is positive stagger on a biplane?",
+  "opciones": [
+    "The lower wing is ahead of the upper wing",
+    "The upper wing is ahead of the lower wing",
+    "Both wings have the same leading edge position",
+    "The wings have different dihedral angles"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Positive stagger exists when the upper wing is positioned forward of the lower wing."
+},
+{
+  "id": "aerodynamics-243",
+  "pregunta": "If a propeller rotates clockwise when viewed from the cockpit, torque reaction tends to roll the aircraft:",
+  "opciones": [
+    "Clockwise",
+    "Counterclockwise",
+    "Nose up",
+    "Nose down"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Torque reaction tends to roll the aircraft opposite the direction of propeller rotation. The exact tendency depends on the aircraft configuration and reference viewpoint."
+},
+{
+  "id": "flightcontrols-230",
+  "pregunta": "Where are leading-edge slots located?",
+  "opciones": [
+    "Trailing edge of the wing",
+    "Leading edge of the wing",
+    "Wing tip only",
+    "Horizontal stabilizer"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "Leading-edge slots are installed at the leading edge of the wing to delay stall and improve low-speed handling."
+},
+{
+  "id": "aerodynamics-244",
+  "pregunta": "What is washout?",
+  "opciones": [
+    "Greater angle of incidence at the wing tip than the wing root",
+    "Greater angle of incidence at the wing root than the wing tip",
+    "A movable leading-edge device",
+    "A wing with positive stagger"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Washout means the wing root has a greater angle of incidence than the tip. Its primary purpose is to ensure the wing root stalls before the tip, improving controllability."
+},
+{
+  "id": "flightcontrols-231",
+  "pregunta": "What is the purpose of control surface snubbers?",
+  "opciones": [
+    "Increase control travel",
+    "Hydraulically cushion control surface movement on the ground",
+    "Prevent flutter during flight",
+    "Balance the control surfaces"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "Snubbers dampen control surface movement while the aircraft is on the ground, reducing damage from wind gusts."
+},
+{
+  "id": "aerodynamics-245",
+  "pregunta": "What is burbling?",
+  "opciones": [
+    "Smooth laminar airflow",
+    "Breakdown of smooth airflow producing turbulence",
+    "A type of wing twist",
+    "A propeller vibration"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Burbling is the turbulent airflow produced when smooth airflow separates from the aircraft surface."
+},
+{
+  "id": "flightcontrols-232",
+  "pregunta": "What is the primary advantage of a Fowler flap compared with a split flap?",
+  "opciones": [
+    "Produces less drag",
+    "Increases wing area and produces more lift",
+    "Operates without hydraulics",
+    "Requires less maintenance"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "A Fowler flap moves rearward as it extends, increasing both wing area and camber, producing greater lift than a split flap."
+},
+{
+  "id": "flightcontrols-233",
+  "pregunta": "What is a common result of excessively over-tensioned flight control cables?",
+  "opciones": [
+    "Reduced control effectiveness",
+    "Excessive wear of pulleys and fairleads",
+    "Lower cable strength",
+    "Improved control feel"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "Excessive cable tension increases friction and causes accelerated wear of pulleys and fairleads."
+},
+{
+  "id": "aerodynamics-246",
+  "pregunta": "What is the primary purpose of vortex generators?",
+  "opciones": [
+    "Reduce drag at high speed",
+    "Energize the boundary layer to delay airflow separation",
+    "Increase propeller efficiency",
+    "Reduce wing loading"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Vortex generators energize the boundary layer, delaying flow separation and improving low-speed handling and control effectiveness."
+},
+{
+  "id": "hardware-203",
+  "pregunta": "A properly installed wrapped-and-soldered cable terminal should retain approximately:",
+  "opciones": [
+    "60% of the cable strength",
+    "75% of the cable strength",
+    "90% of the cable strength",
+    "100% of the cable strength"
+  ],
+  "correcta": 2,
+  "tema": "Hardware",
+  "explicacion": "Traditional wrapped-and-soldered terminals are generally rated at about 90% of the cable's strength, whereas properly swaged terminals retain essentially 100%."
+},
+{
+    "id": "flightcontrols-234",
+    "pregunta": "What is the minimum cable size on which a five-tuck hand splice may normally be used?",
+    "opciones": [
+      "1/16 inch",
+      "3/32 inch",
+      "1/8 inch",
+      "5/32 inch"
+    ],
+    "correcta": 1,
+    "tema": "Flight Controls",
+    "explicacion": "Traditional aircraft cable maintenance references state that a five-tuck hand splice is normally used only on cables 3/32 inch diameter or larger. Always verify with the applicable maintenance manual."
+  },
+  {
+    "id": "structures-223",
+    "pregunta": "What is a Warren truss fuselage?",
+    "opciones": [
+      "A monocoque aluminum structure",
+      "A welded tubular steel structure carrying tension and compression loads",
+      "A composite honeycomb structure",
+      "A geodesic wooden structure"
+    ],
+    "correcta": 1,
+    "tema": "Structures",
+    "explicacion": "A Warren truss fuselage consists of welded steel tubing arranged in triangular members that carry tension and compression loads."
+  },
+  {
+    "id": "weightbalance-210",
+    "pregunta": "What is tare weight?",
+    "opciones": [
+      "The empty weight of the aircraft",
+      "The weight of unusable fuel",
+      "The weight of equipment used while weighing the aircraft",
+      "The maximum payload"
+    ],
+    "correcta": 2,
+    "tema": "Weight and Balance",
+    "explicacion": "Tare is the weight of equipment such as chocks, jacks, or scales that must be deducted from the measured weight."
+  },
+  {
+    "id": "weightbalance-211",
+    "pregunta": "Aircraft center of gravity limits are commonly expressed as:",
+    "opciones": [
+      "Only inches from the nose",
+      "Only percentage of empty weight",
+      "Percentage of MAC or distance from the datum",
+      "Percentage of wing loading"
+    ],
+    "correcta": 2,
+    "tema": "Weight and Balance",
+    "explicacion": "CG limits are commonly expressed as either inches from the datum or percentage of the Mean Aerodynamic Chord (MAC)."
+  },
+  {
+    "id": "standardpractices-201",
+    "pregunta": "When using a torque wrench with a crowfoot adapter in line with the wrench, which formula is used to determine the indicated torque?",
+    "opciones": [
+      "Tw = Ta × L / (L + A)",
+      "Tw = Ta + A / L",
+      "Tw = Ta × A / L",
+      "Tw = Ta × (L + A)"
+    ],
+    "correcta": 0,
+    "tema": "Standard Practices",
+    "explicacion": "When the adapter is inline, the indicated torque must be reduced using: Tw = Ta × L / (L + A), where Ta is the desired torque, L is wrench length, and A is adapter length."
+  },
+  {
+    "id": "structures-224",
+    "pregunta": "Grade A aircraft fabric normally has approximately how many threads per inch?",
+    "opciones": [
+      "50 to 60",
+      "65 to 75",
+      "85 to 90",
+      "100 to 110"
+    ],
+    "correcta": 2,
+    "tema": "Structures",
+    "explicacion": "Traditional Grade A cotton aircraft fabric is commonly specified as having approximately 85 to 90 threads per inch. Values may vary with manufacturer specifications."
+  },
+  {
+    "id": "structures-225",
+    "pregunta": "A sewing machine used for aircraft fabric should normally produce approximately:",
+    "opciones": [
+      "4 to 6 stitches per inch",
+      "6 to 8 stitches per inch",
+      "8 to 10 stitches per inch",
+      "12 to 14 stitches per inch"
+    ],
+    "correcta": 2,
+    "tema": "Structures",
+    "explicacion": "Aircraft fabric repair references commonly specify 8 to 10 stitches per inch for machine stitching. Always follow the manufacturer's repair manual."
+  },
+  {
+    "id": "structures-226",
+    "pregunta": "A hand-sewn aircraft fabric seam should normally have at least:",
+    "opciones": [
+      "2 stitches per inch",
+      "4 stitches per inch",
+      "6 stitches per inch",
+      "8 stitches per inch"
+    ],
+    "correcta": 1,
+    "tema": "Structures",
+    "explicacion": "Traditional aircraft fabric hand stitching typically requires a minimum of 4 stitches per inch."
+  },
+  {
+    "id": "structures-227",
+    "pregunta": "During a baseball stitch repair on aircraft fabric, the stitches should normally be locked:",
+    "opciones": [
+      "Every stitch",
+      "Every 4 to 5 stitches",
+      "Every 8 to 10 stitches",
+      "Only at the end of the repair"
+    ],
+    "correcta": 2,
+    "tema": "Structures",
+    "explicacion": "Traditional aircraft fabric repair practices recommend locking the baseball stitch approximately every 8 to 10 stitches."
+  },
+  {
+    "id": "structures-228",
+    "pregunta": "Blushing in a dope finish is most commonly caused by:",
+    "opciones": [
+      "Excessive drying time",
+      "High humidity causing moisture condensation",
+      "Too much plasticizer",
+      "Insufficient thinner"
+    ],
+    "correcta": 1,
+    "tema": "Structures",
+    "explicacion": "Blushing is the milky appearance caused by moisture condensing in the dope during rapid evaporation under humid conditions."
+  },
+  {
+    "id": "structures-229",
+    "pregunta": "Rib-lacing knots should normally be located on the:",
+    "opciones": [
+      "Upper surface of the wing",
+      "Leading edge",
+      "Lower surface of the wing",
+      "Wing tip"
+    ],
+    "correcta": 2,
+    "tema": "Structures",
+    "explicacion": "Standard rib-lacing procedures place the knots on the lower surface to reduce aerodynamic disturbance."
+  },
+  {
+    "id": "structures-230",
+    "pregunta": "Tape applied over a sewn aircraft fabric repair should overlap the repair by at least:",
+    "opciones": [
+      "1/2 inch",
+      "1 inch",
+      "1 1/2 inches",
+      "2 inches"
+    ],
+    "correcta": 2,
+    "tema": "Structures",
+    "explicacion": "Traditional aircraft fabric repair practices specify approximately 1½ inches minimum overlap over sewn repairs."
+  },
+  {
+    "id": "structures-231",
+    "pregunta": "Tape applied over the trailing edge of a fabric-covered wing should normally be notched every:",
+    "opciones": [
+      "3 inches",
+      "4 inches",
+      "6 inches",
+      "12 inches"
+    ],
+    "correcta": 2,
+    "tema": "Structures",
+    "explicacion": "Trailing-edge tape is commonly notched every 6 inches to reduce the possibility of the entire strip loosening."
+  },
+  {
+    "id": "structures-232",
+    "pregunta": "The warp threads of aircraft fabric should normally be installed:",
+    "opciones": [
+      "Perpendicular to the line of flight",
+      "Parallel to the line of flight",
+      "At 45 degrees to the line of flight",
+      "Parallel to the wing spar"
+    ],
+    "correcta": 1,
+    "tema": "Structures",
+    "explicacion": "Warp threads are installed parallel to the line of flight because they are the strongest direction of the fabric."
+  },
+  {
+    "id": "structures-233",
+    "pregunta": "Aircraft dope should ideally be applied under what environmental conditions?",
+    "opciones": [
+      "Below 40°F with any humidity",
+      "Approximately 70°F and less than 65% relative humidity",
+      "Above 90°F only",
+      "Humidity above 90%"
+    ],
+    "correcta": 1,
+    "tema": "Structures",
+    "explicacion": "Traditional aircraft fabric practices recommend applying dope at approximately 70°F with relative humidity below 65%. Manufacturer recommendations always take precedence."
+  },
+  {
+    "id": "structures-234",
+    "pregunta": "Pinholes in a dope finish are most commonly caused by:",
+    "opciones": [
+      "Too much thinner",
+      "Insufficient drying time between coats",
+      "Low humidity",
+      "Too many reinforcing tapes"
+    ],
+    "correcta": 1,
+    "tema": "Structures",
+    "explicacion": "Pinholes usually result from trapped solvents caused by insufficient drying time between successive coats."
+  },
+  {
+    "id": "structures-235",
+    "pregunta": "What is bias in aircraft fabric?",
+    "opciones": [
+      "The strongest direction of the fabric",
+      "A cut made diagonally across the warp and fill threads",
+      "A reinforcing tape",
+      "A type of dope finish"
+    ],
+    "correcta": 1,
+    "tema": "Structures",
+    "explicacion": "Bias refers to a cut made diagonally across the weave, providing greater flexibility around curved surfaces."
+  },
+  {
+    "id": "structures-236",
+    "pregunta": "Orange peel in a sprayed dope finish is commonly caused by:",
+    "opciones": [
+      "Dope too thick, excessive spray distance, or very dry air",
+      "Too much humidity",
+      "Applying too many coats",
+      "Using insufficient air pressure"
+    ],
+    "correcta": 0,
+    "tema": "Structures",
+    "explicacion": "Orange peel commonly results from overly thick dope, spraying too far from the surface, or environmental conditions causing poor flow-out."
+  },
+  {
+    "id": "structures-237",
+    "pregunta": "Stress corrosion cracking in aluminum alloy fittings is most commonly associated with:",
+    "opciones": [
+      "Compressive loading",
+      "Static tensile stress",
+      "High temperature only",
+      "Repeated impact loading"
+    ],
+    "correcta": 1,
+    "tema": "Structures",
+    "explicacion": "Stress corrosion cracking develops when susceptible aluminum alloys are subjected to sustained tensile stress in a corrosive environment."
+  },
+  {
+  "id": "electrical-232",
+  "pregunta": "Are automatic-reset circuit breakers normally used on aircraft?",
+  "opciones": [
+    "Yes, on all aircraft circuits",
+    "Yes, on essential buses only",
+    "No, manual-reset circuit breakers are normally used",
+    "Only on battery circuits"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "Most certified aircraft use manual-reset circuit breakers so that repeated faults cannot automatically re-energize a failed circuit. Some aircraft may incorporate automatic-reset devices for specific applications."
+},
+{
+  "id": "landinggear-214",
+  "pregunta": "What is camber in landing gear alignment?",
+  "opciones": [
+    "The angle of the wheel in relation to the aircraft's vertical axis",
+    "The distance between the wheels",
+    "The caster angle of the nose wheel",
+    "The toe-in angle"
+  ],
+  "correcta": 0,
+  "tema": "Landing Gear",
+  "explicacion": "Camber is the inward or outward tilt of the wheel when viewed from the front of the aircraft."
+},
+{
+  "id": "flightcontrols-235",
+  "pregunta": "When rigging the rudder and rudder pedals, the rudder should be aligned with the:",
+  "opciones": [
+    "Vertical stabilizer leading edge",
+    "Centerline of the fuselage",
+    "Elevator trailing edge",
+    "Nose wheel"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "With the rudder pedals neutral, the rudder should normally be aligned with the aircraft centerline unless otherwise specified by the manufacturer."
+},
+{
+  "id": "flightcontrols-236",
+  "pregunta": "What is the purpose of a Flettner tab?",
+  "opciones": [
+    "Increase drag during landing",
+    "Reduce pilot control forces by assisting control surface movement",
+    "Prevent flutter",
+    "Lock the control surface on the ground"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "A Flettner tab is a type of servo tab that assists movement of the primary control surface, reducing pilot effort."
+},
+{
+  "id": "iceprotection-201",
+  "pregunta": "If one pneumatic de-ice boot fails to inflate while the others operate normally, the most likely cause is:",
+  "opciones": [
+    "Engine failure",
+    "A leak in the affected boot or its supply line",
+    "Low hydraulic pressure",
+    "A faulty pitot tube"
+  ],
+  "correcta": 1,
+  "tema": "Ice Protection",
+  "explicacion": "A leak in the individual boot or its pneumatic plumbing is the most common reason a single de-ice boot fails to inflate."
+},
+{
+  "id": "flightcontrols-237",
+  "pregunta": "Aircraft control locks should normally have:",
+  "opciones": [
+    "A red warning streamer or ribbon",
+    "A green identification tag",
+    "A locking pin only",
+    "Reflective tape"
+  ],
+  "correcta": 0,
+  "tema": "Flight Controls",
+  "explicacion": "Control locks should have a highly visible warning streamer to remind personnel that the controls are locked before flight."
+},
+{
+  "id": "flightcontrols-238",
+  "pregunta": "What is the purpose of a wing flap relief valve?",
+  "opciones": [
+    "Increase flap extension speed",
+    "Prevent flap movement at excessive airspeeds",
+    "Increase hydraulic pressure",
+    "Reduce flap drag"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "A flap relief valve protects the flap system by preventing excessive aerodynamic loads at high airspeeds."
+},
+{
+  "id": "structures-238",
+  "pregunta": "Can the dihedral angle normally be adjusted on a certificated aircraft?",
+  "opciones": [
+    "Yes, during every inspection",
+    "No, unless specifically authorized by the manufacturer",
+    "Yes, by adjusting the wing struts",
+    "Only on retractable-gear aircraft"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "Dihedral is established by the aircraft structure and is normally not adjustable unless specified in approved maintenance procedures."
+},
+{
+  "id": "structures-239",
+  "pregunta": "Can scratches be removed from aircraft acrylic (Plexiglas) windows?",
+  "opciones": [
+    "No, scratches can never be removed",
+    "Minor scratches can often be polished out using approved materials",
+    "Only by sanding with coarse sandpaper",
+    "Only by repainting the surface"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "Minor scratches in acrylic transparencies can often be removed with approved polishing compounds. Deep cracks or severe damage require replacement."
+},
+{
+  "id": "landinggear-215",
+  "pregunta": "When servicing an oleo strut, the correct procedure is to:",
+  "opciones": [
+    "Add nitrogen first, then hydraulic fluid",
+    "Completely deflate the strut, compress it, service the fluid, then recharge with nitrogen or air as specified",
+    "Only add hydraulic fluid",
+    "Only check the extension"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "Standard servicing requires relieving the gas pressure, compressing the strut, servicing the hydraulic fluid, and then recharging with the specified gas."
+},
+{
+  "id": "landinggear-216",
+  "pregunta": "If brake clearances are adjusted too small, the most likely result is:",
+  "opciones": [
+    "Reduced stopping distance",
+    "Brake overheating and excessive wear",
+    "Low hydraulic pressure",
+    "Wheel shimmy"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "Insufficient brake clearance causes the brakes to drag, resulting in overheating and accelerated wear."
+},
+{
+  "id": "landinggear-217",
+  "pregunta": "Aircraft tires should normally be stored:",
+  "opciones": [
+    "Horizontally outdoors",
+    "In a cool, dry place in a vertical position",
+    "Near heat sources",
+    "Stacked under heavy loads"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "Aircraft tires should be stored vertically in a cool, dry area away from sunlight, ozone sources, and petroleum products."
+},
+{
+  "id": "electrical-233",
+  "pregunta": "The maximum charging voltage for a typical 12-volt (6-cell) lead-acid aircraft battery is approximately:",
+  "opciones": [
+    "12.0 volts",
+    "13.0 volts",
+    "14.1 volts",
+    "16.5 volts"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "Approximately 14.1 volts is a common charging voltage for many 12-volt lead-acid batteries. Always follow the battery manufacturer's maintenance instructions."
+},
+{
+  "id": "structures-240",
+  "pregunta": "Semi-monocoque aircraft structures primarily use:",
+  "opciones": [
+    "Skin only",
+    "Longerons, frames, bulkheads, and stressed skin",
+    "External wire bracing only",
+    "Wooden trusses"
+  ],
+  "correcta": 1,
+  "tema": "Structures",
+  "explicacion": "Semi-monocoque construction distributes loads through the stressed skin together with longerons, frames, and bulkheads."
+},
+{
+  "id": "autopilot-202",
+  "pregunta": "The basic sensing elements of most aircraft autopilot systems are:",
+  "opciones": [
+    "Pitot tubes only",
+    "Gyroscopes and associated sensing units",
+    "Hydraulic actuators",
+    "Static ports only"
+  ],
+  "correcta": 1,
+  "tema": "Autopilot",
+  "explicacion": "Most autopilot systems use gyroscopes and other sensing elements to detect aircraft attitude and deviations from the selected flight path."
+},
+{
+  "id": "autopilot-203",
+  "pregunta": "How can the pilot normally override an engaged autopilot?",
+  "opciones": [
+    "By increasing engine power",
+    "Through the control wheel or flight controller override",
+    "By selecting the landing gear down",
+    "By switching fuel tanks"
+  ],
+  "correcta": 1,
+  "tema": "Autopilot",
+  "explicacion": "Most autopilot systems allow manual override through the control wheel or by disconnecting the autopilot using the flight controls or disconnect switch."
+},
+{
+  "id": "weightbalance-212",
+  "pregunta": "Wing Station Zero (WS 0) is normally measured from the:",
+  "opciones": [
+    "Waterline",
+    "Fuselage station",
+    "Buttock line",
+    "Aircraft datum"
+  ],
+  "correcta": 2,
+  "tema": "Weight and Balance",
+  "explicacion": "Wing stations are referenced to the aircraft buttock line for lateral location measurements."
+},
+{
+  "id": "flightcontrols-239",
+  "pregunta": "Aircraft control cables should generally be replaced when wear reaches approximately:",
+  "opciones": [
+    "10 to 20%",
+    "25 to 30%",
+    "40 to 50%",
+    "75%"
+  ],
+  "correcta": 2,
+  "tema": "Flight Controls",
+  "explicacion": "Some training references use 40–50% wear as a replacement guideline, but actual replacement criteria are specified by the aircraft manufacturer and cable construction."
+},
+{
+  "id": "aerodynamics-247",
+  "pregunta": "The ability of an aircraft to be directed along a selected flight path is known as:",
+  "opciones": [
+    "Stability",
+    "Controllability",
+    "Maneuverability",
+    "Balance"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "Maneuverability is the ability of an aircraft to be directed along a desired flight path."
+},
+{
+  "id": "fuel-205",
+  "pregunta": "One advantage of an integral fuel tank is that it:",
+  "opciones": [
+    "Uses less hydraulic fluid",
+    "Reduces structural weight by using the wing structure as the fuel tank",
+    "Eliminates the need for boost pumps",
+    "Requires no sealing"
+  ],
+  "correcta": 1,
+  "tema": "Fuel Systems",
+  "explicacion": "Integral (wet-wing) fuel tanks reduce weight because the aircraft structure itself forms the fuel tank."
+},
+{
+  "id": "landinggear-218",
+  "pregunta": "After installing a new aircraft tire, the inflation pressure should normally be rechecked after:",
+  "opciones": [
+    "30 minutes",
+    "2 to 4 hours",
+    "12 to 24 hours",
+    "72 hours"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "A newly installed tire is commonly rechecked after 12–24 hours because the pressure may stabilize after installation."
+},
+{
+  "id": "landinggear-219",
+  "pregunta": "Small heat-check cracks on an aircraft brake drum are:",
+  "opciones": [
+    "Always cause for immediate replacement",
+    "Acceptable only within manufacturer limits",
+    "Never permitted",
+    "Repaired by welding"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "Allowable brake drum cracks depend on the manufacturer's maintenance limits. Always consult the applicable maintenance manual."
+},
+{
+  "id": "electrical-234",
+  "pregunta": "A DC generator uses what type of commutator?",
+  "opciones": [
+    "Slip ring",
+    "Split-ring commutator",
+    "Brushless exciter",
+    "Solid-state rectifier"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "A DC generator uses a split-ring commutator to mechanically rectify the generated alternating current into direct current."
+},
+{
+  "id": "aerodynamics-248",
+  "pregunta": "Which combination contributes most to aircraft stability?",
+  "opciones": [
+    "Dihedral for lateral stability and longitudinal tail arrangement for longitudinal stability",
+    "Wing fences and spoilers",
+    "Wing loading and aspect ratio",
+    "Wash-in and washout"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Dihedral improves lateral stability, while the horizontal stabilizer and longitudinal configuration provide longitudinal stability."
+},
+{
+  "id": "landinggear-220",
+  "pregunta": "Internal leakage in a brake master cylinder will most likely result in:",
+  "opciones": [
+    "Brake fading or inability to maintain pressure",
+    "Wheel shimmy",
+    "Hard pedal only",
+    "Brake overheating only"
+  ],
+  "correcta": 0,
+  "tema": "Landing Gear",
+  "explicacion": "Internal leakage allows hydraulic fluid to bypass the piston seal, reducing braking effectiveness."
+},
+{
+  "id": "hydraulics-239",
+  "pregunta": "The primary purpose of a hydraulic accumulator is to:",
+  "opciones": [
+    "Cool the hydraulic fluid",
+    "Store hydraulic energy and assist the pump during periods of high demand",
+    "Filter hydraulic fluid",
+    "Increase system pressure above relief-valve setting"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "An accumulator stores hydraulic energy, dampens pressure fluctuations, and supplies additional fluid during peak demand."
+},
+{
+  "id": "landinggear-221",
+  "pregunta": "What is the primary purpose of a de-booster valve in a brake system?",
+  "opciones": [
+    "Increase brake pressure",
+    "Reduce brake pressure for smoother application and release",
+    "Vent trapped air",
+    "Control anti-skid operation"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "A de-booster valve reduces hydraulic pressure reaching the brakes, providing smoother brake application."
+},
+{
+  "id": "electrical-235",
+  "pregunta": "An Integrated Drive Generator (IDG) combines a:",
+  "opciones": [
+    "Split-ring generator and inverter",
+    "Brushless generator and constant-speed drive",
+    "Alternator and battery charger",
+    "Generator and transformer-rectifier"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "An IDG combines a brushless AC generator with a Constant Speed Drive (CSD) to provide constant-frequency electrical power."
+},
+{
+  "id": "hydraulics-240",
+  "pregunta": "Phosphate ester hydraulic fluid systems normally use seals made of:",
+  "opciones": [
+    "Natural rubber",
+    "Neoprene",
+    "Butyl rubber",
+    "Silicone rubber"
+  ],
+  "correcta": 2,
+  "tema": "Hydraulics",
+  "explicacion": "Butyl rubber is commonly used because it is compatible with phosphate ester hydraulic fluids such as Skydrol."
+},
+{
+  "id": "navigation-201",
+  "pregunta": "ADF sense antennas are normally mounted:",
+  "opciones": [
+    "On top of the vertical stabilizer",
+    "On the bottom of the aircraft as far forward as practical",
+    "Inside the engine nacelle",
+    "At the wing tip"
+  ],
+  "correcta": 1,
+  "tema": "Navigation",
+  "explicacion": "ADF antennas are commonly installed on the underside of the aircraft, as far forward as practical, to minimize interference."
+},
+{
+  "id": "oxygen-202",
+  "pregunta": "Selecting EMERGENCY or 100% on a diluter-demand oxygen regulator provides:",
+  "opciones": [
+    "Cabin air only",
+    "100% oxygen to the user",
+    "A reduced oxygen concentration",
+    "Automatic pressure relief"
+  ],
+  "correcta": 1,
+  "tema": "Oxygen Systems",
+  "explicacion": "Selecting 100% or EMERGENCY bypasses the normal air dilution and supplies pure oxygen."
+},
+{
+  "id": "pressurization-206",
+  "pregunta": "During isobaric operation, the cabin pressure controller primarily senses:",
+  "opciones": [
+    "Engine bleed air pressure",
+    "Cabin pressure",
+    "Outside air temperature",
+    "Hydraulic pressure"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "The controller senses cabin pressure and modulates the outflow valve to maintain the selected cabin altitude."
+},
+{
+  "id": "navigation-202",
+  "pregunta": "A VOR antenna is most commonly installed:",
+  "opciones": [
+    "On top of the vertical stabilizer",
+    "On the upper fuselage or vertical stabilizer",
+    "Inside the nose landing gear bay",
+    "Under the wing root"
+  ],
+  "correcta": 1,
+  "tema": "Navigation",
+  "explicacion": "VOR antennas are commonly mounted on the top of the fuselage or on the vertical stabilizer to provide good omnidirectional reception."
+},
+{
+  "id": "structures-241",
+  "pregunta": "The dihedral angle of a wing is commonly measured at the:",
+  "opciones": [
+    "Rear spar",
+    "Wing tip",
+    "Front spar or specified reference point",
+    "Center of pressure"
+  ],
+  "correcta": 2,
+  "tema": "Structures",
+  "explicacion": "The manufacturer specifies the reference location for measuring dihedral, commonly at or near the front spar."
+},
+{
+  "id": "flightcontrols-240",
+  "pregunta": "The neutral position of a trim tab is generally:",
+  "opciones": [
+    "10° from the streamlined position",
+    "Flush with the control surface only",
+    "Approximately 1° to 2° from the streamlined position",
+    "5° trailing edge down"
+  ],
+  "correcta": 2,
+  "tema": "Flight Controls",
+  "explicacion": "A trim tab is generally rigged approximately 1° to 2° from the streamlined position unless otherwise specified by the manufacturer."
+},
+{
+  "id": "hydraulics-241",
+  "pregunta": "Before servicing or removing a hydraulic accumulator, maintenance personnel should first:",
+  "opciones": [
+    "Relieve all hydraulic pressure and remove the gas preload",
+    "Drain the hydraulic reservoir",
+    "Operate the hydraulic pump",
+    "Remove the pressure gauge only"
+  ],
+  "correcta": 0,
+  "tema": "Hydraulics",
+  "explicacion": "The accumulator gas charge must be safely released and hydraulic pressure relieved before servicing to prevent injury."
+},
+{
+  "id": "autopilot-204",
+  "pregunta": "Most aircraft autopilot sensing systems operate on the principle of:",
+  "opciones": [
+    "Hydraulic amplification",
+    "Relative motion between a gyro and its supporting structure",
+    "Magnetic induction",
+    "Static air pressure changes"
+  ],
+  "correcta": 1,
+  "tema": "Autopilot",
+  "explicacion": "Autopilot sensing units use gyroscopic principles, detecting relative motion between the gyro and its supporting structure."
+},
+{
+  "id": "autopilot-205",
+  "pregunta": "The primary sensing instruments used by most autopilot systems are:",
+  "opciones": [
+    "Gyroscopes such as attitude and directional gyros",
+    "Pitot tube and static port",
+    "VOR receiver only",
+    "Flux valve only"
+  ],
+  "correcta": 0,
+  "tema": "Autopilot",
+  "explicacion": "Autopilot systems commonly receive attitude and heading information from gyroscopic instruments."
+},
+{
+  "id": "navigation-203",
+  "pregunta": "The primary purpose of performing a compass swing is to:",
+  "opciones": [
+    "Calibrate the magnetic compass and determine deviation",
+    "Adjust the directional gyro",
+    "Check the VOR receiver",
+    "Test the ADF antenna"
+  ],
+  "correcta": 0,
+  "tema": "Navigation",
+  "explicacion": "A compass swing is performed to determine and correct compass deviation caused by magnetic influences in the aircraft."
+},
+{
+  "id": "hydraulics-242",
+  "pregunta": "The primary function of a hydraulic pump is to:",
+  "opciones": [
+    "Increase hydraulic pressure directly",
+    "Store hydraulic energy",
+    "Move or circulate hydraulic fluid through the system",
+    "Regulate system pressure"
+  ],
+  "correcta": 2,
+  "tema": "Hydraulics",
+  "explicacion": "A hydraulic pump creates flow. Pressure is produced only when that flow encounters resistance."
+},
+{
+  "id": "electrical-236",
+  "pregunta": "On a vibrator-type voltage regulator, system voltage is adjusted by:",
+  "opciones": [
+    "Replacing the generator brushes",
+    "Adjusting the spring tension on the regulator contact points",
+    "Changing battery electrolyte",
+    "Adjusting generator RPM"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Mechanical voltage regulators are adjusted by changing the spring tension acting on the voltage regulating contacts."
+},
+{
+  "id": "electrical-237",
+  "pregunta": "To protect generator rectifier diodes from voltage surges, maintenance personnel should:",
+  "opciones": [
+    "Disconnect the battery while the engine is running",
+    "Increase generator output",
+    "Keep the battery connected whenever the generator is operating",
+    "Ground the alternator output terminal"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "Disconnecting the battery while the generator or alternator is operating may create damaging voltage spikes."
+},
+{
+  "id": "electrical-238",
+  "pregunta": "Electrolyte spilled from a nickel-cadmium (Ni-Cd) battery is commonly neutralized with:",
+  "opciones": [
+    "Baking soda",
+    "Distilled water",
+    "Acetic acid",
+    "Boric acid"
+  ],
+  "correcta": 3,
+  "tema": "Electrical",
+  "explicacion": "Potassium hydroxide electrolyte from Ni-Cd batteries is neutralized using a boric acid solution."
+},
+{
+  "id": "electrical-239",
+  "pregunta": "The state of charge of a lead-acid battery is normally determined using a:",
+  "opciones": [
+    "Hydrometer",
+    "Megohmmeter",
+    "Ohmmeter",
+    "Clamp ammeter"
+  ],
+  "correcta": 0,
+  "tema": "Electrical",
+  "explicacion": "A hydrometer measures the electrolyte specific gravity, which indicates the state of charge of a lead-acid battery."
+},
+{
+  "id": "powerplant-203",
+  "pregunta": "If no manufacturer limits are available, a satisfactory differential compression test result is generally considered to be:",
+  "opciones": [
+    "80/40",
+    "80/60 or better",
+    "60/40",
+    "100/80"
+  ],
+  "correcta": 1,
+  "tema": "Powerplant",
+  "explicacion": "A commonly accepted training value is 80/60, although the engine manufacturer's limits always take precedence."
+},
+{
+  "id": "navigation-204",
+  "pregunta": "A complete Instrument Landing System (ILS) consists primarily of:",
+  "opciones": [
+    "ADF, Marker Beacon and DME",
+    "VOR, Glide Slope and DME",
+    "Localizer, Glide Slope and Marker Beacons",
+    "GPS and Marker Beacon"
+  ],
+  "correcta": 2,
+  "tema": "Navigation",
+  "explicacion": "The primary ILS components are the Localizer, Glide Slope and Marker Beacons."
+},
+{
+  "id": "navigation-205",
+  "pregunta": "The localizer portion of an Instrument Landing System provides:",
+  "opciones": [
+    "Vertical guidance",
+    "Lateral guidance for runway centerline alignment",
+    "Distance information",
+    "Groundspeed information"
+  ],
+  "correcta": 1,
+  "tema": "Navigation",
+  "explicacion": "The localizer provides left/right guidance to align the aircraft with the runway centerline."
+},
+{
+  "id": "electrical-240",
+  "pregunta": "A battery capable of supplying 7 amperes continuously for 5 hours has a capacity of:",
+  "opciones": [
+    "12 ampere-hours",
+    "35 ampere-hours",
+    "70 ampere-hours",
+    "140 ampere-hours"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Battery capacity is calculated by multiplying current by time: 7 A × 5 h = 35 Ah."
+},
+{
+  "id": "fireprotection-201",
+  "pregunta": "The contents of most portable aircraft fire extinguishers are checked by:",
+  "opciones": [
+    "Measuring internal pressure only",
+    "Checking the color of the agent",
+    "Weighing the extinguisher",
+    "Opening the discharge valve"
+  ],
+  "correcta": 2,
+  "tema": "Fire Protection",
+  "explicacion": "Many portable aircraft fire extinguishers are serviced by comparing their actual weight with the manufacturer's specified weight."
+},
+{
+  "id": "helicopter-201",
+  "pregunta": "Dissymmetry of lift in a helicopter is primarily caused by:",
+  "opciones": [
+    "Unequal rotor blade weight",
+    "The advancing blade producing more lift than the retreating blade",
+    "Excessive coning angle",
+    "Blade tracking errors"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "As the helicopter moves forward, the advancing blade experiences a higher relative wind than the retreating blade, producing dissymmetry of lift."
+},
+{
+  "id": "helicopter-202",
+  "pregunta": "Gyroscopic precession causes rotor blade movement to occur:",
+  "opciones": [
+    "Immediately at the point of control input",
+    "180° after the applied force",
+    "Approximately 90° later in the direction of rotation",
+    "90° opposite the direction of rotation"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Rotor systems respond approximately 90° later in the direction of rotation due to gyroscopic precession."
+},
+{
+  "id": "helicopter-203",
+  "pregunta": "The primary purpose of rotor blade tracking is to:",
+  "opciones": [
+    "Increase rotor RPM",
+    "Ensure all blades follow the same tip-path plane",
+    "Reduce engine torque",
+    "Balance the tail rotor"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Blade tracking ensures every rotor blade follows the same tip-path plane, reducing vibration."
+},
+{
+  "id": "helicopter-204",
+  "pregunta": "Blade twist is incorporated into helicopter rotor blades primarily to:",
+  "opciones": [
+    "Reduce blade weight",
+    "Increase centrifugal force",
+    "Improve lift distribution along the blade span",
+    "Prevent ground resonance"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Blade twist compensates for the increase in rotational speed toward the blade tip, improving lift distribution."
+},
+{
+  "id": "helicopter-205",
+  "pregunta": "The coning angle of a helicopter rotor is primarily determined by the relationship between:",
+  "opciones": [
+    "Lift and centrifugal force",
+    "Engine torque and drag",
+    "Rotor RPM and temperature",
+    "Blade pitch and air density"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "Coning angle increases as lift overcomes centrifugal force acting on the rotor blades."
+},
+{
+  "id": "helicopter-206",
+  "pregunta": "The primary loads acting on a helicopter rotor mast are:",
+  "opciones": [
+    "Compression and bending",
+    "Tension and torsion",
+    "Shear only",
+    "Compression only"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The rotor mast primarily carries tensile and torsional loads transmitted by the rotor system."
+},
+{
+  "id": "helicopter-207",
+  "pregunta": "If the overrunning clutch (freewheeling unit) seizes, the result is that the:",
+  "opciones": [
+    "Main rotor can no longer autorotate",
+    "Tail rotor stops immediately",
+    "Engine becomes disconnected from the transmission",
+    "Rotor brake applies automatically"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "A seized overrunning clutch prevents the rotor from freewheeling during autorotation."
+},
+{
+  "id": "helicopter-208",
+  "pregunta": "A hard rotor damper generally results in:",
+  "opciones": [
+    "A slower but more stable response",
+    "Faster response with reduced stability",
+    "Complete elimination of vibration",
+    "Improved autorotation performance"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "A hard damper produces quicker control response but can make the helicopter less stable."
+},
+{
+  "id": "helicopter-209",
+  "pregunta": "Pitch links connect the rotating swashplate to the:",
+  "opciones": [
+    "Main transmission",
+    "Rotor brake",
+    "Rotor blades",
+    "Tail rotor gearbox"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Pitch links transmit swashplate movement to each rotor blade, changing blade pitch."
+},
+{
+  "id": "helicopter-210",
+  "pregunta": "The drive link in a helicopter rotor system connects the:",
+  "opciones": [
+    "Rotating swashplate to the rotor mast",
+    "Tail rotor to the transmission",
+    "Collective lever to the cyclic stick",
+    "Pitch horn to the blade grip"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "The drive link transmits rotation from the mast to the rotating swashplate."
+},
+{
+  "id": "helicopter-211",
+  "pregunta": "The rotor brake is commonly installed:",
+  "opciones": [
+    "Inside the tail rotor gearbox",
+    "Between the engine and the main transmission",
+    "On the tail rotor hub",
+    "Inside the rotor head"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Most rotor brakes are installed on the transmission input or power shaft between the engine and transmission."
+},
+{
+  "id": "helicopter-212",
+  "pregunta": "Artificial feel in a hydraulically boosted helicopter control system is normally provided by a:",
+  "opciones": [
+    "Servo tab",
+    "Gradient unit",
+    "Bellcrank",
+    "Snubber"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "A gradient unit provides artificial control feel when hydraulic boost removes normal aerodynamic feedback."
+},
+{
+  "id": "helicopter-213",
+  "pregunta": "Most turbine helicopter fuel systems are:",
+  "opciones": [
+    "Gravity feed",
+    "Pressure carburetor systems",
+    "Forced-feed systems",
+    "Vacuum feed systems"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Most turbine-powered helicopters use forced-feed fuel systems to ensure continuous fuel delivery."
+},
+{
+  "id": "helicopter-214",
+  "pregunta": "Vertical flight of a helicopter is primarily controlled by:",
+  "opciones": [
+    "Tail rotor pitch",
+    "Collective pitch",
+    "Cyclic pitch",
+    "Throttle only"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Changing collective pitch changes lift equally on all rotor blades, controlling vertical movement."
+},
+{
+  "id": "helicopter-215",
+  "pregunta": "According to Newton's Third Law, helicopter torque reaction causes the fuselage to:",
+  "opciones": [
+    "Rotate opposite the direction of main rotor rotation",
+    "Rotate in the same direction as the rotor",
+    "Pitch nose down",
+    "Increase rotor RPM"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "The fuselage tends to rotate opposite the direction of main rotor rotation unless counteracted by the tail rotor or another anti-torque system."
+},
+{
+  "id": "helicopter-216",
+  "pregunta": "Blade alignment is performed to establish the correct relationship of the blade center of gravity to the:",
+  "opciones": [
+    "Main spar",
+    "Center of pressure",
+    "Chordwise balance",
+    "Spanwise balance"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Blade alignment establishes the proper chordwise balance relationship of the rotor blade to minimize vibration during operation."
+},
+{
+  "id": "helicopter-217",
+  "pregunta": "A helicopter rotor system that is out of track will normally produce:",
+  "opciones": [
+    "A 1:1 vertical vibration",
+    "A 2:1 lateral vibration",
+    "A 3:1 vertical vibration",
+    "A constant chordwise vibration"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "An out-of-track rotor typically produces a 1-per-revolution (1:1) vertical vibration."
+},
+{
+  "id": "helicopter-218",
+  "pregunta": "In normal flight, the main rotor mast primarily absorbs:",
+  "opciones": [
+    "Compression and bending loads",
+    "Torsion and tension loads",
+    "Radial loads only",
+    "Compression loads only"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The rotor mast transmits both torsional loads from rotor torque and tensile loads generated by rotor lift."
+},
+{
+  "id": "helicopter-219",
+  "pregunta": "The rotating portion of the swashplate is driven by a drive link attached to the:",
+  "opciones": [
+    "Main transmission",
+    "Collective control",
+    "Cyclic control",
+    "Rotor mast"
+  ],
+  "correcta": 3,
+  "tema": "Helicopters",
+  "explicacion": "The rotating swashplate is driven from the rotor mast through a drive link."
+},
+{
+  "id": "helicopter-220",
+  "pregunta": "On a free-turbine helicopter, the collective twist grip primarily controls:",
+  "opciones": [
+    "Compressor RPM",
+    "Main rotor RPM",
+    "Tail rotor RPM",
+    "Transmission RPM"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "The twist grip is used to control compressor (gas producer) RPM on helicopters equipped with free-turbine engines."
+},
+{
+  "id": "helicopter-221",
+  "pregunta": "A movable horizontal stabilizer on a helicopter is primarily used to:",
+  "opciones": [
+    "Increase lateral stability",
+    "Increase controllability and extend the center-of-gravity range",
+    "Reduce rotor RPM",
+    "Improve tail rotor efficiency only"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Movable horizontal stabilizers improve longitudinal controllability and allow a wider center-of-gravity operating range."
+},
+{
+  "id": "helicopter-222",
+  "pregunta": "On most turbine-powered helicopters, the rotor brake is normally operated by:",
+  "opciones": [
+    "Engine bleed air",
+    "Transmission oil pressure",
+    "A dedicated hydraulic system",
+    "Engine oil pressure"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "Most turbine helicopters use a dedicated hydraulic system to operate the rotor brake."
+},
+{
+  "id": "helicopter-223",
+  "pregunta": "Helicopter torque reaction causes the fuselage to rotate:",
+  "opciones": [
+    "In the same direction as the main rotor",
+    "Opposite the direction of main rotor rotation",
+    "Only during autorotation",
+    "Only during hover"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "According to Newton's Third Law, the fuselage tends to rotate opposite the direction of the main rotor."
+},
+{
+  "id": "helicopter-224",
+  "pregunta": "A dual tachometer in a helicopter normally indicates:",
+  "opciones": [
+    "Engine RPM and transmission RPM",
+    "Engine RPM and main rotor RPM",
+    "Compressor RPM and turbine RPM",
+    "Main rotor RPM and tail rotor RPM"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "The dual tachometer allows the pilot to monitor both engine RPM and main rotor RPM simultaneously."
+},
+{
+  "id": "helicopter-225",
+  "pregunta": "On many metal helicopter rotor blades, the skin primarily:",
+  "opciones": [
+    "Acts as the main structural spar",
+    "Serves as a wrap-around skin providing the aerodynamic shape",
+    "Supports all centrifugal loads",
+    "Contains the balancing weights"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Many metal rotor blades use a wrap-around skin to form the aerodynamic contour, while the spar carries the primary structural loads."
+},
+{
+  "id": "helicopter-226",
+  "pregunta": "Conical elastomeric bearings used in helicopter rotor systems are designed to:",
+  "opciones": [
+    "Absorb high axial and radial loads while allowing limited movement",
+    "Operate only under torsional loads",
+    "Replace drag hinges only",
+    "Provide blade tracking adjustments"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "Conical elastomeric bearings support high radial and axial loads while permitting the limited movement required by the rotor system."
+},
+{
+  "id": "hydraulics-243",
+  "pregunta": "Aircraft hydraulic priority valves are normally:",
+  "opciones": [
+    "Mechanically actuated",
+    "Electrically actuated",
+    "Hydraulically actuated",
+    "Pneumatically actuated"
+  ],
+  "correcta": 2,
+  "tema": "Hydraulics",
+  "explicacion": "Priority valves are normally hydraulically actuated to ensure hydraulic pressure is supplied first to essential systems."
+},
+{
+  "id": "helicopter-227",
+  "pregunta": "The variation in blade angle between the rotor root and tip is known as the:",
+  "opciones": [
+    "Feathering angle",
+    "Twist angle",
+    "Coning angle",
+    "Pitch angle"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Blade twist (twist angle) is the gradual change in blade incidence from root to tip to provide a more uniform lift distribution."
+},
+{
+  "id": "helicopter-228",
+  "pregunta": "Rotor blade tracking is performed to ensure that all rotor blades:",
+  "opciones": [
+    "Have the same pitch angle at all times",
+    "Produce identical lift",
+    "Remain perfectly balanced",
+    "Follow the same tip-path plane during rotation"
+  ],
+  "correcta": 3,
+  "tema": "Helicopters",
+  "explicacion": "Blade tracking ensures that every blade follows the same tip-path plane, minimizing vibration and improving rotor smoothness."
+},
+{
+  "id": "electrical-241",
+  "pregunta": "During inspection of an aircraft terminal strip, the terminal studs should be:",
+  "opciones": [
+    "Allowed to rotate slightly",
+    "Secured against rotation",
+    "Lubricated before tightening",
+    "Installed with fiber washers only"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Terminal strip studs must be secured against rotation to prevent damage to wiring and electrical connections."
+},
+{
+  "id": "structures-242",
+  "pregunta": "A Pratt truss fuselage is characterized by:",
+  "opciones": [
+    "Welded steel tubes with diagonal members only",
+    "A stressed-skin structure",
+    "Vertical members between longerons reinforced with wire bracing",
+    "Honeycomb composite construction"
+  ],
+  "correcta": 2,
+  "tema": "Structures",
+  "explicacion": "A Pratt truss uses vertical members between the longerons with diagonal wire bracing to carry structural loads."
+},
+{
+  "id": "electrical-242",
+  "pregunta": "On aircraft that use AC generators but no DC generators, the batteries are normally charged by:",
+  "opciones": [
+    "An inverter",
+    "Transformer Rectifier Units (TRUs)",
+    "A voltage regulator",
+    "A static inverter"
+  ],
+  "correcta": 1,
+  "tema": "Electrical",
+  "explicacion": "Transformer Rectifier Units (TRUs) convert AC power into DC power to charge the aircraft batteries and supply DC buses."
+},
+{
+  "id": "airconditioning-203",
+  "pregunta": "In a vapor-cycle air conditioning system, heat absorbed by the refrigerant is rejected at the:",
+  "opciones": [
+    "Evaporator",
+    "Expansion valve",
+    "Condenser",
+    "Receiver-drier"
+  ],
+  "correcta": 2,
+  "tema": "Air Conditioning",
+  "explicacion": "The condenser rejects heat absorbed by the refrigerant to the outside air."
+},
+{
+  "id": "landinggear-222",
+  "pregunta": "What should be used to clean an aircraft tire bead before installation?",
+  "opciones": [
+    "Soap and water",
+    "Mineral spirits",
+    "Isopropyl alcohol",
+    "Hydraulic fluid"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "Aircraft tire beads are normally cleaned with isopropyl alcohol before installation."
+},
+{
+  "id": "oxygen-203",
+  "pregunta": "An automatic continuous-flow oxygen regulator will:",
+  "opciones": [
+    "Supply 100% oxygen at all times",
+    "Automatically adjust oxygen flow as altitude changes",
+    "Require manual adjustment after every 1,000 feet",
+    "Operate only above 25,000 feet"
+  ],
+  "correcta": 1,
+  "tema": "Oxygen Systems",
+  "explicacion": "Automatic continuous-flow regulators vary oxygen flow automatically as cabin altitude changes."
+},
+{
+  "id": "oxygen-204",
+  "pregunta": "A manual continuous-flow oxygen regulator requires the user to:",
+  "opciones": [
+    "Reset the oxygen flow as altitude changes",
+    "Recharge the cylinder during flight",
+    "Switch between AC and DC power",
+    "Adjust cabin pressure"
+  ],
+  "correcta": 0,
+  "tema": "Oxygen Systems",
+  "explicacion": "Manual continuous-flow regulators require periodic adjustment to match changing altitude."
+},
+{
+  "id": "pressurization-207",
+  "pregunta": "The purpose of a negative pressure relief valve is to:",
+  "opciones": [
+    "Prevent excessive positive differential pressure",
+    "Prevent outside pressure from becoming greater than cabin pressure",
+    "Regulate bleed-air flow",
+    "Control cabin rate of climb"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "A negative pressure relief valve protects the fuselage by preventing excessive negative differential pressure."
+},
+{
+  "id": "electrical-243",
+  "pregunta": "What is the maximum number of terminal lugs normally permitted on a single terminal strip stud?",
+  "opciones": [
+    "Two",
+    "Three",
+    "Four",
+    "Five"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "Standard aircraft practices generally limit terminal strip studs to four terminal lugs unless otherwise specified."
+},
+{
+  "id": "electrical-244",
+  "pregunta": "Aircraft fuses are rated according to:",
+  "opciones": [
+    "Voltage",
+    "Resistance",
+    "Current (amperes)",
+    "Power (watts)"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "Aircraft fuses are rated by the amount of current, in amperes, they can safely carry."
+},
+{
+  "id": "hydraulics-244",
+  "pregunta": "Air is normally removed from an aircraft hydraulic system by:",
+  "opciones": [
+    "Applying vacuum to the reservoir",
+    "Operating the hydraulic components through several complete cycles",
+    "Heating the hydraulic fluid",
+    "Increasing system pressure above normal"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "Cycling the hydraulic components repeatedly allows trapped air to return to the reservoir and be removed."
+},
+{
+  "id": "pitotstatic-202",
+  "pregunta": "A leak in the aircraft static system is normally detected by observing the:",
+  "opciones": [
+    "Airspeed indicator",
+    "Vertical speed indicator",
+    "Altimeter after applying the specified test altitude",
+    "Magnetic compass"
+  ],
+  "correcta": 2,
+  "tema": "Pitot-Static",
+  "explicacion": "Static system leakage is checked by monitoring the altimeter for allowable altitude loss after a specified test pressure is applied."
+},
+{
+  "id": "flightcontrols-241",
+  "pregunta": "When using a cable tensiometer, the correct ______ must be installed for the cable being checked.",
+  "opciones": [
+    "Adapter spring",
+    "Riser",
+    "Pulley",
+    "Scale"
+  ],
+  "correcta": 1,
+  "tema": "Flight Controls",
+  "explicacion": "Cable tensiometers require the proper riser for the cable diameter to obtain an accurate reading."
+},
+{
+  "id": "landinggear-223",
+  "pregunta": "The specified tire inflation pressure for an aircraft wheel is found in the:",
+  "opciones": [
+    "Structural Repair Manual (SRM)",
+    "Illustrated Parts Catalog (IPC)",
+    "Aircraft Maintenance Manual (AMM)",
+    "Pilot Operating Handbook (POH)"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "Aircraft tire servicing pressures are specified in the Aircraft Maintenance Manual (AMM)."
+},
+{
+  "id": "electrical-245",
+  "pregunta": "The two most common types of AC motors used in aircraft are:",
+  "opciones": [
+    "Series and shunt motors",
+    "Universal and compound motors",
+    "Induction and synchronous motors",
+    "Brushless and stepper motors"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "Induction and synchronous motors are the most commonly used AC motors in aircraft systems."
+},
+{
+  "id": "electrical-246",
+  "pregunta": "A common method of restoring residual magnetism in a DC generator field is to:",
+  "opciones": [
+    "Flash the generator field",
+    "Reverse the battery polarity",
+    "Increase generator speed",
+    "Adjust the voltage regulator"
+  ],
+  "correcta": 0,
+  "tema": "Electrical",
+  "explicacion": "Residual magnetism can be restored by flashing the generator field using the approved maintenance procedure."
+},
+{
+  "id": "electrical-247",
+  "pregunta": "Excessive arcing at generator brushes is commonly corrected by adjusting the:",
+  "opciones": [
+    "Brush spring tension",
+    "Generator pulley",
+    "Battery voltage",
+    "Current limiter"
+  ],
+  "correcta": 0,
+  "tema": "Electrical",
+  "explicacion": "Proper brush spring tension helps maintain good brush contact and minimizes arcing."
+},
+{
+  "id": "landinggear-224",
+  "pregunta": "Internal leakage in a brake master cylinder will usually cause the brake pedal to:",
+  "opciones": [
+    "Become locked",
+    "Slowly sink while pressure is maintained",
+    "Vibrate rapidly",
+    "Return abruptly to neutral"
+  ],
+  "correcta": 1,
+  "tema": "Landing Gear",
+  "explicacion": "Internal seal leakage allows fluid to bypass the piston, causing the brake pedal to slowly creep downward under constant pressure."
+},
+{
+  "id": "aerodynamics-249",
+  "pregunta": "An aircraft with good longitudinal stability has little tendency to:",
+  "opciones": [
+    "Yaw",
+    "Roll",
+    "Pitch",
+    "Sideslip"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "Longitudinal stability refers to the aircraft's tendency to resist pitching disturbances."
+},
+{
+  "id": "aerodynamics-250",
+  "pregunta": "The aspect ratio of a wing is correctly calculated as:",
+  "opciones": [
+    "Wing area ÷ wingspan",
+    "Wingspan² ÷ wing area",
+    "Mean aerodynamic chord ÷ wing area",
+    "Wing area × wingspan"
+  ],
+  "correcta": 1,
+  "tema": "Aerodynamics",
+  "explicacion": "Aspect ratio is calculated by dividing the square of the wingspan by the wing area."
+},
+{
+  "id": "helicopter-229",
+  "pregunta": "Which helicopter rotor head design is least able to compensate for dissymmetry of lift?",
+  "opciones": [
+    "Fully articulated",
+    "Semi-articulated",
+    "Rigid",
+    "Semi-rigid"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "A rigid rotor head has no flapping hinges and therefore has the least inherent ability to compensate for dissymmetry of lift compared with articulated or semi-rigid designs. :contentReference[oaicite:0]{index=0}"
+},
+{
+  "id": "helicopter-230",
+  "pregunta": "Which rotor head design best compensates for the Coriolis effect?",
+  "opciones": [
+    "Semi-rigid",
+    "Rigid",
+    "Fully articulated",
+    "Semi-articulated"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "A fully articulated rotor head uses lead-lag hinges that allow the blades to compensate for Coriolis effect during flight. :contentReference[oaicite:1]{index=1}"
+},
+{
+  "id": "helicopter-231",
+  "pregunta": "A movable horizontal stabilizer on a helicopter is normally actuated by the:",
+  "opciones": [
+    "Hydraulic system",
+    "Collective control",
+    "Cyclic control",
+    "Pneumatic system"
+  ],
+  "correcta": 2,
+  "tema": "Helicopters",
+  "explicacion": "On helicopters equipped with a movable horizontal stabilizer, the stabilizer is normally positioned as a function of cyclic control inputs or associated control linkage. :contentReference[oaicite:2]{index=2}"
+},
+{
+  "id": "helicopter-232",
+  "pregunta": "A helicopter transmission is normally lubricated with:",
+  "opciones": [
+    "Hydraulic oil",
+    "Its own lubricant",
+    "Engine oil",
+    "An oil-fuel mixture"
+  ],
+  "correcta": 1,
+  "tema": "Helicopters",
+  "explicacion": "Most helicopter transmissions use their own dedicated lubricant rather than sharing engine oil. :contentReference[oaicite:3]{index=3}"
+},
+{
+  "id": "helicopter-233",
+  "pregunta": "The horizontal stabilizer used on many helicopters typically has what airfoil shape?",
+  "opciones": [
+    "Symmetrical",
+    "Unsymmetrical",
+    "Inverted symmetrical",
+    "Inverted asymmetrical"
+  ],
+  "correcta": 3,
+  "tema": "Helicopters",
+  "explicacion": "Many helicopter horizontal stabilizers use an inverted asymmetrical airfoil to improve longitudinal stability in forward flight. :contentReference[oaicite:4]{index=4}"
+},
+{
+  "id": "helicopter-234",
+  "pregunta": "In steady forward flight, a helicopter changes direction primarily by:",
+  "opciones": [
+    "Tilting the rotor disc",
+    "Changing collective pitch",
+    "Applying negative tail rotor thrust",
+    "Applying positive tail rotor thrust only"
+  ],
+  "correcta": 0,
+  "tema": "Helicopters",
+  "explicacion": "Directional changes in forward flight are accomplished primarily by tilting the rotor disc with cyclic control, which changes the direction of the total rotor thrust. :contentReference[oaicite:5]{index=5}"
+},
+{
+  "id": "helicopter-235",
+  "pregunta": "If the amplitude of a helicopter vibration remains constant throughout the entire rotor RPM range, the rotor is most likely:",
+  "opciones": [
+    "Out of spanwise balance",
+    "Serviceable",
+    "Out of track",
+    "Out of chordwise balance"
+  ],
+  "correcta": 3,
+  "tema": "Helicopters",
+  "explicacion": "A vibration whose amplitude remains essentially constant throughout the rotor RPM range is characteristic of a chordwise imbalance. An out-of-track condition normally produces a 1-per-revolution vertical vibration rather than a constant-amplitude vibration. :contentReference[oaicite:1]{index=1}"
+},
+{
+  "id": "airframe-236",
+  "pregunta": "For wire selection, an intermittent electrical load is defined as a load that operates for a maximum of:",
+  "opciones": [
+    "30 seconds",
+    "5 minutes",
+    "2 minutes",
+    "10 minutes"
+  ],
+  "correcta": 2,
+  "tema": "Electrical",
+  "explicacion": "For wire sizing purposes, an intermittent load is one that operates for a maximum of 2 minutes. :contentReference[oaicite:0]{index=0}"
+},
+{
+  "id": "airframe-237",
+  "pregunta": "Before installing an aircraft wheel, the wheel contact surfaces should be cleaned with:",
+  "opciones": [
+    "Isopropyl alcohol",
+    "Acetone",
+    "Mineral spirits",
+    "MEK"
+  ],
+  "correcta": 0,
+  "tema": "Landing Gear",
+  "explicacion": "Wheel contact surfaces should be cleaned with isopropyl alcohol before installation. :contentReference[oaicite:1]{index=1}"
+},
+{
+  "id": "airframe-238",
+  "pregunta": "An ADF radio system consists of:",
+  "opciones": [
+    "Receiver, VOR antenna, DME antenna and indicator",
+    "Receiver, loop antenna, sense antenna, RMI (or indicator), and control panel",
+    "Receiver, glide slope antenna, localizer antenna and encoder",
+    "Receiver, transponder, encoder and control head"
+  ],
+  "correcta": 1,
+  "tema": "Navigation",
+  "explicacion": "A complete ADF installation includes a receiver, loop antenna, sense antenna, indicator/RMI and a control panel. :contentReference[oaicite:2]{index=2}"
+},
+{
+  "id": "airframe-239",
+  "pregunta": "A Mode C transponder system includes:",
+  "opciones": [
+    "Function selector and encoding altimeter (encoder)",
+    "Receiver and loop antenna",
+    "Pressure regulator and encoder",
+    "Control head and glide slope antenna"
+  ],
+  "correcta": 0,
+  "tema": "Avionics",
+  "explicacion": "Mode C operation requires an encoding altimeter (encoder) along with the transponder function selector. :contentReference[oaicite:3]{index=3}"
+},
+{
+  "id": "airframe-240",
+  "pregunta": "During inspection, the tire bead seat should be checked for:",
+  "opciones": [
+    "Valve stem leakage only",
+    "Sidewall discoloration",
+    "Evidence of tire tool damage, rim chafing and slippage",
+    "Tread wear only"
+  ],
+  "correcta": 2,
+  "tema": "Landing Gear",
+  "explicacion": "Inspect the bead seat area for tool damage, chafing against the rim and evidence of slippage. :contentReference[oaicite:4]{index=4}"
+},
+{
+  "id": "airframe-241",
+  "pregunta": "The refrigerant traditionally used in aircraft vapor-cycle air conditioning systems is:",
+  "opciones": [
+    "R-134a",
+    "Ammonia",
+    "Carbon dioxide",
+    "Dichlorodifluoromethane (R-12)"
+  ],
+  "correcta": 3,
+  "tema": "Air Conditioning",
+  "explicacion": "Older aircraft vapor-cycle systems commonly used dichlorodifluoromethane (R-12) refrigerant. :contentReference[oaicite:5]{index=5}"
+},
+{
+  "id": "airframe-242",
+  "pregunta": "An aircraft that responds rapidly and accurately to pilot control inputs is said to have good:",
+  "opciones": [
+    "Controllability",
+    "Longitudinal stability",
+    "Directional stability",
+    "Static stability"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Controllability is the characteristic that describes how readily an aircraft responds to pilot control inputs. :contentReference[oaicite:6]{index=6}"
+},
+{
+  "id": "airframe-243",
+  "pregunta": "The thickness of the boundary layer is primarily affected by:",
+  "opciones": [
+    "The surface roughness of the wing",
+    "Wing span",
+    "Air density only",
+    "Aspect ratio"
+  ],
+  "correcta": 0,
+  "tema": "Aerodynamics",
+  "explicacion": "Surface roughness has a significant effect on boundary-layer development and transition. :contentReference[oaicite:7]{index=7}"
+},
+{
+  "id": "airframe-244",
+  "pregunta": "The upper surface of an airfoil is called the:",
+  "opciones": [
+    "Intrados",
+    "Mean camber line",
+    "Extrados",
+    "Chord line"
+  ],
+  "correcta": 2,
+  "tema": "Aerodynamics",
+  "explicacion": "The upper surface of an airfoil is known as the extrados. :contentReference[oaicite:8]{index=8}"
+},
+{
+  "id": "airframe-245",
+  "pregunta": "Cabin pressurization systems normally operate in which basic modes?",
+  "opciones": [
+    "Isobaric and constant differential pressure",
+    "Manual and hydraulic only",
+    "Constant pressure and bleed air",
+    "Vacuum and differential"
+  ],
+  "correcta": 0,
+  "tema": "Pressurization",
+  "explicacion": "Aircraft pressurization systems generally operate in an isobaric range followed by a constant differential pressure range. :contentReference[oaicite:9]{index=9}"
+},
+{
+  "id": "airframe-246",
+  "pregunta": "The air used by a Freon vapor-cycle condenser is normally:",
+  "opciones": [
+    "Engine bleed air",
+    "Cabin recirculated air",
+    "External ambient air",
+    "Ram air from the compressor"
+  ],
+  "correcta": 2,
+  "tema": "Air Conditioning",
+  "explicacion": "The condenser of a vapor-cycle system is cooled by outside ambient air. :contentReference[oaicite:10]{index=10}"
+},
+{
+  "id": "brakes-206",
+  "pregunta": "What would be the effect if the piston return spring broke in a brake master cylinder?",
+  "opciones": [
+    "The brakes would not apply",
+    "The brake would drag",
+    "The brake pedal would lock in the up position",
+    "The brake reservoir would overflow"
+  ],
+  "correcta": 1,
+  "tema": "Brakes",
+  "explicacion": "A broken piston return spring prevents the piston from fully returning, causing the compensating port to remain closed and the brake to drag."
+},
+{
+  "id": "environmental-205",
+  "pregunta": "What component in a vapor-cycle air conditioning system would most likely be at fault if the system would not take a Freon charge?",
+  "opciones": [
+    "Compressor",
+    "Expansion valve",
+    "Condenser",
+    "Evaporator blower"
+  ],
+  "correcta": 1,
+  "tema": "Environmental Systems",
+  "explicacion": "A restricted or faulty expansion valve can prevent the system from accepting a refrigerant charge."
+},
+{
+  "id": "pressurization-213",
+  "pregunta": "What controls the operation of the cabin pressure regulator?",
+  "opciones": [
+    "Engine RPM",
+    "Cabin air pressure",
+    "Bleed air temperature",
+    "Outside air temperature"
+  ],
+  "correcta": 1,
+  "tema": "Pressurization",
+  "explicacion": "The cabin pressure regulator operates by sensing and responding to cabin air pressure."
+},
+{
+  "id": "environmental-206",
+  "pregunta": "The basic air-cycle cooling system consists of:",
+  "opciones": [
+    "A compressor, condenser, and evaporator",
+    "A source of compressed air, heat exchangers, and an expansion turbine",
+    "A compressor, receiver-drier, and expansion valve",
+    "An evaporator, blower, and condenser"
+  ],
+  "correcta": 1,
+  "tema": "Environmental Systems",
+  "explicacion": "A basic air-cycle cooling system uses compressed air, heat exchangers, and an expansion turbine to produce cooling."
+},
+{
+  "id": "environmental-207",
+  "pregunta": "What is the purpose of evacuating a vapor-cycle (Freon) air conditioning system before charging?",
+  "opciones": [
+    "To increase refrigerant pressure",
+    "To remove moisture from the system",
+    "To lubricate the compressor",
+    "To test the pressure switch"
+  ],
+  "correcta": 1,
+  "tema": "Environmental Systems",
+  "explicacion": "Evacuating the system removes moisture and non-condensable gases before charging with refrigerant."
+},
+{
+  "id": "hydraulics-208",
+  "pregunta": "Chattering of the hydraulic pump during engine run-up is usually an indication of:",
+  "opciones": [
+    "A blocked return filter",
+    "An air leak in the pump inlet line",
+    "Excessive system pressure",
+    "A faulty selector valve"
+  ],
+  "correcta": 1,
+  "tema": "Hydraulics",
+  "explicacion": "Air entering the pump inlet causes cavitation, producing a characteristic chattering noise."
+}
 ]
