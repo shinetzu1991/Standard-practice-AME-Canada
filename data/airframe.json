@@ -2355,7 +2355,7 @@
     ],
     "correcta": 1,
     "tema": "Aerodynamics",
-    "explicacion": "Wash-in means the wing root has a greater angle of incidence than the wing tip."
+    "explicacion": "Wash-out means the wing root has a greater angle of incidence than the wing tip, causing the root to stall before the tip and maintaining aileron effectiveness."
   },
   {
     "id": "aero-231",
