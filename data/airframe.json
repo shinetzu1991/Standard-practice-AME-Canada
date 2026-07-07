@@ -2353,7 +2353,7 @@
       "Anhedral",
       "Sweepback"
     ],
-    "correcta": 0,
+    "correcta": 1,
     "tema": "Aerodynamics",
     "explicacion": "Wash-in means the wing root has a greater angle of incidence than the wing tip."
   },
