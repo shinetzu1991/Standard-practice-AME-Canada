@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { Moon, Sun } from "lucide-react";
+
 import rawStandardQuestions from "../data/questions.json";
 import rawAirframeQuestions from "../data/airframe.json";
 
@@ -34,6 +36,7 @@ export default function Home() {
   const [checkedAnswers, setCheckedAnswers] = useState<boolean[]>([]);
   const [finished, setFinished] = useState(false);
   const [studyMenuOpen, setStudyMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   const currentBank = questionBanks[category];
 
@@ -66,8 +69,22 @@ export default function Home() {
   };
 
   useEffect(() => {
-    startQuiz("test", category);
-  }, [category]);
+  const saved = localStorage.getItem("darkMode");
+
+  if (saved) {
+    setDarkMode(saved === "true");
+  } else {
+    setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches);
+  }
+}, []);
+
+useEffect(() => {
+  localStorage.setItem("darkMode", String(darkMode));
+}, [darkMode]);
+
+useEffect(() => {
+  startQuiz("test", category);
+}, [category]);
 
   if (order.length === 0 || !order[current]) {
     return <div className="p-6">Loading...</div>;
@@ -150,7 +167,9 @@ export default function Home() {
       return "border-red-500 bg-red-100";
     }
 
-    return "border-gray-300 bg-white";
+    return darkMode
+  ? "border-slate-600 bg-slate-800 text-white"
+  : "border-gray-300 bg-white";
   };
 
   const categoryTitle =
@@ -165,8 +184,18 @@ export default function Home() {
 
   if (finished && mode === "test") {
     return (
-      <div className="min-h-screen bg-gray-100 p-6">
-        <div className="mx-auto w-full max-w-4xl rounded-2xl bg-white p-8 shadow-lg">
+      <div
+  className={`min-h-screen p-6 transition-colors ${
+    darkMode
+      ? "bg-slate-950 text-white"
+      : "bg-gray-100 text-black"
+  }`}
+>
+        <div
+  className={`mx-auto w-full max-w-4xl rounded-2xl p-6 shadow-lg sm:p-8 transition-colors ${
+    darkMode ? "bg-slate-900" : "bg-white"
+  }`}
+>
           <div className="mb-6 flex flex-wrap gap-3">
             <button
               onClick={() => setCategory("standard")}
@@ -192,7 +221,13 @@ export default function Home() {
             {categoryTitle}
           </p>
 
-          <div className="mb-6 rounded-xl border bg-gray-50 p-4">
+          <div
+  className={`mb-6 rounded-xl border p-4 ${
+    darkMode
+      ? "border-slate-700 bg-slate-800"
+      : "border-gray-200 bg-gray-50"
+  }`}
+>
             <p className="text-xl font-semibold">
               Final Score: {score} / {order.length}
             </p>
@@ -280,7 +315,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <div className="mx-auto w-full max-w-4xl rounded-2xl bg-white p-6 shadow-lg sm:p-8">
+      <div
+  className={`min-h-screen p-6 transition-colors ${
+    darkMode
+      ? "bg-slate-950 text-white"
+      : "bg-gray-100 text-black"
+  }`}
+>
         <div className="mb-6 flex flex-wrap gap-3">
           <button
             onClick={() => setCategory("standard")}
@@ -329,6 +370,12 @@ export default function Home() {
                 }`}
               >
                 Study Mode ▾
+              </button>
+              <button
+                 onClick={() => setDarkMode(!darkMode)}
+                 className="rounded-lg bg-slate-700 p-3 text-white hover:bg-slate-600"
+              >
+                 {darkMode ? <Sun size={20} /> : <Moon size={20} />}
               </button>
 
               {studyMenuOpen && (
@@ -440,7 +487,11 @@ export default function Home() {
         </div>
 
         {(mode === "study" || mode === "study100") && showAnswer && (
-          <div className="mt-6 rounded-lg bg-gray-50 p-4">
+          <div
+  className={`mt-6 rounded-lg p-4 ${
+    darkMode ? "bg-slate-800" : "bg-gray-50"
+  }`}
+>
             <p className="text-base font-semibold text-gray-900 sm:text-lg">
               {selected === question.correcta ? "✅ Correct" : "❌ Incorrect"}
             </p>
