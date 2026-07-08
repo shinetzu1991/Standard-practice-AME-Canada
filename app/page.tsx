@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Moon, Sun } from "lucide-react";
-
 import rawStandardQuestions from "../data/questions.json";
 import rawAirframeQuestions from "../data/airframe.json";
 
@@ -36,7 +34,6 @@ export default function Home() {
   const [checkedAnswers, setCheckedAnswers] = useState<boolean[]>([]);
   const [finished, setFinished] = useState(false);
   const [studyMenuOpen, setStudyMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
 
   const currentBank = questionBanks[category];
 
@@ -69,22 +66,8 @@ export default function Home() {
   };
 
   useEffect(() => {
-  const saved = localStorage.getItem("darkMode");
-
-  if (saved !== null) {
-    setDarkMode(saved === "true");
-  } else {
-    setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches);
-  }
-}, []);
-
-useEffect(() => {
-  localStorage.setItem("darkMode", darkMode.toString());
-}, [darkMode]);
-
-useEffect(() => {
-  startQuiz("test", category);
-}, [category]);
+    startQuiz("test", category);
+  }, [category]);
 
   if (order.length === 0 || !order[current]) {
     return <div className="p-6">Loading...</div>;
