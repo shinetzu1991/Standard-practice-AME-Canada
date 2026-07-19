@@ -754,9 +754,9 @@
       "Servo tab",
       "Anti-servo tab"
     ],
-    "correcta": 2,
+    "correcta": 3,
     "tema": "Flight Controls",
-    "explicacion": "A servo tab moves in the same direction as the primary flight control surface to assist pilot movement."
+    "explicacion": "A Anti-servo tab moves in the same direction as the primary flight control surface to assist pilot movement."
   },
   {
     "id": "systems-203",
@@ -1183,7 +1183,7 @@
       "Trim tab",
       "Spring tab"
     ],
-    "correcta": 1,
+    "correcta": 0,
     "tema": "Flight Controls",
     "explicacion": "An anti-servo (or balance) tab moves in the opposite direction of the control surface to increase control forces and improve stability."
   },
