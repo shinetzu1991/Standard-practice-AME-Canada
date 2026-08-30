@@ -7865,5 +7865,285 @@
       "Maximum pressure is applied to that wheel's brake"
     ],
     "correcta": 1
+  },
+  {
+    "pregunta": "What dual type of instruments are used together by the pilot?",
+    "opciones": [
+      "Rotor RPM and Engine RPM",
+      "N1 and N2",
+      "Engine RPM and Transmission RPM",
+      "Compressor RPM and free turbine RPM"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "In a vertical steady-state ascent, the helicopter has to overcome?",
+    "opciones": [
+      "Lift and weight vs. drag and thrust",
+      "Thrust and lift vs. weight and drag",
+      "Torque and thrust vs. lift and drag",
+      "Thrust and weight vs. lift and drag"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The amount of coning is dependent on?",
+    "opciones": [
+      "Lift and weight",
+      "Weight and speed",
+      "Lift and drag",
+      "Weight and thrust"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Torque is based on which law?",
+    "opciones": [
+      "Newton's second law",
+      "Newton's fourth law",
+      "Newton's third law",
+      "Newton's first law"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Which rotor head design uses an individual flapping hinge for each blade?",
+    "opciones": [
+      "Rigid",
+      "Semi-rigid",
+      "Fully-articulated",
+      "Semi-articulated"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What head design relieves bending forces at the root of the blade and allows coning of the rotor?",
+    "opciones": [
+      "Semi-rigid",
+      "Rigid",
+      "Semi-articulated",
+      "Fully-articulated"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "At what speed does effective translational lift take place?",
+    "opciones": [
+      "5-10 mph",
+      "15-20 mph",
+      "10-15 mph",
+      "25-35 mph"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "A European made helicopter in forward cruise requires?",
+    "opciones": [
+      "Right pedal",
+      "Full right pedal",
+      "Left pedal",
+      "Neutral pedal"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "A U.S. made helicopter during take-off requires what anti-torque input?",
+    "opciones": [
+      "Right pedal",
+      "Neutral pedal",
+      "Negative pitch",
+      "Left pedal"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What causes the tilt of the tip path plane of the main rotor?",
+    "opciones": [
+      "Translating tendency",
+      "Cyclic control",
+      "Flapping hinge",
+      "Collective pitch"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "A movable stabilizer is moved by?",
+    "opciones": [
+      "The cyclic",
+      "Hydraulics",
+      "The collective",
+      "Pneumatics"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What type of bearings are used on control linkages?",
+    "opciones": [
+      "Ball bearings",
+      "Spherical bearings",
+      "Needle bearings",
+      "Roller bearings"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Blade alignment is?",
+    "opciones": [
+      "Not required on semi-articulated heads",
+      "Chordwise balance",
+      "Necessary on fully-articulated heads only",
+      "Spanwise balance"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Artificial \"feel\" is accomplished by what?",
+    "opciones": [
+      "Hydraulic dampers",
+      "Control boosts",
+      "A magnetic brake unit",
+      "A gradient unit"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What does an inverter do?",
+    "opciones": [
+      "Converts AC to DC",
+      "Converts DC to AC",
+      "Changes field direction",
+      "Maintains a constant AC voltage"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "An underslung rotor is utilized to counter?",
+    "opciones": [
+      "Cyclic drift",
+      "The Coriolis effect",
+      "Dissymmetry of lift",
+      "Gyroscopic precession"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What property puts the action at a different point on the swashplate than where it was input?",
+    "opciones": [
+      "Dissymmetry of lift",
+      "Cyclic control input alone",
+      "Gyroscopic precession",
+      "Collective pitch"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "In forward steady flight, directional change is affected by what?",
+    "opciones": [
+      "Negative tail rotor input",
+      "Collective pitch change",
+      "Positive tail rotor input",
+      "Rotor disk tilt"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Pitch link rod ends are usually fitted with?",
+    "opciones": [
+      "Elastomeric bearings",
+      "Spherical bearings",
+      "Plain bearings",
+      "Sealed bearings"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Monocoque fuselages derive their principal strength from?",
+    "opciones": [
+      "The longerons",
+      "External bracing wires",
+      "The bulkheads and frames",
+      "The skin itself"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What physical factors are involved in providing lateral stability?",
+    "opciones": [
+      "Dihedral and angle of incidence",
+      "Angle of attack and angle of incidence",
+      "Dihedral and wing sweep",
+      "Angle of attack and sweepback"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "A newly built-up wheel should?",
+    "opciones": [
+      "Have its inflation pressure checked daily for several days after installation",
+      "Be deflated and reinflated after 24 hours",
+      "Be deflated and reinflated after 12 hours",
+      "Need nothing checked for proper inflation after 28 hours"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A fully charged hydraulic accumulator provides?",
+    "opciones": [
+      "Air pressure to various hydraulic compartments",
+      "Positive fluid flow to the pump inlet",
+      "A source of additional hydraulic power during high peak demand",
+      "Additional hydraulic fluid volume"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Why are integral fuel tanks used in many large aircraft?",
+    "opciones": [
+      "To minimize leakage",
+      "To reduce weight",
+      "To reduce fire hazards",
+      "To facilitate leakage"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "In most modern hydraulically actuated landing gear systems, the order of gear and fairing door operation is controlled by?",
+    "opciones": [
+      "Micro switches",
+      "Sequence valves",
+      "Selector handles",
+      "Limit switches"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What is the ideal location of a VOR antenna for a light aircraft?",
+    "opciones": [
+      "On top of the vertical fin",
+      "Below the fuselage near the front",
+      "On top of the fuselage with the apex of the V facing forward",
+      "Below the fuselage, as far aft as possible but ahead of the horizontal tail"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Wing station 0 is located?",
+    "opciones": [
+      "At the wing root",
+      "On the center line of the fuselage",
+      "On the center line of the wing",
+      "At the wing tip"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "A well designed airplane will stall?",
+    "opciones": [
+      "Over the outer 50% of the wing and progress inward to the tip",
+      "Over the outer 25% of the wing and progress inward to the root",
+      "Over one wing, then the other",
+      "Near the wing root first and progress outward toward the tip"
+    ],
+    "correcta": 3
   }
 ]
