@@ -8145,5 +8145,425 @@
       "Near the wing root first and progress outward toward the tip"
     ],
     "correcta": 3
+  },
+  {
+    "pregunta": "Where does a freon vapor exchanger take its air from?",
+    "opciones": [
+      "Bleed air from the compressor",
+      "Recirculated cabin air",
+      "External ambient air",
+      "Ram air only"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What kind of armature does a generator use?",
+    "opciones": [
+      "Drum type (ring type) armature is most frequent",
+      "A permanent-magnet armature",
+      "A squirrel-cage armature",
+      "A wound-rotor armature"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "An integral alternator has?",
+    "opciones": [
+      "No moving parts",
+      "A belt-driven speed-up gearbox",
+      "A constant speed drive",
+      "A separate external voltage regulator only"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "To prevent overheating of the tires?",
+    "opciones": [
+      "Taxi as fast as possible to reduce heat soak time",
+      "Use minimum braking, proper tire inflation, short ground rolls, and slow taxi speeds",
+      "Use maximum braking to reduce ground roll time",
+      "Overinflate the tires before flight"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Skydrol O-rings are made of what?",
+    "opciones": [
+      "Butyl rubber or ethylene-propylene elastomers",
+      "Nitrile (Buna-N) rubber",
+      "Natural rubber",
+      "Neoprene rubber"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "We consider that the minimal resistance of a fabric wing skin to be of?",
+    "opciones": [
+      "50% of its initial resistance",
+      "85% of its initial resistance",
+      "30% of its initial resistance",
+      "70% of its initial resistance"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Before installing a tire on a rim you must?",
+    "opciones": [
+      "Inflate the tire fully before mounting it on the rim",
+      "Align the red dot on the tire with the valve stem on the rim",
+      "Align the red dot with the wheel balance weight",
+      "Align the manufacturer's logo with the valve stem"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What is the use of the compensation port or valve in the braking system?",
+    "opciones": [
+      "It boosts brake pressure at low speed",
+      "It allows fluid to flow from the brake chamber or brake line back to the reservoir when the brakes are not applied",
+      "It relieves excess pressure during braking",
+      "It locks the brakes when parked"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What does a shimmy damper consist of?",
+    "opciones": [
+      "A pair of counterweights only",
+      "An electric solenoid and relay",
+      "A cam and damper assembly, or a piston rod and piston assembly",
+      "A single leaf spring"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "A braking system using a large amount of fluid does not need?",
+    "opciones": [
+      "A brake debooster",
+      "A separate reservoir or independent master cylinder, since the reservoir is part of the master cylinder",
+      "A parking brake valve",
+      "A power brake control valve"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Hydraulic filter elements must be rated at?",
+    "opciones": [
+      "Less than 10 microns",
+      "Less than 40 microns",
+      "Less than 1 micron",
+      "Less than 100 microns"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "On an ADF installation, what must we do?",
+    "opciones": [
+      "Perform a loop swing to calibrate the loop antenna",
+      "Recalibrate the VOR receiver",
+      "Recalibrate the transponder",
+      "Realign the compass swing"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Why are there flapper valves in the fuel system?",
+    "opciones": [
+      "To meter fuel flow to the engine",
+      "To filter debris from the fuel",
+      "To allow fuel flow in both directions equally",
+      "To allow fuel flow in one direction, keeping positive fuel head at the boost pumps in all flight attitudes"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Fairleads are allowed a max deflection of what?",
+    "opciones": [
+      "3 degrees",
+      "1 degree",
+      "10 degrees",
+      "45 degrees"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "In a semi-monocoque structure, what carries most of the bending forces?",
+    "opciones": [
+      "External bracing wires",
+      "The bulkheads alone",
+      "Longerons",
+      "The skin alone"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Nose oleo strut is locked straight by what?",
+    "opciones": [
+      "A shimmy damper",
+      "An upper and lower cam",
+      "A drag brace",
+      "A torque link only"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Test cable splices to what % of total cable strength?",
+    "opciones": [
+      "100% of the load, for 3 minutes",
+      "90% of the load, for 1 minute",
+      "40% of the load, for 5 minutes",
+      "60% of the load, for 3 minutes"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Why should we leave some oxygen in a bottle?",
+    "opciones": [
+      "To keep the regulator lubricated",
+      "To keep the pressure gauge calibrated",
+      "To prevent corrosion (moisture entering the empty cylinder)",
+      "To prevent the cylinder from imploding"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "If a battery over-charges, what could be the cause?",
+    "opciones": [
+      "The voltage regulator is not properly adjusted (set too high)",
+      "The battery is undersized for the system",
+      "The battery electrolyte level is too low",
+      "The generator brushes are worn"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What would result in cable overtensioning?",
+    "opciones": [
+      "Corrosion at the cable ends",
+      "A stretched control cable",
+      "Loose turnbuckles",
+      "Worn pulleys and fairleads"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "An aircraft not needing full braking power — what valve do we use to control the pressure?",
+    "opciones": [
+      "A shuttle valve",
+      "A debooster valve",
+      "A priority valve",
+      "A sequence valve"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What is the most common system of flaps on small turboprops?",
+    "opciones": [
+      "Plain or split flaps",
+      "Krueger flaps",
+      "Fowler or slotted flaps",
+      "Slat-only systems"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What relieves the pressure in a pressurization system?",
+    "opciones": [
+      "The differential pressure gauge",
+      "The isobaric metering valve",
+      "The cabin altitude selector",
+      "The outflow or safety valve"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "The pressure of nylon tires should be checked when, after the installation of the wheel?",
+    "opciones": [
+      "Only at the next scheduled inspection",
+      "12 to 24 hours after being mounted and inflated to regular operating pressure",
+      "48 to 72 hours after mounting",
+      "Immediately after mounting, before any settling"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "How does the nose wheel oleo reach its full extension?",
+    "opciones": [
+      "By hydraulic fluid pressure alone",
+      "By gravity once weight is off the wheel",
+      "By spring tension alone",
+      "By pressurized air in the oleo"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "On large aircraft, what is used to increase braking power?",
+    "opciones": [
+      "A simple master cylinder",
+      "A shuttle valve",
+      "A power brake control valve",
+      "A debooster valve"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What causes brakes to jerk or grab?",
+    "opciones": [
+      "Excessive brake fluid in the reservoir",
+      "Oil or other contamination on the linings, or worn discs",
+      "Overinflated tires",
+      "A stuck-open thermal relief valve"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What is positive load?",
+    "opciones": [
+      "When the ailerons are deflected symmetrically",
+      "When the aircraft is in straight and level unaccelerated flight",
+      "When back pressure is applied to the elevator control, causing centrifugal force to act in the same direction as the weight force",
+      "When forward pressure is applied to the elevator control, causing centrifugal force to act opposite to the weight force"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What is negative load?",
+    "opciones": [
+      "When the rudder is deflected symmetrically",
+      "When forward pressure is applied to the elevator control, causing centrifugal force to act opposite to the weight force",
+      "When the aircraft is in straight and level unaccelerated flight",
+      "When back pressure is applied to the elevator control, causing centrifugal force to act in the same direction as the weight force"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What happens to the braking of the aircraft if the master cylinder has an internal leak?",
+    "opciones": [
+      "The brake locks on permanently",
+      "The brake fades (loses pressure/effectiveness)",
+      "There is no effect on braking",
+      "The brake becomes overly grabby"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Aircraft cruises at 8000 ft, and cabin pressure is set at 3500 ft manually, autopilot disengaged. What is the cabin altitude if the aircraft descends to 3500 ft?",
+    "opciones": [
+      "It depressurizes to ambient",
+      "It follows the aircraft down to match outside altitude",
+      "It stays at 3500 ft",
+      "It climbs above 3500 ft"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What pressure controls the altitude controller?",
+    "opciones": [
+      "Engine bleed air pressure",
+      "Outside ambient pressure only",
+      "Cabin pressure",
+      "Hydraulic system pressure"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What is CSD (constant speed drive)?",
+    "opciones": [
+      "A voltage regulator with no mechanical drive components",
+      "A gearbox that only steps down engine RPM for the starter",
+      "A device that varies generator output frequency to match engine RPM",
+      "An assembly with an AC generator, differential assembly, and hydraulic trim unit that maintains constant generator RPM (and thus constant voltage and frequency) regardless of engine RPM, so generators can operate in parallel"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Why would we reject a brake drum?",
+    "opciones": [
+      "For a crack of more than 1 inch",
+      "Only if it is visibly warped",
+      "Only if it fails a hardness test",
+      "For any crack, regardless of size"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What would you do if you had irregular braking or a dragging brake?",
+    "opciones": [
+      "Replace the tires",
+      "Increase brake fluid pressure",
+      "Bleed the brakes",
+      "Replace the wheel bearings"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "The aerodynamic profiles used to control supersonic airflow on the surface of the wing are called?",
+    "opciones": [
+      "Stall strips",
+      "Vortex generators",
+      "Winglets",
+      "Wing fences"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What should we do before removing a pressure regulator or opening a hydraulic system?",
+    "opciones": [
+      "Disconnect the electrical system only",
+      "Fully pressurize the system first",
+      "Remove system pressure and relieve accumulator pressure",
+      "Drain only the reservoir, leaving the accumulator charged"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "On an isobaric valve that moves away from its seat, what happens to the cabin pressure?",
+    "opciones": [
+      "Cabin pressure stays exactly the same",
+      "The outflow valve closes completely",
+      "Cabin pressure decreases",
+      "Cabin pressure increases"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "The max rated % of strength of a wrap-solder cable terminal is?",
+    "opciones": [
+      "90% of the load",
+      "100% of the load",
+      "40 to 50% of the load",
+      "60% of the load"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "An oxygen system that reduces the high pressure to low pressure for use is?",
+    "opciones": [
+      "A pressure reducer valve",
+      "A flow control valve",
+      "A pressure relief valve",
+      "A diluter-demand regulator"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "When calculating an electrical charge for wire selection, what must we take into consideration?",
+    "opciones": [
+      "Only the wire's color code",
+      "Only the ambient temperature",
+      "Only the length of the run",
+      "The maximum charge (current draw)"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Proximity switches work in conjunction with what?",
+    "opciones": [
+      "A steel target",
+      "A pressure diaphragm",
+      "A magnet",
+      "An infrared beam"
+    ],
+    "correcta": 0
   }
 ]
