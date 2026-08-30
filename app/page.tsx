@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import rawStandardQuestions from "../data/questions.json";
 import rawAirframeQuestions from "../data/airframe.json";
@@ -59,7 +59,6 @@ export default function Home() {
   const [finished, setFinished] = useState(false);
   const [studyMenuOpen, setStudyMenuOpen] = useState(false);
   const [hydrated, setHydrated] = useState(false);
-  const skipNextCategoryReset = useRef(true);
 
   const currentBank = questionBanks[category];
 
@@ -116,7 +115,6 @@ export default function Home() {
         (saved.category === urlCategory && saved.mode === urlMode));
 
     if (saved && savedMatchesUrl) {
-      skipNextCategoryReset.current = true;
       setCategory(saved.category);
       setMode(saved.mode);
       setOrder(saved.order);
@@ -125,7 +123,6 @@ export default function Home() {
       setCheckedAnswers(saved.checkedAnswers);
       setFinished(saved.finished);
     } else {
-      skipNextCategoryReset.current = true;
       setCategory(urlCategory);
       startQuiz(
         urlMode,
@@ -138,14 +135,10 @@ export default function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => {
-    if (skipNextCategoryReset.current) {
-      skipNextCategoryReset.current = false;
-      return;
-    }
-    startQuiz("test", category);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [category]);
+  const selectCategory = (newCategory: Category) => {
+    setCategory(newCategory);
+    startQuiz("test", newCategory);
+  };
 
   useEffect(() => {
     if (!hydrated || order.length === 0) return;
@@ -274,7 +267,7 @@ export default function Home() {
         <div className="mx-auto w-full max-w-4xl rounded-2xl bg-white p-8 shadow-lg">
           <div className="mb-6 flex flex-wrap gap-3">
             <button
-              onClick={() => setCategory("standard")}
+              onClick={() => selectCategory("standard")}
               className={`rounded-lg px-5 py-3 text-white ${
                 category === "standard" ? "bg-blue-700" : "bg-blue-500"
               }`}
@@ -283,7 +276,7 @@ export default function Home() {
             </button>
 
             <button
-              onClick={() => setCategory("airframe")}
+              onClick={() => selectCategory("airframe")}
               className={`rounded-lg px-5 py-3 text-white ${
                 category === "airframe" ? "bg-green-700" : "bg-green-500"
               }`}
@@ -388,7 +381,7 @@ export default function Home() {
       <div className="mx-auto w-full max-w-4xl rounded-2xl bg-white p-6 shadow-lg sm:p-8">
         <div className="mb-6 flex flex-wrap gap-3">
           <button
-            onClick={() => setCategory("standard")}
+            onClick={() => selectCategory("standard")}
             className={`rounded-lg px-5 py-3 text-white ${
               category === "standard" ? "bg-blue-700" : "bg-blue-500"
             }`}
@@ -397,7 +390,7 @@ export default function Home() {
           </button>
 
           <button
-            onClick={() => setCategory("airframe")}
+            onClick={() => selectCategory("airframe")}
             className={`rounded-lg px-5 py-3 text-white ${
               category === "airframe" ? "bg-green-700" : "bg-green-500"
             }`}
