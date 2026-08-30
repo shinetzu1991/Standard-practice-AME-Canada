@@ -100,7 +100,22 @@ export default function Home() {
   useEffect(() => {
     const saved = loadProgress();
 
-    if (saved) {
+    const params = new URLSearchParams(window.location.search);
+    const hasUrlParams =
+      params.has("category") || params.has("mode") || params.has("q");
+    const urlCategory: Category =
+      params.get("category") === "airframe" ? "airframe" : "standard";
+    const modeParam = params.get("mode");
+    const urlMode: QuizMode =
+      modeParam === "study" || modeParam === "study100" ? modeParam : "test";
+    const urlQuestionNumber = parseInt(params.get("q") ?? "1", 10);
+
+    const savedMatchesUrl =
+      !!saved &&
+      (!hasUrlParams ||
+        (saved.category === urlCategory && saved.mode === urlMode));
+
+    if (saved && savedMatchesUrl) {
       skipNextCategoryReset.current = true;
       setCategory(saved.category);
       setMode(saved.mode);
@@ -110,22 +125,12 @@ export default function Home() {
       setCheckedAnswers(saved.checkedAnswers);
       setFinished(saved.finished);
     } else {
-      const params = new URLSearchParams(window.location.search);
-      const initialCategory: Category =
-        params.get("category") === "airframe" ? "airframe" : "standard";
-      const modeParam = params.get("mode");
-      const initialMode: QuizMode =
-        modeParam === "study" || modeParam === "study100"
-          ? modeParam
-          : "test";
-      const initialQuestionNumber = parseInt(params.get("q") ?? "1", 10);
-
       skipNextCategoryReset.current = true;
-      setCategory(initialCategory);
+      setCategory(urlCategory);
       startQuiz(
-        initialMode,
-        initialCategory,
-        Number.isFinite(initialQuestionNumber) ? initialQuestionNumber : 1,
+        urlMode,
+        urlCategory,
+        Number.isFinite(urlQuestionNumber) ? urlQuestionNumber : 1,
       );
     }
 
