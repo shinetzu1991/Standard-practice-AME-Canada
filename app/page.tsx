@@ -66,6 +66,7 @@ export default function Home() {
   const startQuiz = (
     selectedMode: QuizMode,
     selectedCategory: Category = category,
+    initialQuestionNumber = 1,
   ) => {
     const sourceQuestions = questionBanks[selectedCategory];
 
@@ -82,9 +83,14 @@ export default function Home() {
             )
           : [...sourceQuestions];
 
+    const initialCurrent = Math.min(
+      Math.max(initialQuestionNumber - 1, 0),
+      loadedQuestions.length - 1,
+    );
+
     setMode(selectedMode);
     setOrder(loadedQuestions);
-    setCurrent(0);
+    setCurrent(initialCurrent);
     setSelectedAnswers(new Array(loadedQuestions.length).fill(null));
     setCheckedAnswers(new Array(loadedQuestions.length).fill(false));
     setFinished(false);
@@ -107,9 +113,20 @@ export default function Home() {
       const params = new URLSearchParams(window.location.search);
       const initialCategory: Category =
         params.get("category") === "airframe" ? "airframe" : "standard";
+      const modeParam = params.get("mode");
+      const initialMode: QuizMode =
+        modeParam === "study" || modeParam === "study100"
+          ? modeParam
+          : "test";
+      const initialQuestionNumber = parseInt(params.get("q") ?? "1", 10);
+
       skipNextCategoryReset.current = true;
       setCategory(initialCategory);
-      startQuiz("test", initialCategory);
+      startQuiz(
+        initialMode,
+        initialCategory,
+        Number.isFinite(initialQuestionNumber) ? initialQuestionNumber : 1,
+      );
     }
 
     setHydrated(true);
