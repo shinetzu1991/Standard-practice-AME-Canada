@@ -2008,5 +2008,785 @@
       "feeling the boots to see if they are heating"
     ],
     "correcta": 0
+  },
+  {
+    "pregunta": "What is the blade back?",
+    "opciones": [
+      "The root of the blade",
+      "The cambered or curved side of the prop",
+      "The tip of the blade",
+      "The flat side of the prop"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "How is de-icing fluid transmitted on a propeller?",
+    "opciones": [
+      "By a dedicated electric pump at each blade",
+      "By ram air pressure",
+      "By centrifugal force",
+      "By engine oil pressure"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What must the propeller's contact area be on a tapered shaft?",
+    "opciones": [
+      "At least 70%",
+      "At least 30%",
+      "At least 50%",
+      "100%, with no gaps permitted"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What type of propeller uses oil pressure alone to both increase and decrease pitch?",
+    "opciones": [
+      "Double acting (hydromatic)",
+      "Single acting (oil plus counterweight)",
+      "Fixed pitch",
+      "Ground adjustable only"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "How many repairs are permitted on the outer 2% of a propeller blade tip?",
+    "opciones": [
+      "No limit",
+      "Repairs are never permitted there",
+      "A maximum of one repair",
+      "A maximum of three repairs"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What is blade angle on a propeller?",
+    "opciones": [
+      "The angle between the chord and the relative wind",
+      "The angle between the blade face and the hub centerline",
+      "The angle between the blade back and the spinner",
+      "The angle between the chord of the blade and the plane of rotation"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What happens when you increase power with a constant-speed propeller?",
+    "opciones": [
+      "Both RPM and pitch increase together",
+      "Pitch decreases to maintain RPM",
+      "Pitch increases to maintain RPM",
+      "RPM increases while pitch stays fixed"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What force turns a constant-speed propeller blade toward high pitch?",
+    "opciones": [
+      "Aerodynamic twisting moment force",
+      "Spring force from the pitch-lock mechanism",
+      "Exhaust gas back-pressure",
+      "Governor oil pressure alone"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A propeller's blade stations are measured from where?",
+    "opciones": [
+      "From an index mark on the blade shank",
+      "Inch by inch from the center of the hub to the tip",
+      "From the blade butt outward, in whole feet",
+      "From the tip inward to the hub"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What is effective pitch?",
+    "opciones": [
+      "The angle of the blade relative to the plane of rotation",
+      "The distance between the leading and trailing edges of the blade",
+      "The theoretical distance the propeller would move in a solid, with no slip",
+      "The actual distance the propeller moves forward through the air in one revolution"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What is the most effective angle of attack for a propeller blade?",
+    "opciones": [
+      "-2 to +2 degrees",
+      "+4 to +8 degrees",
+      "+2 to +4 degrees",
+      "+8 to +12 degrees"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "With a fixed-pitch propeller, the blade angle is designed to give maximum performance at?",
+    "opciones": [
+      "Takeoff",
+      "Idle",
+      "Climb",
+      "Cruise"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What happens when you increase pressure on the propeller governor's speeder spring?",
+    "opciones": [
+      "RPM increases and blade angle decreases",
+      "Neither RPM nor blade angle changes",
+      "RPM increases and blade angle increases",
+      "RPM decreases and blade angle increases"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What is propeller efficiency?",
+    "opciones": [
+      "RPM divided by manifold pressure",
+      "Torque horsepower divided by thrust horsepower",
+      "Shaft horsepower divided by fuel flow",
+      "Thrust horsepower divided by torque (brake) horsepower"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "In cruise flight at a constant RPM, what is the state of the propeller governor's flyweights?",
+    "opciones": [
+      "The speeder spring tension exceeds the centrifugal force of the flyweights",
+      "The centrifugal force of the flyweights exceeds the speeder spring tension",
+      "The centrifugal force of the flyweights is balanced by (equal to) the tension of the speeder spring",
+      "The flyweights are fully retracted against their stops"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What force tends to move a propeller blade's tips forward?",
+    "opciones": [
+      "Aerodynamic twisting force",
+      "Torque bending force",
+      "Centrifugal twisting force",
+      "Thrust bending force"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Compared to engine speed, does a propeller turn slower or faster on a geared (reduction gear) engine?",
+    "opciones": [
+      "Slower",
+      "It depends only on manifold pressure",
+      "Faster",
+      "The same speed"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What position should a propeller be placed in for aircraft storage?",
+    "opciones": [
+      "It does not matter",
+      "Vertical, blade up",
+      "Vertical, blade down",
+      "Horizontal"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "A propeller in cruise flight is normally operating in what mode/range?",
+    "opciones": [
+      "The negative thrust range",
+      "The reverse range",
+      "The beta range (mode)",
+      "The alpha range (mode)"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "How is propeller synchronization typically achieved?",
+    "opciones": [
+      "By controlling blade angle only",
+      "By controlling propeller RPM",
+      "By controlling manifold pressure",
+      "By controlling fuel flow to each engine"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "How much can a light aircraft's metal propeller be out of track?",
+    "opciones": [
+      "About 1/16 inch (wood propellers: about 1/8 inch)",
+      "About 1/2 inch",
+      "It must be perfectly in track, with zero tolerance",
+      "About 1/4 inch"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "How do you check for proper seating of a propeller hub on a tapered shaft?",
+    "opciones": [
+      "With a go/no-go gauge only",
+      "With a dial indicator",
+      "With a feeler gauge",
+      "With Prussian blue"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What repairs are permitted on the shank of a propeller blade?",
+    "opciones": [
+      "Cracks up to 1/2 inch long",
+      "Dents up to 1/16 inch deep",
+      "Any damage that can be blended out",
+      "Only shallow scratches"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "If a propeller feathers at shutdown, when does it normally unfeather?",
+    "opciones": [
+      "Only during an approved bench test",
+      "It cannot be unfeathered without removing the propeller",
+      "At the next startup, when the control is moved forward",
+      "Automatically, a few minutes after shutdown"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What part of a propeller fits into the hub?",
+    "opciones": [
+      "The blade tip",
+      "The blade cuff",
+      "The blade butt",
+      "The blade face"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What is the purpose of the snap ring on a propeller?",
+    "opciones": [
+      "To aid in removal of the propeller",
+      "To limit maximum blade travel",
+      "To balance the propeller statically",
+      "To seal the hub against oil leakage"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What is the purpose of a propeller blade cuff?",
+    "opciones": [
+      "To add counterweight for balance",
+      "To reduce propeller noise",
+      "To increase cooling airflow to the engine",
+      "To strengthen the blade root against fatigue"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What do you use to smooth out minor surface irregularities on the face of a propeller?",
+    "opciones": [
+      "Fine emery cloth",
+      "A wire brush",
+      "Coarse sandpaper",
+      "A metal file"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "On the ground, what adjusts the position (pitch) of the propeller in beta mode?",
+    "opciones": [
+      "The engine power lever",
+      "The trim wheel",
+      "The propeller feathering button",
+      "The mixture control"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What does propeller synchrophasing do?",
+    "opciones": [
+      "Automatically feathers a failed engine's propeller",
+      "Balances fuel flow between engines",
+      "Keeps the propellers at a set angular relationship to each other to reduce noise and vibration",
+      "Keeps all propellers at exactly the same RPM only, ignoring blade position"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Repairs on the face of a propeller blade should generally be oriented how?",
+    "opciones": [
+      "Across the blade, in the chordwise direction",
+      "Along the longest axis, in the spanwise direction (root to tip)",
+      "At a 45-degree angle to the leading edge",
+      "Orientation does not matter as long as depth limits are met"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What theory divides a propeller blade into small airfoil sections for aerodynamic analysis?",
+    "opciones": [
+      "Blade element theory",
+      "Blade twist theory",
+      "Boundary layer theory",
+      "Momentum theory"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What is the purpose of the pitch lock mechanism on a propeller?",
+    "opciones": [
+      "To lock the blade angle during ground runs only",
+      "To hold the blades in feather during storage",
+      "To prevent the blades from going below flight idle in the air",
+      "To prevent an engine overspeed condition"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What cuts out the feathering pump in a hydromechanical propeller unit once feathering is complete?",
+    "opciones": [
+      "An oil pressure switch",
+      "A centrifugal switch on the governor",
+      "A timer relay",
+      "A manual cockpit switch only"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What controls the position of the pilot valve inside a propeller governor?",
+    "opciones": [
+      "Cabin altitude",
+      "The balance between flyweight centrifugal force and speeder spring force",
+      "Engine oil pressure alone",
+      "Manifold pressure alone"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "A jet engine operates on which principle?",
+    "opciones": [
+      "Constant velocity",
+      "Constant volume",
+      "Constant pressure",
+      "Constant temperature"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "How is a subsonic turbine engine's air inlet typically designed?",
+    "opciones": [
+      "As a divergent duct of fixed geometry",
+      "As a convergent duct of fixed geometry",
+      "As a variable-geometry convergent-divergent duct",
+      "As a straight, constant-area duct"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What is the purpose of a vortex destroyer (dissipater) near a turbine engine's inlet?",
+    "opciones": [
+      "To prevent the ingestion of foreign objects from the ground",
+      "To measure inlet airflow",
+      "To reduce inlet noise",
+      "To de-ice the inlet lip"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What kind of bearing is best designed to sustain radial loads rather than thrust loads?",
+    "opciones": [
+      "Roller bearing",
+      "Ball bearing",
+      "Plain (sleeve) bearing",
+      "Duplex ball bearing"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Jet engine thermocouples are typically made of what?",
+    "opciones": [
+      "Chromel and Alumel",
+      "Copper and constantan",
+      "Iron and copper",
+      "Platinum and rhodium"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What type of turbine engine usually has more turbine stages than a simple turbojet?",
+    "opciones": [
+      "A single-spool turbojet",
+      "A free turbine engine (turboprop/turboshaft)",
+      "A ramjet",
+      "A pulsejet"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "In a free-turbine jet engine, roughly how much useful energy is extracted by the gas generator turbine (from the total available)?",
+    "opciones": [
+      "About 95 to 100%",
+      "About 10 to 20%",
+      "About 30 to 40%",
+      "About 60 to 80%"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "In a combustion can, what is the primary air used for?",
+    "opciones": [
+      "To support combustion",
+      "To cool the combustor liner only",
+      "To pressurize the fuel nozzles",
+      "To cool the turbine blades only"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What is stamped on turbine blade roots?",
+    "opciones": [
+      "The maximum EGT rating",
+      "The manufacturing date only",
+      "The blade's serial number only",
+      "Moment weight, in inch-ounces"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Which compressor is driven on the same shaft as the fan in a turbofan engine?",
+    "opciones": [
+      "Neither compressor — the fan has its own shaft",
+      "The HP (high pressure) compressor",
+      "Both compressors equally",
+      "The LP (low pressure) compressor"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What kind of air is needed to turn a pneumatic (air turbine) starter?",
+    "opciones": [
+      "High volume, high pressure air",
+      "Low volume, low pressure air",
+      "Low volume, high pressure air",
+      "High volume, low pressure air"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "If an engine has high oil temperature at all power settings with no change in other power parameters, what could be the cause?",
+    "opciones": [
+      "An overly rich fuel/air mixture",
+      "Bearing distress",
+      "A clogged fuel nozzle",
+      "A leaking bleed valve"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What does a starter-generator need to have?",
+    "opciones": [
+      "A drive spline that disengages after start",
+      "A spline shaft permanently coupled to the engine",
+      "Two separate motors bolted together",
+      "A belt-driven pulley system"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "On a turboprop, what does the propeller (beta) control primarily do in the beta range?",
+    "opciones": [
+      "Controls cabin pressurization",
+      "Controls the speed of the engine (via propeller blade angle) at low power/ground operations",
+      "Controls only the fuel flow to the engine",
+      "Feathers the propeller automatically"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "If the RPM of an axial-flow compressor remains constant, how can the angle of attack of the compressor blades be changed?",
+    "opciones": [
+      "By changing the fuel/air ratio only",
+      "By increasing the pressure ratio (changing the mass airflow/back-pressure)",
+      "By changing the oil pressure only",
+      "It cannot be changed if RPM is constant"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Continued and/or excessive heat and centrifugal force on turbine engine compressor blades usually causes what?",
+    "opciones": [
+      "Creep (permanent cumulative elongation/deformation)",
+      "Delamination",
+      "Spalling",
+      "Galling"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Where is water (or water-methanol) injected into a turbojet engine for cooling purposes?",
+    "opciones": [
+      "Into the starter",
+      "At the compressor inlet or diffuser",
+      "Into the oil system",
+      "At the turbine exit only"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The Brayton cycle, used by gas turbine engines, is also known as what?",
+    "opciones": [
+      "The constant-volume cycle",
+      "The Otto cycle",
+      "The constant-temperature cycle",
+      "The constant-pressure cycle"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "A turbojet engine having a high exhaust gas temperature at the desired engine pressure ratio for takeoff indicates what?",
+    "opciones": [
+      "Normal operation for a cold day",
+      "FCU (fuel control unit) malfunction / engine out of trim",
+      "An overly lean fuel/air mixture only",
+      "A stuck-open bleed valve only"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Severe rubbing of turbine engine compressor blades will usually cause what?",
+    "opciones": [
+      "Bowing (a bend or curve in a normally straight blade)",
+      "Fretting corrosion only",
+      "Spalling",
+      "Creep"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Newton's first law of motion (the law of inertia) states what?",
+    "opciones": [
+      "For every action there is an equal and opposite reaction",
+      "Force equals mass times acceleration",
+      "A body persists in its state of rest or uniform motion in a straight line unless acted upon by an outside force",
+      "Energy cannot be created or destroyed"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Which of the following is NOT a factor in the operation of an automatic fuel control unit on a turbojet engine?",
+    "opciones": [
+      "Burner (compressor discharge) pressure",
+      "Engine RPM",
+      "Compressor inlet temperature or pressure",
+      "Mixture control position"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What is the possible cause when a turbojet indicates no change in power setting parameters, but oil temperature is high?",
+    "opciones": [
+      "A clogged fuel filter",
+      "A faulty EGT probe",
+      "Engine main bearing distress",
+      "Low ambient temperature"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What determines the compression ratio of a compressor?",
+    "opciones": [
+      "Discharge temperature divided by inlet temperature",
+      "RPM divided by number of stages",
+      "Inlet pressure divided by discharge pressure",
+      "Last-stage discharge pressure divided by inlet (ambient) pressure"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "On a speed-rated (high-bypass) turbofan, how is thrust typically indicated?",
+    "opciones": [
+      "By fuel flow alone",
+      "By oil pressure alone",
+      "By EPR and/or fan speed (N1)",
+      "By EGT alone"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Where is the oil temperature regulator (bypass valve) typically located in a dry-sump engine?",
+    "opciones": [
+      "Between the oil tank and the oil cooler",
+      "Inside the fuel control unit",
+      "Inside the starter-generator",
+      "Between the oil cooler and the bearings"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What does a fuel system using duplex nozzles require?",
+    "opciones": [
+      "An extra igniter per nozzle",
+      "A flow divider",
+      "A dedicated oil cooler",
+      "A second engine-driven pump"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What kind of loads do the ball bearings on a compressor/turbine rotor typically take?",
+    "opciones": [
+      "Radial loads only",
+      "Torsional loads only",
+      "Axial loads only",
+      "Axial (thrust) and radial loads"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What is ram air recovery?",
+    "opciones": [
+      "The recovery of engine RPM after a flameout",
+      "The point/condition at which inlet (ram) air pressure rise brings pressure back up to ambient",
+      "The process of restarting a flamed-out engine in flight",
+      "The recovery of oil pressure after a scavenge pump failure"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "If a turbine engine is unable to reach takeoff EPR before EGT limits are reached, this is an indication of?",
+    "opciones": [
+      "Normal operation on a hot day",
+      "A damaged or dirty compressor",
+      "An overcharged oil system",
+      "A properly rigged fuel control"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What type of oil pump is never used in a turbine engine's lubrication system?",
+    "opciones": [
+      "A vane-type pump",
+      "A gerotor-type pump",
+      "A piston-type pump",
+      "A gear-type pump"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Where is the main oil strainer/filter typically located in a turbine oil system?",
+    "opciones": [
+      "Downstream of the bearings only",
+      "Inside the oil tank only",
+      "At the pump inlet only",
+      "At the pump outlet (pressure side)"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What could be the cause of fluctuating oil pressure in a turbine engine?",
+    "opciones": [
+      "A properly calibrated relief valve",
+      "Correct oil grade",
+      "Normal cold-start behavior",
+      "Foreign object debris (FOD) stuck in the pressure relief valve"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "How would you define a continuous-loop fire detection system?",
+    "opciones": [
+      "It uses a photoelectric cell to detect flame color",
+      "It measures smoke density optically along a fixed path",
+      "It is a single-point thermocouple wired to a warning light",
+      "It uses a core material whose resistance changes with temperature, allowing current to flow (signaling a fire) when heated"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Roughly how much of the total compressor air passing through a turbine engine is actually used to support combustion?",
+    "opciones": [
+      "About 5 to 10%",
+      "About 90 to 100%",
+      "About 25 to 35%",
+      "About 50 to 60%"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What is compressor discharge air commonly referred to as?",
+    "opciones": [
+      "P1",
+      "P7",
+      "Pc or P3",
+      "P2"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What component directs exhaust gases as they leave the turbine section?",
+    "opciones": [
+      "The diffuser",
+      "The combustion liner",
+      "The inlet guide vanes",
+      "The exhaust cone"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Name four factors that affect the thrust produced by a turbine engine.",
+    "opciones": [
+      "Altitude, ambient temperature, engine RPM, and airspeed",
+      "Oil pressure, oil temperature, fuel type, and cabin altitude",
+      "Wing loading, aspect ratio, altitude, and airspeed",
+      "Fuel color, fuel viscosity, altitude, and RPM"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What is the operating principle of a torque-indicating system on a turboprop/turboshaft engine?",
+    "opciones": [
+      "It measures EGT and converts it to torque",
+      "It measures fuel flow and converts it directly to horsepower",
+      "It counts propeller RPM only",
+      "It senses the twisting (torsional) deflection of a power-transmitting shaft and converts it into a horsepower/torque reading"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What does the overspeed governor in a hydromechanical fuel pump/FCU sense?",
+    "opciones": [
+      "Oil pressure only",
+      "RPM and EGT",
+      "RPM only",
+      "Fuel flow only"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "May a turbine engine's fuel control unit (FCU) be calibrated (trimmed) in the field?",
+    "opciones": [
+      "Yes, by any AME with basic hand tools",
+      "Only with approved equipment and instructions, generally on a fuel flow bench",
+      "Yes, but only while the engine is running at full power",
+      "No, it can never be adjusted outside the factory"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "After continued operation, a gas turbine engine's pilot complains of a loss of power. What can the mechanic do?",
+    "opciones": [
+      "Replace the propeller governor",
+      "Increase the oil dilution setting",
+      "Trim the fuel control",
+      "Adjust the mixture control"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What is the principle of a fuel-oil heat exchanger (fuel-oil cooler)?",
+    "opciones": [
+      "It cools the fuel while heating the oil",
+      "It heats both the fuel and the oil",
+      "It cools both the fuel and the oil",
+      "It heats the fuel while cooling the oil"
+    ],
+    "correcta": 3
   }
 ]
