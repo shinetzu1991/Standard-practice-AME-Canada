@@ -878,5 +878,345 @@
       "A fouled spark plug"
     ],
     "correcta": 1
+  },
+  {
+    "pregunta": "What is the advantage of the axial flow compressor?",
+    "opciones": [
+      "Simpler construction than a centrifugal compressor",
+      "Lower manufacturing cost than a centrifugal compressor",
+      "High operating pressure ratio in a single stage",
+      "Small frontal area"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "The starter on a dual (twin-spool) axial compressor drives what?",
+    "opciones": [
+      "The low pressure compressor only (N1)",
+      "Both N1 and N2 together",
+      "The high pressure compressor only (N2), through the gear box",
+      "The accessory gearbox only, not the compressor"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What is a normal start cycle for a turbine engine?",
+    "opciones": [
+      "Starter engage, fuel on, accelerate, ignition on, light-off, starter disengage",
+      "Ignition on, fuel on, starter engage, light-off, ignition off, accelerate",
+      "Engage starter, ignition on, fuel on, light-off, accelerate, ignition off, starter disengage",
+      "Fuel on, starter engage, ignition on, accelerate, starter disengage, ignition off"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What is the purpose of the diffuser section in a turbine engine?",
+    "opciones": [
+      "To mix fuel and air before combustion",
+      "To cool the turbine blades before the exhaust",
+      "To increase pressure and decrease velocity",
+      "To increase velocity and decrease pressure"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What is the purpose of the last-chance oil filter in a turbine engine?",
+    "opciones": [
+      "To filter fuel immediately before the nozzles",
+      "To filter air immediately before the compressor inlet",
+      "To remove water from the oil before it reaches the tank",
+      "To filter the oil immediately before it enters the main bearings"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What conditions are required to properly trim (calibrate) a turbine engine's fuel control unit?",
+    "opciones": [
+      "No wind, moisture-free air, and known ambient temperature and barometric pressure",
+      "High wind and low humidity",
+      "The engine must be cold and not yet started",
+      "Icing conditions, to test the anti-ice system at the same time"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Where is the dump valve located in a turbine engine fuel system, and what does it do?",
+    "opciones": [
+      "It is located at the igniter and dumps unused ignition energy",
+      "It is located on the fuel manifold and dumps residual fuel after shutdown so deposits don't form as the fuel evaporates",
+      "It is located on the FCU and dumps fuel during an overspeed",
+      "It is located at the fuel tank and prevents overfilling"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What does compressor bleed air do in a turbine engine?",
+    "opciones": [
+      "It cools the compressor inlet only",
+      "It increases thrust directly at the exhaust nozzle",
+      "It powers the starter during engine start",
+      "It cools and relieves pressure on the turbine section"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What are the general types of compressors used in turbine engines?",
+    "opciones": [
+      "Centrifugal, radial, and reciprocating",
+      "Centrifugal and turbo-compound only",
+      "Centrifugal, axial-flow (single or twin spool), and axial-flow bypass",
+      "Axial-flow only, in single or double stages"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What is the purpose of compressor bleed valves?",
+    "opciones": [
+      "To ensure stable compressor operation, particularly in the low operating (RPM) range, by preventing compressor stall",
+      "To supply air to the cabin pressurization system only",
+      "To increase compressor discharge pressure at high RPM",
+      "To cool the turbine bearings"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Which best describes a labyrinth seal in a turbine engine?",
+    "opciones": [
+      "It uses a spring-loaded metal bellows to seal against oil loss",
+      "It is a simple rubber O-ring seal requiring no air pressure",
+      "It uses a series of circumferential grooves and relies on a pressurized air source to minimize leakage",
+      "It relies on carbon rubbing directly against a polished shaft"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What is the function of drain and drop valves in a turbine engine's combustion section?",
+    "opciones": [
+      "To drain excess oil from the combustion liner",
+      "To ensure no fuel is left in the burners, which could otherwise cause a hot start",
+      "To relieve excess compressor bleed air pressure",
+      "To drain condensation from the turbine case"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What is the purpose of variable stator vanes in an axial-flow compressor?",
+    "opciones": [
+      "To reduce the number of compressor stages required",
+      "To increase compressor discharge temperature at idle",
+      "To eliminate the need for compressor bleed valves",
+      "To help reduce the risk of compressor stall across the engine's operating range"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What is the purpose of combustion chamber interconnector tubes?",
+    "opciones": [
+      "To drain unburned fuel between combustion chambers",
+      "To carry cooling air between combustion chambers",
+      "To propagate (spread) the flame from one combustion chamber to the next during starting",
+      "To equalize fuel pressure between combustion chambers"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "A gradual power loss on a turboprop engine caused by a dirty compressor is typically remedied by?",
+    "opciones": [
+      "Replacing the fuel control unit",
+      "Increasing the idle RPM setting",
+      "Cleaning the compressor blades",
+      "Replacing the turbine wheel assembly"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Where is water or water-methanol injected in a turbine engine for power augmentation?",
+    "opciones": [
+      "Directly into the exhaust nozzle",
+      "At the compressor inlet or into the combustion chamber",
+      "Into the turbine bearing oil supply",
+      "Into the fuel tank before each flight"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What is the correct action if a crack is found on a turbine disc (wheel)?",
+    "opciones": [
+      "The turbine disc must be rejected — a crack is immediate cause for rejection",
+      "It is acceptable if less than 1/32 inch long",
+      "It should be monitored and reinspected at the next scheduled check",
+      "It may be blended out by stoning and polishing"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Piston rings that are not properly staggered around the cylinder's circumference can cause what?",
+    "opciones": [
+      "Detonation",
+      "Excessive blow-by",
+      "Valve sticking",
+      "Excessive oil consumption only"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What is the purpose of the venturi (throat) in a float-type carburetor?",
+    "opciones": [
+      "To filter incoming air before it reaches the throttle",
+      "To increase pressure at the discharge nozzle",
+      "To decrease pressure at the discharge nozzle, drawing fuel into the airstream",
+      "To cool the incoming air before the throttle body"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What connects the piston to the connecting rod, and how is it typically lubricated?",
+    "opciones": [
+      "The piston pin (wrist pin), lubricated by oil passing through the connecting rod",
+      "The knuckle pin, lubricated by a dedicated pressure line from the pump",
+      "The wrist pin, lubricated by grease packed in during assembly",
+      "The gudgeon bolt, lubricated by splash from the crankcase only"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What problem can carbon deposits on a valve stem cause?",
+    "opciones": [
+      "A sticking valve, which may lead to preignition",
+      "Excessive valve clearance",
+      "A cracked valve guide",
+      "A burned exhaust valve seat"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Where does the oil supply for a hydraulic valve lifter come from?",
+    "opciones": [
+      "Grease packed in at overhaul, not engine oil",
+      "Engine oil pressure (pressure oil from the oil sump)",
+      "The propeller governor oil supply",
+      "A dedicated hand-pump reservoir"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The amount of air passing through a turbine engine depends on which factors?",
+    "opciones": [
+      "Ambient humidity and fuel type only",
+      "Fuel flow, RPM, and oil pressure",
+      "Temperature, airspeed, and altitude",
+      "EGT, oil temperature, and altitude only"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "In a centrifugal compressor, what do the diffuser (cascade) vanes do?",
+    "opciones": [
+      "Accelerate the air to supersonic speed before combustion",
+      "Cool the air before it enters the impeller",
+      "Mix fuel directly into the airflow before the burner",
+      "Diffuse the air, turn it smoothly, and redirect it about 90 degrees toward the combustion chambers"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Of the air passing through a jet engine's combustion chamber, roughly what percentage is actually used to support combustion?",
+    "opciones": [
+      "About 90 to 100 percent",
+      "About 5 to 10 percent",
+      "About 50 to 60 percent",
+      "About 25 to 35 percent"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What is meant by the calorific value of a turbine fuel?",
+    "opciones": [
+      "The maximum flow rate the fuel can sustain through a nozzle",
+      "The freezing point of the fuel",
+      "The fuel's specific gravity compared to water",
+      "The heat energy (Btu rating) produced per pound of fuel burned"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Where is the highest pressure typically found in a turbine engine's gas path?",
+    "opciones": [
+      "At the compressor inlet",
+      "Just prior to entry to the burners, in the diffuser section (compressor discharge)",
+      "At the turbine inlet",
+      "At the exhaust nozzle outlet"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Why are turbine engine igniter plugs less susceptible to fouling than reciprocating engine spark plugs?",
+    "opciones": [
+      "They are replaced far more frequently than spark plugs",
+      "They are not exposed to the combustion gas path",
+      "They operate at a much lower voltage, producing less carbon buildup",
+      "Their high-intensity, high-voltage spark tends to clean the igniter with heat"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "A turbofan engine with a bypass ratio of about 2:1 to 3:1 is classified as what?",
+    "opciones": [
+      "A medium-bypass turbofan",
+      "An unducted fan (propfan)",
+      "A low-bypass turbofan",
+      "A high-bypass turbofan"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "How is Engine Pressure Ratio (EPR) determined?",
+    "opciones": [
+      "By dividing compressor discharge pressure by turbine inlet pressure",
+      "By dividing exhaust gas temperature by compressor inlet temperature",
+      "By dividing N1 by N2",
+      "By dividing turbine discharge (outlet) total pressure by compressor inlet (engine inlet) total pressure"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "A mechanical-blockage type thrust reverser is also known as what type?",
+    "opciones": [
+      "Cascade-vane type",
+      "Bucket-type",
+      "Clamshell-type",
+      "Target-type"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "A turbine engine's capacitor-discharge ignition system energy is typically rated in what unit?",
+    "opciones": [
+      "Volts",
+      "Amperes",
+      "Joules",
+      "Watts"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "What are the two main types of turbine blades, based on how they extract energy from the gas stream?",
+    "opciones": [
+      "Forged and cast",
+      "Impulse and reaction",
+      "Shrouded and unshrouded",
+      "Axial and radial"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Approximately what percentage of the gas stream's total pressure energy does the turbine section extract?",
+    "opciones": [
+      "Between 30 and 40 percent",
+      "Between 10 and 20 percent",
+      "Between 60 and 80 percent",
+      "Nearly 100 percent"
+    ],
+    "correcta": 2
   }
 ]
