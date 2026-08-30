@@ -17,8 +17,7 @@ type Question = {
 type Category = "standard" | "airframe" | "powerplant";
 type QuizMode = "test" | "study" | "study100";
 
-// Powerplant still needs its question bank filled in before it goes live.
-const SHOW_POWERPLANT = false;
+const SHOW_POWERPLANT = true;
 
 const questionBanks: Record<Category, Question[]> = {
   standard: rawStandardQuestions as Question[],

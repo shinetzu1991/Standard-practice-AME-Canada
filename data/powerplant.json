@@ -1,1 +1,882 @@
-[]
+[
+  {
+    "pregunta": "The piston displacement of a cylinder having a bore of 5 inches and a stroke of 4 inches is closest to",
+    "opciones": [
+      "20 cubic inches",
+      "62.832 cubic inches",
+      "78.54 cubic inches",
+      "169.646 cubic inches"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "An O-540 engine is a",
+    "opciones": [
+      "Horizontally opposed engine with a displacement of 540 cubic centimeters",
+      "Single row radial engine rated at 540 indicated HP",
+      "Single row radial engine rated at 540 brake HP",
+      "Horizontally opposed engine with a displacement of 540 cubic inches"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "The compression ratio of a conventional gasoline engine is",
+    "opciones": [
+      "Maintained by the piston rings",
+      "Limited by temperature rise due to compression",
+      "At its maximum when at a value of 13 to 1",
+      "The ratio of connecting rod length to cylinder clearance volume"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Care must be taken when installing piston rings on the pistons because",
+    "opciones": [
+      "They are brittle and easily broken",
+      "The rings will jam if the cylinder is not rocked while slipping it on the piston",
+      "All tapered edges of the rings must face towards the piston crown",
+      "All tapered edges of the rings must face towards the piston skirt"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Chrome-plated piston rings",
+    "opciones": [
+      "Must never be used in aircraft engines",
+      "Can only be used with chrome-plated cylinders",
+      "Must never be used with chrome-plated cylinders",
+      "Are used only in oversize cylinder and piston assemblies"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "After installing a new set of piston rings on a piston, a subsequent test indicated excessive blow-by. A possible reason for this could be",
+    "opciones": [
+      "Non-staggering of the ring gaps",
+      "Insufficient end gap on the rings",
+      "A crack in the cylinder head",
+      "Improper seating of the valves"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "When removing cylinders from a radial engine, the master rod cylinder should be removed",
+    "opciones": [
+      "First and installed last",
+      "Last and installed first",
+      "And installed first",
+      "And installed last"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The purpose of the safety circlet or spring ring on an intake or exhaust valve stem is to",
+    "opciones": [
+      "Secure the valve spring to the stem",
+      "Retain the valve should the stem tip break",
+      "Prevent the valve stems from rotating",
+      "Secure the lock plate"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "A fuel/air ratio that is expressed as 1:12 means",
+    "opciones": [
+      "1 part of air to 12 parts of fuel by volume",
+      "1 part of fuel to 12 parts of air by volume",
+      "1 part of fuel to 12 parts of air by weight",
+      "1 part of air to 12 parts of fuel by weight"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "When comparing high and low compression engines,",
+    "opciones": [
+      "Low compression engines are more susceptible to pre-ignition",
+      "Low compression engines require a fuel with a higher performance number",
+      "High compression engines convert more heat energy into useful work",
+      "High compression engines are less susceptible to detonation"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "When the recommended fuel is being used, detonation may occur if",
+    "opciones": [
+      "The carburettor air temperature is too low",
+      "The mixture is too lean",
+      "The mixture is too rich",
+      "Too low a cylinder head temperature is maintained"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "When an engine is stopped, the float operated needle valve in a simple float-type carburettor maintains the fuel level in the float chamber",
+    "opciones": [
+      "Slightly above the outlet of the discharge nozzle",
+      "Slightly below the outlet of the metering jet",
+      "Even with the outlet of the discharge nozzle",
+      "Even with the outlet of the metering jet"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The most likely cause of a carburettor leaking when the engine is stopped is an",
+    "opciones": [
+      "Open primer line",
+      "Improperly seated float needle valve",
+      "Economizer needle valve stuck open",
+      "Accelerating pump valve stuck open"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "A backfire results from",
+    "opciones": [
+      "Fast burning of a rich mixture",
+      "Fast burning of a lean mixture",
+      "Slow burning of a lean mixture",
+      "Slightly retarded ignition timing"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "An engine backfires in the idle range but operates satisfactorily at medium and high power settings. The most likely cause would be",
+    "opciones": [
+      "An excessively lean idle mixture",
+      "A fouled spark plug",
+      "A faulty valve clearance setting",
+      "An excessively rich idle mixture"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "If the bellows or capsule of the automatic mixture control mechanism is ruptured",
+    "opciones": [
+      "The air bleed will increase the air flow",
+      "A lean fuel/air mixture will normally result",
+      "A rich fuel/air mixture will normally result",
+      "The compensator will continue to control the fuel/air mixture"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "During inspection of an operational engine after a recent overhaul",
+    "opciones": [
+      "The presence of any debris in the oil screen is cause for engine strip-down and internal inspection",
+      "The accessory section sludge chamber must be inspected for debris",
+      "The oil cooler must be checked for contamination",
+      "Small metal slivers and particles may be found in the oil screen but this is not considered abnormal"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What is an advantage of using propeller or transmission reduction gears?",
+    "opciones": [
+      "To allow an engine RPM increase with an accompanying increase in power while the blades remain at a lower, more efficient RPM",
+      "To allow a blade RPM increase with a decrease in engine RPM",
+      "To allow a blade RPM increase without an accompanying increase in engine RPM",
+      "To allow an engine RPM increase with an accompanying increase in blade RPM"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Straight roller bearings, as compared to ball bearings,",
+    "opciones": [
+      "Cause less friction",
+      "Are used for combination thrust and radial loads",
+      "Are used only for thrust loads",
+      "Are used only for radial loads"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Dynamic balance of a crankshaft is achieved by use of",
+    "opciones": [
+      "A pendulum which oscillates in time with crankshaft vibration",
+      "A pendulum which oscillates out of time with crankshaft vibration",
+      "Two knife edges to balance and check for any turning tendency",
+      "A pendulum whose vibrating frequency differs from the engine power impulses"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "How many revolutions of the crankshaft are required to fire all the cylinders of a four stroke, six cylinder, horizontally opposed engine?",
+    "opciones": [
+      "6",
+      "3",
+      "2",
+      "1"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Shot-peening of certain engine parts is a method of",
+    "opciones": [
+      "Locking a nut without using a pal nut",
+      "Increasing the wetting surface of a piston's side areas",
+      "Relieving stress in specific metal parts",
+      "Securing a spark plug insert in a cylinder"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Nitriding the surface of metal engine parts",
+    "opciones": [
+      "Increases the metal's resistance to wear",
+      "Is an anti-corrosion plating process",
+      "Improves their heat dissipation properties",
+      "Increases their dimensions"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "On unsupercharged engines with direct injection systems, the fuel discharge nozzles",
+    "opciones": [
+      "Inject fuel into each intake port",
+      "Inject fuel directly into the combustion chamber",
+      "Meter the fuel to each cylinder",
+      "Pressurize the airflow through the nozzle"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Water injection systems inject water/methanol into the fuel/air mixture to provide",
+    "opciones": [
+      "An increase in air density to the cylinders",
+      "Extra cooling for the mixture and cylinders",
+      "A richer fuel/air ratio",
+      "An increase in air volume to the cylinders"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "A leak in the induction system of an engine",
+    "opciones": [
+      "Will have the same detrimental effect whether it is supercharged or unsupercharged",
+      "Will cause it to run rich",
+      "Will have no effect on the operational performance of a supercharged engine",
+      "Will cause an increase in power due to the induction of a richer mixture"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A journey log report indicates that an engine is overheating and not developing full power. The first troubleshooting check should be to",
+    "opciones": [
+      "Ensure that the mixture control is correctly adjusted",
+      "Inspect the spark plugs for lead deposits",
+      "Carry out a motostat test of each cylinder",
+      "Determine if the correct grade of fuel is being used"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Pump seals, carburettor diaphragms, and flexible hoses of a fuel system must be",
+    "opciones": [
+      "Made of natural rubber",
+      "Replaced every five years",
+      "Made of special synthetic rubber",
+      "Pre-soaked in benzol before use"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "When a vane-type engine-driven fuel pump fails with the booster pump on, fuel flow to the engine will",
+    "opciones": [
+      "Continue through a bypass valve",
+      "Continue through relief ports in the pump vanes",
+      "Be cut off",
+      "Continue only if cross-feed is selected"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "In a low-tension ignition system, each spark plug requires an individual",
+    "opciones": [
+      "Breaker assembly",
+      "Secondary coil",
+      "Cam assembly",
+      "Distributor rotor segment"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "In a magneto, retard breaker points are generally found in the",
+    "opciones": [
+      "Induction vibrator circuit",
+      "Secondary circuit",
+      "Trailing finger when employed in the distributor rotor",
+      "Primary circuit"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "During routine inspection of a magneto, the breaker-points were found to have a coarse, crystalline surface with black sooty sides, a condition known as \"frosting\". This would most likely be caused by",
+    "opciones": [
+      "An incorrect E-gap setting",
+      "Too wide a spark plug gap",
+      "Improper dressing",
+      "An open condenser"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "A compensated cam in the magneto of a radial engine rotates at",
+    "opciones": [
+      "1/4 crankshaft speed",
+      "1/2 crankshaft speed",
+      "Crankshaft speed",
+      "Twice crankshaft speed"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The retard ignition of a low-tension ignition system",
+    "opciones": [
+      "Is energized by operation of the primer switch",
+      "Makes use of a battery operated inverter",
+      "Is timed to fire at a predetermined number of degrees after the main breaker points open",
+      "Functions in accordance with all of the statements listed above"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "On a dual ignition system with staggered magneto timing, the",
+    "opciones": [
+      "Spark plug on the intake side of the cylinder fires first",
+      "Spark plug on the exhaust side of the cylinder fires first",
+      "Firing of the spark plugs is synchronized",
+      "Spark plugs in the cylinder are timed to fire alternately"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Resistor type spark plugs",
+    "opciones": [
+      "Should not be used on low powered engines",
+      "Reduce erosion of the magneto breaker points",
+      "Reduce wear at the spark plug electrodes",
+      "Increase the current discharge at the spark plug electrodes"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "When removing a shielded spark plug, which part is most likely to be damaged?",
+    "opciones": [
+      "Centre electrode",
+      "Shell section",
+      "Ground electrodes",
+      "Core insulator"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Exhaust augmentation provides",
+    "opciones": [
+      "Increased exhaust back pressure for smoother engine operation",
+      "Hot air flow for the induction anti-icing system",
+      "A means of ducting heat to the cabin",
+      "Reduced exhaust back pressure and increased airflow over the engine"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "When a thorough visual inspection of intensifier tubes or the heat exchangers in exhaust type cabin heaters cannot be made, the best way to do a periodic inspection is by",
+    "opciones": [
+      "The dye penetrant inspection procedure",
+      "Observing a carbon dioxide detector located near the cabin heat source during engine run-up",
+      "Pressurizing and submerging in water",
+      "Magnafluxing"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "To clear a hydraulically locked cylinder on a radial engine, the crankshaft should be turned through several revolutions",
+    "opciones": [
+      "By hand in the direction of rotation",
+      "By intermittent use of the starter with the magneto switches off",
+      "By hand opposite to direction of rotation",
+      "In the direction of rotation after removal of the lower spark plugs"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Charging lead-acid batteries presents an explosion hazard due to the generation of",
+    "opciones": [
+      "Oxygen and nitrogen",
+      "Helium and oxygen",
+      "Hydrogen and oxygen",
+      "Nitrogen and hydrogen"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "When more power is required in an aircraft electrical system, the generator voltage will",
+    "opciones": [
+      "Remain constant and the current flow will increase",
+      "Increase at a steady value to oppose the current flow",
+      "Remain constant and the current will remain at a constant value",
+      "Automatically decrease because of the greater current flow"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "The transfer of electrical energy from one circuit to another without the aid of electrical connections is",
+    "opciones": [
+      "Only possible through use of an electrolyte",
+      "Called conduction",
+      "Accomplished with a capacitor",
+      "Called induction"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "When the secondary winding of a transformer has more turns than the primary winding it is known as a",
+    "opciones": [
+      "Step-down transformer",
+      "Step-up transformer",
+      "Low amperage transformer",
+      "Variable voltage transformer"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Loss of residual magnetism or reversal of polarity in generator field poles may be restored by",
+    "opciones": [
+      "Adjusting the voltage regulator",
+      "Increasing generator RPM",
+      "Resetting the battery bus circuit breaker",
+      "Flashing the generator field"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Improper load sharing in a parallel generator system may be caused by",
+    "opciones": [
+      "Voltage adjustments not being properly balanced",
+      "One generator switch being in the \"off\" position",
+      "A defective equalizer circuit",
+      "All of the above"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "An electric tachometer used in some modern twin-engine aircraft gets its signal from",
+    "opciones": [
+      "A special three-phase generator",
+      "A pick-up coil attached to each of the alternators",
+      "The D.C. voltage output of the magneto secondary circuit",
+      "The A.C. voltage output of the magneto secondary circuit"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Pistons are usually made of",
+    "opciones": [
+      "Steel alloy",
+      "Magnesium alloy",
+      "High grade cast iron",
+      "Aluminum alloy"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "When starting a cold engine, the oil pressure will",
+    "opciones": [
+      "Indicate a normal operating pressure without change as the engine warms up to operating temperature",
+      "Register higher than normal with a reduction to normal as operating temperatures are reached",
+      "Fluctuate until operating temperatures are reached",
+      "Be below normal until operating temperatures stabilize"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "When a reciprocating engine is started, there should be a positive indication of oil pressure within",
+    "opciones": [
+      "10 seconds",
+      "15 seconds",
+      "20 seconds",
+      "30 seconds"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "The bellows of a thermostatic valve in an oil cooler causes the valve to close the",
+    "opciones": [
+      "Core outlet in a hot oil flow condition",
+      "Outlet from the bypass jacket in a cold oil flow condition",
+      "Outlet from the bypass jacket in a surge condition",
+      "Outlet from the bypass jacket in a hot oil flow condition"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "The check valve mounted in the top of an oil filter",
+    "opciones": [
+      "Permits unfiltered oil to bypass the filter if the oil filter becomes clogged",
+      "Prevents gravity fed oil from settling in the lower cylinders of radial engines",
+      "Prevents backflow and a buildup of pressure against the oil pump if the oil filter becomes blocked",
+      "Limits system oil pressure to a pre-determined value"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "On seasonal commencement of oil dilution",
+    "opciones": [
+      "The oil cooler should be drained to prevent coring",
+      "The oil dilution switch must be removed and bench checked for correct operation",
+      "The oil filter must be inspected after each flight until it is clear of excessive sludge",
+      "A detergent oil shall be used"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Oil dilution boil-off is",
+    "opciones": [
+      "Not conducted when reduced oil viscosity is needed for cold weather flight",
+      "Accomplished after take-off by maintaining high power settings",
+      "Essential to avoid plugged or collapsed oil filters",
+      "Essential prior to take-off to avoid possible oil venting through the engine or oil tank breathers"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Fuel/air mixture ratio is expressed on the basis of",
+    "opciones": [
+      "Weight",
+      "Pressure",
+      "Octane rating",
+      "Volume"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A three lobe cam ring installed in a 7 cylinder radial engine will rotate at",
+    "opciones": [
+      "1/8 crankshaft speed",
+      "3/7 crankshaft speed",
+      "1/6 crankshaft speed",
+      "1/4 crankshaft speed"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "One reason valve lead and valve lag is greater in relation to bottom dead centre than to top dead centre is because",
+    "opciones": [
+      "The piston accelerates at this position",
+      "The time required for the valves to open fully is greater at B.D.C. than at T.D.C.",
+      "Piston travel per degree of crankshaft travel is greater near B.D.C. than T.D.C.",
+      "Piston travel per degree of crankshaft travel is less near B.D.C. than T.D.C."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "When adjusting valve clearances, the cam lobes should be correctly positioned by placing the piston at the beginning of the",
+    "opciones": [
+      "Intake stroke",
+      "Exhaust stroke",
+      "Power stroke",
+      "Compression stroke"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Setting the clearance of both the intake and exhaust valves to more than specified would cause",
+    "opciones": [
+      "The intake to close early and the exhaust to close late",
+      "Both valves to close early",
+      "The exhaust to close early and the intake to close late",
+      "Both valves to close late"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The sequence of strokes to complete a cycle in a four-stroke engine is",
+    "opciones": [
+      "Intake, compression, power and exhaust",
+      "Ignition, exhaust, intake and compression",
+      "Compression, ignition, exhaust and intake",
+      "Intake, ignition, power and exhaust"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Failure of the ball check valve to seat properly in a zero lash hydraulic valve lifter would cause",
+    "opciones": [
+      "Excessive clearance in the valve train",
+      "Insufficient clearance in the valve train",
+      "The valves to open early",
+      "The valves to close late"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "During a differential pressure test (motostat) on an aircraft engine, excessive leakage from the crankcase breather would indicate poor condition of the",
+    "opciones": [
+      "Valve guides",
+      "Exhaust valves",
+      "Intake valves",
+      "Piston rings"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Correct idle settings can be made by adjusting the idle mixture to",
+    "opciones": [
+      "A slightly rich position which will result in a 10 to 20 RPM rise when moving the mixture control to idle cut off",
+      "A position that gives an immediate drop when moving the mixture to idle cut off",
+      "Very rich, then compensate by adjusting the throttle stop to a relatively high RPM for minimum idling",
+      "A rich position that will result in a 75 RPM rise when moving the mixture control to idle cut off"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Manifold pressure",
+    "opciones": [
+      "Is measured between the throttle butterfly and intake valve",
+      "Is measured at the cylinder head",
+      "If increased will improve the power output only when RPM is allowed to increase",
+      "Is directly related to compression ratio"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "The application of carburettor heat during engine run up will normally produce",
+    "opciones": [
+      "An increase in MAP and RPM",
+      "A decrease in MAP and an increase in RPM",
+      "A decrease in MAP and RPM",
+      "An increase in MAP and a decrease in RPM"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "A possible cause for fuel/air mixture being too lean at cruising power is",
+    "opciones": [
+      "An incorrectly adjusted automatic fuel pressure control",
+      "An air leak in the intake manifold",
+      "A high float level",
+      "All of the causes listed above"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The working principle of the pressure injection carburettor is based on",
+    "opciones": [
+      "Metered fuel pressure being regulated by airflow through the carburettor",
+      "Float chamber pressurization by the supercharger",
+      "Elimination of the butterfly valve",
+      "Charles' law"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A pressure injection carburettor which has been partially disassembled for the correction of malfunctions may be certified",
+    "opciones": [
+      "By an \"A\" category AME",
+      "Only by a \"D\" category AME",
+      "Only in an approved carburettor overhaul shop",
+      "Only by the manufacturer"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "When cleaning nozzles and nozzle screens of a fuel injection system, the",
+    "opciones": [
+      "Use of a baking soda and distilled water solution is recommended",
+      "Nozzles and screens must be returned to an approved carburettor overhaul shop",
+      "Use of fresh cleaning solvent only is recommended",
+      "Metering valve should also be checked"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Improper setting of the E-gap angle during internal timing of a magneto will cause",
+    "opciones": [
+      "Excessive pitting of the primary breaker points",
+      "The secondary voltage to be lower than normal",
+      "The magneto to engine timing to be late",
+      "Arcing of the magneto safety gap"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "In the preparation of any magneto for installation, it is most important to check that the breaker points are just opening and that the",
+    "opciones": [
+      "Rotor is positioned at E-gap",
+      "Number one cylinder is the prescribed number of degrees before TDC on the intake stroke",
+      "Retard breaker points are closed as the distributor finger is aligned with the electrode serving the number one cylinder",
+      "Requirements of (1), (2), and (3) above are met"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The use of a Time Rite indicator in timing a magneto to an engine which had carbon built up on the pistons would",
+    "opciones": [
+      "Result in the timing being late",
+      "Result in the timing being early",
+      "Alter the magneto E-gap",
+      "Not affect the timing"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "If ignition were timed to occur when the piston was at top dead centre",
+    "opciones": [
+      "Maximum cylinder pressure would not develop",
+      "Detonation would most likely occur",
+      "The engine would develop excessive vibration",
+      "The power output would be increased"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A magneto check shows a rise in RPM with the magneto switch selected to the \"left\" position (left magneto operative). The problem would most likely be found in the",
+    "opciones": [
+      "Timing of the left magneto",
+      "Timing of the right magneto",
+      "Voltage of the booster coil",
+      "Magneto grounding circuits"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "When doing a magneto check, failure to obtain any drop while in the single magneto position, or failure of the engine to cut out while switching to \"off\" would indicate that",
+    "opciones": [
+      "One or both the magneto grounding circuits are open",
+      "One or both the magneto grounding circuits are shorted",
+      "The breaker points of that magneto are seized closed",
+      "The breaker points of the opposite magneto are seized open"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A broken magneto impulse coupling spring will cause the",
+    "opciones": [
+      "Spark of the magneto on which it is installed to be retarded",
+      "Magneto to fire one cylinder late in the engine's firing order",
+      "Magneto to operate normally except during start",
+      "Magneto drive gear to turn without moving the magneto rotor"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "The RPM of a turbocharger may be increased by",
+    "opciones": [
+      "Moving the waste gate towards the closed position",
+      "Moving the waste gate towards the open position",
+      "Decreasing the engine RPM to increase back pressure",
+      "Selecting from ram to alternate air"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "The purpose of supercharger diffuser vanes is to",
+    "opciones": [
+      "Decrease the temperature of the charge",
+      "Increase the induction air charge volume",
+      "Convert the charge pressure to high velocity",
+      "Convert the high velocity of the charge to pressure"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Gasoline may be regarded as having",
+    "opciones": [
+      "Potential energy",
+      "Dynamic energy",
+      "Explosive energy",
+      "Kinetic energy"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Which statement regarding 100 low lead aviation gasoline is correct?",
+    "opciones": [
+      "It should not be used in engines requiring grade 100/130 fuel",
+      "It should not be used in engines requiring 80/87 octane fuel",
+      "It will replace 80/87 octane with adjustments required to some engines using this fuel",
+      "It will replace grade 100/130 with adjustments required to all engines using this fuel"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "A fuel with a lower octane rating than that recommended by the engine manufacturer should not",
+    "opciones": [
+      "Be used in aircraft engines",
+      "The grade recommended may be used in an emergency providing high engine power settings are selected",
+      "100 should not be used in aircraft engines",
+      "That recommended may be used providing the engine is turbocharged to restore normal power settings"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "The antiknock characteristics of an aviation gasoline",
+    "opciones": [
+      "Worsen with addition of tetraethyl lead",
+      "Are constant under all conditions",
+      "Vary with changes in the fuel/air ratio",
+      "Worsen with addition of iso-octane"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Commercial aviation oil #80",
+    "opciones": [
+      "Is a mineral oil equivalent to SAE #80 grade",
+      "Is a mineral oil equivalent to SAE #40 grade",
+      "Is a detergent oil equal to SAE #40 grade",
+      "May be either a straight or detergent oil"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "If an engine has a total of 800 hours running time on a straight mineral oil, is it permissible to change over to an ash dispersant type oil?",
+    "opciones": [
+      "No, the interaction of the two types of oil is detrimental to the engine",
+      "Yes, and no precautions are necessary as the oils are compatible",
+      "No, a dispersant oil will react with the flexible materials, seals, etc., used in the oil system",
+      "Yes, but special precautions should be taken"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Diode rectifiers are used",
+    "opciones": [
+      "To provide a load resistance in an electrical circuit",
+      "In compound-wound D.C. generators",
+      "As capacitors or inductors to filter D.C.",
+      "To change A.C. to D.C."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "A carbon-pile voltage regulator may be adjusted while installed on an aircraft by setting",
+    "opciones": [
+      "Either the pile screw or voltage rheostat",
+      "The pile screw only",
+      "The voltage rheostat only",
+      "Both the pile screw and voltage rheostat"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "The points of a reverse current cut-out relay of an electrical system are open when the",
+    "opciones": [
+      "Ammeter indicates a charge",
+      "Generator voltage is less than the battery voltage",
+      "Generator current is more than the load current",
+      "Battery is fully charged"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "An engine is not developing full power and almost quits in flight, but everything is fine on the ground. What is the most likely cause?",
+    "opciones": [
+      "Water in the fuel",
+      "Carburettor icing",
+      "Mixture too rich",
+      "A fouled spark plug"
+    ],
+    "correcta": 1
+  }
+]
