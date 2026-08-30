@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import rawStandardQuestions from "../data/questions.json";
 import rawAirframeQuestions from "../data/airframe.json";
@@ -25,6 +25,30 @@ function shuffleArray<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
+const PROGRESS_KEY = "ame-exam-progress";
+
+type SavedProgress = {
+  category: Category;
+  mode: QuizMode;
+  order: Question[];
+  current: number;
+  selectedAnswers: (number | null)[];
+  checkedAnswers: boolean[];
+  finished: boolean;
+};
+
+function loadProgress(): SavedProgress | null {
+  try {
+    const raw = localStorage.getItem(PROGRESS_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as SavedProgress;
+    if (!parsed.order || parsed.order.length === 0) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
 export default function Home() {
   const [category, setCategory] = useState<Category>("standard");
   const [mode, setMode] = useState<QuizMode>("test");
@@ -34,6 +58,8 @@ export default function Home() {
   const [checkedAnswers, setCheckedAnswers] = useState<boolean[]>([]);
   const [finished, setFinished] = useState(false);
   const [studyMenuOpen, setStudyMenuOpen] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
+  const skipNextCategoryReset = useRef(true);
 
   const currentBank = questionBanks[category];
 
@@ -66,8 +92,65 @@ export default function Home() {
   };
 
   useEffect(() => {
+    const saved = loadProgress();
+
+    if (saved) {
+      skipNextCategoryReset.current = true;
+      setCategory(saved.category);
+      setMode(saved.mode);
+      setOrder(saved.order);
+      setCurrent(saved.current);
+      setSelectedAnswers(saved.selectedAnswers);
+      setCheckedAnswers(saved.checkedAnswers);
+      setFinished(saved.finished);
+    } else {
+      const params = new URLSearchParams(window.location.search);
+      const initialCategory: Category =
+        params.get("category") === "airframe" ? "airframe" : "standard";
+      skipNextCategoryReset.current = true;
+      setCategory(initialCategory);
+      startQuiz("test", initialCategory);
+    }
+
+    setHydrated(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (skipNextCategoryReset.current) {
+      skipNextCategoryReset.current = false;
+      return;
+    }
     startQuiz("test", category);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category]);
+
+  useEffect(() => {
+    if (!hydrated || order.length === 0) return;
+
+    const data: SavedProgress = {
+      category,
+      mode,
+      order,
+      current,
+      selectedAnswers,
+      checkedAnswers,
+      finished,
+    };
+
+    try {
+      localStorage.setItem(PROGRESS_KEY, JSON.stringify(data));
+    } catch {
+      // ignore quota / storage errors
+    }
+
+    const params = new URLSearchParams({
+      category,
+      mode,
+      q: String(current + 1),
+    });
+    window.history.replaceState(null, "", `/?${params.toString()}`);
+  }, [hydrated, category, mode, order, current, selectedAnswers, checkedAnswers, finished]);
 
   if (order.length === 0 || !order[current]) {
     return <div className="p-6">Loading...</div>;
