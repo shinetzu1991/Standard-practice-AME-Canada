@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import rawStandardQuestions from "../data/questions.json";
 import rawAirframeQuestions from "../data/airframe.json";
+import rawPowerplantQuestions from "../data/powerplant.json";
 
 type Question = {
   pregunta: string;
@@ -13,12 +14,16 @@ type Question = {
   imagen?: string;
 };
 
-type Category = "standard" | "airframe";
+type Category = "standard" | "airframe" | "powerplant";
 type QuizMode = "test" | "study" | "study100";
+
+// Powerplant still needs its question bank filled in before it goes live.
+const SHOW_POWERPLANT = false;
 
 const questionBanks: Record<Category, Question[]> = {
   standard: rawStandardQuestions as Question[],
   airframe: rawAirframeQuestions as Question[],
+  powerplant: rawPowerplantQuestions as Question[],
 };
 
 function shuffleArray<T>(array: T[]): T[] {
@@ -252,7 +257,11 @@ export default function Home() {
   };
 
   const categoryTitle =
-    category === "standard" ? "STANDARD PRACTICES" : "AIRFRAME";
+    category === "standard"
+      ? "STANDARD PRACTICES"
+      : category === "airframe"
+        ? "AIRFRAME"
+        : "POWERPLANT";
 
   const modeLabel =
     mode === "test"
@@ -283,6 +292,17 @@ export default function Home() {
             >
               Airframe
             </button>
+
+            {SHOW_POWERPLANT && (
+              <button
+                onClick={() => selectCategory("powerplant")}
+                className={`rounded-lg px-5 py-3 text-white ${
+                  category === "powerplant" ? "bg-orange-700" : "bg-orange-500"
+                }`}
+              >
+                Powerplant
+              </button>
+            )}
           </div>
 
           <h1 className="mb-2 text-3xl font-bold">TEST RESULTS</h1>
@@ -397,6 +417,17 @@ export default function Home() {
           >
             Airframe
           </button>
+
+          {SHOW_POWERPLANT && (
+            <button
+              onClick={() => selectCategory("powerplant")}
+              className={`rounded-lg px-5 py-3 text-white ${
+                category === "powerplant" ? "bg-orange-700" : "bg-orange-500"
+              }`}
+            >
+              Powerplant
+            </button>
+          )}
         </div>
 
         <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
