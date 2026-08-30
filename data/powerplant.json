@@ -3888,5 +3888,805 @@
       "Because the applied voltage is much less."
     ],
     "correcta": 2
+  },
+  {
+    "pregunta": "Horsepower that is produced when a 1000 lb. weight is lifted 33 feet in 2 minutes?",
+    "opciones": [
+      "1 HP",
+      "1/2 HP",
+      "2 HP",
+      "4 HP"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Specific fuel consumption is calculated by?",
+    "opciones": [
+      "Multiplying fuel used by hours flown",
+      "The ratio of fuel used to distance traveled",
+      "Dividing fuel used by hours flown",
+      "Dividing the weight of fuel burned per hour by the HP developed"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "The comparison between the volume of a cylinder with the piston at BDC to the volume of the cylinder with the piston at TDC, is called?",
+    "opciones": [
+      "Compression ratio",
+      "Piston displacement",
+      "Volumetric efficiency",
+      "Cylinder displacement"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "An 1830 engine may be regarded as developing?",
+    "opciones": [
+      "A displacement of 1830 cubic inches.",
+      "183 horsepower.",
+      "1830 horsepower.",
+      "A displacement of 1830 c.c."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Thermal efficiency?",
+    "opciones": [
+      "Is the ratio of heat developed to the potential heat available.",
+      "May be disregarded when calculating the heat efficiency of an engine.",
+      "Can be increased by decreasing the compression ratio.",
+      "Is the ratio of the heat converted to useful work to the heating value of fuel consumed."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Compression rings which are chrome plated on the face surfaces.",
+    "opciones": [
+      "Must never be used in aircraft engines.",
+      "Can only be used with chrome plated cylinders.",
+      "Must never be used with chrome plated cylinders.",
+      "Must be hand lapped to the cylinder."
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "The most important advantage to using two or more springs on each exhaust and inlet valve is?",
+    "opciones": [
+      "Elimination of side pressure on the valve stem.",
+      "Prevention of sticking valves.",
+      "Safety factor.",
+      "Elimination of spring surge vibrations during engine operation."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Referring to the intake and exhaust valves, the face of the valve is usually ground to an angle of?",
+    "opciones": [
+      "30 or 48 degrees",
+      "25 or 48 degrees",
+      "25 or 45 degrees",
+      "30 or 45 degrees"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Before valve clearance adjustment is performed, it is a good practice to make sure the cams are correctly positioned?",
+    "opciones": [
+      "By placing the piston in the top position at the beginning of the power stroke.",
+      "Through the use of a feeler gauge.",
+      "By positioning the push rods.",
+      "By placing the piston at bottom dead center."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "The recommended method for smoothing out slight irregularities on a commutator, is by the use of?",
+    "opciones": [
+      "Emery cloth.",
+      "A mild liquid metal buffer.",
+      "A soft wire buffing wheel.",
+      "Number 000 sandpaper."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "The reason for shielding an ignition system is to?",
+    "opciones": [
+      "Maintain current voltage.",
+      "Prevent interference (noise) which would otherwise be heard in the radio receiver.",
+      "Prevent insulation breakdown caused by coronal effect.",
+      "Protect the flexible wires from wear due to vibration."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "A back-fire through the induction system?",
+    "opciones": [
+      "Indicates improper valve timing.",
+      "Is caused by pre-ignition.",
+      "Is caused by a leak passed the float needle.",
+      "May be caused by an excessively lean mixture."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "When checking the idle mixture of an engine",
+    "opciones": [
+      "The rpm remains steady then drops to zero when the mixture control lever is moved to the idle cut-off position.",
+      "The rpm increases slightly and then drops to zero when the mixture control lever is moved to the idle cut-off position.",
+      "The rpm drops slightly then increases before dropping to zero when the mixture control lever is moved to the off position.",
+      "There is a steady decrease in rpm when the mixture control lever is moved to the off position."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "An irregularity entry in the aircraft log book indicates fuel starvation when the center fuel tank was selected. If a check of the tank revealed an adequate supply of fuel, the proper sequence of inspections to establish the cause of the problem is:",
+    "opciones": [
+      "1. Remove the main filters. 2. Dismantle the fuel selector valve. 3. Check the fuel lines.",
+      "1. Dismantle and inspect the fuel selector valve. 2. Check the main filter screen. 3. Check the fuel lines for condition.",
+      "1. Check the main filter. 2. Check the fuel lines. 3. Flush the selector valve. 4. Check the fuel lines for condition.",
+      "1. Check the tank vent for obstruction. 2. Check the tank sump screen. 3. Check the fuel selector valve for correct operation."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Partial disassembly of a pressure-injection carburetor for the correction of malfunctions?",
+    "opciones": [
+      "May only be done in an approved carburetor overhaul shop with a proper flow bench.",
+      "May be accomplished by an \"A\" Category licensed aircraft maintenance engineer.",
+      "Should only be performed by a \"D\" Category licensed aircraft maintenance engineer.",
+      "Is not recommended."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A fuel vaporizes too easily?",
+    "opciones": [
+      "Will produce a lean mixture.",
+      "Should be mixed with a heavier grade fuel.",
+      "Is considered acceptable because of its energy to weight ratio.",
+      "Will be susceptible to vapour lock."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "If a valve seat is found to be sharped the proper corrective action is to?",
+    "opciones": [
+      "Grind the valve seat and then lap the valve face to the valve seat.",
+      "Grind the valve face to match the seal",
+      "Lap the valve until the seat and face are matched.",
+      "Replace the seat valve, and rocker assembly."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Pre-ignition may be caused by?",
+    "opciones": [
+      "Any of the above mentioned reasons.",
+      "Heated feather edges of a valve face.",
+      "Excessive carbon in cylinder heads.",
+      "Thickly carboned spark plugs."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "When installing fuel lines into an aircraft?",
+    "opciones": [
+      "Any bend shall have a radius not less than 3 diameters of the line.",
+      "The minimum bend radius shall not be less than 4 diameters of the line.",
+      "The lines must be identified with red and green colour bands.",
+      "All aluminum lines must be annealed before use."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "When pressurizing a metal fuel tank to check for leaks?",
+    "opciones": [
+      "No more than 1 psi pressure should be used.",
+      "A pressure relief valve should be installed in one of the ports.",
+      "Only water pressure may be used.",
+      "A maximum pressure of 2 1/2 psi should be used"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "An engine which had been operating satisfactorily develops a low oil pressure condition. Providing the oil type and level is correct, the next item that should be checked in tracing the cause of the problem is the?",
+    "opciones": [
+      "Oil pressure relief valve.",
+      "Oil pump.",
+      "Scavenger pump.",
+      "Core of the oil cooler."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Wiping friction?",
+    "opciones": [
+      "Is friction involving a continuously changing load both in intensity and direction.",
+      "Is friction created when one part slides over another.",
+      "Only occurs in a roller bearing.",
+      "Only occurs between the piston rings and cylinder walls."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Referring to the subject of friction between two solids?",
+    "opciones": [
+      "Friction is usually less at high speeds.",
+      "An increase in load increases the friction.",
+      "The friction is reduced because of the shearing action of the lubricant between the solids.",
+      "All statements above are true."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "A cuno oil filter?",
+    "opciones": [
+      "Has a series of laminated plates or discs, with one set of discs rotating in the spaces between the other discs.",
+      "Is not approved for use on aircraft",
+      "Is required on all engines over 150 horsepower.",
+      "Must be dismantled to remove debris from between the filter plates."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "The direction of a magnetic field around a current carrying wire can be determined by the left hand rule for conductors. The left hand rule?",
+    "opciones": [
+      "Can only be applied to conductors carrying ac current",
+      "States that if a conductor is grasped by the left hand, thumb extended, the fingers indicate direction of magnetic field and the thumb indicates direction of current flow.",
+      "States that if a conductor is grasped by the left hand, thumb extended, the thumb indicates the direction of magnetic field and the fingers indicate the direction of current flow.",
+      "States that when a conductor is grasped by the left hand with the index finger extended, the extended finger points to the course of magnetic flux and the center finger direction of current flow."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "When the coil of an electromagnet is 200 turns of wire and a current of 5 amperes the magneto motive force is?",
+    "opciones": [
+      "1000 magnetic flux.",
+      "200 ampere turns.",
+      "1000 ampere turns.",
+      "200 magnetic flux."
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Which of the following is most appropriate regarding the use of electrical cable and the electrical cable charts?",
+    "opciones": [
+      "If the area of a cable is reduced by one-half and the length is then doubled, the resistance of the replacement cable will be four times as much as the original cable.",
+      "If the diameter of a cable is reduced by one-half and the length is then doubled, the resistance of the replacement cable will be eight times as much as the original cable.",
+      "Number 8 aluminum cable may be used as a substitute for number 10 copper wire.",
+      "All three of the above answers are correct."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "The E-Gap angle of a magneto?",
+    "opciones": [
+      "Is the angle between the neutral position and the position the points open.",
+      "Provide for the strongest spark at the instant of breaker-point separation.",
+      "Varies from 5 to 17 degrees.",
+      "Conforms to all of the statements above."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "The four principals causes of irregularities experienced in high voltage ignition systems are?",
+    "opciones": [
+      "Flashover, capacitance, moisture and spark plug failure.",
+      "Flashover, capacitance, coil breakdown, and breaker-point deterioration.",
+      "Flashover, capacitance, moisture and high voltage corona.",
+      "Moisture, spark plug failure, timing and condenser leak"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "An increase in humidity in the ambient air will?",
+    "opciones": [
+      "Not affect an engine's power output",
+      "Tend to reduce an engine's power output",
+      "Cause an increase in the power output of an engine.",
+      "Only affect the power output of an engine at altitude."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "When the ignition switch of an aircraft is selected to the \"on\" position the",
+    "opciones": [
+      "Primary circuit is connected to the battery circuit",
+      "Primary circuit is connected to the secondary circuit",
+      "Primary circuit is connected to ground",
+      "\"Ground\" of the primary circuit is opened, or disconnected."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "A piston pin is normally held in place by a circlet, spring, spring ring or a plug to prevent the piston pin from?",
+    "opciones": [
+      "Turning on the piston boss.",
+      "Turning in the small end.",
+      "Scoring to the cylinder wall.",
+      "Vibrating."
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Cylinder heads are usually made of?",
+    "opciones": [
+      "Stellite alloy.",
+      "Aluminum alloy.",
+      "Steel alloy.",
+      "Magnesium alloy."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The surge valve protects the oiler cooler from high pressure by diverting",
+    "opciones": [
+      "Hot oil directly to the oil tank.",
+      "Cool oil to the oil filter.",
+      "Hot oil through the copper core.",
+      "Cold oil directly to the oil tank."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "The gears of an oil scavenger pump are usually larger than the gears of the oil pressure pump to?",
+    "opciones": [
+      "Compensate for their slower rate of delivery.",
+      "Allow for the expansion of oil due to heat",
+      "Allow the pump to turn at a slower rate and still scavenge the pressure pump's output of oil.",
+      "Ensure positive draining or scavenging of the crankcase."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The throat or venturi of a carburetor is designed to?",
+    "opciones": [
+      "Increase the volume of air through a carburetor.",
+      "Increase the air pressure at the fuel discharge nozzle.",
+      "Decrease the air pressure at the fuel discharge nozzle.",
+      "Decrease the volume of air flow across the discharge jet."
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "The type of ignition system incorporating a transformer coil near each spark plug is called?",
+    "opciones": [
+      "Condenser.",
+      "Low tension.",
+      "High tension.",
+      "Booster."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "When engine idling, movement of the mixture control to idle cut-off will cause",
+    "opciones": [
+      "A small RPM increase prior to a normal drop.",
+      "An immediate RPM drop accompanied by a MAP drop.",
+      "An immediate fuel flow increase.",
+      "An immediate fuel flow decrease."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "The period of rotation during which the breaker points are closed is called",
+    "opciones": [
+      "E-gap.",
+      "Dwell.",
+      "Point gap",
+      "Neutral"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Maximum pressure in an engine storage container is",
+    "opciones": [
+      "1 psi.",
+      "3 psi.",
+      "5 psi.",
+      "7 psi."
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Desiccant should be inspected every",
+    "opciones": [
+      "30 days.",
+      "60 days.",
+      "90 days.",
+      "120 days."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A common cause of distributor flashover is?",
+    "opciones": [
+      "A cracked insulator.",
+      "Moisture.",
+      "Worn spark plugs",
+      "Worn breaker points"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "The fourth cylinder to fire on a 9 cylinder radial is?",
+    "opciones": [
+      "#7",
+      "#5",
+      "#6",
+      "#4"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Direct cranking starter motors are usually?",
+    "opciones": [
+      "Shunt wound.",
+      "Compound wound.",
+      "Parallel wound.",
+      "Series wound."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What percentage of engine heat is removed by the exhaust system?",
+    "opciones": [
+      "30%",
+      "50%",
+      "75%",
+      "90%"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "A light brown deposit on a spark plug is a sign of?",
+    "opciones": [
+      "Running normal condition.",
+      "Rich running.",
+      "Lean running.",
+      "Worn valve guides"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A light blue flame coming from the exhaust at night is a sign of?",
+    "opciones": [
+      "Normal.",
+      "Running rich.",
+      "Running lean.",
+      "Burning oil."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A backfire through the induction system may be caused by?",
+    "opciones": [
+      "An excessively rich mixture.",
+      "Slightly retarded ignition timing.",
+      "An excessively lean mixture.",
+      "A break at the float needle."
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "The air bleed in the discharges nozzle of a carburetor?",
+    "opciones": [
+      "Helps produce a more uniform fuel/air mixture.",
+      "Vents the float chamber to atmosphere.",
+      "Sense the variation in air velocity.",
+      "May be used as a mixture control."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "An entry in the log reads: \"Engine running uneven, low power, tending to cut out during flight but a ground run after trouble shooting procedures failed to reveal any irregularity. A most probable cause for the in-flight malfunction would be?",
+    "opciones": [
+      "Water in the fuel tank.",
+      "A defective spark plug.",
+      "Carburetor icing.",
+      "Too rich a fuel/air mixture."
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "The purpose of the counter weights on a Hamilton Standard constant speed propeller is to?",
+    "opciones": [
+      "Assist the oil pressure in moving the blades toward the low pitch, high rpm position.",
+      "Moved the blades toward the high pitch, low rpm position",
+      "Dampen blade vibrations.",
+      "Move the blades to the low pitch, high rpm position when the oil pressure is released."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The heat range of a spark plug?",
+    "opciones": [
+      "Is the principal factor governing spark plug performance operating with various conditions.",
+      "Has no bearing on its performance.",
+      "Is controlled through the use of baffles.",
+      "Depends upon the number of electrodes of the spark plug."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A normally aspirated engine with a variable pitch propeller?",
+    "opciones": [
+      "Must be equipped with a manifold pressure gauge.",
+      "Does not require a manifold pressure gauge.",
+      "Requires a manifold pressure gauge if the supercharger is functioning.",
+      "May have a manifold pressure gauge at the direction of the engineer."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "When an attempt was made to synchronize a magneto on an engine by use of a timing light it was noted that the light remained \"on\" even though the breaker points were open. The reason for this is?",
+    "opciones": [
+      "A short in the secondary winding.",
+      "A short in primary winding.",
+      "A leak across the points.",
+      "The primary lead is still connected in the breaker points."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "The density of air depends upon?",
+    "opciones": [
+      "Humidity, height and pressure.",
+      "Pressure, temperature, and humidity.",
+      "Temperature, height and humidily.",
+      "Its velocity, temperature, and pressure."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "The air gap and the point opening adjustment of the cutout relay (voltage and current regulator) must?",
+    "opciones": [
+      "Not be performed on the aircraft",
+      "Be made with the engine running.",
+      "Be made with the battery disconnected.",
+      "Be made with an accurate volt/ammeter."
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "If for any reason the field poles lose their magnetism in a generator which completes its field ground through the voltage regulator?",
+    "opciones": [
+      "\"Flashing the field\" by momentarily connecting the gen terminal to the bat terminal of the regulator will re-establish polarity in the poles.",
+      "Momentarily connecting the fld terminal to the bat terminal will correct the fault by \"flashing the field\".",
+      "A momentary contact of the field and generator terminals will restore magnetism in the poles.",
+      "Magnetism may only be restored by the use of a special induction coil."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "During routine inspection of an engine system a red button was noted to be in the extended or out position on the oil filter?",
+    "opciones": [
+      "This indicates that the filter is locked in place.",
+      "This indicates that an over-temperature of the filter has occurred.",
+      "No further operation of the engine should be attempted until the engine is disassembled and inspected internally for damage.",
+      "The reason for this is an accumulation of foreign matter in the filter causing a back pressure; the filter should be cleaned."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "The specific gravity of petroleum oil?",
+    "opciones": [
+      "Is an index to quality",
+      "Is indicated by the SAE number.",
+      "Has a direct bearing on its lubricating ability.",
+      "Is the property of importance only for the aircraft center of gravity."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Lubrication of oil with a very low flash point?",
+    "opciones": [
+      "If used in a high performance engine, may burn and result in improper lubrication of the engine.",
+      "Is recommended for aero engines.",
+      "Is not stable.",
+      "Is the basis for all lubrication oils"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "When heating oil to its flash point?",
+    "opciones": [
+      "\"Popping and/or foaming, should it occur, indicates the presence of water in the oil.",
+      "\"Popping\" and/or foaming is a normal reaction.",
+      "An enclosed container must be used.",
+      "The formation of black deposits in the oil indicates carbon solids."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Fuel lines in gravity systems must be of a size which will provide a flow of fuel to the carburetor?",
+    "opciones": [
+      "Equal to 0.9 lb. per hour for each take-off horsepower.",
+      "At a rate of not less than 125 percent of the actual take-off fuel consumption.",
+      "At a rate considered sufficient for the take-off fuel consumption under all conditions.",
+      "Equal to 150 percent of the take-off fuel consumption."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "The location of fuel delivery into the induction system when a fuel injection carburetor is installed is?",
+    "opciones": [
+      "In the intake port of each cylinder.",
+      "The same as that for a fuel injection system installation.",
+      "At or near the fuel injection carburetor.",
+      "The same as for a float type carburetor installation."
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Is there a difference between a fuel injector system and a fuel injector carburetor?",
+    "opciones": [
+      "No, the two systems inject fuel under pressure into the central induction section.",
+      "Yes, the injection system injects the fuel at a high pressure, the injector carburetor uses atmospheric pressure.",
+      "No, both systems deliver fuel under pressure to each individual cylinder.",
+      "Yes, the injector delivers fuel direct to each cylinder, the injector carburetor delivers fuel to a central location in the induction system."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Water injection is a method whereby water is used with the fuel/air mixture?",
+    "opciones": [
+      "To provide a denser charge into the cylinders.",
+      "To provide extra cooling for the mixture and cylinder thereby preventing detonation when additional power is required of the engine.",
+      "In turbine engines only.",
+      "As a stabilizer."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Referring to a float-type carburetor, to lower the fuel level in the float chamber?",
+    "opciones": [
+      "Place washers under the float needle seat.",
+      "Install a shorter needle assembly.",
+      "Carefully grind the head of the needle.",
+      "Replace the seat assembly."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "If a spark plug lead is disconnected while the engine is operating?",
+    "opciones": [
+      "The electrical energy for that spark plug will discharge",
+      "The secondary winding will burn out",
+      "The breaker points will arc.",
+      "The condenser will break down."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Referring to the laws of evaporation, the rate of evaporation?",
+    "opciones": [
+      "Will increase with temperature.",
+      "Will increase as ambient pressure decreases.",
+      "Varies with the nature of the liquid.",
+      "Conforms to all of the laws listed above."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "A check of an in-service engine revealed one exhaust valve with insufficient clearance between the rocker arm and valve stem. If records of a previous check indicate all valve clearances within tolerance, the most probable reason for the irregularity noted would be?",
+    "opciones": [
+      "A stretched valve stem.",
+      "A displaced valve stem.",
+      "A carbon coated valve stem.",
+      "Stretched cylinder head studs."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A magneto is internally timed?",
+    "opciones": [
+      "To correctly position the E-gap to the cam lobe position.",
+      "To take advantage of the fly-weight action of the driving gear.",
+      "Because of the keyway position.",
+      "To reduce arcing at the breaker points."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Rated power?",
+    "opciones": [
+      "Is also referred to as maximum power.",
+      "Is the same as METO power",
+      "May vary with atmospheric conditions.",
+      "Is the best available power at altitude."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "A normal aspirated engine?",
+    "opciones": [
+      "Is less affected by icing conditions.",
+      "Is not normally used in aircraft.",
+      "Has a higher volumetric efficient at altitude.",
+      "Always has a volumetric efficiency of less than 100 percent."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "Referring to modern reciprocating engines. The theory of diminishing returns means a?",
+    "opciones": [
+      "Decrease in usable power to weight ratio beyond a specific size of engine.",
+      "Decrease in power to fuel ratio in specific designs.",
+      "Decrease in efficiency with altitude.",
+      "Theoretical explanation for decreasing efficiency of engines due to heat"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A cycle means a?",
+    "opciones": [
+      "Sequence of events, returning to the original state.",
+      "Sequence of events.",
+      "Necessary number of events.",
+      "Movement equal to a stroke."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Some types of exhaust valves are sodium filled to?",
+    "opciones": [
+      "Reduce valve resonance.",
+      "Improve the quality of steel.",
+      "Improve their shock absorbing capacity.",
+      "Improve heat dissipation away from the valve head."
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "A \"cold-cylinder\" check is a procedure used to?",
+    "opciones": [
+      "Establish whether or not a cold spark plug should be used in a particular engine.",
+      "Detect a faulty spark plug.",
+      "Determine the cooling of an engine during cold weather.",
+      "Trace a low compression cylinder on an engine."
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Backfiring through the exhaust is caused by?",
+    "opciones": [
+      "Lean mixture.",
+      "Rich mixture.",
+      "Exhaust system crack",
+      "Leaking induction manifold"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "A starter circuit is protected by?",
+    "opciones": [
+      "Is unprotected.",
+      "A fuse.",
+      "A circuit breaker.",
+      "Circuit breakers."
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What is the percentage of cylinder fin damage allowed to be removed from the barrel?",
+    "opciones": [
+      "10%",
+      "20%",
+      "30%",
+      "40%"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "What is the principle of back-suction mixture control?",
+    "opciones": [
+      "Decreased pressure in the float chamber leans out the mixture.",
+      "An orifice is used to slow fuel flow",
+      "A vent controls airflow to the float chamber",
+      "A spring-loaded valve meters fuel to the discharge nozzle"
+    ],
+    "correcta": 0
   }
 ]
