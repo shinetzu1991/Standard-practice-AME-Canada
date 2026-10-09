@@ -235,13 +235,13 @@ export default function Home() {
     if (mode === "test" && !finished) {
       return selected === i
         ? "border-blue-500 bg-blue-50 ring-2 ring-blue-200"
-        : "border-slate-200 bg-white hover:border-blue-300 hover:bg-blue-50/70";
+        : "border-blue-100 bg-white shadow-sm hover:border-blue-400 hover:bg-blue-50";
     }
 
     if ((mode === "study" || mode === "study100") && !showAnswer) {
       return selected === i
         ? "border-blue-500 bg-blue-50 ring-2 ring-blue-200"
-        : "border-slate-200 bg-white hover:border-blue-300 hover:bg-blue-50/70";
+        : "border-blue-100 bg-white shadow-sm hover:border-blue-400 hover:bg-blue-50";
     }
 
     if (i === question.correcta) {
@@ -252,7 +252,7 @@ export default function Home() {
       return "border-rose-500 bg-rose-50 ring-2 ring-rose-200";
     }
 
-    return "border-slate-200 bg-white";
+    return "border-blue-100 bg-white";
   };
 
   const categoryTitle =
@@ -313,7 +313,7 @@ export default function Home() {
         <div className="mx-auto w-full max-w-4xl">
           {categoryTabs}
 
-          <div className="rounded-3xl bg-white p-5 shadow-xl shadow-blue-900/10 ring-1 ring-blue-100 sm:p-8">
+          <div className="rounded-3xl bg-gradient-to-b from-blue-50 to-sky-100 p-5 shadow-xl shadow-blue-900/15 ring-1 ring-blue-200 sm:p-8">
           <p className="mb-1 text-xs font-bold uppercase tracking-widest text-blue-600">
             {categoryTitle}
           </p>
@@ -428,7 +428,7 @@ export default function Home() {
       <div className="mx-auto w-full max-w-4xl">
         {categoryTabs}
 
-        <div className="rounded-3xl bg-white p-5 shadow-xl shadow-blue-900/10 ring-1 ring-blue-100 sm:p-8">
+        <div className="rounded-3xl bg-gradient-to-b from-blue-50 to-sky-100 p-5 shadow-xl shadow-blue-900/15 ring-1 ring-blue-200 sm:p-8">
 
         <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
@@ -517,7 +517,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="h-2 w-full overflow-hidden rounded-full bg-blue-100">
+          <div className="h-2 w-full overflow-hidden rounded-full bg-blue-200/70">
             <div
               className="h-full rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 transition-all"
               style={{
@@ -527,7 +527,7 @@ export default function Home() {
           </div>
         </div>
 
-        <p className="mb-5 rounded-2xl bg-blue-50/70 p-4 text-base font-semibold leading-relaxed text-slate-900 ring-1 ring-blue-100 sm:mb-6 sm:p-5 sm:text-lg">
+        <p className="mb-5 rounded-2xl bg-white p-4 text-base font-semibold leading-relaxed text-slate-900 shadow-sm ring-1 ring-blue-200 sm:mb-6 sm:p-5 sm:text-lg">
           {question.pregunta}
         </p>
 
@@ -593,7 +593,7 @@ export default function Home() {
         </div>
 
         {(mode === "study" || mode === "study100") && showAnswer && (
-          <div className="mt-6 rounded-2xl border border-blue-100 bg-blue-50/60 p-4 sm:p-5">
+          <div className="mt-6 rounded-2xl border border-blue-200 bg-white p-4 shadow-sm sm:p-5">
             <p className="text-base font-bold text-slate-900 sm:text-lg">
               {selected === question.correcta ? "✅ Correct" : "❌ Incorrect"}
             </p>
