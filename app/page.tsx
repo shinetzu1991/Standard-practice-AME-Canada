@@ -64,6 +64,7 @@ export default function Home() {
   const [finished, setFinished] = useState(false);
   const [studyMenuOpen, setStudyMenuOpen] = useState(false);
   const [hydrated, setHydrated] = useState(false);
+  const [jumpTo, setJumpTo] = useState("");
 
   const currentBank = questionBanks[category];
 
@@ -499,12 +500,44 @@ export default function Home() {
 
         <div className="mb-5">
           <div className="mb-2 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-sm font-bold text-slate-800">
-              Question {current + 1}{" "}
-              <span className="font-medium text-slate-400">
-                / {order.length}
-              </span>
-            </p>
+            <div className="flex flex-wrap items-center gap-3">
+              <p className="text-sm font-bold text-slate-800">
+                Question {current + 1}{" "}
+                <span className="font-medium text-slate-400">
+                  / {order.length}
+                </span>
+              </p>
+
+              <form
+                className="flex items-center gap-1"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const n = parseInt(jumpTo, 10);
+                  if (Number.isFinite(n)) {
+                    setCurrent(Math.min(Math.max(n, 1), order.length) - 1);
+                    setJumpTo("");
+                  }
+                }}
+              >
+                <input
+                  type="number"
+                  inputMode="numeric"
+                  min={1}
+                  max={order.length}
+                  value={jumpTo}
+                  onChange={(e) => setJumpTo(e.target.value)}
+                  placeholder="Go to #"
+                  aria-label="Go to question number"
+                  className="w-24 rounded-lg border border-blue-200 bg-white px-2 py-1 text-sm text-slate-800 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                />
+                <button
+                  type="submit"
+                  className="rounded-lg bg-blue-600 px-3 py-1 text-sm font-semibold text-white transition hover:bg-blue-700"
+                >
+                  Go
+                </button>
+              </form>
+            </div>
 
             <div className="flex flex-wrap items-center gap-2">
               <p className="text-sm font-semibold text-blue-700">
@@ -530,6 +563,7 @@ export default function Home() {
 
         {(mode === "study" || mode === "study100") && (
           <AudioPlayer
+            category={category}
             order={order}
             current={current}
             setCurrent={setCurrent}
