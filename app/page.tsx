@@ -234,25 +234,25 @@ export default function Home() {
   const getOptionClass = (i: number) => {
     if (mode === "test" && !finished) {
       return selected === i
-        ? "border-blue-500 bg-blue-100"
-        : "border-gray-300 bg-white hover:bg-gray-50";
+        ? "border-blue-500 bg-blue-50 ring-2 ring-blue-200"
+        : "border-slate-200 bg-white hover:border-blue-300 hover:bg-blue-50/70";
     }
 
     if ((mode === "study" || mode === "study100") && !showAnswer) {
       return selected === i
-        ? "border-blue-500 bg-blue-100"
-        : "border-gray-300 bg-white hover:bg-gray-50";
+        ? "border-blue-500 bg-blue-50 ring-2 ring-blue-200"
+        : "border-slate-200 bg-white hover:border-blue-300 hover:bg-blue-50/70";
     }
 
     if (i === question.correcta) {
-      return "border-green-500 bg-green-100";
+      return "border-emerald-500 bg-emerald-50 ring-2 ring-emerald-200";
     }
 
     if (selected === i && i !== question.correcta) {
-      return "border-red-500 bg-red-100";
+      return "border-rose-500 bg-rose-50 ring-2 ring-rose-200";
     }
 
-    return "border-gray-300 bg-white";
+    return "border-slate-200 bg-white";
   };
 
   const categoryTitle =
@@ -269,85 +269,112 @@ export default function Home() {
         ? "STUDY 100 RANDOM"
         : "STUDY MODE";
 
+  const categoryTabs = (
+    <header className="mb-6 overflow-hidden rounded-3xl bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-700 p-5 text-white shadow-xl shadow-blue-900/20 sm:p-6">
+      <div className="mb-4 flex items-center gap-3">
+        <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/15 text-2xl ring-1 ring-white/25">
+          ✈
+        </div>
+        <div>
+          <p className="text-xl font-extrabold tracking-tight">M2 Canada</p>
+          <p className="text-xs font-medium uppercase tracking-widest text-blue-200">
+            AME exam preparation
+          </p>
+        </div>
+      </div>
+
+      <div className="flex flex-wrap gap-2 rounded-2xl bg-blue-950/30 p-1.5">
+        {(
+          [
+            ["standard", "Standard Practices"],
+            ["airframe", "Airframe"],
+            ...(SHOW_POWERPLANT ? [["powerplant", "Powerplant"]] : []),
+          ] as [string, string][]
+        ).map(([key, label]) => (
+          <button
+            key={key}
+            onClick={() => selectCategory(key as Category)}
+            className={`flex-1 rounded-xl px-4 py-2.5 text-sm font-semibold transition sm:flex-none sm:px-6 ${
+              category === key
+                ? "bg-white text-blue-800 shadow-md"
+                : "text-blue-100 hover:bg-white/10"
+            }`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+    </header>
+  );
+
   if (finished && mode === "test") {
     return (
-      <div className="min-h-screen bg-gray-100 p-6">
-        <div className="mx-auto w-full max-w-4xl rounded-2xl bg-white p-8 shadow-lg">
-          <div className="mb-6 flex flex-wrap gap-3">
-            <button
-              onClick={() => selectCategory("standard")}
-              className={`rounded-lg px-5 py-3 text-white ${
-                category === "standard" ? "bg-blue-700" : "bg-blue-500"
-              }`}
-            >
-              Standard Practices
-            </button>
+      <div className="min-h-screen bg-gradient-to-br from-sky-200 via-blue-200 to-indigo-300 px-4 py-6 sm:p-8">
+        <div className="mx-auto w-full max-w-4xl">
+          {categoryTabs}
 
-            <button
-              onClick={() => selectCategory("airframe")}
-              className={`rounded-lg px-5 py-3 text-white ${
-                category === "airframe" ? "bg-green-700" : "bg-green-500"
-              }`}
-            >
-              Airframe
-            </button>
-
-            {SHOW_POWERPLANT && (
-              <button
-                onClick={() => selectCategory("powerplant")}
-                className={`rounded-lg px-5 py-3 text-white ${
-                  category === "powerplant" ? "bg-orange-700" : "bg-orange-500"
-                }`}
-              >
-                Powerplant
-              </button>
-            )}
-          </div>
-
-          <h1 className="mb-2 text-3xl font-bold">TEST RESULTS</h1>
-          <p className="mb-4 text-sm font-medium text-gray-600">
+          <div className="rounded-3xl bg-white p-5 shadow-xl shadow-blue-900/10 ring-1 ring-blue-100 sm:p-8">
+          <p className="mb-1 text-xs font-bold uppercase tracking-widest text-blue-600">
             {categoryTitle}
           </p>
+          <h1 className="mb-5 text-3xl font-extrabold text-slate-900">
+            Test Results
+          </h1>
 
-          <div className="mb-6 rounded-xl border bg-gray-50 p-4">
-            <p className="text-xl font-semibold">
-              Final Score: {score} / {order.length}
-            </p>
-            <p className="mt-2 text-lg text-blue-700">
-              Percentage: {percentage}%
-            </p>
-            <p className="mt-2 text-lg text-red-600">
-              Incorrect Answers: {wrongAnswers.length}
-            </p>
+          <div className="mb-6 grid gap-3 sm:grid-cols-3">
+            <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 p-4 text-white shadow-md">
+              <p className="text-xs font-semibold uppercase tracking-wider text-blue-100">
+                Final Score
+              </p>
+              <p className="mt-1 text-3xl font-extrabold">
+                {score} / {order.length}
+              </p>
+            </div>
+            <div className="rounded-2xl bg-sky-50 p-4 ring-1 ring-sky-200">
+              <p className="text-xs font-semibold uppercase tracking-wider text-sky-700">
+                Percentage
+              </p>
+              <p className="mt-1 text-3xl font-extrabold text-sky-800">
+                {percentage}%
+              </p>
+            </div>
+            <div className="rounded-2xl bg-rose-50 p-4 ring-1 ring-rose-200">
+              <p className="text-xs font-semibold uppercase tracking-wider text-rose-700">
+                Incorrect Answers
+              </p>
+              <p className="mt-1 text-3xl font-extrabold text-rose-700">
+                {wrongAnswers.length}
+              </p>
+            </div>
           </div>
 
           <div className="mb-6 flex flex-wrap gap-3">
             <button
               onClick={() => startQuiz("test")}
-              className="rounded-lg bg-blue-600 px-5 py-3 text-white"
+              className="rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-md shadow-blue-600/25 transition hover:bg-blue-700"
             >
               Restart Test Mode
             </button>
 
             <button
               onClick={() => startQuiz("study")}
-              className="rounded-lg bg-green-600 px-5 py-3 text-white"
+              className="rounded-xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-md shadow-indigo-600/25 transition hover:bg-indigo-700"
             >
               Switch to Study Mode
             </button>
 
             <button
               onClick={() => startQuiz("study100")}
-              className="rounded-lg bg-emerald-600 px-5 py-3 text-white"
+              className="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-blue-700 ring-1 ring-blue-200 transition hover:bg-blue-50"
             >
               Study 100 Random
             </button>
           </div>
 
-          <h2 className="mb-4 text-2xl font-bold">Wrong Answers</h2>
+          <h2 className="mb-4 text-xl font-extrabold text-slate-900">Wrong Answers</h2>
 
           {wrongAnswers.length === 0 ? (
-            <div className="rounded-lg border border-green-300 bg-green-50 p-4 text-green-700">
+            <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-4 font-medium text-emerald-700">
               Perfect score. No wrong answers.
             </div>
           ) : (
@@ -355,9 +382,9 @@ export default function Home() {
               {wrongAnswers.map((item, index) => (
                 <div
                   key={index}
-                  className="rounded-xl border border-red-200 bg-red-50 p-5"
+                  className="rounded-2xl border border-rose-200 bg-rose-50/70 p-5"
                 >
-                  <p className="font-semibold text-red-700">
+                  <p className="font-bold text-rose-700">
                     Question {item.questionNumber}
                   </p>
                   <p className="mt-2 text-lg font-medium">{item.pregunta}</p>
@@ -369,20 +396,20 @@ export default function Home() {
                         alt="Question figure"
                         width={800}
                         height={500}
-                        className="h-auto w-full rounded-lg border"
+                        className="h-auto w-full rounded-xl border border-slate-200"
                       />
                     </div>
                   )}
 
-                  <p className="mt-3 text-sm text-red-700">
+                  <p className="mt-3 text-sm font-medium text-rose-700">
                     Your answer: {item.selected}
                   </p>
-                  <p className="mt-1 text-sm text-green-700">
+                  <p className="mt-1 text-sm font-medium text-emerald-700">
                     Correct answer: {item.correct}
                   </p>
 
                   {item.explicacion && (
-                    <p className="mt-2 text-sm text-gray-800">
+                    <p className="mt-2 text-sm text-slate-700">
                       Explanation: {item.explicacion}
                     </p>
                   )}
@@ -390,49 +417,28 @@ export default function Home() {
               ))}
             </div>
           )}
+          </div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <div className="mx-auto w-full max-w-4xl rounded-2xl bg-white p-6 shadow-lg sm:p-8">
-        <div className="mb-6 flex flex-wrap gap-3">
-          <button
-            onClick={() => selectCategory("standard")}
-            className={`rounded-lg px-5 py-3 text-white ${
-              category === "standard" ? "bg-blue-700" : "bg-blue-500"
-            }`}
-          >
-            Standard Practices
-          </button>
+    <div className="min-h-screen bg-gradient-to-br from-sky-200 via-blue-200 to-indigo-300 px-4 py-6 sm:p-8">
+      <div className="mx-auto w-full max-w-4xl">
+        {categoryTabs}
 
-          <button
-            onClick={() => selectCategory("airframe")}
-            className={`rounded-lg px-5 py-3 text-white ${
-              category === "airframe" ? "bg-green-700" : "bg-green-500"
-            }`}
-          >
-            Airframe
-          </button>
-
-          {SHOW_POWERPLANT && (
-            <button
-              onClick={() => selectCategory("powerplant")}
-              className={`rounded-lg px-5 py-3 text-white ${
-                category === "powerplant" ? "bg-orange-700" : "bg-orange-500"
-              }`}
-            >
-              Powerplant
-            </button>
-          )}
-        </div>
+        <div className="rounded-3xl bg-white p-5 shadow-xl shadow-blue-900/10 ring-1 ring-blue-100 sm:p-8">
 
         <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h1 className="text-2xl font-bold sm:text-3xl">{categoryTitle}</h1>
-            <p className="mt-1 text-sm text-gray-600">
+            <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
+              Question bank
+            </p>
+            <h1 className="text-2xl font-extrabold text-slate-900 sm:text-3xl">
+              {categoryTitle}
+            </h1>
+            <p className="mt-1 text-sm text-slate-500">
               Total questions: {currentBank.length}
             </p>
           </div>
@@ -440,8 +446,10 @@ export default function Home() {
           <div className="flex flex-wrap gap-3">
             <button
               onClick={() => startQuiz("test")}
-              className={`rounded-lg px-5 py-3 text-white ${
-                mode === "test" ? "bg-blue-700" : "bg-blue-600"
+              className={`rounded-xl px-5 py-3 text-sm font-semibold transition ${
+                mode === "test"
+                  ? "bg-blue-600 text-white shadow-md shadow-blue-600/30"
+                  : "bg-blue-50 text-blue-700 ring-1 ring-blue-200 hover:bg-blue-100"
               }`}
             >
               Test Mode
@@ -450,23 +458,23 @@ export default function Home() {
             <div className="relative">
               <button
                 onClick={() => setStudyMenuOpen((prev) => !prev)}
-                className={`rounded-lg px-5 py-3 text-white ${
+                className={`rounded-xl px-5 py-3 text-sm font-semibold transition ${
                   mode === "study" || mode === "study100"
-                    ? "bg-green-700"
-                    : "bg-green-600"
+                    ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/30"
+                    : "bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200 hover:bg-indigo-100"
                 }`}
               >
                 Study Mode ▾
               </button>
 
               {studyMenuOpen && (
-                <div className="absolute right-0 z-10 mt-2 w-56 overflow-hidden rounded-lg border bg-white shadow-lg">
+                <div className="absolute right-0 z-10 mt-2 w-56 overflow-hidden rounded-xl border border-blue-100 bg-white shadow-xl shadow-blue-900/15">
                   <button
                     onClick={() => startQuiz("study")}
-                    className={`block w-full px-4 py-3 text-left text-sm hover:bg-gray-100 ${
+                    className={`block w-full px-4 py-3 text-left text-sm hover:bg-blue-50 ${
                       mode === "study"
-                        ? "font-semibold text-green-700"
-                        : "text-gray-800"
+                        ? "font-semibold text-indigo-700"
+                        : "text-slate-700"
                     }`}
                   >
                     Full Question Bank
@@ -474,10 +482,10 @@ export default function Home() {
 
                   <button
                     onClick={() => startQuiz("study100")}
-                    className={`block w-full px-4 py-3 text-left text-sm hover:bg-gray-100 ${
+                    className={`block w-full px-4 py-3 text-left text-sm hover:bg-blue-50 ${
                       mode === "study100"
-                        ? "font-semibold text-green-700"
-                        : "text-gray-800"
+                        ? "font-semibold text-indigo-700"
+                        : "text-slate-700"
                     }`}
                   >
                     100 Random Questions
@@ -488,24 +496,38 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm font-semibold text-gray-700">
-            Question {current + 1} / {order.length}
-          </p>
-
-          <div className="flex flex-wrap items-center gap-2">
-            <p className="text-sm font-semibold text-blue-700">
-              Selected:{" "}
-              {selectedAnswers.filter((answer) => answer !== null).length} /{" "}
-              {order.length}
+        <div className="mb-5">
+          <div className="mb-2 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-sm font-bold text-slate-800">
+              Question {current + 1}{" "}
+              <span className="font-medium text-slate-400">
+                / {order.length}
+              </span>
             </p>
-            <span className="rounded-full bg-gray-200 px-3 py-1 text-xs font-medium text-gray-800">
-              {modeLabel}
-            </span>
+
+            <div className="flex flex-wrap items-center gap-2">
+              <p className="text-sm font-semibold text-blue-700">
+                Selected:{" "}
+                {selectedAnswers.filter((answer) => answer !== null).length} /{" "}
+                {order.length}
+              </p>
+              <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-bold tracking-wide text-blue-800">
+                {modeLabel}
+              </span>
+            </div>
+          </div>
+
+          <div className="h-2 w-full overflow-hidden rounded-full bg-blue-100">
+            <div
+              className="h-full rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 transition-all"
+              style={{
+                width: `${order.length ? ((current + 1) / order.length) * 100 : 0}%`,
+              }}
+            />
           </div>
         </div>
 
-        <p className="mb-5 text-base font-medium leading-relaxed text-gray-900 sm:mb-6 sm:text-lg">
+        <p className="mb-5 rounded-2xl bg-blue-50/70 p-4 text-base font-semibold leading-relaxed text-slate-900 ring-1 ring-blue-100 sm:mb-6 sm:p-5 sm:text-lg">
           {question.pregunta}
         </p>
 
@@ -516,7 +538,7 @@ export default function Home() {
               alt="Question figure"
               width={800}
               height={500}
-              className="h-auto w-full rounded-lg border"
+              className="h-auto w-full rounded-xl border border-slate-200"
             />
           </div>
         )}
@@ -526,9 +548,12 @@ export default function Home() {
             <button
               key={i}
               onClick={() => handleSelect(i)}
-              className={`w-full rounded-lg border p-3 text-left text-sm text-gray-900 transition sm:p-4 sm:text-base ${getOptionClass(i)}`}
+              className={`flex w-full items-start gap-3 rounded-xl border p-3 text-left text-sm text-slate-900 transition sm:p-4 sm:text-base ${getOptionClass(i)}`}
             >
-              {op}
+              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-xs font-bold text-slate-600">
+                {String.fromCharCode(65 + i)}
+              </span>
+              <span>{op}</span>
             </button>
           ))}
         </div>
@@ -537,7 +562,7 @@ export default function Home() {
           <button
             onClick={prevQuestion}
             disabled={current === 0}
-            className="w-full rounded-lg bg-gray-600 px-5 py-3 text-sm font-medium text-white disabled:opacity-50 sm:w-auto sm:text-base"
+            className="w-full rounded-xl bg-slate-100 px-5 py-3 text-sm font-semibold text-slate-700 ring-1 ring-slate-200 transition hover:bg-slate-200 disabled:opacity-40 sm:w-auto sm:text-base"
           >
             Previous
           </button>
@@ -545,7 +570,7 @@ export default function Home() {
           <button
             onClick={nextQuestion}
             disabled={current === order.length - 1}
-            className="w-full rounded-lg bg-green-600 px-5 py-3 text-sm font-medium text-white disabled:opacity-50 sm:w-auto sm:text-base"
+            className="w-full rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-blue-600/30 transition hover:bg-blue-700 disabled:opacity-40 sm:w-auto sm:text-base"
           >
             Next
           </button>
@@ -553,7 +578,7 @@ export default function Home() {
           {mode === "test" && (
             <button
               onClick={finishTest}
-              className="w-full rounded-lg bg-red-600 px-5 py-3 text-sm font-medium text-white sm:w-auto sm:text-base"
+              className="w-full rounded-xl bg-rose-600 px-5 py-3 text-sm font-semibold text-white shadow-md shadow-rose-600/25 transition hover:bg-rose-700 sm:w-auto sm:text-base"
             >
               Finish Test
             </button>
@@ -561,29 +586,30 @@ export default function Home() {
 
           <button
             onClick={() => startQuiz(mode)}
-            className="w-full rounded-lg bg-purple-600 px-5 py-3 text-sm font-medium text-white sm:w-auto sm:text-base"
+            className="w-full rounded-xl bg-indigo-50 px-5 py-3 text-sm font-semibold text-indigo-700 ring-1 ring-indigo-200 transition hover:bg-indigo-100 sm:w-auto sm:text-base"
           >
             Restart
           </button>
         </div>
 
         {(mode === "study" || mode === "study100") && showAnswer && (
-          <div className="mt-6 rounded-lg bg-gray-50 p-4">
-            <p className="text-base font-semibold text-gray-900 sm:text-lg">
+          <div className="mt-6 rounded-2xl border border-blue-100 bg-blue-50/60 p-4 sm:p-5">
+            <p className="text-base font-bold text-slate-900 sm:text-lg">
               {selected === question.correcta ? "✅ Correct" : "❌ Incorrect"}
             </p>
 
-            <p className="mt-2 text-sm text-gray-800 sm:text-base">
+            <p className="mt-2 text-sm font-medium text-slate-800 sm:text-base">
               Correct answer: {question.opciones[question.correcta]}
             </p>
 
             {question.explicacion && (
-              <p className="mt-2 text-sm text-gray-800 sm:text-base">
+              <p className="mt-2 text-sm text-slate-700 sm:text-base">
                 Explanation: {question.explicacion}
               </p>
             )}
           </div>
         )}
+        </div>
       </div>
     </div>
   );
