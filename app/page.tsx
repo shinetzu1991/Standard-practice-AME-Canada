@@ -13,10 +13,44 @@ type Question = {
   correcta: number;
   explicacion?: string;
   imagen?: string;
+  tema?: string;
 };
 
 type Category = "standard" | "airframe" | "powerplant";
-type QuizMode = "test" | "study" | "study100";
+type QuizMode = "test" | "study" | "study100" | "topic";
+
+// Canonical topic order per bank (same names as scripts/classify_topics.py).
+const TOPIC_ORDER: Record<Category, string[]> = {
+  standard: [
+    "Physics & Math",
+    "Electrical",
+    "Hardware, Materials & Processes",
+    "Hydraulics & Pneumatics",
+    "Drawings, Documents & Regulations",
+  ],
+  airframe: [
+    "Helicopters",
+    "Hydraulics, Landing Gear & Brakes",
+    "Flight Controls & Aerodynamics",
+    "Structures, Fabric & Sheet Metal",
+    "Pressurization, Air Conditioning & Oxygen",
+    "Electrical, Instruments & Avionics",
+    "Fuel Systems & Weight and Balance",
+  ],
+  powerplant: [
+    "Piston engines",
+    "Propellers",
+    "Turbine engines",
+    "Engine Systems & Electrical",
+  ],
+};
+
+function topicsFor(category: Category): { name: string; count: number }[] {
+  const bank = questionBanks[category];
+  return TOPIC_ORDER[category]
+    .map((name) => ({ name, count: bank.filter((q) => q.tema === name).length }))
+    .filter((t) => t.count > 0);
+}
 
 const SHOW_POWERPLANT = true;
 
@@ -35,6 +69,7 @@ const PROGRESS_KEY = "ame-exam-progress";
 type SavedProgress = {
   category: Category;
   mode: QuizMode;
+  topic?: string | null;
   order: Question[];
   current: number;
   selectedAnswers: (number | null)[];
@@ -57,6 +92,7 @@ function loadProgress(): SavedProgress | null {
 export default function Home() {
   const [category, setCategory] = useState<Category>("standard");
   const [mode, setMode] = useState<QuizMode>("test");
+  const [topic, setTopic] = useState<string | null>(null);
   const [order, setOrder] = useState<Question[]>([]);
   const [current, setCurrent] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<(number | null)[]>([]);
@@ -72,8 +108,14 @@ export default function Home() {
     selectedMode: QuizMode,
     selectedCategory: Category = category,
     initialQuestionNumber = 1,
+    selectedTopic: string | null = null,
   ) => {
-    const sourceQuestions = questionBanks[selectedCategory];
+    const bank = questionBanks[selectedCategory];
+    const sourceQuestions =
+      selectedMode === "topic" && selectedTopic
+        ? bank.filter((q) => q.tema === selectedTopic)
+        : bank;
+    if (sourceQuestions.length === 0) return;
 
     const loadedQuestions =
       selectedMode === "test"
@@ -94,6 +136,7 @@ export default function Home() {
     );
 
     setMode(selectedMode);
+    setTopic(selectedMode === "topic" ? selectedTopic : null);
     setOrder(loadedQuestions);
     setCurrent(initialCurrent);
     setSelectedAnswers(new Array(loadedQuestions.length).fill(null));
@@ -108,22 +151,40 @@ export default function Home() {
     const params = new URLSearchParams(window.location.search);
     const hasUrlParams =
       params.has("category") || params.has("mode") || params.has("q");
+    const categoryParam = params.get("category");
     const urlCategory: Category =
-      params.get("category") === "airframe" ? "airframe" : "standard";
+      categoryParam === "airframe" || categoryParam === "powerplant"
+        ? categoryParam
+        : "standard";
     const modeParam = params.get("mode");
+    const urlTopic = params.get("topic");
     const urlMode: QuizMode =
-      modeParam === "study" || modeParam === "study100" ? modeParam : "test";
+      modeParam === "study" || modeParam === "study100"
+        ? modeParam
+        : modeParam === "topic" && urlTopic
+          ? "topic"
+          : "test";
     const urlQuestionNumber = parseInt(params.get("q") ?? "1", 10);
 
     const savedMatchesUrl =
       !!saved &&
       (!hasUrlParams ||
-        (saved.category === urlCategory && saved.mode === urlMode));
+        (saved.category === urlCategory &&
+          saved.mode === urlMode &&
+          (urlMode !== "topic" || (saved.topic ?? null) === urlTopic)));
 
     if (saved && savedMatchesUrl) {
+      // Saved progress stores full question objects; refresh them from the
+      // current bank so edited questions/answers (and their audio) stay in sync.
+      const byText = new Map(
+        questionBanks[saved.category].map((q) => [q.pregunta, q] as const),
+      );
+      const refreshedOrder = saved.order.map((q) => byText.get(q.pregunta) ?? q);
+
       setCategory(saved.category);
       setMode(saved.mode);
-      setOrder(saved.order);
+      setTopic(saved.topic ?? null);
+      setOrder(refreshedOrder);
       setCurrent(saved.current);
       setSelectedAnswers(saved.selectedAnswers);
       setCheckedAnswers(saved.checkedAnswers);
@@ -134,6 +195,7 @@ export default function Home() {
         urlMode,
         urlCategory,
         Number.isFinite(urlQuestionNumber) ? urlQuestionNumber : 1,
+        urlTopic,
       );
     }
 
@@ -152,6 +214,7 @@ export default function Home() {
     const data: SavedProgress = {
       category,
       mode,
+      topic,
       order,
       current,
       selectedAnswers,
@@ -170,14 +233,16 @@ export default function Home() {
       mode,
       q: String(current + 1),
     });
+    if (mode === "topic" && topic) params.set("topic", topic);
     window.history.replaceState(null, "", `/?${params.toString()}`);
-  }, [hydrated, category, mode, order, current, selectedAnswers, checkedAnswers, finished]);
+  }, [hydrated, category, mode, topic, order, current, selectedAnswers, checkedAnswers, finished]);
 
   if (order.length === 0 || !order[current]) {
     return <div className="p-6">Loading...</div>;
   }
 
   const question = order[current];
+  const isStudy = mode === "study" || mode === "study100" || mode === "topic";
   const selected = selectedAnswers[current];
   const showAnswer = checkedAnswers[current];
 
@@ -204,13 +269,13 @@ export default function Home() {
 
   const handleSelect = (index: number) => {
     if (finished) return;
-    if ((mode === "study" || mode === "study100") && showAnswer) return;
+    if (isStudy && showAnswer) return;
 
     const updated = [...selectedAnswers];
     updated[current] = index;
     setSelectedAnswers(updated);
 
-    if (mode === "study" || mode === "study100") {
+    if (isStudy) {
       const updatedChecked = [...checkedAnswers];
       updatedChecked[current] = true;
       setCheckedAnswers(updatedChecked);
@@ -240,7 +305,7 @@ export default function Home() {
         : "border-blue-100 bg-white shadow-sm hover:border-blue-400 hover:bg-blue-50";
     }
 
-    if ((mode === "study" || mode === "study100") && !showAnswer) {
+    if (isStudy && !showAnswer) {
       return selected === i
         ? "border-blue-500 bg-blue-50 ring-2 ring-blue-200"
         : "border-blue-100 bg-white shadow-sm hover:border-blue-400 hover:bg-blue-50";
@@ -269,7 +334,9 @@ export default function Home() {
       ? "TEST MODE"
       : mode === "study100"
         ? "STUDY 100 RANDOM"
-        : "STUDY MODE";
+        : mode === "topic"
+          ? `STUDY: ${(topic ?? "").toUpperCase()}`
+          : "STUDY MODE";
 
   const categoryTabs = (
     <header className="mb-6 overflow-hidden rounded-3xl bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-700 p-5 text-white shadow-xl shadow-blue-900/20 sm:p-6">
@@ -461,7 +528,7 @@ export default function Home() {
               <button
                 onClick={() => setStudyMenuOpen((prev) => !prev)}
                 className={`rounded-xl px-5 py-3 text-sm font-semibold transition ${
-                  mode === "study" || mode === "study100"
+                  isStudy
                     ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/30"
                     : "bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200 hover:bg-indigo-100"
                 }`}
@@ -470,7 +537,7 @@ export default function Home() {
               </button>
 
               {studyMenuOpen && (
-                <div className="absolute right-0 z-10 mt-2 w-56 overflow-hidden rounded-xl border border-blue-100 bg-white shadow-xl shadow-blue-900/15">
+                <div className="absolute right-0 z-10 mt-2 w-72 overflow-hidden rounded-xl border border-blue-100 bg-white shadow-xl shadow-blue-900/15">
                   <button
                     onClick={() => startQuiz("study")}
                     className={`block w-full px-4 py-3 text-left text-sm hover:bg-blue-50 ${
@@ -492,6 +559,26 @@ export default function Home() {
                   >
                     100 Random Questions
                   </button>
+
+                  <p className="border-t border-blue-100 px-4 pb-1 pt-3 text-[11px] font-bold uppercase tracking-widest text-blue-600">
+                    By topic
+                  </p>
+                  {topicsFor(category).map((t) => (
+                    <button
+                      key={t.name}
+                      onClick={() => startQuiz("topic", category, 1, t.name)}
+                      className={`flex w-full items-center justify-between gap-2 px-4 py-2.5 text-left text-sm hover:bg-blue-50 ${
+                        mode === "topic" && topic === t.name
+                          ? "font-semibold text-indigo-700"
+                          : "text-slate-700"
+                      }`}
+                    >
+                      <span>{t.name}</span>
+                      <span className="shrink-0 rounded-full bg-blue-100 px-2 py-0.5 text-[11px] font-bold text-blue-800">
+                        {t.count}
+                      </span>
+                    </button>
+                  ))}
                 </div>
               )}
             </div>
@@ -561,7 +648,7 @@ export default function Home() {
           </div>
         </div>
 
-        {(mode === "study" || mode === "study100") && (
+        {isStudy && (
           <AudioPlayer
             category={category}
             order={order}
@@ -628,14 +715,14 @@ export default function Home() {
           )}
 
           <button
-            onClick={() => startQuiz(mode)}
+            onClick={() => startQuiz(mode, category, 1, topic)}
             className="w-full rounded-xl bg-indigo-50 px-5 py-3 text-sm font-semibold text-indigo-700 ring-1 ring-indigo-200 transition hover:bg-indigo-100 sm:w-auto sm:text-base"
           >
             Restart
           </button>
         </div>
 
-        {(mode === "study" || mode === "study100") && showAnswer && (
+        {isStudy && showAnswer && (
           <div className="mt-6 rounded-2xl border border-blue-200 bg-white p-4 shadow-sm sm:p-5">
             <p className="text-base font-bold text-slate-900 sm:text-lg">
               {selected === question.correcta ? "✅ Correct" : "❌ Incorrect"}
