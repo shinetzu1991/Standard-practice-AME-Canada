@@ -6,9 +6,10 @@ Usage (from the project root):
 
 Requirements: pip install edge-tts, and ffmpeg on the PATH.
 
-For every question it creates two files in public/audio/<category>/:
-    <key>_q.mp3   the question text
-    <key>_a.mp3   "Answer: <correct option>"
+For every question it creates one file in public/audio/<category>/:
+    <key>_qa.mp3   the question, a 2.5 s pause, "Answer: <correct option>", then a 1 s pause
+(the question and answer are synthesized separately and joined; one file per question
+means fewer file changes during playback, which is more reliable with the phone locked)
 where <key> is a hash of (question + correct answer) that app/AudioPlayer.tsx computes
 the same way, so editing a question automatically triggers new audio on the next run.
 Also writes: public/audio/num/<n>.mp3 ("Question n"), public/audio/silence.mp3 and
@@ -154,7 +155,7 @@ async def main() -> None:
         keys.append(key)
         for suffix, text in (("q", speakable(q["pregunta"])), ("a", "Answer: " + speakable(answer))):
             f = out_dir / f"{key}_{suffix}.mp3"
-            if not f.exists():
+            if not f.exists() and not (out_dir / f"{key}_qa.mp3").exists():
                 jobs.append((text, f))
 
     for n in range(1, MAX_NUMBER + 1):
@@ -177,8 +178,23 @@ async def main() -> None:
 
     await asyncio.gather(*(run(t, f) for t, f in jobs))
 
-    # manifest: only keys whose two files exist
-    valid = sorted({k for k in keys if (out_dir / f"{k}_q.mp3").exists() and (out_dir / f"{k}_a.mp3").exists()})
+    # join question + pause + answer + pause into one file per question
+    for k in dict.fromkeys(keys):
+        qa = out_dir / f"{k}_qa.mp3"
+        qf, af = out_dir / f"{k}_q.mp3", out_dir / f"{k}_a.mp3"
+        if qa.exists() or not (qf.exists() and af.exists()):
+            continue
+        subprocess.run(
+            ["ffmpeg", "-y", "-loglevel", "error", "-i", str(qf), "-i", str(AUDIO / "silence.mp3"), "-i", str(af),
+             "-i", str(AUDIO / "pause.mp3"), "-filter_complex", "concat=n=4:v=0:a=1",
+             "-ac", "1", "-ar", "24000", "-b:a", "32k", str(qa)],
+            check=True,
+        )
+        qf.unlink()
+        af.unlink()
+
+    # manifest: only keys that have their joined file
+    valid = sorted({k for k in keys if (out_dir / f"{k}_qa.mp3").exists()})
     manifest_path = AUDIO / "manifest.json"
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
     manifest[args.category] = valid

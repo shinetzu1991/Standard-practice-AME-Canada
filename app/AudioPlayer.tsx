@@ -110,13 +110,8 @@ export default function AudioPlayer({
 
     if (available.has(key) && current + 1 <= 1000) {
       const audio = getAudio();
-      const clips = [
-        `/audio/num/${current + 1}.mp3`,
-        `${dir}/${key}_q.mp3`,
-        `/audio/silence.mp3`,
-        `${dir}/${key}_a.mp3`,
-        `/audio/pause.mp3`,
-      ];
+      // number clip + one joined clip (question, pause, answer, pause)
+      const clips = [`/audio/num/${current + 1}.mp3`, `${dir}/${key}_qa.mp3`];
       let i = 0;
       const playClip = () => {
         if (cancelled) return;
