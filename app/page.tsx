@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import AudioPlayer from "./AudioPlayer";
 import rawStandardQuestions from "../data/questions.json";
 import rawAirframeQuestions from "../data/airframe.json";
 import rawPowerplantQuestions from "../data/powerplant.json";
@@ -526,6 +527,14 @@ export default function Home() {
             />
           </div>
         </div>
+
+        {(mode === "study" || mode === "study100") && (
+          <AudioPlayer
+            order={order}
+            current={current}
+            setCurrent={setCurrent}
+          />
+        )}
 
         <p className="mb-5 rounded-2xl bg-white p-4 text-base font-semibold leading-relaxed text-slate-900 shadow-sm ring-1 ring-blue-200 sm:mb-6 sm:p-5 sm:text-lg">
           {question.pregunta}
