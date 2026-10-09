@@ -5228,7 +5228,7 @@
     ],
     "correcta": 2,
     "tema": "Helicopters",
-    "explicacion": "A rigid rotor head has no flapping hinges and therefore has the least inherent ability to compensate for dissymmetry of lift compared with articulated or semi-rigid designs. :contentReference[oaicite:0]{index=0}"
+    "explicacion": "A rigid rotor head has no flapping hinges and therefore has the least inherent ability to compensate for dissymmetry of lift compared with articulated or semi-rigid designs."
   },
   {
     "id": "helicopter-230",
@@ -5239,9 +5239,9 @@
       "Fully articulated",
       "Semi-articulated"
     ],
-    "correcta": 2,
+    "correcta": 0,
     "tema": "Helicopters",
-    "explicacion": "A fully articulated rotor head uses lead-lag hinges that allow the blades to compensate for Coriolis effect during flight. :contentReference[oaicite:1]{index=1}"
+    "explicacion": "Per the Rotary Wing Airframes exam key (RWA08), the semi-rigid rotor head compensates for the Coriolis effect (its underslung design reduces the change in blade speed as the blades flap)."
   },
   {
     "id": "helicopter-231",
@@ -5254,7 +5254,7 @@
     ],
     "correcta": 2,
     "tema": "Helicopters",
-    "explicacion": "On helicopters equipped with a movable horizontal stabilizer, the stabilizer is normally positioned as a function of cyclic control inputs or associated control linkage. :contentReference[oaicite:2]{index=2}"
+    "explicacion": "On helicopters equipped with a movable horizontal stabilizer, the stabilizer is normally positioned as a function of cyclic control inputs or associated control linkage."
   },
   {
     "id": "helicopter-232",
@@ -5267,7 +5267,7 @@
     ],
     "correcta": 1,
     "tema": "Helicopters",
-    "explicacion": "Most helicopter transmissions use their own dedicated lubricant rather than sharing engine oil. :contentReference[oaicite:3]{index=3}"
+    "explicacion": "Most helicopter transmissions use their own dedicated lubricant rather than sharing engine oil."
   },
   {
     "id": "airframe-236",
@@ -5280,7 +5280,7 @@
     ],
     "correcta": 2,
     "tema": "Electrical",
-    "explicacion": "For wire sizing purposes, an intermittent load is one that operates for a maximum of 2 minutes. :contentReference[oaicite:0]{index=0}"
+    "explicacion": "For wire sizing purposes, an intermittent load is one that operates for a maximum of 2 minutes."
   },
   {
     "id": "airframe-237",
@@ -5293,7 +5293,7 @@
     ],
     "correcta": 0,
     "tema": "Landing Gear",
-    "explicacion": "Wheel contact surfaces should be cleaned with isopropyl alcohol before installation. :contentReference[oaicite:1]{index=1}"
+    "explicacion": "Wheel contact surfaces should be cleaned with isopropyl alcohol before installation."
   },
   {
     "id": "airframe-238",
@@ -5306,7 +5306,7 @@
     ],
     "correcta": 1,
     "tema": "Navigation",
-    "explicacion": "A complete ADF installation includes a receiver, loop antenna, sense antenna, indicator/RMI and a control panel. :contentReference[oaicite:2]{index=2}"
+    "explicacion": "A complete ADF installation includes a receiver, loop antenna, sense antenna, indicator/RMI and a control panel."
   },
   {
     "id": "airframe-239",
@@ -5319,7 +5319,7 @@
     ],
     "correcta": 0,
     "tema": "Avionics",
-    "explicacion": "Mode C operation requires an encoding altimeter (encoder) along with the transponder function selector. :contentReference[oaicite:3]{index=3}"
+    "explicacion": "Mode C operation requires an encoding altimeter (encoder) along with the transponder function selector."
   },
   {
     "id": "airframe-240",
@@ -5332,7 +5332,7 @@
     ],
     "correcta": 2,
     "tema": "Landing Gear",
-    "explicacion": "Inspect the bead seat area for tool damage, chafing against the rim and evidence of slippage. :contentReference[oaicite:4]{index=4}"
+    "explicacion": "Inspect the bead seat area for tool damage, chafing against the rim and evidence of slippage."
   },
   {
     "id": "airframe-241",
@@ -5345,7 +5345,7 @@
     ],
     "correcta": 3,
     "tema": "Air Conditioning",
-    "explicacion": "Older aircraft vapor-cycle systems commonly used dichlorodifluoromethane (R-12) refrigerant. :contentReference[oaicite:5]{index=5}"
+    "explicacion": "Older aircraft vapor-cycle systems commonly used dichlorodifluoromethane (R-12) refrigerant."
   },
   {
     "id": "airframe-242",
@@ -5358,7 +5358,7 @@
     ],
     "correcta": 0,
     "tema": "Aerodynamics",
-    "explicacion": "Controllability is the characteristic that describes how readily an aircraft responds to pilot control inputs. :contentReference[oaicite:6]{index=6}"
+    "explicacion": "Controllability is the characteristic that describes how readily an aircraft responds to pilot control inputs."
   },
   {
     "id": "airframe-243",
@@ -5371,7 +5371,7 @@
     ],
     "correcta": 0,
     "tema": "Aerodynamics",
-    "explicacion": "Surface roughness has a significant effect on boundary-layer development and transition. :contentReference[oaicite:7]{index=7}"
+    "explicacion": "Surface roughness has a significant effect on boundary-layer development and transition."
   },
   {
     "id": "airframe-244",
@@ -5384,7 +5384,7 @@
     ],
     "correcta": 2,
     "tema": "Aerodynamics",
-    "explicacion": "The upper surface of an airfoil is known as the extrados. :contentReference[oaicite:8]{index=8}"
+    "explicacion": "The upper surface of an airfoil is known as the extrados."
   },
   {
     "id": "airframe-245",
@@ -5397,7 +5397,7 @@
     ],
     "correcta": 0,
     "tema": "Pressurization",
-    "explicacion": "Aircraft pressurization systems generally operate in an isobaric range followed by a constant differential pressure range. :contentReference[oaicite:9]{index=9}"
+    "explicacion": "Aircraft pressurization systems generally operate in an isobaric range followed by a constant differential pressure range."
   },
   {
     "id": "environmental-206",
@@ -6243,7 +6243,7 @@
       "Left pedal",
       "Neutral pedal"
     ],
-    "correcta": 0
+    "correcta": 3
   },
   {
     "pregunta": "A U.S. made helicopter during take-off requires what anti-torque input?",
@@ -8894,5 +8894,25 @@
       "Max payload"
     ],
     "correcta": 0
+  },
+  {
+    "pregunta": "What force is imposed on a helicopter in forward steady state flight?",
+    "opciones": [
+      "Translational lift",
+      "Dissymmetry of lift",
+      "Transitional lift",
+      "Gyroscopic precession"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Hydraulic pumps are of what type?",
+    "opciones": [
+      "Piston",
+      "Gerotor",
+      "Vane",
+      "Gear"
+    ],
+    "correcta": 3
   }
 ]
