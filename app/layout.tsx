@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
@@ -44,6 +44,14 @@ export const metadata: Metadata = {
     apple: "/apple-icon.png",
   },
 
+  manifest: "/manifest.webmanifest",
+
+  appleWebApp: {
+    capable: true,
+    title: "M2 Canada",
+    statusBarStyle: "black-translucent",
+  },
+
   openGraph: {
     title: "M2 Canada",
     description:
@@ -52,6 +60,16 @@ export const metadata: Metadata = {
     siteName: "M2 Canada",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#1e3a8a" },
+    { media: "(prefers-color-scheme: dark)", color: "#0f172a" },
+  ],
 };
 
 export default function RootLayout({

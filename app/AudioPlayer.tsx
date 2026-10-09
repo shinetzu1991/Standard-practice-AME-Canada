@@ -15,7 +15,7 @@ type Props = {
   setCurrent: (updater: (prev: number) => number) => void;
 };
 
-const RATES = [0.8, 1, 1.2, 1.5];
+const RATES = [1, 1.2, 1.5, 0.8];
 
 // Same hash as scripts/generate_audio.py (two 32-bit FNV-1a over UTF-8 bytes).
 function audioKey(question: string, answer: string): string {
@@ -230,59 +230,51 @@ export default function AudioPlayer({
     setCurrent((prev) => Math.min(Math.max(prev + delta, 0), order.length - 1));
   };
 
+  const cycleRate = () => {
+    const i = RATES.indexOf(rate);
+    setRate(RATES[(i + 1) % RATES.length]);
+  };
+
+  const small =
+    "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/15 text-base font-semibold text-white ring-1 ring-white/25 transition hover:bg-white/25 disabled:opacity-40";
+
   return (
-    <div className="mb-5 rounded-2xl bg-gradient-to-r from-blue-700 to-indigo-600 p-4 text-white shadow-md">
-      <div className="flex flex-wrap items-center gap-3">
-        <div className="mr-auto">
-          <p className="text-sm font-bold">🎧 Audio mode</p>
-          <p className="text-xs text-blue-100">
-            Reads the question number, the question and the correct answer, then
-            moves on.
-          </p>
-        </div>
+    <div className="flex items-center gap-2 text-white">
+      <button
+        onClick={togglePlay}
+        className="flex h-10 shrink-0 items-center gap-1.5 rounded-xl bg-white px-4 text-sm font-bold text-blue-700 shadow-md transition hover:bg-blue-50"
+      >
+        {playing ? "⏸ Pause" : "▶ Play"}
+      </button>
 
-        <button
-          onClick={() => goTo(-1)}
-          disabled={current === 0}
-          aria-label="Previous question"
-          className="rounded-xl bg-white/15 px-3 py-2 text-sm font-semibold ring-1 ring-white/25 transition hover:bg-white/25 disabled:opacity-40"
-        >
-          ⏮
-        </button>
+      <button
+        onClick={() => goTo(-1)}
+        disabled={current === 0}
+        aria-label="Previous question"
+        className={small}
+      >
+        ⏮
+      </button>
+      <button
+        onClick={() => goTo(1)}
+        disabled={current === order.length - 1}
+        aria-label="Next question"
+        className={small}
+      >
+        ⏭
+      </button>
 
-        <button
-          onClick={togglePlay}
-          className="rounded-xl bg-white px-5 py-2 text-sm font-bold text-blue-700 shadow-md transition hover:bg-blue-50"
-        >
-          {playing ? "⏸ Pause" : "▶ Play"}
-        </button>
+      <button
+        onClick={cycleRate}
+        aria-label="Playback speed"
+        className={`${small} w-auto px-3 text-xs`}
+      >
+        {rate}x
+      </button>
 
-        <button
-          onClick={() => goTo(1)}
-          disabled={current === order.length - 1}
-          aria-label="Next question"
-          className="rounded-xl bg-white/15 px-3 py-2 text-sm font-semibold ring-1 ring-white/25 transition hover:bg-white/25 disabled:opacity-40"
-        >
-          ⏭
-        </button>
-      </div>
-
-      <div className="mt-3 flex flex-wrap items-center gap-1 text-xs">
-        <span className="mr-1 text-blue-100">Speed</span>
-        {RATES.map((r) => (
-          <button
-            key={r}
-            onClick={() => setRate(r)}
-            className={`rounded-lg px-2 py-1 font-semibold transition ${
-              rate === r
-                ? "bg-white text-blue-700"
-                : "bg-white/15 text-white hover:bg-white/25"
-            }`}
-          >
-            {r}x
-          </button>
-        ))}
-      </div>
+      <span className="ml-auto hidden text-[11px] leading-tight text-blue-100 sm:block">
+        🎧 Reads the question, pauses, then the answer
+      </span>
     </div>
   );
 }
