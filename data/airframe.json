@@ -8914,5 +8914,65 @@
       "Gear"
     ],
     "correcta": 3
+  },
+  {
+    "pregunta": "Stability about the lateral axis is?",
+    "opciones": [
+      "Vertical stability",
+      "Longitudinal stability",
+      "Horizontal stability",
+      "Lateral stability"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What is the primary function of the hydraulic system accumulators?",
+    "opciones": [
+      "Act as an emergency supply of fluid for the hand pump",
+      "Ensure a continuous supply of fluid to the engine driven pump",
+      "Relieve the pump of the constant load when no units in the system are operating",
+      "Supplement the pump when it is under peak load"
+    ],
+    "correcta": 3
+  },
+  {
+    "pregunta": "What is the purpose of bonding on an aircraft?",
+    "opciones": [
+      "To prevent electricity from moving around the structure",
+      "To allow electrical forces to travel throughout the aircraft structure without causing sparks",
+      "To relieve electrical stress during flight before the aircraft touches the ground",
+      "Mechanical means of securing components"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "What type of trim tab is directly controlled by the flight control components?",
+    "opciones": [
+      "Servo tab",
+      "Balance tab",
+      "Spring tab",
+      "Trim tab"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Low aspect ratio airfoils arranged in pairs on the surface of the wing create vortexes that pull high energy air down into the boundary layer and prevent air separating from the surface. These airfoils are called?",
+    "opciones": [
+      "Wing lets",
+      "Wing fences",
+      "Vortex generators",
+      "Slots and slats"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "Laminar flow of air over a wing is compressed the most?",
+    "opciones": [
+      "At the leading edge of the wing where the air flow separates",
+      "At the trailing edge of the lower wing surface",
+      "At the wing tip",
+      "At mid range of the upper wing surface"
+    ],
+    "correcta": 3
   }
 ]
