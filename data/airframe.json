@@ -8974,5 +8974,45 @@
       "At mid range of the upper wing surface"
     ],
     "correcta": 3
+  },
+  {
+    "pregunta": "Some types of rotor are permitted to flap to compensate for:",
+    "opciones": [
+      "Coriolis effect",
+      "Dissymmetry of lift",
+      "Centrifugal force",
+      "Blade tip overspeed"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Greater downwash effect through the aft part of the main rotor disk compared to the forward part of the disk is known as:",
+    "opciones": [
+      "Ground effect",
+      "Translational lift",
+      "Transitional lift",
+      "Transverse flow lift"
+    ],
+    "correcta": 1
+  },
+  {
+    "pregunta": "In a hydraulic system, the purpose of the pump is to:",
+    "opciones": [
+      "Generate pressure",
+      "Move the fluid",
+      "Relieve pressure",
+      "Regulate pressure"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "In a hydraulic system, priority valves are:",
+    "opciones": [
+      "Electrically actuated",
+      "Hydraulically actuated",
+      "Both electrically and hydraulically actuated",
+      "Mechanically actuated"
+    ],
+    "correcta": 2
   }
 ]
