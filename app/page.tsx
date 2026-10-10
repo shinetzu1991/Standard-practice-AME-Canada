@@ -83,6 +83,8 @@ type SavedProgress = {
   selectedAnswers: (number | null)[];
   checkedAnswers: boolean[];
   finished: boolean;
+  testStartedAt?: number | null;
+  testFinishedAt?: number | null;
 };
 
 // Questions already answered in Test Mode, per section, so the next test draws
@@ -109,6 +111,15 @@ function saveSeen(map: SeenMap) {
 }
 
 const TEST_SIZE = 90;
+const TEST_DURATION_MS = 3 * 60 * 60 * 1000; // 3 hours, like the Transport Canada exam
+
+function formatClock(ms: number): string {
+  const total = Math.max(0, Math.floor(ms / 1000));
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const sec = total % 60;
+  return [h, m, sec].map((v) => String(v).padStart(2, "0")).join(":");
+}
 
 function pickTestQuestions(bank: Question[], category: Category): Question[] {
   const seenMap = loadSeen();
@@ -183,6 +194,9 @@ export default function Home() {
   const [jumpTo, setJumpTo] = useState("");
   const [hydrated, setHydrated] = useState(false);
   const [seenCount, setSeenCount] = useState(0);
+  const [testStartedAt, setTestStartedAt] = useState<number | null>(null);
+  const [testFinishedAt, setTestFinishedAt] = useState<number | null>(null);
+  const [now, setNow] = useState(() => Date.now());
 
   const currentBank = questionBanks[category];
 
@@ -221,6 +235,8 @@ export default function Home() {
     setSelectedAnswers(new Array(loadedQuestions.length).fill(null));
     setCheckedAnswers(new Array(loadedQuestions.length).fill(false));
     setFinished(false);
+    setTestStartedAt(null); // test mode waits for the Start button
+    setTestFinishedAt(null);
     setStudyMenuOpen(false);
     setMoreOpen(false);
     setJumpOpen(false);
@@ -270,6 +286,17 @@ export default function Home() {
       setSelectedAnswers(saved.selectedAnswers);
       setCheckedAnswers(saved.checkedAnswers);
       setFinished(saved.finished);
+      setTestStartedAt(saved.testStartedAt ?? null);
+      setTestFinishedAt(saved.testFinishedAt ?? null);
+      if (
+        saved.mode === "test" &&
+        !saved.finished &&
+        saved.testStartedAt &&
+        Date.now() - saved.testStartedAt >= TEST_DURATION_MS
+      ) {
+        setFinished(true);
+        setTestFinishedAt(saved.testStartedAt + TEST_DURATION_MS);
+      }
     } else {
       setCategory(urlCategory);
       startQuiz(
@@ -317,6 +344,8 @@ export default function Home() {
       selectedAnswers,
       checkedAnswers,
       finished,
+      testStartedAt,
+      testFinishedAt,
     };
 
     try {
@@ -332,7 +361,31 @@ export default function Home() {
     });
     if (mode === "topic" && topic) params.set("topic", topic);
     window.history.replaceState(null, "", `/?${params.toString()}`);
-  }, [hydrated, category, mode, topic, order, current, selectedAnswers, checkedAnswers, finished]);
+  }, [hydrated, category, mode, topic, order, current, selectedAnswers, checkedAnswers, finished, testStartedAt, testFinishedAt]);
+
+  // Exam clock: tick every second while a test is running; finish when time is up.
+  const testRunning = mode === "test" && !finished && testStartedAt !== null;
+  useEffect(() => {
+    if (!testRunning) return;
+    const id = setInterval(() => setNow(Date.now()), 1000);
+    return () => clearInterval(id);
+  }, [testRunning]);
+
+  const timeLeftMs = testStartedAt
+    ? Math.max(0, testStartedAt + TEST_DURATION_MS - now)
+    : TEST_DURATION_MS;
+
+  useEffect(() => {
+    if (testRunning && timeLeftMs <= 0) {
+      setFinished(true);
+      setTestFinishedAt(Date.now());
+    }
+  }, [testRunning, timeLeftMs]);
+
+  const beginTest = () => {
+    setTestStartedAt(Date.now());
+    setNow(Date.now());
+  };
 
   const question = order[current];
   const isStudy = mode === "study" || mode === "study100" || mode === "topic";
@@ -341,6 +394,7 @@ export default function Home() {
 
   const handleSelect = (index: number) => {
     if (!question || finished) return;
+    if (mode === "test" && testStartedAt === null) return;
     if (isStudy && showAnswer) return;
 
     const updated = [...selectedAnswers];
@@ -368,8 +422,11 @@ export default function Home() {
 
   const finishTest = () => {
     setFinished(true);
+    setTestFinishedAt(Date.now());
     setMoreOpen(false);
   };
+
+  const awaitingStart = mode === "test" && !finished && testStartedAt === null;
 
   // Keyboard shortcuts (desktop): 1-4 / A-D answer, arrows move, Enter = next.
   useEffect(() => {
@@ -384,6 +441,7 @@ export default function Home() {
         return;
       }
       if (!question || finished) return;
+      if (mode === "test" && testStartedAt === null) return;
       if (e.key === "ArrowRight" || e.key === "Enter") {
         e.preventDefault();
         setCurrent((prev) => Math.min(prev + 1, order.length - 1));
@@ -399,7 +457,7 @@ export default function Home() {
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [question, finished, isStudy, showAnswer, selectedAnswers, checkedAnswers, current, order.length]);
+  }, [question, finished, isStudy, showAnswer, selectedAnswers, checkedAnswers, current, order.length, mode, testStartedAt]);
 
   if (order.length === 0 || !question) {
     return (
@@ -610,6 +668,11 @@ export default function Home() {
           ) : (
             <p className={`mt-1 text-sm ${MUTED}`}>
               Answered {answeredCount} / {order.length}
+              {testRunning && (
+                <span className="ml-2 font-mono font-semibold tabular-nums text-blue-700 dark:text-blue-300">
+                  ⏱ {formatClock(timeLeftMs)}
+                </span>
+              )}
             </p>
           )}
           <p className={`mt-2 text-xs ${MUTED}`}>
@@ -707,7 +770,22 @@ export default function Home() {
               <p className="mb-1 text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
                 {categoryTitle}
               </p>
-              <h1 className="mb-5 text-3xl font-extrabold">Test Results</h1>
+              <h1 className="mb-1 text-3xl font-extrabold">Test Results</h1>
+              {testStartedAt && (
+                <p className={`mb-5 text-sm ${MUTED}`}>
+                  Time used:{" "}
+                  <span className="font-mono font-semibold tabular-nums">
+                    {formatClock(
+                      Math.min(
+                        (testFinishedAt ?? Date.now()) - testStartedAt,
+                        TEST_DURATION_MS,
+                      ),
+                    )}
+                  </span>{" "}
+                  of {formatClock(TEST_DURATION_MS)}
+                  {timeLeftMs <= 0 && " · time expired"}
+                </p>
+              )}
 
               <div className="mb-6 grid gap-3 sm:grid-cols-3">
                 <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 p-4 text-white shadow-md">
@@ -868,6 +946,48 @@ export default function Home() {
         <main className="min-w-0 flex-1">
           {mobileHeader}
 
+          {awaitingStart ? (
+            <section className={`${CARD} p-6 sm:p-10`}>
+              <div className="mx-auto max-w-lg text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 text-3xl text-white shadow-lg shadow-blue-600/30">
+                  ⏱
+                </div>
+                <p className="text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
+                  {categoryTitle}
+                </p>
+                <h1 className="mt-1 text-3xl font-extrabold">Test Mode</h1>
+                <p className="mt-4 text-lg font-medium">
+                  Complete the {order.length} questions of this section.
+                </p>
+                <p className="mt-2 text-lg">
+                  You have{" "}
+                  <span className="font-mono font-bold tabular-nums">
+                    {formatClock(TEST_DURATION_MS)}
+                  </span>{" "}
+                  after you hit Start.
+                </p>
+                <ul className={`mt-5 space-y-1 text-sm ${MUTED}`}>
+                  <li>The answers are shown at the end, like the Transport Canada exam.</li>
+                  <li>The test ends by itself when the time is up; you can also finish earlier.</li>
+                  <li>
+                    {currentBank.length - seenCount} of {currentBank.length} questions
+                    in this section have not been in a test yet.
+                  </li>
+                </ul>
+                <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+                  <button
+                    onClick={beginTest}
+                    className="rounded-xl bg-blue-600 px-10 py-4 text-lg font-bold text-white shadow-lg shadow-blue-600/30 transition hover:bg-blue-700"
+                  >
+                    Start
+                  </button>
+                  <button onClick={() => startQuiz("study")} className={BTN_SOFT}>
+                    Study instead
+                  </button>
+                </div>
+              </div>
+            </section>
+          ) : (
           <section className={`${CARD} p-4 sm:p-6 lg:p-8`}>
             <div className="mb-4 flex flex-wrap items-end justify-between gap-2">
               <div>
@@ -889,13 +1009,25 @@ export default function Home() {
                   </span>
                 </p>
               ) : (
-                <p className={`text-sm ${MUTED}`}>
-                  Answered{" "}
-                  <span className="font-semibold text-blue-700 dark:text-blue-300">
-                    {answeredCount}
-                  </span>{" "}
-                  / {order.length}
-                </p>
+                <div className="flex items-center gap-3">
+                  <p className={`text-sm ${MUTED}`}>
+                    Answered{" "}
+                    <span className="font-semibold text-blue-700 dark:text-blue-300">
+                      {answeredCount}
+                    </span>{" "}
+                    / {order.length}
+                  </p>
+                  <span
+                    className={`rounded-xl px-3 py-1.5 font-mono text-sm font-bold tabular-nums ring-1 ${
+                      timeLeftMs < 10 * 60 * 1000
+                        ? "bg-rose-50 text-rose-700 ring-rose-200 dark:bg-rose-950/50 dark:text-rose-300 dark:ring-rose-800"
+                        : "bg-white text-blue-800 ring-blue-200 dark:bg-slate-800 dark:text-blue-200 dark:ring-slate-600"
+                    }`}
+                    title="Time left"
+                  >
+                    ⏱ {formatClock(timeLeftMs)}
+                  </span>
+                </div>
               )}
             </div>
 
@@ -1003,8 +1135,10 @@ export default function Home() {
               </div>
             )}
           </section>
+          )}
 
       {/* Bottom bar: fixed on phones, part of the page on desktop. */}
+      {!awaitingStart && (
       <div className="fixed inset-x-0 bottom-0 z-30 lg:static lg:z-auto lg:mt-4">
             <div className="rounded-t-3xl bg-white shadow-[0_-8px_30px_rgba(30,58,138,0.25)] ring-1 ring-blue-200 lg:rounded-3xl lg:shadow-xl dark:bg-slate-900 dark:ring-slate-700">
               {isStudy && (
@@ -1098,6 +1232,7 @@ export default function Home() {
               </div>
             </div>
       </div>
+      )}
 
         </main>
       </div>
