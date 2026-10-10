@@ -85,6 +85,58 @@ type SavedProgress = {
   finished: boolean;
 };
 
+// Questions already answered in Test Mode, per section, so the next test draws
+// from the ones not seen yet. When fewer than a full test remain, the remaining
+// ones are used first and the rest is filled from the old pool, which then restarts.
+const TEST_SEEN_KEY = "ame-test-seen";
+type SeenMap = Partial<Record<Category, string[]>>;
+
+function loadSeen(): SeenMap {
+  try {
+    const raw = localStorage.getItem(TEST_SEEN_KEY);
+    return raw ? (JSON.parse(raw) as SeenMap) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveSeen(map: SeenMap) {
+  try {
+    localStorage.setItem(TEST_SEEN_KEY, JSON.stringify(map));
+  } catch {
+    // ignore storage errors
+  }
+}
+
+const TEST_SIZE = 90;
+
+function pickTestQuestions(bank: Question[], category: Category): Question[] {
+  const seenMap = loadSeen();
+  const seen = new Set(seenMap[category] ?? []);
+  const unseen = bank.filter((q) => !seen.has(q.pregunta));
+  const size = Math.min(TEST_SIZE, bank.length);
+
+  if (unseen.length >= size) {
+    return shuffleArray(unseen).slice(0, size);
+  }
+
+  // Not enough fresh questions: use all of them, top up from the old pool and
+  // start a new cycle (only the top-up questions count as seen).
+  const topUp = shuffleArray(bank.filter((q) => seen.has(q.pregunta))).slice(
+    0,
+    size - unseen.length,
+  );
+  saveSeen({ ...seenMap, [category]: topUp.map((q) => q.pregunta) });
+  return shuffleArray([...unseen, ...topUp]);
+}
+
+function markSeen(category: Category, text: string) {
+  const seenMap = loadSeen();
+  const list = seenMap[category] ?? [];
+  if (list.includes(text)) return;
+  saveSeen({ ...seenMap, [category]: [...list, text] });
+}
+
 function loadProgress(): SavedProgress | null {
   try {
     const raw = localStorage.getItem(PROGRESS_KEY);
@@ -130,6 +182,7 @@ export default function Home() {
   const [jumpOpen, setJumpOpen] = useState(false);
   const [jumpTo, setJumpTo] = useState("");
   const [hydrated, setHydrated] = useState(false);
+  const [seenCount, setSeenCount] = useState(0);
 
   const currentBank = questionBanks[category];
 
@@ -148,16 +201,13 @@ export default function Home() {
 
     const loadedQuestions =
       selectedMode === "test"
-        ? shuffleArray(sourceQuestions).slice(
-            0,
-            Math.min(90, sourceQuestions.length),
-          )
+        ? pickTestQuestions(sourceQuestions, selectedCategory)
         : selectedMode === "study100"
           ? shuffleArray(sourceQuestions).slice(
               0,
               Math.min(100, sourceQuestions.length),
             )
-          : [...sourceQuestions];
+          : shuffleArray(sourceQuestions); // study / topic: always a random order
 
     const initialCurrent = Math.min(
       Math.max(initialQuestionNumber - 1, 0),
@@ -234,6 +284,22 @@ export default function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Keep the "not seen yet in Test Mode" counter in sync with storage.
+  useEffect(() => {
+    if (!hydrated) return;
+    const bank = questionBanks[category];
+    const seen = new Set(loadSeen()[category] ?? []);
+    setSeenCount(bank.filter((q) => seen.has(q.pregunta)).length);
+  }, [hydrated, category, order, selectedAnswers]);
+
+  const resetTestPool = () => {
+    const seenMap = loadSeen();
+    delete seenMap[category];
+    saveSeen(seenMap);
+    setSeenCount(0);
+    setMoreOpen(false);
+  };
+
   const selectCategory = (newCategory: Category) => {
     setCategory(newCategory);
     startQuiz("test", newCategory);
@@ -280,6 +346,10 @@ export default function Home() {
     const updated = [...selectedAnswers];
     updated[current] = index;
     setSelectedAnswers(updated);
+
+    if (mode === "test") {
+      markSeen(category, question.pregunta);
+    }
 
     if (isStudy) {
       const updatedChecked = [...checkedAnswers];
@@ -542,6 +612,13 @@ export default function Home() {
               Answered {answeredCount} / {order.length}
             </p>
           )}
+          <p className={`mt-2 text-xs ${MUTED}`}>
+            Not yet seen in Test Mode:{" "}
+            <span className="font-semibold text-blue-700 dark:text-blue-300">
+              {currentBank.length - seenCount}
+            </span>{" "}
+            / {currentBank.length}
+          </p>
           <p className={`mt-3 text-[11px] ${MUTED}`}>
             Keys: 1–4 answer · ← → move · Enter next
           </p>
@@ -691,9 +768,23 @@ export default function Home() {
                 </div>
               )}
 
+              <p className={`mb-3 text-sm ${MUTED}`}>
+                Questions not yet seen in Test Mode:{" "}
+                <span className="font-semibold text-blue-700 dark:text-blue-300">
+                  {currentBank.length - seenCount}
+                </span>{" "}
+                / {currentBank.length}. The next test uses those first.
+                <button
+                  onClick={resetTestPool}
+                  className="ml-2 font-semibold text-indigo-600 underline-offset-2 hover:underline dark:text-indigo-300"
+                >
+                  Reset
+                </button>
+              </p>
+
               <div className="mb-6 flex flex-wrap gap-3">
                 <button onClick={() => startQuiz("test")} className={BTN_PRIMARY}>
-                  Restart Test Mode
+                  New Test (unseen questions)
                 </button>
                 <button
                   onClick={() => startQuiz("study")}
@@ -998,6 +1089,14 @@ export default function Home() {
                       >
                         Restart
                       </button>
+                      {mode === "test" && (
+                        <button onClick={resetTestPool} className={MENU_ITEM}>
+                          Reset test pool
+                          <span className={`block text-[11px] ${MUTED}`}>
+                            {currentBank.length - seenCount} / {currentBank.length} not seen yet
+                          </span>
+                        </button>
+                      )}
                     </div>
                   </>
                 )}
