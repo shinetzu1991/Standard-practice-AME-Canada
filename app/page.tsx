@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import AudioPlayer, { QuestionReader, unlockAudio } from "./AudioPlayer";
 import rawStandardQuestions from "../data/questions.json";
@@ -199,6 +199,7 @@ export default function Home() {
   const [testFinishedAt, setTestFinishedAt] = useState<number | null>(null);
   const [now, setNow] = useState(() => Date.now());
   const [readAloud, setReadAloud] = useState(false);
+  const autoNextRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const currentBank = questionBanks[category];
 
@@ -428,8 +429,25 @@ export default function Home() {
       const updatedChecked = [...checkedAnswers];
       updatedChecked[current] = true;
       setCheckedAnswers(updatedChecked);
+
+      // Correct answer in study mode: move on by itself after a short pause
+      // (a wrong answer stays on screen so the explanation can be read).
+      if (index === question.correcta && current < order.length - 1) {
+        if (autoNextRef.current) clearTimeout(autoNextRef.current);
+        autoNextRef.current = setTimeout(() => {
+          autoNextRef.current = null;
+          setCurrent((prev) => Math.min(prev + 1, order.length - 1));
+        }, 900);
+      }
     }
   };
+
+  useEffect(() => {
+    return () => {
+      if (autoNextRef.current) clearTimeout(autoNextRef.current);
+      autoNextRef.current = null;
+    };
+  }, [current]);
 
   const nextQuestion = () => {
     setCurrent((prev) => Math.min(prev + 1, order.length - 1));
