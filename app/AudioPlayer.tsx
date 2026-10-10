@@ -65,11 +65,8 @@ function audioKey(question: string, answer: string): string {
 }
 
 // Fallback voice (browser speech) for questions that have no recorded audio yet.
-function fallbackText(q: Question, number: number): string[] {
-  return [
-    `Question ${number}. ${q.pregunta}`,
-    `Answer: ${q.opciones[q.correcta]}`,
-  ];
+function fallbackText(q: Question): string[] {
+  return [q.pregunta, `Answer: ${q.opciones[q.correcta]}`];
 }
 
 // Plays the current question only (no number, no answer) whenever it changes.
@@ -206,10 +203,11 @@ export default function AudioPlayer({
     const dir = `/audio/${category}`;
     let cleanup = () => {};
 
-    if (manifest.has(key) && current + 1 <= 1000) {
+    if (manifest.has(key)) {
       const audio = getAudio();
-      // number clip + one joined clip (question, pause, answer, pause)
-      const clips = [`/audio/num/${current + 1}.mp3`, `${dir}/${key}_qa.mp3`];
+      // one joined clip per question (question, pause, answer, pause); the
+      // question number is not read, it only slows the session down.
+      const clips = [`${dir}/${key}_qa.mp3`];
       let i = 0;
       const playClip = () => {
         if (cancelled) return;
@@ -243,7 +241,7 @@ export default function AudioPlayer({
       };
     } else if ("speechSynthesis" in window) {
       const synth = window.speechSynthesis;
-      const parts = fallbackText(q, current + 1);
+      const parts = fallbackText(q);
       let i = 0;
       const speak = () => {
         if (cancelled) return;
