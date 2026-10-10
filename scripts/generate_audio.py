@@ -13,7 +13,8 @@ means fewer file changes during playback, which is more reliable with the phone 
 where <key> is a hash of (question + correct answer) that app/AudioPlayer.tsx computes
 the same way, so editing a question automatically triggers new audio on the next run.
 Also writes: public/audio/num/<n>.mp3 ("Question n"), public/audio/silence.mp3 and
-public/audio/manifest.json (the list of keys that have audio).
+public/audio/manifest.json ({category: {key: question_seconds}}, where question_seconds is
+where the question ends inside <key>_qa.mp3, so the app can play the question alone).
 """
 
 import argparse
@@ -118,6 +119,20 @@ async def synth(text: str, out: Path, sem: asyncio.Semaphore) -> bool:
         return False
 
 
+def question_seconds(qa: Path) -> float | None:
+    """Where the question ends inside the joined clip: start of the first long silence."""
+    out = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-i", str(qa), "-af", "silencedetect=noise=-45dB:d=1.2", "-f", "null", "-"],
+        capture_output=True, text=True,
+    ).stderr
+    starts = re.findall(r"silence_start: ([0-9.]+)", out)
+    durations = re.findall(r"silence_duration: ([0-9.]+)", out)
+    for start, dur in zip(starts, durations):
+        if float(dur) >= 2.0:
+            return round(float(start), 2)
+    return round(float(starts[0]), 2) if starts else None
+
+
 def make_silence(path: Path, seconds: float = 2.5) -> None:
     """Silent clip used as a pause between question and answer (and between questions)."""
     if path.exists():
@@ -193,11 +208,20 @@ async def main() -> None:
         qf.unlink()
         af.unlink()
 
-    # manifest: only keys that have their joined file
+    # manifest: only keys that have their joined file, with the question end time
     valid = sorted({k for k in keys if (out_dir / f"{k}_qa.mp3").exists()})
     manifest_path = AUDIO / "manifest.json"
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
-    manifest[args.category] = valid
+    previous = manifest.get(args.category) or {}
+    if isinstance(previous, list):  # old format: plain list of keys
+        previous = {}
+    entry: dict[str, float] = {}
+    for k in valid:
+        secs = previous.get(k)
+        if secs is None:
+            secs = question_seconds(out_dir / f"{k}_qa.mp3")
+        entry[k] = secs if secs is not None else 0
+    manifest[args.category] = entry
     manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
 
     # remove orphaned files from edited / deleted questions

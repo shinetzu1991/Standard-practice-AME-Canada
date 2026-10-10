@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import AudioPlayer from "./AudioPlayer";
+import AudioPlayer, { QuestionReader, unlockAudio } from "./AudioPlayer";
 import rawStandardQuestions from "../data/questions.json";
 import rawAirframeQuestions from "../data/airframe.json";
 import rawPowerplantQuestions from "../data/powerplant.json";
@@ -110,6 +110,7 @@ function saveSeen(map: SeenMap) {
   }
 }
 
+const READ_ALOUD_KEY = "ame-test-read-aloud";
 const TEST_SIZE = 90;
 const TEST_DURATION_MS = 3 * 60 * 60 * 1000; // 3 hours, like the Transport Canada exam
 
@@ -197,6 +198,7 @@ export default function Home() {
   const [testStartedAt, setTestStartedAt] = useState<number | null>(null);
   const [testFinishedAt, setTestFinishedAt] = useState<number | null>(null);
   const [now, setNow] = useState(() => Date.now());
+  const [readAloud, setReadAloud] = useState(false);
 
   const currentBank = questionBanks[category];
 
@@ -307,9 +309,26 @@ export default function Home() {
       );
     }
 
+    try {
+      setReadAloud(localStorage.getItem(READ_ALOUD_KEY) === "1");
+    } catch {
+      // ignore
+    }
+
     setHydrated(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const toggleReadAloud = () => {
+    const next = !readAloud;
+    if (next) unlockAudio(); // inside the tap, so iPhone allows later autoplay
+    setReadAloud(next);
+    try {
+      localStorage.setItem(READ_ALOUD_KEY, next ? "1" : "0");
+    } catch {
+      // ignore
+    }
+  };
 
   // Keep the "not seen yet in Test Mode" counter in sync with storage.
   useEffect(() => {
@@ -974,7 +993,16 @@ export default function Home() {
                     in this section have not been in a test yet.
                   </li>
                 </ul>
-                <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+                <label className="mt-6 inline-flex cursor-pointer items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-medium ring-1 ring-blue-200 dark:bg-slate-800 dark:ring-slate-600">
+                  <input
+                    type="checkbox"
+                    checked={readAloud}
+                    onChange={toggleReadAloud}
+                    className="h-4 w-4 accent-indigo-600"
+                  />
+                  Read each question aloud (question only, no answer)
+                </label>
+                <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
                   <button
                     onClick={beginTest}
                     className="rounded-xl bg-blue-600 px-10 py-4 text-lg font-bold text-white shadow-lg shadow-blue-600/30 transition hover:bg-blue-700"
@@ -1017,6 +1045,18 @@ export default function Home() {
                     </span>{" "}
                     / {order.length}
                   </p>
+                  <button
+                    onClick={toggleReadAloud}
+                    aria-pressed={readAloud}
+                    title="Read each question aloud (question only)"
+                    className={`rounded-xl px-3 py-1.5 text-sm font-semibold ring-1 transition ${
+                      readAloud
+                        ? "bg-indigo-600 text-white ring-indigo-600 shadow-md shadow-indigo-600/30"
+                        : "bg-white text-slate-600 ring-blue-200 hover:bg-blue-50 dark:bg-slate-800 dark:text-slate-300 dark:ring-slate-600"
+                    }`}
+                  >
+                    {readAloud ? "🔊 Reading" : "🔈 Read aloud"}
+                  </button>
                   <span
                     className={`rounded-xl px-3 py-1.5 font-mono text-sm font-bold tabular-nums ring-1 ${
                       timeLeftMs < 10 * 60 * 1000
@@ -1087,6 +1127,14 @@ export default function Home() {
                 />
               </div>
             </div>
+
+            {testRunning && (
+              <QuestionReader
+                category={category}
+                question={question}
+                enabled={readAloud}
+              />
+            )}
 
             <p className="mb-4 rounded-2xl bg-white p-4 text-lg font-semibold leading-relaxed text-slate-900 shadow-sm ring-1 ring-blue-200 sm:mb-6 sm:p-5 sm:text-xl dark:bg-slate-800 dark:text-slate-100 dark:ring-slate-600">
               {question.pregunta}

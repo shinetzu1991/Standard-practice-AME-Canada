@@ -17,6 +17,41 @@ type Props = {
 
 const RATES = [1, 1.2, 1.5, 0.8];
 
+// manifest.json: { category: { key: questionSeconds } }  (older builds: { category: key[] })
+type Manifest = Map<string, number>;
+
+function parseManifest(raw: unknown, category: string): Manifest {
+  const m = new Map<string, number>();
+  const entry = (raw as Record<string, unknown>)?.[category];
+  if (Array.isArray(entry)) {
+    for (const k of entry) m.set(String(k), 0);
+  } else if (entry && typeof entry === "object") {
+    for (const [k, v] of Object.entries(entry as Record<string, number>)) {
+      m.set(k, typeof v === "number" ? v : 0);
+    }
+  }
+  return m;
+}
+
+function useManifest(category: string): Manifest | null {
+  const [manifest, setManifest] = useState<Manifest | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/audio/manifest.json")
+      .then((r) => (r.ok ? r.json() : {}))
+      .then((raw) => {
+        if (!cancelled) setManifest(parseManifest(raw, category));
+      })
+      .catch(() => {
+        if (!cancelled) setManifest(new Map());
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [category]);
+  return manifest;
+}
+
 // Same hash as scripts/generate_audio.py (two 32-bit FNV-1a over UTF-8 bytes).
 function audioKey(question: string, answer: string): string {
   const data = new TextEncoder().encode(question + "\n" + answer);
@@ -37,6 +72,84 @@ function fallbackText(q: Question, number: number): string[] {
   ];
 }
 
+// Plays the current question only (no number, no answer) whenever it changes.
+// Used in Test Mode as an optional aid. `unlockToken` changes on every toggle
+// so the audio element gets unlocked inside the user's tap (iPhone requirement).
+export function QuestionReader({
+  category,
+  question,
+  enabled,
+}: {
+  category: string;
+  question: Question;
+  enabled: boolean;
+}) {
+  const manifest = useManifest(category);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const getAudio = () => {
+    if (!audioRef.current) audioRef.current = new Audio();
+    return audioRef.current;
+  };
+
+  useEffect(() => {
+    if (!enabled || manifest === null) return;
+    const key = audioKey(question.pregunta, question.opciones[question.correcta]);
+    const endAt = manifest.get(key);
+    const audio = getAudio();
+    let cancelled = false;
+    let cleanup = () => {};
+
+    if (endAt !== undefined) {
+      audio.src = `/audio/${category}/${key}_qa.mp3`;
+      audio.playbackRate = 1;
+      const onTime = () => {
+        if (endAt > 0 && audio.currentTime >= endAt) audio.pause();
+      };
+      audio.addEventListener("timeupdate", onTime);
+      audio.play().catch(() => {});
+      cleanup = () => {
+        audio.removeEventListener("timeupdate", onTime);
+        audio.pause();
+      };
+    } else if ("speechSynthesis" in window) {
+      const synth = window.speechSynthesis;
+      synth.cancel();
+      const u = new SpeechSynthesisUtterance(question.pregunta);
+      u.lang = "en-US";
+      if (!cancelled) synth.speak(u);
+      cleanup = () => synth.cancel();
+    }
+
+    return () => {
+      cancelled = true;
+      cleanup();
+    };
+  }, [enabled, manifest, category, question]);
+
+  useEffect(() => {
+    return () => {
+      audioRef.current?.pause();
+      if (typeof window !== "undefined" && "speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+      }
+    };
+  }, []);
+
+  return null;
+}
+
+// Call inside a click handler before enabling QuestionReader so iPhone allows
+// the later automatic playback.
+export function unlockAudio() {
+  try {
+    const a = new Audio("/audio/silence.mp3");
+    a.play().catch(() => {});
+  } catch {
+    // ignore
+  }
+}
+
 export default function AudioPlayer({
   category,
   order,
@@ -45,24 +158,9 @@ export default function AudioPlayer({
 }: Props) {
   const [playing, setPlaying] = useState(false);
   const [rate, setRate] = useState(1);
-  const [available, setAvailable] = useState<Set<string> | null>(null);
+  const manifest = useManifest(category);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const wakeLockRef = useRef<WakeLockSentinel | null>(null);
-
-  useEffect(() => {
-    let cancelled = false;
-    fetch("/audio/manifest.json")
-      .then((r) => (r.ok ? r.json() : {}))
-      .then((m: Record<string, string[]>) => {
-        if (!cancelled) setAvailable(new Set(m[category] ?? []));
-      })
-      .catch(() => {
-        if (!cancelled) setAvailable(new Set());
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [category]);
 
   const getAudio = () => {
     if (!audioRef.current) audioRef.current = new Audio();
@@ -93,7 +191,7 @@ export default function AudioPlayer({
 
   // The playing loop: one question at a time, then move to the next.
   useEffect(() => {
-    if (!playing || available === null) return;
+    if (!playing || manifest === null) return;
     const q = order[current];
     if (!q) return;
 
@@ -108,7 +206,7 @@ export default function AudioPlayer({
     const dir = `/audio/${category}`;
     let cleanup = () => {};
 
-    if (available.has(key) && current + 1 <= 1000) {
+    if (manifest.has(key) && current + 1 <= 1000) {
       const audio = getAudio();
       // number clip + one joined clip (question, pause, answer, pause)
       const clips = [`/audio/num/${current + 1}.mp3`, `${dir}/${key}_qa.mp3`];
@@ -178,7 +276,7 @@ export default function AudioPlayer({
       cancelled = true;
       cleanup();
     };
-  }, [playing, available, category, current, order, rate, setCurrent]);
+  }, [playing, manifest, category, current, order, rate, setCurrent]);
 
   // Lock-screen / Bluetooth controls.
   useEffect(() => {
