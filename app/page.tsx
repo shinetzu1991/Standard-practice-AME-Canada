@@ -1003,15 +1003,10 @@ export default function Home() {
               </div>
             )}
           </section>
-        </main>
-      </div>
 
       {/* Bottom bar: fixed on phones, part of the page on desktop. */}
-      <div className="fixed inset-x-0 bottom-0 z-30 lg:static lg:z-auto">
-        <div className="mx-auto w-full max-w-6xl lg:flex lg:gap-6 lg:px-6 lg:pb-10">
-          <div className="hidden w-72 shrink-0 lg:block" />
-          <div className="min-w-0 flex-1">
-            <div className="rounded-t-3xl bg-white shadow-[0_-8px_30px_rgba(30,58,138,0.25)] ring-1 ring-blue-200 lg:-mt-6 lg:rounded-3xl lg:shadow-xl dark:bg-slate-900 dark:ring-slate-700">
+      <div className="fixed inset-x-0 bottom-0 z-30 lg:static lg:z-auto lg:mt-4">
+            <div className="rounded-t-3xl bg-white shadow-[0_-8px_30px_rgba(30,58,138,0.25)] ring-1 ring-blue-200 lg:rounded-3xl lg:shadow-xl dark:bg-slate-900 dark:ring-slate-700">
               {isStudy && (
                 <div className={`${BRAND} rounded-t-3xl px-3 py-2 lg:rounded-t-3xl`}>
                   <AudioPlayer
@@ -1102,8 +1097,9 @@ export default function Home() {
                 )}
               </div>
             </div>
-          </div>
-        </div>
+      </div>
+
+        </main>
       </div>
 
       {studySheet}
