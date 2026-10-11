@@ -5716,15 +5716,16 @@
     "tema": "Helicopters"
   },
   {
-    "pregunta": "Rotor brake used the same hydraulic fluid the aircraft?",
+    "pregunta": "The helicopter rotor brake is normally operated by:",
     "opciones": [
       "The landing gear hydraulic system",
       "The main rotor flight control hydraulic system",
       "The wheel brake hydraulic system",
-      "Independent hydraulic system"
+      "An independent hydraulic system"
     ],
     "correcta": 3,
-    "tema": "Hydraulics, Landing Gear & Brakes"
+    "tema": "Helicopters",
+    "explicacion": "The rotor brake normally has its own independent hydraulic system, separate from the flight control and landing gear systems."
   },
   {
     "pregunta": "If a helicopter with a stabilizer bar is over stable, what is the cause?",
