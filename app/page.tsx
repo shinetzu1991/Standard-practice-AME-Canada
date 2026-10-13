@@ -1502,7 +1502,7 @@ export default function Home() {
                   after you hit Start.
                 </p>
                 <ul className={`mt-5 space-y-1 text-sm ${MUTED}`}>
-                  <li>The answers are shown at the end, like the Transport Canada exam.</li>
+                  <li>The answers are shown at the end of the test.</li>
                   <li>The test ends by itself when the time is up; you can also finish earlier.</li>
                   <li>
                     {currentBank.length - seenCount} of {currentBank.length} questions
