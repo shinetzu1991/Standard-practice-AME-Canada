@@ -3,7 +3,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { SUPABASE_PUBLISHABLE_KEY, SUPABASE_URL, authEnabled } from "@/lib/supabase/config";
 
 // Pages anyone can open without an account.
-const PUBLIC_PATHS = ["/login", "/auth"];
+const PUBLIC_PATHS = ["/login", "/auth", "/legal"];
 
 // Refreshes the Supabase session cookie on every page request and sends
 // visitors who are not signed in to /login.

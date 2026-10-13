@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Transport Canada AME M2 exam preparation. Practice questions, study mode, and realistic mock exams.",
+    "Independent, free practice for the Transport Canada AME M2 exam: practice questions, study mode and mock exams. Not affiliated with Transport Canada.",
 
   applicationName: "M2 Canada",
 
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "M2 Canada",
     description:
-      "Transport Canada AME M2 exam preparation with hundreds of practice questions.",
+      "Independent, free practice for the Transport Canada AME M2 exam, with hundreds of practice questions.",
     url: "https://m2canada.ca",
     siteName: "M2 Canada",
     type: "website",

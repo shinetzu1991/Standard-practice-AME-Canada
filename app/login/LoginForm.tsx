@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useActionState, useState } from "react";
 import PartnerBadge from "../PartnerBadge";
 import {
@@ -127,7 +128,16 @@ export default function LoginForm({
 
       <p className="mt-6 text-center text-[11px] leading-relaxed text-slate-400">
         When you sign in we keep your name, email and approximate location
-        (city and country) to manage access to the site.
+        (city and country) to manage access to the site.{" "}
+        <Link href="/legal#privacy" className="underline hover:text-slate-600">
+          Privacy policy
+        </Link>
+      </p>
+      <p className="mt-3 text-center text-[11px] leading-relaxed text-slate-400">
+        Independent study tool, not affiliated with or endorsed by Transport Canada.{" "}
+        <Link href="/legal" className="underline hover:text-slate-600">
+          Legal
+        </Link>
       </p>
 
       <PartnerBadge className="mt-5 !ring-blue-100" />

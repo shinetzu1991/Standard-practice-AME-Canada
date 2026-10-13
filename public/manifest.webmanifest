@@ -1,7 +1,7 @@
 {
   "name": "M2 Canada – AME Exam Prep",
   "short_name": "M2 Canada",
-  "description": "Transport Canada AME M2 exam preparation: practice questions, study mode and mock exams.",
+  "description": "Independent, free practice for the Transport Canada AME M2 exam: practice questions, study mode and mock exams.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

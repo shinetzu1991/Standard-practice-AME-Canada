@@ -8,11 +8,16 @@ import {
   CircleCheck,
   CircleX,
   History,
+  SquarePlus,
 } from "lucide-react";
 import AudioPlayer, { QuestionReader, unlockAudio } from "./AudioPlayer";
 import PartnerBadge from "./PartnerBadge";
+import ReportButton from "./ReportButton";
+import SiteFooter from "./SiteFooter";
+import Link from "next/link";
 import { signOut } from "./login/actions";
 import { authEnabled } from "@/lib/supabase/config";
+import { TOPIC_ORDER, type Category } from "@/lib/sections";
 import rawStandardQuestions from "../data/questions.json";
 import rawAirframeQuestions from "../data/airframe.json";
 import rawPowerplantQuestions from "../data/powerplant.json";
@@ -26,7 +31,6 @@ type Question = {
   tema?: string;
 };
 
-type Category = "standard" | "airframe" | "powerplant";
 type QuizMode = "test" | "study" | "study100" | "topic";
 
 const SHOW_POWERPLANT = true;
@@ -64,31 +68,6 @@ const SECTION_STYLE: Record<
   },
 };
 
-// Canonical topic order per bank (same names as scripts/classify_topics.py).
-const TOPIC_ORDER: Record<Category, string[]> = {
-  standard: [
-    "Physics & Math",
-    "Electrical",
-    "Hardware, Materials & Processes",
-    "Hydraulics & Pneumatics",
-    "Drawings, Documents & Regulations",
-  ],
-  airframe: [
-    "Helicopters",
-    "Hydraulics, Landing Gear & Brakes",
-    "Flight Controls & Aerodynamics",
-    "Structures, Fabric & Sheet Metal",
-    "Pressurization, Air Conditioning & Oxygen",
-    "Electrical, Instruments & Avionics",
-    "Fuel Systems & Weight and Balance",
-  ],
-  powerplant: [
-    "Piston engines",
-    "Propellers",
-    "Turbine engines",
-    "Engine Systems & Electrical",
-  ],
-};
 
 const questionBanks: Record<Category, Question[]> = {
   standard: rawStandardQuestions as Question[],
@@ -96,8 +75,48 @@ const questionBanks: Record<Category, Question[]> = {
   powerplant: rawPowerplantQuestions as Question[],
 };
 
+// Live banks: the JSON files above minus questions hidden from /admin, plus
+// approved user submissions. Filled once by loadBankUpdates() at start-up.
+let liveBanks: Record<Category, Question[]> = questionBanks;
+
+type BankUpdates = {
+  hidden: { category: Category; question: string }[];
+  added: (Question & { category: Category })[];
+};
+
+async function loadBankUpdates(): Promise<void> {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), 3000);
+  try {
+    const res = await fetch("/api/bank-updates", { signal: ctrl.signal, cache: "no-store" });
+    if (!res.ok) return;
+    const u = (await res.json()) as BankUpdates;
+    const hidden = new Set(u.hidden.map((h) => h.question));
+    const next = { ...questionBanks };
+    for (const c of Object.keys(next) as Category[]) {
+      const base = questionBanks[c].filter((q) => !hidden.has(q.pregunta));
+      const known = new Set(base.map((q) => q.pregunta));
+      const added: Question[] = u.added
+        .filter((a) => a.category === c && !hidden.has(a.pregunta) && !known.has(a.pregunta))
+        .map((a) => ({
+          pregunta: a.pregunta,
+          opciones: a.opciones,
+          correcta: a.correcta,
+          tema: a.tema,
+          explicacion: a.explicacion,
+        }));
+      next[c] = [...base, ...added];
+    }
+    liveBanks = next;
+  } catch {
+    // offline or slow: keep the built-in banks
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 function topicsFor(category: Category): { name: string; count: number }[] {
-  const bank = questionBanks[category];
+  const bank = liveBanks[category];
   return TOPIC_ORDER[category]
     .map((name) => ({ name, count: bank.filter((q) => q.tema === name).length }))
     .filter((t) => t.count > 0);
@@ -275,7 +294,7 @@ export default function Home() {
   const [historyDetail, setHistoryDetail] = useState<number | null>(null); // startedAt of the test shown
   const autoNextRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const currentBank = questionBanks[category];
+  const currentBank = liveBanks[category];
 
   const startQuiz = (
     selectedMode: QuizMode,
@@ -283,7 +302,7 @@ export default function Home() {
     initialQuestionNumber = 1,
     selectedTopic: string | null = null,
   ) => {
-    const bank = questionBanks[selectedCategory];
+    const bank = liveBanks[selectedCategory];
     const sourceQuestions =
       selectedMode === "topic" && selectedTopic
         ? bank.filter((q) => q.tema === selectedTopic)
@@ -321,6 +340,15 @@ export default function Home() {
   };
 
   useEffect(() => {
+    let cancelled = false;
+    loadBankUpdates().finally(() => {
+      if (!cancelled) init();
+    });
+    return () => {
+      cancelled = true;
+    };
+
+    function init() {
     const saved = loadProgress();
 
     const params = new URLSearchParams(window.location.search);
@@ -352,7 +380,7 @@ export default function Home() {
       // Saved progress stores full question objects; refresh them from the
       // current bank so edited questions/answers (and their audio) stay in sync.
       const byText = new Map(
-        questionBanks[saved.category].map((q) => [q.pregunta, q] as const),
+        liveBanks[saved.category].map((q) => [q.pregunta, q] as const),
       );
       const refreshedOrder = saved.order.map((q) => byText.get(q.pregunta) ?? q);
 
@@ -392,6 +420,7 @@ export default function Home() {
     }
 
     setHydrated(true);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -409,7 +438,7 @@ export default function Home() {
   // Keep the "not seen yet in Test Mode" counter in sync with storage.
   useEffect(() => {
     if (!hydrated) return;
-    const bank = questionBanks[category];
+    const bank = liveBanks[category];
     const seen = new Set(loadSeen()[category] ?? []);
     setSeenCount(bank.filter((q) => seen.has(q.pregunta)).length);
   }, [hydrated, category, order, selectedAnswers]);
@@ -810,6 +839,7 @@ export default function Home() {
     );
 
   type WrongItem = {
+    category?: Category;
     questionNumber?: number;
     pregunta: string;
     tema?: string;
@@ -860,6 +890,9 @@ export default function Home() {
           Explanation: {item.explicacion}
         </p>
       )}
+      <div className="mt-3">
+        <ReportButton category={item.category ?? category} question={item.pregunta} />
+      </div>
     </div>
   );
 
@@ -867,8 +900,11 @@ export default function Home() {
     historyDetail !== null ? history.find((r) => r.startedAt === historyDetail) : undefined;
 
   const detailWrong: WrongItem[] | undefined = detailRecord?.wrong?.map((w) => {
-    const q = questionBanks[detailRecord.category].find((b) => b.pregunta === w.q);
+    const q = [...liveBanks[detailRecord.category], ...questionBanks[detailRecord.category]].find(
+      (b) => b.pregunta === w.q,
+    );
     return {
+      category: detailRecord.category,
       pregunta: w.q,
       tema: q?.tema,
       selected:
@@ -1061,7 +1097,7 @@ export default function Home() {
               </span>
               {!compact && (
                 <span className={`block text-xs ${on ? "text-white/80" : MUTED}`}>
-                  {questionBanks[c.key].length} questions
+                  {liveBanks[c.key].length} questions
                 </span>
               )}
             </span>
@@ -1128,6 +1164,10 @@ export default function Home() {
               Test history
               <span className={`ml-auto text-xs ${MUTED}`}>{sectionHistory.length}</span>
             </button>
+            <Link href="/submit" className={`${MENU_ITEM} flex items-center gap-2`}>
+              <SquarePlus className="h-4 w-4" />
+              Suggest a question
+            </Link>
           </div>
         </div>
 
@@ -1270,6 +1310,7 @@ export default function Home() {
             {rightSidebar}
           </div>
           <PartnerBadge className="mt-4 lg:hidden" />
+          <SiteFooter />
         </div>
         {studySheet}
       </div>
@@ -1424,6 +1465,7 @@ export default function Home() {
           {rightSidebar}
           </div>
           <PartnerBadge className="mt-4 lg:hidden" />
+          <SiteFooter />
         </div>
         {studySheet}
       </div>
@@ -1655,6 +1697,9 @@ export default function Home() {
                     Explanation: {question.explicacion}
                   </p>
                 )}
+                <div className="mt-3">
+                  <ReportButton category={category} question={question.pregunta} />
+                </div>
               </div>
             )}
           </section>
@@ -1761,6 +1806,7 @@ export default function Home() {
         {rightSidebar}
         </div>
         <PartnerBadge className="mt-4 lg:hidden" />
+        <SiteFooter />
       </div>
 
       {studySheet}

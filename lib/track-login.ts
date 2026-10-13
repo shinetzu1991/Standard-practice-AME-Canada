@@ -1,7 +1,7 @@
 import "server-only";
 import type { User } from "@supabase/supabase-js";
 import { headers } from "next/headers";
-import { ADMIN_EMAIL } from "./supabase/config";
+import { emailAdmin } from "./notify";
 import { createAdminClient } from "./supabase/server";
 
 // Vercel adds the visitor's approximate location to every request.
@@ -86,11 +86,8 @@ async function notifyNewAccount(p: {
   region: string | null;
   city: string | null;
 }) {
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey || !ADMIN_EMAIL) return;
-
   const place = [p.city, p.region, p.country].filter(Boolean).join(", ") || "unknown";
-  const lines = [
+  await emailAdmin(`New M2 Canada account: ${p.email ?? p.name ?? "unknown"}`, [
     `Name: ${p.name ?? "-"}`,
     `Email: ${p.email ?? "-"}`,
     `Signed up with: ${p.provider}`,
@@ -98,20 +95,5 @@ async function notifyNewAccount(p: {
     `Date: ${new Date().toUTCString()}`,
     "",
     "All users: https://m2canada.ca/admin",
-  ];
-
-  const res = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      from: process.env.RESEND_FROM ?? "M2 Canada <onboarding@resend.dev>",
-      to: [ADMIN_EMAIL],
-      subject: `New M2 Canada account: ${p.email ?? p.name ?? "unknown"}`,
-      text: lines.join("\n"),
-    }),
-  });
-  if (!res.ok) console.error("Resend error", res.status, await res.text());
+  ]);
 }
