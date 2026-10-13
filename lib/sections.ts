@@ -38,5 +38,5 @@ export function isCategory(value: unknown): value is Category {
   return value === "standard" || value === "airframe" || value === "powerplant";
 }
 
-// Public contact address (forwarded to the admin's inbox).
-export const SUPPORT_EMAIL = "support@m2canada.ca";
+// Public contact address shown in the footer and on /legal.
+export const SUPPORT_EMAIL = "m2canadasupport@gmail.com";
