@@ -7,11 +7,7 @@ import {
   ChevronRight,
   CircleCheck,
   CircleX,
-  Fan,
   History,
-  Plane,
-  Wrench,
-  type LucideIcon,
 } from "lucide-react";
 import AudioPlayer, { QuestionReader, unlockAudio } from "./AudioPlayer";
 import { signOut } from "./login/actions";
@@ -45,22 +41,22 @@ const CATEGORIES: { key: Category; label: string; short: string }[] = [
 // Each section gets its own icon and colour so the three are easy to tell apart.
 const SECTION_STYLE: Record<
   Category,
-  { icon: LucideIcon; active: string; idle: string; badge: string }
+  { image: string; active: string; idle: string; badge: string }
 > = {
   standard: {
-    icon: Wrench,
+    image: "/icons/section-standard.png",
     active: "bg-violet-600 text-white shadow-lg shadow-violet-600/30 ring-violet-600",
     idle: "text-violet-700 ring-violet-200 hover:bg-violet-50 dark:text-violet-300 dark:ring-violet-900 dark:hover:bg-violet-950/40",
     badge: "bg-violet-100 text-violet-700 dark:bg-violet-950 dark:text-violet-300",
   },
   airframe: {
-    icon: Plane,
+    image: "/icons/section-airframe.png",
     active: "bg-sky-600 text-white shadow-lg shadow-sky-600/30 ring-sky-600",
     idle: "text-sky-700 ring-sky-200 hover:bg-sky-50 dark:text-sky-300 dark:ring-sky-900 dark:hover:bg-sky-950/40",
     badge: "bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-300",
   },
   powerplant: {
-    icon: Fan,
+    image: "/icons/section-powerplant.png",
     active: "bg-orange-600 text-white shadow-lg shadow-orange-600/30 ring-orange-600",
     idle: "text-orange-700 ring-orange-200 hover:bg-orange-50 dark:text-orange-300 dark:ring-orange-900 dark:hover:bg-orange-950/40",
     badge: "bg-orange-100 text-orange-700 dark:bg-orange-950 dark:text-orange-300",
@@ -1037,7 +1033,6 @@ export default function Home() {
     <nav aria-label="Section" className="grid grid-cols-3 gap-2">
       {CATEGORIES.map((c) => {
         const style = SECTION_STYLE[c.key];
-        const Icon = style.icon;
         const on = category === c.key;
         return (
           <button
@@ -1050,7 +1045,13 @@ export default function Home() {
                 : "gap-3 px-4 py-3 text-left"
             } ${on ? style.active : `bg-white dark:bg-slate-900 ${style.idle}`}`}
           >
-            <Icon className={compact ? "h-5 w-5" : "h-8 w-8 shrink-0"} strokeWidth={2} />
+            <Image
+              src={style.image}
+              alt=""
+              width={compact ? 40 : 52}
+              height={compact ? 40 : 52}
+              className={`shrink-0 rounded-xl ${compact ? "h-10 w-10" : "h-13 w-13"}`}
+            />
             <span className="min-w-0">
               <span
                 className={`block font-extrabold leading-tight ${compact ? "text-[11px]" : "text-base"}`}
