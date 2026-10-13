@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import AudioPlayer, { QuestionReader, unlockAudio } from "./AudioPlayer";
+import { signOut } from "./login/actions";
+import { authEnabled } from "@/lib/supabase/config";
 import rawStandardQuestions from "../data/questions.json";
 import rawAirframeQuestions from "../data/airframe.json";
 import rawPowerplantQuestions from "../data/powerplant.json";
@@ -696,6 +698,13 @@ export default function Home() {
               </p>
             </div>
           </div>
+          {authEnabled && (
+            <form action={signOut} className="mt-3 text-right">
+              <button className="text-xs font-semibold text-blue-200 underline-offset-2 hover:text-white hover:underline">
+                Sign out
+              </button>
+            </form>
+          )}
         </div>
 
         <div className={SIDE_CARD}>
@@ -846,6 +855,11 @@ export default function Home() {
           </p>
         </div>
         <div className="pb-3">{studyChoices}</div>
+        {authEnabled && (
+          <form action={signOut} className="border-t border-slate-200 px-4 py-3 dark:border-slate-700">
+            <button className={`text-sm font-semibold ${MUTED}`}>Sign out</button>
+          </form>
+        )}
       </div>
     </div>
   );
