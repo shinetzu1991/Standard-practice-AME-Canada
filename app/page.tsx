@@ -110,6 +110,33 @@ function saveSeen(map: SeenMap) {
   }
 }
 
+// Finished tests, kept on this device so the average per section can be shown.
+const HISTORY_KEY = "ame-test-history";
+type TestRecord = {
+  startedAt: number; // also the record id
+  finishedAt: number;
+  category: Category;
+  score: number;
+  total: number;
+};
+
+function loadHistory(): TestRecord[] {
+  try {
+    const raw = localStorage.getItem(HISTORY_KEY);
+    return raw ? (JSON.parse(raw) as TestRecord[]) : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveHistory(list: TestRecord[]) {
+  try {
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(list));
+  } catch {
+    // ignore storage errors
+  }
+}
+
 const READ_ALOUD_KEY = "ame-test-read-aloud";
 const TEST_SIZE = 90;
 const TEST_DURATION_MS = 3 * 60 * 60 * 1000; // 3 hours, like the Transport Canada exam
@@ -199,6 +226,7 @@ export default function Home() {
   const [testFinishedAt, setTestFinishedAt] = useState<number | null>(null);
   const [now, setNow] = useState(() => Date.now());
   const [readAloud, setReadAloud] = useState(false);
+  const [history, setHistory] = useState<TestRecord[]>([]);
   const autoNextRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const currentBank = questionBanks[category];
@@ -338,6 +366,34 @@ export default function Home() {
     const seen = new Set(loadSeen()[category] ?? []);
     setSeenCount(bank.filter((q) => seen.has(q.pregunta)).length);
   }, [hydrated, category, order, selectedAnswers]);
+
+  // Record each finished test once (keyed by its start time). Tests finished
+  // with no answers at all are skipped so they don't drag the average down.
+  useEffect(() => {
+    if (!hydrated) return;
+    const list = loadHistory();
+    if (
+      mode === "test" &&
+      finished &&
+      testStartedAt !== null &&
+      selectedAnswers.some((a) => a !== null) &&
+      !list.some((r) => r.startedAt === testStartedAt)
+    ) {
+      const score = order.reduce(
+        (total, q, i) => (selectedAnswers[i] === q.correcta ? total + 1 : total),
+        0,
+      );
+      list.push({
+        startedAt: testStartedAt,
+        finishedAt: testFinishedAt ?? Date.now(),
+        category,
+        score,
+        total: order.length,
+      });
+      saveHistory(list);
+    }
+    setHistory(list);
+  }, [hydrated, mode, finished, testStartedAt, testFinishedAt, selectedAnswers, order, category]);
 
   const resetTestPool = () => {
     const seenMap = loadSeen();
@@ -794,6 +850,75 @@ export default function Home() {
     </div>
   );
 
+  // ---------- test history (this device) ----------
+
+  const sectionHistory = history
+    .filter((r) => r.category === category)
+    .sort((a, b) => b.finishedAt - a.finishedAt);
+  const pctOf = (r: TestRecord) => (r.total > 0 ? (r.score / r.total) * 100 : 0);
+  const averagePct =
+    sectionHistory.length > 0
+      ? sectionHistory.reduce((sum, r) => sum + pctOf(r), 0) / sectionHistory.length
+      : 0;
+  const bestPct = sectionHistory.reduce((best, r) => Math.max(best, pctOf(r)), 0);
+
+  const historyPanel =
+    sectionHistory.length === 0 ? null : (
+      <div className="mb-6 rounded-2xl bg-white p-4 text-left ring-1 ring-blue-200 dark:bg-slate-800 dark:ring-slate-600">
+        <h2 className="mb-3 text-sm font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
+          Your tests · {categoryTitle}
+        </h2>
+        <div className="mb-4 grid grid-cols-3 gap-2 text-center">
+          <div className="rounded-xl bg-blue-50 p-2.5 dark:bg-slate-900">
+            <p className={`text-[11px] font-semibold uppercase tracking-wider ${MUTED}`}>Average</p>
+            <p className="text-2xl font-extrabold text-blue-700 dark:text-blue-300">
+              {averagePct.toFixed(1)}%
+            </p>
+          </div>
+          <div className="rounded-xl bg-blue-50 p-2.5 dark:bg-slate-900">
+            <p className={`text-[11px] font-semibold uppercase tracking-wider ${MUTED}`}>Best</p>
+            <p className="text-2xl font-extrabold text-emerald-600 dark:text-emerald-400">
+              {bestPct.toFixed(1)}%
+            </p>
+          </div>
+          <div className="rounded-xl bg-blue-50 p-2.5 dark:bg-slate-900">
+            <p className={`text-[11px] font-semibold uppercase tracking-wider ${MUTED}`}>Tests</p>
+            <p className="text-2xl font-extrabold">{sectionHistory.length}</p>
+          </div>
+        </div>
+        <ul className="max-h-56 divide-y divide-blue-100 overflow-y-auto text-sm dark:divide-slate-700">
+          {sectionHistory.map((r) => {
+            const pct = pctOf(r);
+            return (
+              <li key={r.startedAt} className="flex items-center justify-between gap-3 py-1.5">
+                <span className={MUTED}>
+                  {new Date(r.finishedAt).toLocaleDateString(undefined, {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                  })}
+                </span>
+                <span className="tabular-nums">
+                  {r.score} / {r.total} ·{" "}
+                  <span
+                    className={`font-bold ${
+                      pct >= 70
+                        ? "text-emerald-600 dark:text-emerald-400"
+                        : pct >= 50
+                          ? "text-amber-600 dark:text-amber-400"
+                          : "text-rose-600 dark:text-rose-400"
+                    }`}
+                  >
+                    {pct.toFixed(1)}%
+                  </span>
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    );
+
   // ---------- results screen ----------
 
   if (finished && mode === "test") {
@@ -882,6 +1007,8 @@ export default function Home() {
                   </div>
                 </div>
               )}
+
+              {historyPanel}
 
               <p className={`mb-3 text-sm ${MUTED}`}>
                 Questions not yet seen in Test Mode:{" "}
@@ -1031,6 +1158,7 @@ export default function Home() {
                     Study instead
                   </button>
                 </div>
+                {historyPanel && <div className="mt-8">{historyPanel}</div>}
               </div>
             </section>
           ) : (
