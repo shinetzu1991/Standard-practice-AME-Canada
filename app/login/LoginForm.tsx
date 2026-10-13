@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useActionState, useState } from "react";
+import PartnerBadge from "../PartnerBadge";
 import {
   signInWithEmail,
   signInWithGoogle,
@@ -128,6 +129,8 @@ export default function LoginForm({
         When you sign in we keep your name, email and approximate location
         (city and country) to manage access to the site.
       </p>
+
+      <PartnerBadge className="mt-5 !ring-blue-100" />
     </div>
   );
 }

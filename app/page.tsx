@@ -10,6 +10,7 @@ import {
   History,
 } from "lucide-react";
 import AudioPlayer, { QuestionReader, unlockAudio } from "./AudioPlayer";
+import PartnerBadge from "./PartnerBadge";
 import { signOut } from "./login/actions";
 import { authEnabled } from "@/lib/supabase/config";
 import rawStandardQuestions from "../data/questions.json";
@@ -1178,6 +1179,8 @@ export default function Home() {
           </p>
         </div>
         )}
+
+        <PartnerBadge />
       </div>
     </aside>
   );
@@ -1266,6 +1269,7 @@ export default function Home() {
             <main className="min-w-0 flex-1">{historyView}</main>
             {rightSidebar}
           </div>
+          <PartnerBadge className="mt-4 lg:hidden" />
         </div>
         {studySheet}
       </div>
@@ -1419,6 +1423,7 @@ export default function Home() {
           </main>
           {rightSidebar}
           </div>
+          <PartnerBadge className="mt-4 lg:hidden" />
         </div>
         {studySheet}
       </div>
@@ -1755,6 +1760,7 @@ export default function Home() {
         </main>
         {rightSidebar}
         </div>
+        <PartnerBadge className="mt-4 lg:hidden" />
       </div>
 
       {studySheet}
