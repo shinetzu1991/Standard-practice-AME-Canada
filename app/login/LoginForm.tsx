@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useActionState, useState } from "react";
 import {
   signInWithEmail,
@@ -33,9 +34,14 @@ export default function LoginForm({
   return (
     <div className="w-full max-w-sm rounded-3xl bg-gradient-to-b from-blue-50 to-sky-100 p-6 shadow-xl shadow-blue-900/15 ring-1 ring-blue-200 sm:p-8 dark:from-slate-900 dark:to-slate-900 dark:shadow-black/40 dark:ring-slate-700">
       <div className="mb-6 text-center">
-        <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 text-2xl text-white shadow-lg shadow-blue-600/30">
-          ✈
-        </div>
+        <Image
+          src="/icons/icon-192.png"
+          alt="M2 Canada logo"
+          width={80}
+          height={80}
+          priority
+          className="mx-auto mb-3 h-20 w-20 rounded-2xl shadow-lg shadow-blue-900/25"
+        />
         <h1 className="text-2xl font-extrabold">M2 Canada</h1>
         <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
           {mode === "signin" ? "Sign in to practice" : "Create your free account"}

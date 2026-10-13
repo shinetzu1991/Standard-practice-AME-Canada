@@ -1075,9 +1075,14 @@ export default function Home() {
         className={`${BRAND} mb-3 flex items-center justify-between gap-4 rounded-2xl px-5 py-3 shadow-xl shadow-blue-900/20`}
       >
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/15 text-xl ring-1 ring-white/25">
-            ✈
-          </div>
+          <Image
+            src="/icons/icon-192.png"
+            alt="M2 Canada logo"
+            width={48}
+            height={48}
+            priority
+            className="h-12 w-12 rounded-xl"
+          />
           <div>
             <p className="text-xl font-extrabold tracking-tight">M2 Canada</p>
             <p className="text-[11px] font-medium uppercase tracking-widest text-blue-200">
@@ -1182,9 +1187,14 @@ export default function Home() {
     >
       <div className="mb-3 flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-white/15 text-lg ring-1 ring-white/25">
-            ✈
-          </span>
+          <Image
+            src="/icons/icon-192.png"
+            alt="M2 Canada logo"
+            width={36}
+            height={36}
+            priority
+            className="h-9 w-9 rounded-lg"
+          />
           <span className="text-base font-extrabold tracking-tight">M2 Canada</span>
         </div>
         <div className="flex gap-1 rounded-xl bg-blue-950/40 p-1">
