@@ -79,7 +79,7 @@ export default function LegalPage() {
               holders should identify the work concerned and how to contact them.
             </li>
             <li>
-              We acknowledge requests within <strong>5 business days</strong>. Questions
+              We review requests within <strong>15 business days</strong>. Questions
               reported for copyright or confidential exam content are hidden from the site
               while we review them, and permanently removed if the concern is confirmed.
             </li>
