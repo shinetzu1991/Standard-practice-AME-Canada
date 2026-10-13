@@ -2,6 +2,17 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import {
+  ChevronLeft,
+  ChevronRight,
+  CircleCheck,
+  CircleX,
+  Fan,
+  History,
+  Plane,
+  Wrench,
+  type LucideIcon,
+} from "lucide-react";
 import AudioPlayer, { QuestionReader, unlockAudio } from "./AudioPlayer";
 import { signOut } from "./login/actions";
 import { authEnabled } from "@/lib/supabase/config";
@@ -30,6 +41,31 @@ const CATEGORIES: { key: Category; label: string; short: string }[] = [
     ? [{ key: "powerplant" as Category, label: "Powerplant", short: "Powerplant" }]
     : []),
 ];
+
+// Each section gets its own icon and colour so the three are easy to tell apart.
+const SECTION_STYLE: Record<
+  Category,
+  { icon: LucideIcon; active: string; idle: string; badge: string }
+> = {
+  standard: {
+    icon: Wrench,
+    active: "bg-violet-600 text-white shadow-lg shadow-violet-600/30 ring-violet-600",
+    idle: "text-violet-700 ring-violet-200 hover:bg-violet-50 dark:text-violet-300 dark:ring-violet-900 dark:hover:bg-violet-950/40",
+    badge: "bg-violet-100 text-violet-700 dark:bg-violet-950 dark:text-violet-300",
+  },
+  airframe: {
+    icon: Plane,
+    active: "bg-sky-600 text-white shadow-lg shadow-sky-600/30 ring-sky-600",
+    idle: "text-sky-700 ring-sky-200 hover:bg-sky-50 dark:text-sky-300 dark:ring-sky-900 dark:hover:bg-sky-950/40",
+    badge: "bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-300",
+  },
+  powerplant: {
+    icon: Fan,
+    active: "bg-orange-600 text-white shadow-lg shadow-orange-600/30 ring-orange-600",
+    idle: "text-orange-700 ring-orange-200 hover:bg-orange-50 dark:text-orange-300 dark:ring-orange-900 dark:hover:bg-orange-950/40",
+    badge: "bg-orange-100 text-orange-700 dark:bg-orange-950 dark:text-orange-300",
+  },
+};
 
 // Canonical topic order per bank (same names as scripts/classify_topics.py).
 const TOPIC_ORDER: Record<Category, string[]> = {
@@ -120,7 +156,16 @@ type TestRecord = {
   category: Category;
   score: number;
   total: number;
+  // Questions answered wrong (or left blank), with the option picked; older
+  // records saved before this field existed don't have it.
+  wrong?: { q: string; sel: number | null }[];
 };
+
+const PASS_PCT = 70; // Transport Canada pass mark
+
+function recordPct(r: TestRecord): number {
+  return r.total > 0 ? (r.score / r.total) * 100 : 0;
+}
 
 function loadHistory(): TestRecord[] {
   try {
@@ -229,6 +274,8 @@ export default function Home() {
   const [now, setNow] = useState(() => Date.now());
   const [readAloud, setReadAloud] = useState(false);
   const [history, setHistory] = useState<TestRecord[]>([]);
+  const [historyOpen, setHistoryOpen] = useState(false);
+  const [historyDetail, setHistoryDetail] = useState<number | null>(null); // startedAt of the test shown
   const autoNextRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const currentBank = questionBanks[category];
@@ -273,6 +320,7 @@ export default function Home() {
     setStudyMenuOpen(false);
     setMoreOpen(false);
     setJumpOpen(false);
+    setHistoryOpen(false);
   };
 
   useEffect(() => {
@@ -391,6 +439,10 @@ export default function Home() {
         category,
         score,
         total: order.length,
+        wrong: order
+          .map((q, i) => ({ q: q.pregunta, sel: selectedAnswers[i], ok: selectedAnswers[i] === q.correcta }))
+          .filter((w) => !w.ok)
+          .map(({ q, sel }) => ({ q, sel })),
       });
       saveHistory(list);
     }
@@ -648,91 +700,406 @@ export default function Home() {
 
   // ---------- shared pieces ----------
 
-  const studyChoices = (
+  // ---------- test history (this device) ----------
+
+  const sectionHistory = history
+    .filter((r) => r.category === category)
+    .sort((a, b) => b.finishedAt - a.finishedAt);
+  const averagePct =
+    sectionHistory.length > 0
+      ? sectionHistory.reduce((sum, r) => sum + recordPct(r), 0) / sectionHistory.length
+      : 0;
+  const bestPct = sectionHistory.reduce((best, r) => Math.max(best, recordPct(r)), 0);
+  const passedCount = sectionHistory.filter((r) => recordPct(r) >= PASS_PCT).length;
+
+  const formatDay = (t: number) =>
+    new Date(t).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+  const formatDayTime = (t: number) =>
+    new Date(t).toLocaleString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+    });
+  const pctText = (pct: number) =>
+    pct >= PASS_PCT ? "text-emerald-600 dark:text-emerald-400" : "text-rose-600 dark:text-rose-400";
+
+  const passBadge = (pct: number, large = false) => {
+    const passed = pct >= PASS_PCT;
+    const Icon = passed ? CircleCheck : CircleX;
+    return (
+      <span
+        className={`inline-flex shrink-0 items-center gap-1 rounded-full font-bold ${
+          large ? "px-3 py-1 text-sm" : "px-2 py-0.5 text-[11px]"
+        } ${
+          passed
+            ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300"
+            : "bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300"
+        }`}
+      >
+        <Icon className={large ? "h-4 w-4" : "h-3 w-3"} />
+        {passed ? "Passed" : "Failed"}
+      </span>
+    );
+  };
+
+  const historyStats = (
+    <div className="mb-4 grid grid-cols-2 gap-2 text-center sm:grid-cols-4">
+      <div className="rounded-xl bg-blue-50 p-2.5 dark:bg-slate-900">
+        <p className={`text-[11px] font-semibold uppercase tracking-wider ${MUTED}`}>Average</p>
+        <p className={`text-2xl font-extrabold ${pctText(averagePct)}`}>{averagePct.toFixed(1)}%</p>
+      </div>
+      <div className="rounded-xl bg-blue-50 p-2.5 dark:bg-slate-900">
+        <p className={`text-[11px] font-semibold uppercase tracking-wider ${MUTED}`}>Best</p>
+        <p className={`text-2xl font-extrabold ${pctText(bestPct)}`}>{bestPct.toFixed(1)}%</p>
+      </div>
+      <div className="rounded-xl bg-blue-50 p-2.5 dark:bg-slate-900">
+        <p className={`text-[11px] font-semibold uppercase tracking-wider ${MUTED}`}>Tests</p>
+        <p className="text-2xl font-extrabold">{sectionHistory.length}</p>
+      </div>
+      <div className="rounded-xl bg-blue-50 p-2.5 dark:bg-slate-900">
+        <p className={`text-[11px] font-semibold uppercase tracking-wider ${MUTED}`}>Passed</p>
+        <p className="text-2xl font-extrabold text-emerald-600 dark:text-emerald-400">
+          {passedCount}
+        </p>
+      </div>
+    </div>
+  );
+
+  const historyList = (limit?: number) => (
+    <ul className="divide-y divide-blue-100 text-sm dark:divide-slate-700">
+      {sectionHistory.slice(0, limit).map((r) => {
+        const pct = recordPct(r);
+        return (
+          <li key={r.startedAt}>
+            <button
+              onClick={() => openHistory(r.startedAt)}
+              className="flex w-full items-center gap-3 rounded-lg px-1 py-2 text-left transition hover:bg-blue-50 dark:hover:bg-slate-700/50"
+            >
+              <span className={`min-w-0 flex-1 ${MUTED}`}>{formatDay(r.finishedAt)}</span>
+              <span className="tabular-nums">
+                {r.score} / {r.total} ·{" "}
+                <span className={`font-bold ${pctText(pct)}`}>{pct.toFixed(1)}%</span>
+              </span>
+              {passBadge(pct)}
+              <ChevronRight className={`h-4 w-4 shrink-0 ${MUTED}`} />
+            </button>
+          </li>
+        );
+      })}
+    </ul>
+  );
+
+  // Summary on the Test Mode start and results screens; the full list and each
+  // test's wrong answers live in the Test history view.
+  const historyPanel =
+    sectionHistory.length === 0 ? null : (
+      <div className="mb-6 rounded-2xl bg-white p-4 text-left ring-1 ring-blue-200 dark:bg-slate-800 dark:ring-slate-600">
+        <div className="mb-3 flex items-center justify-between gap-3">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
+            Your tests · {categoryTitle}
+          </h2>
+          <button
+            onClick={() => openHistory()}
+            className="text-sm font-semibold text-indigo-600 underline-offset-2 hover:underline dark:text-indigo-300"
+          >
+            View history
+          </button>
+        </div>
+        {historyStats}
+        {historyList(5)}
+      </div>
+    );
+
+  type WrongItem = {
+    questionNumber?: number;
+    pregunta: string;
+    tema?: string;
+    selected: string;
+    correct: string;
+    explicacion?: string;
+    imagen?: string;
+  };
+
+  const wrongAnswerCard = (item: WrongItem, index: number) => (
+    <div
+      key={index}
+      className="rounded-2xl border border-rose-200 bg-rose-50/70 p-5 dark:border-rose-900 dark:bg-rose-950/30"
+    >
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <p className="font-bold text-rose-700 dark:text-rose-300">
+          Question {item.questionNumber ?? index + 1}
+        </p>
+        {item.tema && (
+          <span className="rounded-full bg-white px-2.5 py-0.5 text-[11px] font-semibold text-slate-600 ring-1 ring-rose-200 dark:bg-slate-800 dark:text-slate-300 dark:ring-rose-900">
+            {item.tema}
+          </span>
+        )}
+      </div>
+      <p className="mt-2 text-lg font-medium">{item.pregunta}</p>
+
+      {item.imagen && (
+        <div className="mt-4">
+          <Image
+            src={item.imagen}
+            alt="Question figure"
+            width={800}
+            height={500}
+            className="h-auto w-full rounded-xl border border-slate-200 dark:border-slate-700"
+          />
+        </div>
+      )}
+
+      <p className="mt-3 text-sm font-medium text-rose-700 dark:text-rose-300">
+        Your answer: {item.selected}
+      </p>
+      <p className="mt-1 text-sm font-medium text-emerald-700 dark:text-emerald-300">
+        Correct answer: {item.correct}
+      </p>
+
+      {item.explicacion && (
+        <p className="mt-2 text-sm text-slate-700 dark:text-slate-300">
+          Explanation: {item.explicacion}
+        </p>
+      )}
+    </div>
+  );
+
+  const detailRecord =
+    historyDetail !== null ? history.find((r) => r.startedAt === historyDetail) : undefined;
+
+  const detailWrong: WrongItem[] | undefined = detailRecord?.wrong?.map((w) => {
+    const q = questionBanks[detailRecord.category].find((b) => b.pregunta === w.q);
+    return {
+      pregunta: w.q,
+      tema: q?.tema,
+      selected:
+        w.sel === null ? "No answer selected" : (q?.opciones[w.sel] ?? "—"),
+      correct: q ? q.opciones[q.correcta] : "—",
+      explicacion: q?.explicacion,
+      imagen: q?.imagen,
+    };
+  });
+
+  const historyView = (
+    <section className={`${CARD} p-5 sm:p-8`}>
+      {detailRecord ? (
+        <>
+          <button
+            onClick={() => setHistoryDetail(null)}
+            className="mb-4 inline-flex items-center gap-1 text-sm font-semibold text-indigo-600 hover:underline dark:text-indigo-300"
+          >
+            <ChevronLeft className="h-4 w-4" />
+            All tests
+          </button>
+          <p className="mb-1 text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
+            {CATEGORIES.find((c) => c.key === detailRecord.category)?.label.toUpperCase()}
+          </p>
+          <div className="mb-1 flex flex-wrap items-center gap-3">
+            <h1 className="text-3xl font-extrabold">Test results</h1>
+            {passBadge(recordPct(detailRecord), true)}
+          </div>
+          <p className={`mb-5 text-sm ${MUTED}`}>
+            {formatDayTime(detailRecord.finishedAt)} · time used{" "}
+            <span className="font-mono font-semibold tabular-nums">
+              {formatClock(Math.min(detailRecord.finishedAt - detailRecord.startedAt, TEST_DURATION_MS))}
+            </span>
+          </p>
+
+          <div className="mb-6 grid gap-3 sm:grid-cols-3">
+            <div
+              className={`rounded-2xl p-4 text-white shadow-md ${
+                recordPct(detailRecord) >= PASS_PCT
+                  ? "bg-gradient-to-br from-emerald-500 to-emerald-600"
+                  : "bg-gradient-to-br from-rose-500 to-rose-600"
+              }`}
+            >
+              <p className="text-xs font-semibold uppercase tracking-wider text-white/80">Score</p>
+              <p className="mt-1 text-3xl font-extrabold">
+                {detailRecord.score} / {detailRecord.total}
+              </p>
+            </div>
+            <div className="rounded-2xl bg-sky-50 p-4 ring-1 ring-sky-200 dark:bg-slate-800 dark:ring-slate-600">
+              <p className="text-xs font-semibold uppercase tracking-wider text-sky-700 dark:text-sky-300">
+                Percentage
+              </p>
+              <p className={`mt-1 text-3xl font-extrabold ${pctText(recordPct(detailRecord))}`}>
+                {recordPct(detailRecord).toFixed(1)}%
+              </p>
+            </div>
+            <div className="rounded-2xl bg-rose-50 p-4 ring-1 ring-rose-200 dark:bg-rose-950/40 dark:ring-rose-800">
+              <p className="text-xs font-semibold uppercase tracking-wider text-rose-700 dark:text-rose-300">
+                Incorrect answers
+              </p>
+              <p className="mt-1 text-3xl font-extrabold text-rose-700 dark:text-rose-300">
+                {detailRecord.total - detailRecord.score}
+              </p>
+            </div>
+          </div>
+
+          <h2 className="mb-4 text-xl font-extrabold">Wrong answers</h2>
+          {detailWrong === undefined ? (
+            <p className={`rounded-2xl bg-blue-50 p-4 text-sm ${MUTED} dark:bg-slate-800`}>
+              This test was taken before wrong answers were saved, so only the score is
+              available.
+            </p>
+          ) : detailWrong.length === 0 ? (
+            <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-4 font-medium text-emerald-700 dark:border-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-300">
+              Perfect score. No wrong answers.
+            </div>
+          ) : (
+            <div className="space-y-5">{detailWrong.map(wrongAnswerCard)}</div>
+          )}
+        </>
+      ) : (
+        <>
+          <p className="mb-1 text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
+            {categoryTitle}
+          </p>
+          <h1 className="mb-1 text-3xl font-extrabold">Test history</h1>
+          <p className={`mb-5 text-sm ${MUTED}`}>
+            Tests finished on this device. Pass mark: {PASS_PCT}%. Open a test to see the
+            questions you got wrong.
+          </p>
+          {sectionHistory.length === 0 ? (
+            <div className="rounded-2xl bg-blue-50 p-5 text-center dark:bg-slate-800">
+              <p className="mb-4 font-medium">No tests finished in this section yet.</p>
+              <button onClick={() => startQuiz("test")} className={BTN_PRIMARY}>
+                Start a test
+              </button>
+            </div>
+          ) : (
+            <>
+              {historyStats}
+              {historyList()}
+            </>
+          )}
+        </>
+      )}
+    </section>
+  );
+
+  const openHistory = (detail: number | null = null) => {
+    setHistoryOpen(true);
+    setHistoryDetail(detail);
+    setStudyMenuOpen(false);
+    setMoreOpen(false);
+    window.scrollTo({ top: 0 });
+  };
+
+  const studyModeChoices = (
     <>
       <button
         onClick={() => startQuiz("study")}
-        className={mode === "study" ? MENU_ITEM_ACTIVE : MENU_ITEM}
+        className={!historyOpen && mode === "study" ? MENU_ITEM_ACTIVE : MENU_ITEM}
       >
         Full question bank
         <span className={`ml-2 text-xs ${MUTED}`}>{currentBank.length}</span>
       </button>
       <button
         onClick={() => startQuiz("study100")}
-        className={mode === "study100" ? MENU_ITEM_ACTIVE : MENU_ITEM}
+        className={!historyOpen && mode === "study100" ? MENU_ITEM_ACTIVE : MENU_ITEM}
       >
         100 random questions
       </button>
-      <p className="border-t border-blue-100 px-4 pb-1 pt-3 text-[11px] font-bold uppercase tracking-widest text-blue-600 dark:border-slate-700 dark:text-blue-300">
-        By topic
-      </p>
-      {topicsFor(category).map((t) => (
-        <button
-          key={t.name}
-          onClick={() => startQuiz("topic", category, 1, t.name)}
-          className={`${
-            mode === "topic" && topic === t.name ? MENU_ITEM_ACTIVE : MENU_ITEM
-          } flex items-center justify-between gap-2 !py-2.5`}
-        >
-          <span>{t.name}</span>
-          <span className="shrink-0 rounded-full bg-blue-100 px-2 py-0.5 text-[11px] font-bold text-blue-800 dark:bg-slate-700 dark:text-blue-200">
-            {t.count}
-          </span>
-        </button>
-      ))}
     </>
   );
 
-  const sidebar = (
+  const topicChoices = topicsFor(category).map((t) => (
+    <button
+      key={t.name}
+      onClick={() => startQuiz("topic", category, 1, t.name)}
+      className={`${
+        !historyOpen && mode === "topic" && topic === t.name ? MENU_ITEM_ACTIVE : MENU_ITEM
+      } flex items-center justify-between gap-2 !py-2.5`}
+    >
+      <span>{t.name}</span>
+      <span className="shrink-0 rounded-full bg-blue-100 px-2 py-0.5 text-[11px] font-bold text-blue-800 dark:bg-slate-700 dark:text-blue-200">
+        {t.count}
+      </span>
+    </button>
+  ));
+
+  // Phones: the study sheet lists the study modes and the topics together.
+  const studyChoices = (
+    <>
+      {studyModeChoices}
+      <p className="border-t border-blue-100 px-4 pb-1 pt-3 text-[11px] font-bold uppercase tracking-widest text-blue-600 dark:border-slate-700 dark:text-blue-300">
+        By topic
+      </p>
+      {topicChoices}
+    </>
+  );
+
+  // The three sections, each with its own icon and colour.
+  const sectionTabs = (compact: boolean) => (
+    <nav aria-label="Section" className="grid grid-cols-3 gap-2">
+      {CATEGORIES.map((c) => {
+        const style = SECTION_STYLE[c.key];
+        const Icon = style.icon;
+        const on = category === c.key;
+        return (
+          <button
+            key={c.key}
+            onClick={() => selectCategory(c.key)}
+            aria-current={on ? "page" : undefined}
+            className={`flex items-center rounded-2xl ring-1 transition ${
+              compact
+                ? "flex-col justify-center gap-1 px-1 py-2 text-center"
+                : "gap-3 px-4 py-3 text-left"
+            } ${on ? style.active : `bg-white dark:bg-slate-900 ${style.idle}`}`}
+          >
+            <Icon className={compact ? "h-5 w-5" : "h-8 w-8 shrink-0"} strokeWidth={2} />
+            <span className="min-w-0">
+              <span
+                className={`block font-extrabold leading-tight ${compact ? "text-[11px]" : "text-base"}`}
+              >
+                {compact ? c.short : c.label}
+              </span>
+              {!compact && (
+                <span className={`block text-xs ${on ? "text-white/80" : MUTED}`}>
+                  {questionBanks[c.key].length} questions
+                </span>
+              )}
+            </span>
+          </button>
+        );
+      })}
+    </nav>
+  );
+
+  const topBar = (
+    <header className="mb-5 hidden lg:block">
+      <div
+        className={`${BRAND} mb-3 flex items-center justify-between gap-4 rounded-2xl px-5 py-3 shadow-xl shadow-blue-900/20`}
+      >
+        <div className="flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/15 text-xl ring-1 ring-white/25">
+            ✈
+          </div>
+          <div>
+            <p className="text-xl font-extrabold tracking-tight">M2 Canada</p>
+            <p className="text-[11px] font-medium uppercase tracking-widest text-blue-200">
+              AME exam preparation
+            </p>
+          </div>
+        </div>
+        {authEnabled && (
+          <form action={signOut}>
+            <button className="text-xs font-semibold text-blue-200 underline-offset-2 hover:text-white hover:underline">
+              Sign out
+            </button>
+          </form>
+        )}
+      </div>
+      {sectionTabs(false)}
+    </header>
+  );
+
+  const rightSidebar = (
     <aside className="hidden w-72 shrink-0 lg:block">
       <div className="sticky top-6 space-y-4">
-        <div className={`${BRAND} rounded-2xl p-5 shadow-xl shadow-blue-900/20`}>
-          <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/15 text-2xl ring-1 ring-white/25">
-              ✈
-            </div>
-            <div>
-              <p className="text-xl font-extrabold tracking-tight">M2 Canada</p>
-              <p className="text-[11px] font-medium uppercase tracking-widest text-blue-200">
-                AME exam preparation
-              </p>
-            </div>
-          </div>
-          {authEnabled && (
-            <form action={signOut} className="mt-3 text-right">
-              <button className="text-xs font-semibold text-blue-200 underline-offset-2 hover:text-white hover:underline">
-                Sign out
-              </button>
-            </form>
-          )}
-        </div>
-
-        <div className={SIDE_CARD}>
-          <p className="mb-2 text-[11px] font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
-            Section
-          </p>
-          <div className="space-y-1">
-            {CATEGORIES.map((c) => (
-              <button
-                key={c.key}
-                onClick={() => selectCategory(c.key)}
-                className={`flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-sm font-semibold transition ${
-                  category === c.key
-                    ? "bg-blue-600 text-white shadow-md shadow-blue-600/30"
-                    : "text-slate-700 hover:bg-blue-50 dark:text-slate-200 dark:hover:bg-slate-800"
-                }`}
-              >
-                {c.label}
-                <span
-                  className={`text-xs ${category === c.key ? "text-blue-100" : MUTED}`}
-                >
-                  {questionBanks[c.key].length}
-                </span>
-              </button>
-            ))}
-          </div>
-        </div>
-
         <div className={`${SIDE_CARD} !p-0`}>
           <p className="px-4 pt-4 text-[11px] font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
             Mode
@@ -740,15 +1107,31 @@ export default function Home() {
           <div className="py-2">
             <button
               onClick={() => startQuiz("test")}
-              className={mode === "test" ? MENU_ITEM_ACTIVE : MENU_ITEM}
+              className={!historyOpen && mode === "test" ? MENU_ITEM_ACTIVE : MENU_ITEM}
             >
               Test mode
               <span className={`ml-2 text-xs ${MUTED}`}>90 questions</span>
             </button>
-            {studyChoices}
+            {studyModeChoices}
+            <button
+              onClick={() => openHistory()}
+              className={`${historyOpen ? MENU_ITEM_ACTIVE : MENU_ITEM} flex items-center gap-2 border-t border-blue-100 dark:border-slate-700`}
+            >
+              <History className="h-4 w-4" />
+              Test history
+              <span className={`ml-auto text-xs ${MUTED}`}>{sectionHistory.length}</span>
+            </button>
           </div>
         </div>
 
+        <div className={`${SIDE_CARD} !p-0`}>
+          <p className="px-4 pt-4 text-[11px] font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
+            Study by topic
+          </p>
+          <div className="max-h-[45vh] overflow-y-auto py-2">{topicChoices}</div>
+        </div>
+
+        {!historyOpen && (
         <div className={SIDE_CARD}>
           <p className="mb-2 text-[11px] font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
             Progress
@@ -788,6 +1171,7 @@ export default function Home() {
             Keys: 1–4 answer · ← → move · Enter next
           </p>
         </div>
+        )}
       </div>
     </aside>
   );
@@ -796,7 +1180,7 @@ export default function Home() {
     <header
       className={`${BRAND} mb-3 rounded-2xl p-3 shadow-lg shadow-blue-900/20 lg:hidden`}
     >
-      <div className="flex items-center justify-between gap-2">
+      <div className="mb-3 flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-white/15 text-lg ring-1 ring-white/25">
             ✈
@@ -807,7 +1191,7 @@ export default function Home() {
           <button
             onClick={() => startQuiz("test")}
             className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition ${
-              mode === "test" ? "bg-white text-blue-800 shadow" : "text-blue-100"
+              !historyOpen && mode === "test" ? "bg-white text-blue-800 shadow" : "text-blue-100"
             }`}
           >
             Test
@@ -815,28 +1199,23 @@ export default function Home() {
           <button
             onClick={() => setStudyMenuOpen(true)}
             className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition ${
-              isStudy ? "bg-white text-blue-800 shadow" : "text-blue-100"
+              !historyOpen && isStudy ? "bg-white text-blue-800 shadow" : "text-blue-100"
             }`}
           >
             Study ▾
           </button>
-        </div>
-      </div>
-      <div className="-mx-1 mt-2 flex gap-1.5 overflow-x-auto px-1 pb-0.5 [scrollbar-width:none]">
-        {CATEGORIES.map((c) => (
           <button
-            key={c.key}
-            onClick={() => selectCategory(c.key)}
-            className={`shrink-0 rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${
-              category === c.key
-                ? "bg-white text-blue-800 shadow"
-                : "bg-white/10 text-blue-100 ring-1 ring-white/20"
+            onClick={() => openHistory()}
+            aria-label="Test history"
+            className={`rounded-lg px-2.5 py-1.5 transition ${
+              historyOpen ? "bg-white text-blue-800 shadow" : "text-blue-100"
             }`}
           >
-            {c.label}
+            <History className="h-4 w-4" />
           </button>
-        ))}
+        </div>
       </div>
+      {sectionTabs(true)}
     </header>
   );
 
@@ -864,89 +1243,44 @@ export default function Home() {
     </div>
   );
 
-  // ---------- test history (this device) ----------
+  // ---------- test history screen ----------
 
-  const sectionHistory = history
-    .filter((r) => r.category === category)
-    .sort((a, b) => b.finishedAt - a.finishedAt);
-  const pctOf = (r: TestRecord) => (r.total > 0 ? (r.score / r.total) * 100 : 0);
-  const averagePct =
-    sectionHistory.length > 0
-      ? sectionHistory.reduce((sum, r) => sum + pctOf(r), 0) / sectionHistory.length
-      : 0;
-  const bestPct = sectionHistory.reduce((best, r) => Math.max(best, pctOf(r)), 0);
-
-  const historyPanel =
-    sectionHistory.length === 0 ? null : (
-      <div className="mb-6 rounded-2xl bg-white p-4 text-left ring-1 ring-blue-200 dark:bg-slate-800 dark:ring-slate-600">
-        <h2 className="mb-3 text-sm font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
-          Your tests · {categoryTitle}
-        </h2>
-        <div className="mb-4 grid grid-cols-3 gap-2 text-center">
-          <div className="rounded-xl bg-blue-50 p-2.5 dark:bg-slate-900">
-            <p className={`text-[11px] font-semibold uppercase tracking-wider ${MUTED}`}>Average</p>
-            <p className="text-2xl font-extrabold text-blue-700 dark:text-blue-300">
-              {averagePct.toFixed(1)}%
-            </p>
-          </div>
-          <div className="rounded-xl bg-blue-50 p-2.5 dark:bg-slate-900">
-            <p className={`text-[11px] font-semibold uppercase tracking-wider ${MUTED}`}>Best</p>
-            <p className="text-2xl font-extrabold text-emerald-600 dark:text-emerald-400">
-              {bestPct.toFixed(1)}%
-            </p>
-          </div>
-          <div className="rounded-xl bg-blue-50 p-2.5 dark:bg-slate-900">
-            <p className={`text-[11px] font-semibold uppercase tracking-wider ${MUTED}`}>Tests</p>
-            <p className="text-2xl font-extrabold">{sectionHistory.length}</p>
+  if (historyOpen) {
+    return (
+      <div className={PAGE_BG}>
+        <div className="mx-auto w-full max-w-6xl px-3 pb-10 pt-3 sm:px-6 sm:pt-6">
+          {topBar}
+          {mobileHeader}
+          <div className="flex gap-6">
+            <main className="min-w-0 flex-1">{historyView}</main>
+            {rightSidebar}
           </div>
         </div>
-        <ul className="max-h-56 divide-y divide-blue-100 overflow-y-auto text-sm dark:divide-slate-700">
-          {sectionHistory.map((r) => {
-            const pct = pctOf(r);
-            return (
-              <li key={r.startedAt} className="flex items-center justify-between gap-3 py-1.5">
-                <span className={MUTED}>
-                  {new Date(r.finishedAt).toLocaleDateString(undefined, {
-                    year: "numeric",
-                    month: "short",
-                    day: "numeric",
-                  })}
-                </span>
-                <span className="tabular-nums">
-                  {r.score} / {r.total} ·{" "}
-                  <span
-                    className={`font-bold ${
-                      pct >= 70
-                        ? "text-emerald-600 dark:text-emerald-400"
-                        : pct >= 50
-                          ? "text-amber-600 dark:text-amber-400"
-                          : "text-rose-600 dark:text-rose-400"
-                    }`}
-                  >
-                    {pct.toFixed(1)}%
-                  </span>
-                </span>
-              </li>
-            );
-          })}
-        </ul>
+        {studySheet}
       </div>
     );
+  }
 
   // ---------- results screen ----------
+
+  const passed = Number(percentage) >= PASS_PCT;
 
   if (finished && mode === "test") {
     return (
       <div className={PAGE_BG}>
-        <div className="mx-auto flex w-full max-w-6xl gap-6 px-3 pb-10 pt-3 sm:px-6 sm:pt-6">
-          {sidebar}
+        <div className="mx-auto w-full max-w-6xl px-3 pb-10 pt-3 sm:px-6 sm:pt-6">
+          {topBar}
+          {mobileHeader}
+          <div className="flex gap-6">
           <main className="min-w-0 flex-1">
-            {mobileHeader}
             <div className={`${CARD} p-5 sm:p-8`}>
               <p className="mb-1 text-xs font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
                 {categoryTitle}
               </p>
-              <h1 className="mb-1 text-3xl font-extrabold">Test Results</h1>
+              <div className="mb-1 flex flex-wrap items-center gap-3">
+                <h1 className="text-3xl font-extrabold">Test Results</h1>
+                {passBadge(Number(percentage), true)}
+              </div>
               {testStartedAt && (
                 <p className={`mb-5 text-sm ${MUTED}`}>
                   Time used:{" "}
@@ -964,9 +1298,15 @@ export default function Home() {
               )}
 
               <div className="mb-6 grid gap-3 sm:grid-cols-3">
-                <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 p-4 text-white shadow-md">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-blue-100">
-                    Final Score
+                <div
+                  className={`rounded-2xl p-4 text-white shadow-md ${
+                    passed
+                      ? "bg-gradient-to-br from-emerald-500 to-emerald-600"
+                      : "bg-gradient-to-br from-rose-500 to-rose-600"
+                  }`}
+                >
+                  <p className="text-xs font-semibold uppercase tracking-wider text-white/80">
+                    Final Score · {passed ? "Passed" : "Failed"}
                   </p>
                   <p className="mt-1 text-3xl font-extrabold">
                     {score} / {order.length}
@@ -974,9 +1314,9 @@ export default function Home() {
                 </div>
                 <div className="rounded-2xl bg-sky-50 p-4 ring-1 ring-sky-200 dark:bg-slate-800 dark:ring-slate-600">
                   <p className="text-xs font-semibold uppercase tracking-wider text-sky-700 dark:text-sky-300">
-                    Percentage
+                    Percentage · pass mark {PASS_PCT}%
                   </p>
-                  <p className="mt-1 text-3xl font-extrabold text-sky-800 dark:text-sky-200">
+                  <p className={`mt-1 text-3xl font-extrabold ${pctText(Number(percentage))}`}>
                     {percentage}%
                   </p>
                 </div>
@@ -1061,53 +1401,13 @@ export default function Home() {
                 </div>
               ) : (
                 <div className="space-y-5">
-                  {wrongAnswers.map((item, index) => (
-                    <div
-                      key={index}
-                      className="rounded-2xl border border-rose-200 bg-rose-50/70 p-5 dark:border-rose-900 dark:bg-rose-950/30"
-                    >
-                      <div className="flex flex-wrap items-center justify-between gap-2">
-                        <p className="font-bold text-rose-700 dark:text-rose-300">
-                          Question {item.questionNumber}
-                        </p>
-                        {item.tema && (
-                          <span className="rounded-full bg-white px-2.5 py-0.5 text-[11px] font-semibold text-slate-600 ring-1 ring-rose-200 dark:bg-slate-800 dark:text-slate-300 dark:ring-rose-900">
-                            {item.tema}
-                          </span>
-                        )}
-                      </div>
-                      <p className="mt-2 text-lg font-medium">{item.pregunta}</p>
-
-                      {item.imagen && (
-                        <div className="mt-4">
-                          <Image
-                            src={item.imagen}
-                            alt="Question figure"
-                            width={800}
-                            height={500}
-                            className="h-auto w-full rounded-xl border border-slate-200 dark:border-slate-700"
-                          />
-                        </div>
-                      )}
-
-                      <p className="mt-3 text-sm font-medium text-rose-700 dark:text-rose-300">
-                        Your answer: {item.selected}
-                      </p>
-                      <p className="mt-1 text-sm font-medium text-emerald-700 dark:text-emerald-300">
-                        Correct answer: {item.correct}
-                      </p>
-
-                      {item.explicacion && (
-                        <p className="mt-2 text-sm text-slate-700 dark:text-slate-300">
-                          Explanation: {item.explicacion}
-                        </p>
-                      )}
-                    </div>
-                  ))}
+                  {wrongAnswers.map(wrongAnswerCard)}
                 </div>
               )}
             </div>
           </main>
+          {rightSidebar}
+          </div>
         </div>
         {studySheet}
       </div>
@@ -1118,12 +1418,11 @@ export default function Home() {
 
   return (
     <div className={PAGE_BG}>
-      <div className="mx-auto flex w-full max-w-6xl gap-6 px-3 pb-44 pt-3 sm:px-6 sm:pt-6 lg:pb-10">
-        {sidebar}
-
+      <div className="mx-auto w-full max-w-6xl px-3 pb-44 pt-3 sm:px-6 sm:pt-6 lg:pb-10">
+        {topBar}
+        {mobileHeader}
+        <div className="flex gap-6">
         <main className="min-w-0 flex-1">
-          {mobileHeader}
-
           {awaitingStart ? (
             <section className={`${CARD} p-6 sm:p-10`}>
               <div className="mx-auto max-w-lg text-center">
@@ -1443,6 +1742,8 @@ export default function Home() {
       )}
 
         </main>
+        {rightSidebar}
+        </div>
       </div>
 
       {studySheet}
