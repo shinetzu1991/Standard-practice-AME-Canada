@@ -179,6 +179,10 @@ type TestRecord = {
 
 const PASS_PCT = 70; // Transport Canada pass mark
 
+// Explanations are hidden for now; set to true to show them again under the
+// answers (study mode, results and test history).
+const SHOW_EXPLANATIONS = false;
+
 function recordPct(r: TestRecord): number {
   return r.total > 0 ? (r.score / r.total) * 100 : 0;
 }
@@ -885,7 +889,7 @@ export default function Home() {
         Correct answer: {item.correct}
       </p>
 
-      {item.explicacion && (
+      {SHOW_EXPLANATIONS && item.explicacion && (
         <p className="mt-2 text-sm text-slate-700 dark:text-slate-300">
           Explanation: {item.explicacion}
         </p>
@@ -1692,7 +1696,7 @@ export default function Home() {
                 <p className="mt-2 text-sm font-medium text-slate-800 sm:text-base dark:text-slate-200">
                   Correct answer: {question.opciones[question.correcta]}
                 </p>
-                {question.explicacion && (
+                {SHOW_EXPLANATIONS && question.explicacion && (
                   <p className="mt-2 text-sm text-slate-700 sm:text-base dark:text-slate-300">
                     Explanation: {question.explicacion}
                   </p>
