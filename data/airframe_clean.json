@@ -2119,9 +2119,9 @@
       "Remain level",
       "Yaw left"
     ],
-    "correcta": 1,
+    "correcta": 0,
     "tema": "Flight Controls",
-    "explicacion": "Deflecting the elevator downward increases tail lift, causing the aircraft nose to pitch upward."
+    "explicacion": "Deflecting the elevator downward increases the lift (upward force) on the horizontal tail. The tail rises and the aircraft pitches nose down."
   },
   {
     "id": "aero-225",
