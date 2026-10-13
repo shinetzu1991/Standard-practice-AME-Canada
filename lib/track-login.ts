@@ -35,20 +35,27 @@ export async function trackLogin(user: User) {
   try {
     const db = createAdminClient();
     const where = await visitorLocation();
-    const provider = (user.app_metadata?.provider as string) ?? "email";
+    // One account can have several sign-in methods (same email via password
+    // and Google); the identity used most recently is the one used now.
+    const latest = [...(user.identities ?? [])].sort(
+      (a, b) => Date.parse(b.last_sign_in_at ?? "") - Date.parse(a.last_sign_in_at ?? ""),
+    )[0];
+    const provider = latest?.provider ?? (user.app_metadata?.provider as string) ?? "email";
+    const providers = (user.app_metadata?.providers as string[] | undefined) ?? [provider];
     const now = new Date().toISOString();
 
     const { data: existing } = await db
       .from("profiles")
-      .select("id, login_count")
+      .select("id, login_count, name")
       .eq("id", user.id)
       .maybeSingle();
 
     const profile = {
       id: user.id,
       email: user.email ?? null,
-      name: displayName(user),
-      provider,
+      // Keep the name given at sign-up; Google would overwrite it with its own.
+      name: existing?.name ?? displayName(user),
+      provider: providers.join(", "),
       country: where.country,
       region: where.region,
       city: where.city,
