@@ -183,6 +183,9 @@ const PASS_PCT = 70; // Transport Canada pass mark
 // answers (study mode, results and test history).
 const SHOW_EXPLANATIONS = false;
 
+// Study mode: delay before moving on after a correct answer.
+const STUDY_AUTO_NEXT_MS = 3000;
+
 function recordPct(r: TestRecord): number {
   return r.total > 0 ? (r.score / r.total) * 100 : 0;
 }
@@ -570,14 +573,14 @@ export default function Home() {
       updatedChecked[current] = true;
       setCheckedAnswers(updatedChecked);
 
-      // Correct answer in study mode: move on by itself after a short pause
-      // (a wrong answer stays on screen so the explanation can be read).
+      // Correct answer in study mode: move on by itself after a pause long
+      // enough to see it was right (a wrong answer stays on screen).
       if (index === question.correcta && current < order.length - 1) {
         if (autoNextRef.current) clearTimeout(autoNextRef.current);
         autoNextRef.current = setTimeout(() => {
           autoNextRef.current = null;
           setCurrent((prev) => Math.min(prev + 1, order.length - 1));
-        }, 900);
+        }, STUDY_AUTO_NEXT_MS);
       }
     }
   };
