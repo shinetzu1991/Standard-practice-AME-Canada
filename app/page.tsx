@@ -31,7 +31,8 @@ type Question = {
   tema?: string;
 };
 
-type QuizMode = "test" | "study" | "study100" | "topic";
+// "lazy" = Paul's Lazy Mode: whole bank, question + correct answer only.
+type QuizMode = "test" | "study" | "study100" | "topic" | "lazy";
 
 const SHOW_POWERPLANT = true;
 
@@ -369,7 +370,7 @@ export default function Home() {
     const modeParam = params.get("mode");
     const urlTopic = params.get("topic");
     const urlMode: QuizMode =
-      modeParam === "study" || modeParam === "study100"
+      modeParam === "study" || modeParam === "study100" || modeParam === "lazy"
         ? modeParam
         : modeParam === "topic" && urlTopic
           ? "topic"
@@ -551,14 +552,15 @@ export default function Home() {
   };
 
   const question = order[current];
-  const isStudy = mode === "study" || mode === "study100" || mode === "topic";
+  const isLazy = mode === "lazy";
+  const isStudy = mode === "study" || mode === "study100" || mode === "topic" || isLazy;
   const selected = selectedAnswers[current] ?? null;
   const showAnswer = checkedAnswers[current] ?? false;
 
   const handleSelect = (index: number) => {
     if (!question || finished) return;
     if (mode === "test" && testStartedAt === null) return;
-    if (isStudy && showAnswer) return;
+    if (isLazy || (isStudy && showAnswer)) return;
 
     const updated = [...selectedAnswers];
     updated[current] = index;
@@ -715,7 +717,9 @@ export default function Home() {
   const modeLabel =
     mode === "test"
       ? "Test mode"
-      : mode === "study100"
+      : mode === "lazy"
+        ? "Paul's Lazy Mode"
+        : mode === "study100"
         ? "Study · 100 random"
         : mode === "topic"
           ? `Study · ${topic ?? ""}`
@@ -1043,6 +1047,13 @@ export default function Home() {
       >
         100 random questions
       </button>
+      <button
+        onClick={() => startQuiz("lazy")}
+        className={!historyOpen && mode === "lazy" ? MENU_ITEM_ACTIVE : MENU_ITEM}
+      >
+        Paul&apos;s Lazy Mode
+        <span className={`ml-2 text-xs ${MUTED}`}>answers only</span>
+      </button>
     </>
   );
 
@@ -1194,7 +1205,7 @@ export default function Home() {
             Question {current + 1}
             <span className={`font-medium ${MUTED}`}> / {order.length}</span>
           </p>
-          {isStudy ? (
+          {isLazy ? null : isStudy ? (
             <p className={`mt-1 text-sm ${MUTED}`}>
               <span className="font-semibold text-emerald-600 dark:text-emerald-400">
                 {score} ✓
@@ -1550,7 +1561,9 @@ export default function Home() {
                   {categoryTitle}
                 </h1>
               </div>
-              {isStudy ? (
+              {isLazy ? (
+                <p className={`text-sm ${MUTED}`}>Question and answer only</p>
+              ) : isStudy ? (
                 <p className="text-sm">
                   <span className="font-bold text-emerald-600 dark:text-emerald-400">
                     {score} ✓
@@ -1676,6 +1689,19 @@ export default function Home() {
               </div>
             )}
 
+            {isLazy ? (
+              <div className="rounded-2xl border border-emerald-400 bg-emerald-50 p-4 shadow-sm ring-2 ring-emerald-200 sm:p-5 dark:border-emerald-700 dark:bg-emerald-950/50 dark:ring-emerald-900">
+                <p className="text-[11px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
+                  Answer
+                </p>
+                <p className="mt-1 text-lg font-semibold text-emerald-900 sm:text-xl dark:text-emerald-100">
+                  {question.opciones[question.correcta]}
+                </p>
+                <div className="mt-3">
+                  <ReportButton category={category} question={question.pregunta} />
+                </div>
+              </div>
+            ) : (
             <div className="space-y-3">
               {question.opciones?.map((op, i) => (
                 <button
@@ -1690,8 +1716,9 @@ export default function Home() {
                 </button>
               ))}
             </div>
+            )}
 
-            {isStudy && showAnswer && (
+            {isStudy && !isLazy && showAnswer && (
               <div className="mt-5 rounded-2xl border border-blue-200 bg-white p-4 shadow-sm sm:p-5 dark:border-slate-600 dark:bg-slate-800">
                 <p className="text-base font-bold sm:text-lg">
                   {selected === question.correcta ? "✅ Correct" : "❌ Incorrect"}
