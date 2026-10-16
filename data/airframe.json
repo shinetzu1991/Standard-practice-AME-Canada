@@ -1130,14 +1130,14 @@
     "id": "flightcontrols-207",
     "pregunta": "What kind of tab follows the movement of the control surface but in the opposite direction?",
     "opciones": [
-      "Servo tab",
+      "Balance tab",
       "Anti-servo tab",
-      "Trim tab",
+      "Servo tab",
       "Spring tab"
     ],
     "correcta": 0,
     "tema": "Flight Controls & Aerodynamics",
-    "explicacion": "A servo tab moves in the direction opposite to the primary flight control surface; its deflection aerodynamically moves the surface and reduces the pilot's control force."
+    "explicacion": "A balance tab moves in the direction opposite to the control surface, helping the pilot move it. An anti-servo tab moves in the same direction; a servo tab is moved by the pilot and in turn moves the surface."
   },
   {
     "id": "aero-211",
@@ -3254,9 +3254,9 @@
       "Differential metering valve",
       "Negative pressure relief valve"
     ],
-    "correcta": 2,
+    "correcta": 1,
     "tema": "Pressurization, Air Conditioning & Oxygen",
-    "explicacion": "In differential mode, the differential metering valve controls airflow to maintain the selected cabin differential pressure."
+    "explicacion": "In both isobaric and differential modes the cabin pressure regulator (controller) positions the outflow valve, through which cabin air escapes."
   },
   {
     "id": "pressurization-202",
@@ -4200,12 +4200,12 @@
     "opciones": [
       "50 to 60",
       "65 to 75",
-      "85 to 90",
+      "80 to 90",
       "100 to 110"
     ],
     "correcta": 2,
     "tema": "Structures, Fabric & Sheet Metal",
-    "explicacion": "Traditional Grade A cotton aircraft fabric is commonly specified as having approximately 85 to 90 threads per inch. Values may vary with manufacturer specifications."
+    "explicacion": "Grade A cotton fabric has 80 to 84 threads per inch in warp and fill."
   },
   {
     "id": "structures-225",
@@ -9369,8 +9369,9 @@
       "Relieve pressure",
       "Regulate pressure"
     ],
-    "correcta": 0,
-    "tema": "Hydraulics, Landing Gear & Brakes"
+    "correcta": 1,
+    "tema": "Hydraulics, Landing Gear & Brakes",
+    "explicacion": "The pump moves the fluid (produces flow). Pressure is created when that flow is restricted by the load or a valve."
   },
   {
     "pregunta": "In a hydraulic system, priority valves are:",
@@ -9380,7 +9381,8 @@
       "Both electrically and hydraulically actuated",
       "Mechanically actuated"
     ],
-    "correcta": 2,
-    "tema": "Hydraulics, Landing Gear & Brakes"
+    "correcta": 1,
+    "tema": "Hydraulics, Landing Gear & Brakes",
+    "explicacion": "Priority valves are similar to sequence valves but are opened by hydraulic pressure rather than by mechanical contact."
   }
 ]
