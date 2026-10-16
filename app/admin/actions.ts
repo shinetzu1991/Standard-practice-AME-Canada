@@ -1,6 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { emailUser } from "@/lib/notify";
 import { isCategory } from "@/lib/sections";
 import { ADMIN_EMAIL, authEnabled } from "@/lib/supabase/config";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
@@ -52,6 +53,40 @@ export async function resolveReport(form: FormData) {
 export async function reopenReport(form: FormData) {
   const db = await adminDb();
   await db.from("question_reports").update({ status: "open", resolved_at: null }).eq("id", id(form));
+  revalidatePath("/admin");
+}
+
+// Emails the person who sent the report and marks the report as resolved.
+export async function replyToReport(form: FormData) {
+  const db = await adminDb();
+  const reply = String(form.get("reply") ?? "").trim().slice(0, 4000);
+  if (!reply) return;
+  const { data: report } = await db
+    .from("question_reports")
+    .select("id, email, question")
+    .eq("id", id(form))
+    .maybeSingle();
+  if (!report?.email) return;
+
+  const sent = await emailUser(
+    report.email,
+    "About the question you reported on M2 Canada",
+    [
+      reply,
+      "",
+      "—",
+      `Question you reported: ${report.question}`,
+      "",
+      "M2 Canada support · https://m2canada.ca",
+      "You can answer this email directly.",
+    ].join("\n"),
+  );
+  if (!sent) return;
+
+  await db
+    .from("question_reports")
+    .update({ reply, replied_at: now(), status: "resolved", resolved_at: now() })
+    .eq("id", report.id);
   revalidatePath("/admin");
 }
 

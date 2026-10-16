@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { connection } from "next/server";
+import { canEmailUsers } from "@/lib/notify";
 import { SECTION_LABELS, isCategory } from "@/lib/sections";
 import { ADMIN_EMAIL, authEnabled } from "@/lib/supabase/config";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
@@ -9,6 +10,7 @@ import {
   hideQuestion,
   reopenReport,
   reopenSubmission,
+  replyToReport,
   resolveReport,
   reviewSubmission,
   unhideQuestion,
@@ -64,6 +66,8 @@ type Report = {
   reason: string;
   message: string | null;
   status: "open" | "resolved";
+  reply: string | null;
+  replied_at: string | null;
   created_at: string;
 };
 
@@ -438,6 +442,31 @@ async function ReportsTab({ status }: { status?: string }) {
                   “{r.message}”
                 </p>
               )}
+              {r.reply ? (
+                <div className="mt-3 rounded-xl bg-emerald-50 p-3 text-sm ring-1 ring-emerald-200 dark:bg-emerald-950/30 dark:ring-emerald-900">
+                  <p className="mb-1 text-[11px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-300">
+                    Your reply{r.replied_at ? ` · ${when(r.replied_at)}` : ""}
+                  </p>
+                  <p className="whitespace-pre-wrap text-slate-700 dark:text-slate-300">{r.reply}</p>
+                </div>
+              ) : r.email && canEmailUsers ? (
+                <form action={replyToReport} className="mt-3 space-y-2">
+                  <input type="hidden" name="id" value={r.id} />
+                  <textarea
+                    name="reply"
+                    required
+                    rows={3}
+                    maxLength={4000}
+                    placeholder={`Reply to ${r.email}…`}
+                    className="w-full rounded-lg bg-white px-3 py-2 text-sm ring-1 ring-blue-200 dark:bg-slate-800 dark:ring-slate-600"
+                  />
+                  <button className={BTN_OK}>Send reply &amp; resolve</button>
+                </form>
+              ) : r.email ? (
+                <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
+                  Replies from here turn on once m2canada.ca is verified in Resend.
+                </p>
+              ) : null}
               <div className="mt-3 flex flex-wrap gap-2">
                 {isHidden ? (
                   <form action={unhideQuestion}>
