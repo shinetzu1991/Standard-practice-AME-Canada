@@ -1067,8 +1067,8 @@
       "Are hardened by the application of heat",
       "Are not affected by the application of heat"
     ],
-    "correcta": 3,
-    "explicacion": "Thermosetting plastics are permanently set and do not soften again when reheated.",
+    "correcta": 2,
+    "explicacion": "Thermosetting plastics are hardened (cured) by heat. Once set they do not soften again when reheated and cannot be reshaped; too much heat chars or decomposes them.",
     "tema": "Hardware, Materials & Processes"
   },
   {
