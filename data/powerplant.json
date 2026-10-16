@@ -112,13 +112,14 @@
   {
     "pregunta": "When the recommended fuel is being used, detonation may occur if",
     "opciones": [
-      "The ignition is too far advanced",
+      "The engine is operated at low power settings",
       "The mixture is too lean",
       "The mixture is too rich",
       "Hot coke is present in the cylinder"
     ],
-    "correcta": 3,
-    "tema": "Piston engines"
+    "correcta": 1,
+    "tema": "Piston engines",
+    "explicacion": "An excessively lean mixture burns hotter, raises cylinder head temperature and leads to detonation. Hot carbon (coke) in the cylinder causes pre-ignition, not detonation."
   },
   {
     "pregunta": "When an engine is stopped, the float operated needle valve in a simple float-type carburettor maintains the fuel level in the float chamber",
@@ -2984,12 +2985,13 @@
     "pregunta": "May a turbine engine's fuel control unit (FCU) be calibrated (trimmed) in the field?",
     "opciones": [
       "Yes, by any AME with basic hand tools",
-      "Only with approved equipment and instructions, generally on a fuel flow bench",
+      "Yes, on the installed running engine, with calibrated instruments and the manufacturer's trim procedure",
       "Yes, but only while the engine is running at full power",
       "No, it can never be adjusted outside the factory"
     ],
     "correcta": 1,
-    "tema": "Turbine engines"
+    "tema": "Turbine engines",
+    "explicacion": "Trimming adjusts the idle and maximum (part-power trim stop) settings of the FCU on the installed engine, following the manufacturer's trim curve with calibrated EPR/tachometer instruments and specified ambient conditions."
   },
   {
     "pregunta": "After continued operation, a gas turbine engine's pilot complains of a loss of power. What can the mechanic do?",
@@ -3428,8 +3430,9 @@
       "Hydro mechanical",
       "Electronic"
     ],
-    "correcta": 2,
-    "tema": "Turbine engines"
+    "correcta": 3,
+    "tema": "Turbine engines",
+    "explicacion": "Most current turbine engines use electronic fuel control (EEC / FADEC). Hydromechanical units are still found on older engines but their use is becoming limited."
   },
   {
     "pregunta": "What would be the probable result if the oil system pressure relief valve should stick in the open position on a turbine engine?",
