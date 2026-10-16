@@ -1,0 +1,5326 @@
+[
+  {
+    "pregunta": "The piston displacement of a cylinder having a bore of 5 inches and a stroke of 4 inches is closest to",
+    "opciones": [
+      "20 cubic inches",
+      "62.832 cubic inches",
+      "78.54 cubic inches",
+      "169.646 cubic inches"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "An O-540 engine is a",
+    "opciones": [
+      "Horizontally opposed engine with a displacement of 540 cubic centimeters",
+      "Single row radial engine rated at 540 indicated HP",
+      "Single row radial engine rated at 540 brake HP",
+      "Horizontally opposed engine with a displacement of 540 cubic inches"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The compression ratio of a conventional gasoline engine is",
+    "opciones": [
+      "Is maintained by the piston rings",
+      "Has a maximum of gases in the cylinder",
+      "Has a maximum value of 13 to 1",
+      "Is limited because of the rise in the critical pressure of the gases in the cylinder"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Care must be taken when installing piston rings on the pistons because",
+    "opciones": [
+      "They are brittle and easily broken",
+      "The rings will jam if the cylinder is not rocked while slipping it on the piston",
+      "All tapered edges of the rings must face towards the piston crown",
+      "All tapered edges of the rings must face towards the piston skirt"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Chrome-plated piston rings",
+    "opciones": [
+      "Must never be used in aircraft engines",
+      "Can only be used with chrome-plated cylinders",
+      "Must never be used with chrome-plated cylinders",
+      "Are used only in oversize cylinder and piston assemblies"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "After installing a new set of piston rings on a piston, a subsequent test indicated excessive blow-by. A possible reason for this could be",
+    "opciones": [
+      "Non-staggering of the ring gaps",
+      "Insufficient end gap on the rings",
+      "A crack in the cylinder head",
+      "Improper seating of the valves"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The purpose of the safety circlet or spring ring on an intake or exhaust valve stem is to",
+    "opciones": [
+      "Secure the valve spring to the stem",
+      "Retain the valve should the stem tip break",
+      "Prevent the valve stems from rotating",
+      "Secure the lock plate"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A fuel/air ratio that is expressed as 1:12 means",
+    "opciones": [
+      "1 part of air to 12 parts of fuel by volume",
+      "1 part of fuel to 12 parts of air by volume",
+      "1 part of fuel to 12 parts of air by weight",
+      "1 part of air to 12 parts of fuel by weight"
+    ],
+    "correcta": 2,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "When comparing high and low compression engines,",
+    "opciones": [
+      "Low compression engines are more susceptible to pre-ignition",
+      "Low compression engines require a fuel with a higher performance number",
+      "High compression engines convert more heat energy into useful work",
+      "High compression engines are less susceptible to detonation"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The most likely cause of a carburettor leaking when the engine is stopped is an",
+    "opciones": [
+      "Open primer line",
+      "Improperly seated float needle valve",
+      "Economizer needle valve stuck open",
+      "Accelerating pump valve stuck open"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A backfire results from",
+    "opciones": [
+      "Fast burning of a rich mixture",
+      "Fast burning of a lean mixture",
+      "Slow burning of a lean mixture",
+      "Slightly retarded ignition timing"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "If the bellows or capsule of the automatic mixture control mechanism is ruptured",
+    "opciones": [
+      "The air bleed will increase the air flow",
+      "A lean fuel/air mixture will normally result",
+      "A rich fuel/air mixture will normally result",
+      "The compensator will continue to control the fuel/air mixture"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "During inspection of an operational engine after a recent overhaul",
+    "opciones": [
+      "The presence of any debris in the oil screen is cause for engine strip-down and internal inspection",
+      "The accessory section sludge chamber must be inspected for debris",
+      "The oil cooler must be checked for contamination",
+      "Small metal slivers and particles may be found in the oil screen but this is not considered abnormal"
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What is an advantage of using propeller or transmission reduction gears?",
+    "opciones": [
+      "To allow an engine RPM increase with an accompanying increase in power while the blades remain at a lower, more efficient RPM",
+      "To allow a blade RPM increase with a decrease in engine RPM",
+      "To allow a blade RPM increase without an accompanying increase in engine RPM",
+      "To allow an engine RPM increase with an accompanying increase in blade RPM"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "Straight roller bearings, as compared to ball bearings,",
+    "opciones": [
+      "Cause less friction",
+      "Are used for combination thrust and radial loads",
+      "Are used only for thrust loads",
+      "Are used only for radial loads"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Dynamic balance of a crankshaft is achieved by use of",
+    "opciones": [
+      "A pendulum which oscillates in time with crankshaft vibration",
+      "A pendulum which oscillates out of time with crankshaft vibration",
+      "Two knife edges to balance and check for any turning tendency",
+      "A pendulum whose vibrating frequency differs from the engine power impulses"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Shot-peening of certain engine parts is a method of",
+    "opciones": [
+      "Locking a nut without using a pal nut",
+      "Increasing the wetting surface of a piston's side areas",
+      "Relieving stress in specific metal parts",
+      "Securing a spark plug insert in a cylinder"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Nitriding the surface of metal engine parts",
+    "opciones": [
+      "Increases the metal's resistance to wear",
+      "Is an anti-corrosion plating process",
+      "Improves their heat dissipation properties",
+      "Increases their dimensions"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "On unsupercharged engines with direct injection systems, the fuel discharge nozzles",
+    "opciones": [
+      "Inject fuel into each intake port",
+      "Inject fuel directly into the combustion chamber",
+      "Meter the fuel to each cylinder",
+      "Pressurize the airflow through the nozzle"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Water injection systems inject water/methanol into the fuel/air mixture to provide",
+    "opciones": [
+      "An increase in air density to the cylinders",
+      "Extra cooling for the mixture and cylinders",
+      "A richer fuel/air ratio",
+      "An increase in air volume to the cylinders"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Pump seals, carburettor diaphragms, and flexible hoses of a fuel system must be",
+    "opciones": [
+      "Must be made of pure rubber",
+      "Should be removed from their packages before placing into storage",
+      "Must be made of special synthetic rubber",
+      "Should be pre-soaked before use"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "In a low-tension ignition system, each spark plug requires an individual",
+    "opciones": [
+      "Breaker assembly",
+      "Secondary coil",
+      "Cam assembly",
+      "Distributor rotor segment"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "In a magneto, retard breaker points are generally found in the",
+    "opciones": [
+      "Induction vibrator circuit",
+      "Secondary circuit",
+      "Trailing finger when employed in the distributor rotor",
+      "Primary circuit"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A compensated cam in the magneto of a radial engine rotates at",
+    "opciones": [
+      "1/4 crankshaft speed",
+      "1/2 crankshaft speed",
+      "Crankshaft speed",
+      "Twice crankshaft speed"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The retard ignition of a low-tension ignition system",
+    "opciones": [
+      "Is energized by operation of the primer switch",
+      "Makes use of a battery operated inverter",
+      "Is timed to fire at a predetermined number of degrees after the main breaker points open",
+      "Functions in accordance with all of the statements listed above"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "On a dual ignition system with staggered magneto timing, the",
+    "opciones": [
+      "Spark plug on the intake side of the cylinder fires first",
+      "Spark plug on the exhaust side of the cylinder fires first",
+      "Firing of the spark plugs is synchronized",
+      "Spark plugs in the cylinder are timed to fire alternately"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Resistor type spark plugs",
+    "opciones": [
+      "Should not be used on low powered engines",
+      "Reduce erosion of the magneto breaker points",
+      "Reduce wear at the spark plug electrodes",
+      "Increase the current discharge at the spark plug electrodes"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "When removing a shielded spark plug, which part is most likely to be damaged?",
+    "opciones": [
+      "Centre electrode",
+      "Shell section",
+      "Ground electrodes",
+      "Core insulator"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Exhaust augmentation provides",
+    "opciones": [
+      "Increased exhaust back pressure for smoother engine operation",
+      "Hot air flow for the induction anti-icing system",
+      "A means of ducting heat to the cabin",
+      "Reduced exhaust back pressure and increased airflow over the engine"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "To clear a hydraulically locked cylinder on a radial engine, the crankshaft should be turned through several revolutions",
+    "opciones": [
+      "By hand in the direction of rotation",
+      "By intermittent use of the starter with the magneto switches off",
+      "By hand opposite to direction of rotation",
+      "In the direction of rotation after removal of the lower spark plugs"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "When more power is required in an aircraft electrical system, the generator voltage will",
+    "opciones": [
+      "Remain constant and the current flow will increase",
+      "Increase at a steady value to oppose the current flow",
+      "Remain constant and the current will remain at a constant value",
+      "Automatically decrease because of the greater current flow"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "The transfer of electrical energy from one circuit to another without the aid of electrical connections is",
+    "opciones": [
+      "Only possible through use of an electrolyte",
+      "Called conduction",
+      "Accomplished with a capacitor",
+      "Called induction"
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Loss of residual magnetism or reversal of polarity in generator field poles may be restored by",
+    "opciones": [
+      "Adjusting the voltage regulator",
+      "Increasing generator RPM",
+      "Resetting the battery bus circuit breaker",
+      "Flashing the generator field"
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "An electric tachometer used in some modern twin-engine aircraft gets its signal from",
+    "opciones": [
+      "A special three-phase generator",
+      "A pick-up coil attached to each of the alternators",
+      "The D.C. voltage output of the magneto secondary circuit",
+      "The A.C. voltage output of the magneto secondary circuit"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Pistons are usually made of",
+    "opciones": [
+      "Steel alloy",
+      "Magnesium alloy",
+      "High grade cast iron",
+      "Aluminum alloy"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "When starting a cold engine, the oil pressure will",
+    "opciones": [
+      "Indicate a normal operating pressure without change as the engine warms up to operating temperature",
+      "Register higher than normal with a reduction to normal as operating temperatures are reached",
+      "Fluctuate until operating temperatures are reached",
+      "Be below normal until operating temperatures stabilize"
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "When a reciprocating engine is started, there should be a positive indication of oil pressure within",
+    "opciones": [
+      "10 seconds",
+      "15 seconds",
+      "20 seconds",
+      "30 seconds"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The bellows of a thermostatic valve in an oil cooler causes the valve to close the",
+    "opciones": [
+      "Core outlet in a hot oil flow condition",
+      "Outlet from the bypass jacket in a cold oil flow condition",
+      "Outlet from the bypass jacket in a surge condition",
+      "Outlet from the bypass jacket in a hot oil flow condition"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The check valve mounted in the top of an oil filter",
+    "opciones": [
+      "Permits unfiltered oil to bypass the filter if the oil filter becomes clogged",
+      "Prevents gravity fed oil from settling in the lower cylinders of radial engines",
+      "Prevents backflow and a buildup of pressure against the oil pump if the oil filter becomes blocked",
+      "Limits system oil pressure to a pre-determined value"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Fuel/air mixture ratio is expressed on the basis of",
+    "opciones": [
+      "Weight",
+      "Pressure",
+      "Octane rating",
+      "Volume"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "One reason valve lead and valve lag is greater in relation to bottom dead centre than to top dead centre is because",
+    "opciones": [
+      "The piston accelerates at this position",
+      "The time required for the valves to open fully is greater at B.D.C. than at T.D.C.",
+      "Piston travel per degree of crankshaft travel is greater near B.D.C. than T.D.C.",
+      "Piston travel per degree of crankshaft travel is less near B.D.C. than T.D.C."
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Setting the clearance of both the intake and exhaust valves to more than specified would cause",
+    "opciones": [
+      "The intake to close early and the exhaust to close late",
+      "Both valves to close early",
+      "The exhaust to close early and the intake to close late",
+      "Both valves to close late"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The sequence of strokes to complete a cycle in a four-stroke engine is",
+    "opciones": [
+      "Intake, compression, power and exhaust",
+      "Ignition, exhaust, intake and compression",
+      "Compression, ignition, exhaust and intake",
+      "Intake, ignition, power and exhaust"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Failure of the ball check valve to seat properly in a zero lash hydraulic valve lifter would cause",
+    "opciones": [
+      "Excessive clearance in the valve train",
+      "Insufficient clearance in the valve train",
+      "The valves to open early",
+      "The valves to close late"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "During a differential pressure test (motostat) on an aircraft engine, excessive leakage from the crankcase breather would indicate poor condition of the",
+    "opciones": [
+      "Valve guides",
+      "Exhaust valves",
+      "Intake valves",
+      "Piston rings"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Correct idle settings can be made by adjusting the idle mixture to",
+    "opciones": [
+      "A slightly rich position which will result in a 10 to 20 RPM rise when moving the mixture control to idle cut off",
+      "A position that gives an immediate drop when moving the mixture to idle cut off",
+      "Very rich, then compensate by adjusting the throttle stop to a relatively high RPM for minimum idling",
+      "A rich position that will result in a 75 RPM rise when moving the mixture control to idle cut off"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A possible cause for fuel/air mixture being too lean at cruising power is",
+    "opciones": [
+      "An incorrectly adjusted automatic fuel pressure control",
+      "An air leak in the intake manifold",
+      "A high float level",
+      "All of the causes listed above"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The working principle of the pressure injection carburettor is based on",
+    "opciones": [
+      "Metered fuel pressure being regulated by airflow through the carburettor",
+      "Float chamber pressurization by the supercharger",
+      "Elimination of the butterfly valve",
+      "Charles' law"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "When cleaning nozzles and nozzle screens of a fuel injection system, the",
+    "opciones": [
+      "Use of a baking soda and distilled water solution is recommended",
+      "Nozzles and screens must be returned to an approved carburettor overhaul shop",
+      "Use of fresh cleaning solvent only is recommended",
+      "Metering valve should also be checked"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Improper setting of the E-gap angle during internal timing of a magneto will cause",
+    "opciones": [
+      "Excessive pitting of the primary breaker points",
+      "The secondary voltage to be lower than normal",
+      "The magneto to engine timing to be late",
+      "Arcing of the magneto safety gap"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "If ignition were timed to occur when the piston was at top dead centre",
+    "opciones": [
+      "Maximum cylinder pressure would not develop",
+      "All of the symptoms, answers a, c and d, would develop",
+      "The engine would develop excessive temperature",
+      "The engine would not develop full power"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "When doing a magneto check, failure to obtain any drop while in the single magneto position, or failure of the engine to cut out while switching to \"off\" would indicate that",
+    "opciones": [
+      "One or both the magneto grounding circuits are open",
+      "One or both the magneto grounding circuits are shorted",
+      "The breaker points of that magneto are seized closed",
+      "The breaker points of the opposite magneto are seized open"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A broken magneto impulse coupling spring will cause the",
+    "opciones": [
+      "Spark of the magneto on which it is installed to be retarded",
+      "Magneto to fire one cylinder late in the engine's firing order",
+      "Magneto to operate normally except during start",
+      "Magneto drive gear to turn without moving the magneto rotor"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The RPM of a turbocharger may be increased by",
+    "opciones": [
+      "Moving the waste gate towards the closed position",
+      "Moving the waste gate towards the open position",
+      "Decreasing the engine RPM to increase back pressure",
+      "Selecting from ram to alternate air"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The purpose of supercharger diffuser vanes is to",
+    "opciones": [
+      "Decrease the temperature of the charge",
+      "Increase the induction air charge volume",
+      "Convert the charge pressure to high velocity",
+      "Convert the high velocity of the charge to pressure"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Gasoline may be regarded as having",
+    "opciones": [
+      "Potential energy",
+      "Dynamic energy",
+      "Explosive energy",
+      "Kinetic energy"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Which statement regarding 100 low lead aviation gasoline is correct?",
+    "opciones": [
+      "It should not be used in engines requiring grade 100/130 fuel",
+      "It should not be used in engines requiring 80/87 octane fuel",
+      "It will replace 80/87 octane with adjustments required to some engines using this fuel",
+      "It will replace grade 100/130 with adjustments required to all engines using this fuel"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A fuel with a lower octane rating than that recommended by the engine manufacturer should not",
+    "opciones": [
+      "Be used in aircraft engines",
+      "The grade recommended may be used in an emergency providing high engine power settings are selected",
+      "100 should not be used in aircraft engines",
+      "That recommended may be used providing the engine is turbocharged to restore normal power settings"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Commercial aviation oil #80",
+    "opciones": [
+      "Is a mineral oil equivalent to SAE #80 grade",
+      "Is a mineral oil equivalent to SAE #40 grade",
+      "Is a detergent oil equal to SAE #80 grade",
+      "May be either a straight or detergent oil"
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Diode rectifiers are used",
+    "opciones": [
+      "To provide a load resistance in an electrical circuit",
+      "In compound-wound D.C. generators",
+      "As capacitors or inductors to filter D.C.",
+      "To change A.C. to D.C."
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "A carbon-pile voltage regulator may be adjusted while installed on an aircraft by setting",
+    "opciones": [
+      "Either the pile screw or voltage rheostat",
+      "The pile screw only",
+      "The voltage rheostat only",
+      "Both the pile screw and voltage rheostat"
+    ],
+    "correcta": 2,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "The points of a reverse current cut-out relay of an electrical system are open when the",
+    "opciones": [
+      "Ammeter indicates a charge",
+      "Generator voltage is less than the battery voltage",
+      "Generator current is more than the load current",
+      "Battery is fully charged"
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "An engine is not developing full power and almost quits in flight, but everything is fine on the ground. What is the most likely cause?",
+    "opciones": [
+      "Water in the fuel",
+      "Carburettor icing",
+      "Mixture too rich",
+      "A fouled spark plug"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "What is the advantage of the axial flow compressor?",
+    "opciones": [
+      "Simpler construction than a centrifugal compressor",
+      "Lower manufacturing cost than a centrifugal compressor",
+      "High operating pressure ratio in a single stage",
+      "Small frontal area"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The starter on a dual (twin-spool) axial compressor drives what?",
+    "opciones": [
+      "The low pressure compressor only (N1)",
+      "Both N1 and N2 together",
+      "The high pressure compressor only (N2), through the gear box",
+      "The accessory gearbox only, not the compressor"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is a normal start cycle for a turbine engine?",
+    "opciones": [
+      "Starter engage, fuel on, accelerate, ignition on, light-off, starter disengage",
+      "Ignition on, fuel on, starter engage, light-off, ignition off, accelerate",
+      "Engage starter, ignition on, fuel on, light-off, accelerate, ignition off, starter disengage",
+      "Fuel on, starter engage, ignition on, accelerate, starter disengage, ignition off"
+    ],
+    "correcta": 2,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What is the purpose of the diffuser section in a turbine engine?",
+    "opciones": [
+      "To mix fuel and air before combustion",
+      "To cool the turbine blades before the exhaust",
+      "To increase pressure and decrease velocity",
+      "To increase velocity and decrease pressure"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the purpose of the last-chance oil filter in a turbine engine?",
+    "opciones": [
+      "To filter fuel immediately before the nozzles",
+      "To filter air immediately before the compressor inlet",
+      "To remove water from the oil before it reaches the tank",
+      "To filter the oil immediately before it enters the main bearings"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What conditions are required to properly trim (calibrate) a turbine engine's fuel control unit?",
+    "opciones": [
+      "No wind, moisture-free air, and known ambient temperature and barometric pressure",
+      "High wind and low humidity",
+      "The engine must be cold and not yet started",
+      "Icing conditions, to test the anti-ice system at the same time"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Where is the dump valve located in a turbine engine fuel system, and what does it do?",
+    "opciones": [
+      "It is located at the igniter and dumps unused ignition energy",
+      "It is located on the fuel manifold and dumps residual fuel after shutdown so deposits don't form as the fuel evaporates",
+      "It is located on the FCU and dumps fuel during an overspeed",
+      "It is located at the fuel tank and prevents overfilling"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What does compressor bleed air do in a turbine engine?",
+    "opciones": [
+      "It cools the compressor inlet only",
+      "It increases thrust directly at the exhaust nozzle",
+      "It powers the starter during engine start",
+      "It cools and relieves pressure on the turbine section"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What are the general types of compressors used in turbine engines?",
+    "opciones": [
+      "Centrifugal, radial, and reciprocating",
+      "Centrifugal and turbo-compound only",
+      "Centrifugal, axial-flow (single or twin spool), and axial-flow bypass",
+      "Axial-flow only, in single or double stages"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the purpose of compressor bleed valves?",
+    "opciones": [
+      "To ensure stable compressor operation, particularly in the low operating (RPM) range, by preventing compressor stall",
+      "To supply air to the cabin pressurization system only",
+      "To increase compressor discharge pressure at high RPM",
+      "To cool the turbine bearings"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Which best describes a labyrinth seal in a turbine engine?",
+    "opciones": [
+      "It uses a spring-loaded metal bellows to seal against oil loss",
+      "It is a simple rubber O-ring seal requiring no air pressure",
+      "It uses a series of circumferential grooves and relies on a pressurized air source to minimize leakage",
+      "It relies on carbon rubbing directly against a polished shaft"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the purpose of variable stator vanes in an axial-flow compressor?",
+    "opciones": [
+      "To reduce the number of compressor stages required",
+      "To increase compressor discharge temperature at idle",
+      "To eliminate the need for compressor bleed valves",
+      "To help reduce the risk of compressor stall across the engine's operating range"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the purpose of combustion chamber interconnector tubes?",
+    "opciones": [
+      "To drain unburned fuel between combustion chambers",
+      "To carry cooling air between combustion chambers",
+      "To propagate (spread) the flame from one combustion chamber to the next during starting",
+      "To equalize fuel pressure between combustion chambers"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A gradual power loss on a turboprop engine caused by a dirty compressor is typically remedied by?",
+    "opciones": [
+      "Replacing the fuel control unit",
+      "Increasing the idle RPM setting",
+      "Cleaning the compressor blades",
+      "Replacing the turbine wheel assembly"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Where is water or water-methanol injected in a turbine engine for power augmentation?",
+    "opciones": [
+      "Directly into the exhaust nozzle",
+      "At the compressor inlet or into the combustion chamber",
+      "Into the turbine bearing oil supply",
+      "Into the fuel tank before each flight"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the correct action if a crack is found on a turbine disc (wheel)?",
+    "opciones": [
+      "The turbine disc must be rejected — a crack is immediate cause for rejection",
+      "It is acceptable if less than 1/32 inch long",
+      "It should be monitored and reinspected at the next scheduled check",
+      "It may be blended out by stoning and polishing"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Piston rings that are not properly staggered around the cylinder's circumference can cause what?",
+    "opciones": [
+      "Detonation",
+      "Excessive blow-by",
+      "Valve sticking",
+      "Excessive oil consumption only"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "What is the purpose of the venturi (throat) in a float-type carburetor?",
+    "opciones": [
+      "To filter incoming air before it reaches the throttle",
+      "To increase pressure at the discharge nozzle",
+      "To decrease pressure at the discharge nozzle, drawing fuel into the airstream",
+      "To cool the incoming air before the throttle body"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "What problem can carbon deposits on a valve stem cause?",
+    "opciones": [
+      "A sticking valve, which may lead to preignition",
+      "Excessive valve clearance",
+      "A cracked valve guide",
+      "A burned exhaust valve seat"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Where does the oil supply for a hydraulic valve lifter come from?",
+    "opciones": [
+      "Grease packed in at overhaul, not engine oil",
+      "Engine oil pressure (pressure oil from the oil sump)",
+      "The propeller governor oil supply",
+      "A dedicated hand-pump reservoir"
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "The amount of air passing through a turbine engine depends on which factors?",
+    "opciones": [
+      "Ambient humidity and fuel type only",
+      "Fuel flow, RPM, and oil pressure",
+      "Temperature, airspeed, and altitude",
+      "EGT, oil temperature, and altitude only"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "In a centrifugal compressor, what do the diffuser (cascade) vanes do?",
+    "opciones": [
+      "Accelerate the air to supersonic speed before combustion",
+      "Cool the air before it enters the impeller",
+      "Mix fuel directly into the airflow before the burner",
+      "Diffuse the air, turn it smoothly, and redirect it about 90 degrees toward the combustion chambers"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Of the air passing through a jet engine's combustion chamber, roughly what percentage is actually used to support combustion?",
+    "opciones": [
+      "About 90 to 100 percent",
+      "About 5 to 10 percent",
+      "About 50 to 60 percent",
+      "About 25 to 35 percent"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is meant by the calorific value of a turbine fuel?",
+    "opciones": [
+      "The maximum flow rate the fuel can sustain through a nozzle",
+      "The freezing point of the fuel",
+      "The fuel's specific gravity compared to water",
+      "The heat energy (Btu rating) produced per pound of fuel burned"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Where is the highest pressure typically found in a turbine engine's gas path?",
+    "opciones": [
+      "At the compressor inlet",
+      "Just prior to entry to the burners, in the diffuser section (compressor discharge)",
+      "At the turbine inlet",
+      "At the exhaust nozzle outlet"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Why are turbine engine igniter plugs less susceptible to fouling than reciprocating engine spark plugs?",
+    "opciones": [
+      "They are replaced far more frequently than spark plugs",
+      "They are not exposed to the combustion gas path",
+      "They operate at a much lower voltage, producing less carbon buildup",
+      "Their high-intensity, high-voltage spark tends to clean the igniter with heat"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A turbofan engine with a bypass ratio of about 2:1 to 3:1 is classified as what?",
+    "opciones": [
+      "A medium-bypass turbofan",
+      "An unducted fan (propfan)",
+      "A low-bypass turbofan",
+      "A high-bypass turbofan"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "How is Engine Pressure Ratio (EPR) determined?",
+    "opciones": [
+      "By dividing compressor discharge pressure by turbine inlet pressure",
+      "By dividing exhaust gas temperature by compressor inlet temperature",
+      "By dividing N1 by N2",
+      "By dividing turbine discharge (outlet) total pressure by compressor inlet (engine inlet) total pressure"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A mechanical-blockage type thrust reverser is also known as what type?",
+    "opciones": [
+      "Cascade-vane type",
+      "Bucket-type",
+      "Clamshell-type",
+      "Target-type"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A turbine engine's capacitor-discharge ignition system energy is typically rated in what unit?",
+    "opciones": [
+      "Volts",
+      "Amperes",
+      "Joules",
+      "Watts"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What are the two main types of turbine blades, based on how they extract energy from the gas stream?",
+    "opciones": [
+      "Forged and cast",
+      "Impulse and reaction",
+      "Shrouded and unshrouded",
+      "Axial and radial"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "In a gas turbine engine, combustion occurs at a constant?",
+    "opciones": [
+      "volume",
+      "velocity",
+      "density",
+      "pressure"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "At higher subsonic speed, the type of engine which affords the most efficient propulsive power is the?",
+    "opciones": [
+      "turboshaft",
+      "turboprop",
+      "turbofan",
+      "turbojet"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A typical cool-down period for an APU is?",
+    "opciones": [
+      "6 minutes",
+      "not required",
+      "3 minutes",
+      "10 minutes"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "When a gas or fluid is supplied through a divergent duct, if pressure increases?",
+    "opciones": [
+      "velocity will increase",
+      "velocity will decrease",
+      "thrust will increase",
+      "temperature will decrease"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Engine manufacturers’ calculations of static thrust are based on a temperature of?",
+    "opciones": [
+      "20°C",
+      "15°C",
+      "13°C",
+      "17°C"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is meant by “shrouded turbine blades?”?",
+    "opciones": [
+      "The turbine wheel is enclosed in a protective shroud to contain the blades in case of failure",
+      "The turbine wheel is enclosed in a protective shroud to contain the blades and provide cooling air to the",
+      "The turbine wheel has a shroud or duct which provides cooling air to the turbine blades",
+      "The turbine blades are shaped so that their ends form a band or a shroud"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Compressor blades which have a reduced thickness at the tips are referred to as?",
+    "opciones": [
+      "blisk or creeper blades",
+      "twist-tip or creep blades",
+      "shrouded tip profile blades",
+      "profile or squeeler blades"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The primary airflow through a combustor?",
+    "opciones": [
+      "provides a cooling blanket on either side of the combustor liner",
+      "is routed to the fuel nozzle area for combustion",
+      "dilutes the mixture to an acceptable temperature",
+      "is approximately 75% of the total airflow"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "In a reverse flow annular combustor, the main airflow enters the combustor from?",
+    "opciones": [
+      "deflectors located at the rear of the combustor",
+      "the rear of the engine",
+      "holes drilled around the combustor",
+      "the front of the engine"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The most common method of attaching turbine blades to a turbine wheel is with?",
+    "opciones": [
+      "the dove tail design",
+      "locktabs and roll pins",
+      "the fir-tree design",
+      "rivets and roll pins"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "On turbine engines, the type of bearing better equipped to support radial loads rather than thrust loads is the?",
+    "opciones": [
+      "roller bearing",
+      "duplex ball bearing",
+      "ball bearing",
+      "plain bearing"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "If a minute crack is found on a turbine disk?",
+    "opciones": [
+      "is acceptable and must be monitored daily",
+      "is immediate cause for rejection of the turbine disk",
+      "it must be blended by stoning and polishing",
+      "it must be further inspected with dye penetrant"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Turbine blade replacements are identified by code letters indicating the?",
+    "opciones": [
+      "weight in grams",
+      "weight in ounces",
+      "moment weight in inch-ounces",
+      "weight in one-tenth of an ounce increments"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A permanent elongation which occurs on turbine blades due to centrifugal force is known as?",
+    "opciones": [
+      "creep",
+      "twist",
+      "deformation",
+      "blisk"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The type of fuel pump designed to deliver a continuous supply of high pressure fuel to the fuel control unit at a quantity which is in excess of what the engine needs is the?",
+    "opciones": [
+      "auxiliary pump",
+      "engine driven pump",
+      "electrical booster pump",
+      "standby pump"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The two types of turbine engine fuel nozzles generally used are?",
+    "opciones": [
+      "flow divider and duplex",
+      "simplex and duplex",
+      "flow divider and simplex",
+      "atomizer and flow divider"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The type of oil system usually found on most turbojet engines is?",
+    "opciones": [
+      "dry sump, splash and spray",
+      "dry sump, pressure and spray",
+      "wet sump, splash and spray",
+      "wet sump, dip and pressure"
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "The capacity of the oil scavenge system must be __________________ the capacity of the pressure system?",
+    "opciones": [
+      "more than ¼ and less than ½",
+      "at least double",
+      "more than ½ and less than ¾",
+      "equal to"
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "In-flight, turbine engine flameouts are usually caused by?",
+    "opciones": [
+      "high exhaust gas temperature",
+      "interruption of the inlet airflow",
+      "fuel nozzle clogging",
+      "fouling of the igniter plugs"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The air source supplied to an air-turbine starter is?",
+    "opciones": [
+      "low pressure, low volume",
+      "high pressure, high volume",
+      "low pressure, high volume",
+      "high pressure, low volume"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A carbon seal found on turbine engines?",
+    "opciones": [
+      "normally rides on a highly polished surface",
+      "is similar in design to a labyrinth seal",
+      "will have grooves forming sealing rings in a concentric path similar to a screw thread",
+      "maintains an air gap clearance"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Temperature taken aft of the turbine wheel(s) is known as?",
+    "opciones": [
+      "T4",
+      "EGT",
+      "TIT",
+      "ITT"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Which of the following are the most common types of thrust reversers used on turbine engine powered aircraft?",
+    "opciones": [
+      "mechanical-blockage and aerodynamic blockage",
+      "convergent and divergent",
+      "cascade vane and blocker door",
+      "rotary air vane and stationary air vane"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Turbine engines utilize a capacitor-discharge ignition system that has a high voltage and...?",
+    "opciones": [
+      "very little tendency to create flashover at high altitudes",
+      "very high heat intensity",
+      "very low amperage",
+      "reduces the possibility of a hot start"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Air enters the centrifugal flow compressor impeller at the?",
+    "opciones": [
+      "centre",
+      "side",
+      "perimeter",
+      "rear"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Which of the following could cause flameout?",
+    "opciones": [
+      "reverse thrust",
+      "turbulence",
+      "wind",
+      "rain"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Cracks in turbine blades are?",
+    "opciones": [
+      "acceptable within limits",
+      "turbine blades don’t crack",
+      "not a problem as they  relieve stress",
+      "not acceptable"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is “Creep” in relation to a turbine blade?",
+    "opciones": [
+      "tendency to elongate due rotation",
+      "tendency to move sideways",
+      "refers to blades rubbing the shroud",
+      "term used in referring to turbine blades"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is considered a standard day?",
+    "opciones": [
+      "temperature 535°F, pressure 30.00",
+      "temperature 915°F, pressure 29.92",
+      "temperature 59°F, pressure 29.92",
+      "temperature 75°F, pressure 30.00"
+    ],
+    "correcta": 2,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Which of the following engine fire detection systems measures temperature rise compared to a reference temperature?",
+    "opciones": [
+      "Lindberg",
+      "Fenwall",
+      "Thermocouple",
+      "All of the above"
+    ],
+    "correcta": 2,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "An engine reduction gear is designed to?",
+    "opciones": [
+      "reduce wear on the thrust bearing",
+      "provide an engine RPM lower than that of the propeller or transmission shaft",
+      "provide a reduced RPM for the governor",
+      "provide a propeller or transmission RPM lower than that of the engine"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "The brake horsepower (BHP) of an engine is?",
+    "opciones": [
+      "the total power output actually delivered",
+      "the calculated theoretical power output",
+      "the total energy expended in all combustion chambers",
+      "the total power developed, disregarding friction losses"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Which of the following results in a decrease in volumetric efficiency?",
+    "opciones": [
+      "Part-throttle operation",
+      "Carburetor air temperature too low",
+      "Cylinder head temperature too low",
+      "Short intake pipes of large diameter"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The reason why choke-type cylinders are used is to?",
+    "opciones": [
+      "compensate for normal cylinder barrel wear",
+      "provide a straight cylinder bore at operating temperature",
+      "reduce the possibility of piston rings sticking in the ring grooves",
+      "increase the compression for starting purposes"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "To allow surplus oil to return to the crankcase, holes are drilled in?",
+    "opciones": [
+      "the piston oil control ring grooves",
+      "the piston pin",
+      "the oil scraper ring grooves",
+      "both the oil control and the oil scraper rings"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Excessive valve clearance will cause the duration of valve opening to?",
+    "opciones": [
+      "decrease for both intake and exhaust valves",
+      "increase for both intake and exhaust valves",
+      "decrease for intake valves and increase for exhaust valves",
+      "increase for intake valves and decrease for exhaust valves"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Cam-ground pistons are installed in some aircraft engines to?",
+    "opciones": [
+      "equalize the wear on pistons that do not operate in a vertical plane",
+      "provide a better fit at operating temperatures",
+      "act as a compensating feature so that a compensated magneto is required",
+      "none of the above"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Knuckle pins form the hinge between?",
+    "opciones": [
+      "the pistons and the connecting rods",
+      "the master rod and the crankshaft",
+      "the pinion gears and the reduction gear cage",
+      "the articulating rods and the master rod flanges"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "At what speed range is a fixed pitch propeller designed to be most efficient?",
+    "opciones": [
+      "none of the above",
+      "ground idle",
+      "flight idle",
+      "cruise"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What happens to the blade angle of a constant speed propeller in flight if the throttle is advanced?",
+    "opciones": [
+      "none of the above",
+      "it will be increased",
+      "it will stay the same",
+      "it will be decreased"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What is the flat side of the propeller blade called?",
+    "opciones": [
+      "the butt",
+      "the face",
+      "the tip",
+      "the back"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "The thrust reverser accounts for how much percentage of braking?",
+    "opciones": [
+      "12%",
+      "40%",
+      "10%",
+      "20%"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The difference between a “cold” and a “hot” spark plug is the variation in?",
+    "opciones": [
+      "spark gap",
+      "plug reach",
+      "length of the insulator core nose",
+      "sealing between the insulator and electrode"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "An aircraft magneto is shut off by?",
+    "opciones": [
+      "opening the primary circuit",
+      "opening the secondary circuit",
+      "grounding the primary circuit",
+      "grounding the secondary circuit"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The fourth electrode in the magneto sparking order of a nine cylinder radial engine serves cylinder #?",
+    "opciones": [
+      "4",
+      "2",
+      "7",
+      "9"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The magneto timing should ensure that the E-gap position occurs when the breaker points are?",
+    "opciones": [
+      "just opening",
+      "closed",
+      "open",
+      "just closing"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "At what speed must a crankshaft turn if each cylinder of a four stroke cylinder engine is to be fired 200 times a minute?",
+    "opciones": [
+      "300 RPM",
+      "200 RPM",
+      "400 RPM",
+      "100 RPM"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "During routine inspection of a magneto, the breaker points are found to be badly pitted and burned. A likely cause would be?",
+    "opciones": [
+      "too wide a spark plug gap",
+      "a faulty secondary coil",
+      "an incorrect E-gap setting",
+      "a faulty primary capacitor"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A hissing sound from the exhaust stacks when the propeller is being pulled manually indicates?",
+    "opciones": [
+      "a rich mixture",
+      "a cracked exhaust stack",
+      "worn piston ring",
+      "exhaust valve blow –by"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "How should the exhaust system be inspected on an aircraft that utilizes an exhaust heat exchanger as a source of cabin heat?",
+    "opciones": [
+      "with an exhaust gas analyzer",
+      "with the heater air shroud removed",
+      "X-ray the exchanger to detect cracks",
+      "hydrostatically tested"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "On a twin-engine aircraft with fuel-injected reciprocating engines, one fuel flow indicator reads considerably higher and the other in all engine operating configuration. What is the probable cause of this indication?",
+    "opciones": [
+      "alternate air door stuck open",
+      "carburetor icing",
+      "excessive intake valve clearance",
+      "one or more fuel nozzles are clogged"
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What is the type of connecting rod normally used on a horizontal opposed engine?",
+    "opciones": [
+      "master and articulated type",
+      "ball type",
+      "fork and blade type",
+      "plain type"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The piston ring installed below the compression rings is called?",
+    "opciones": [
+      "oil control ring",
+      "none of the above",
+      "oil wiper ring",
+      "oil scraper ring"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Cylinders that have been chrome plated are identified by?",
+    "opciones": [
+      "green paint",
+      "orange paint",
+      "blue paint",
+      "white paint"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "If a 0.003 oversize stud is identified by the prefix P003 after the part number, what will be the color painted on the stud?",
+    "opciones": [
+      "Red",
+      "Orange",
+      "none of the above",
+      "White"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "The cambered side of a propeller blade is known as?",
+    "opciones": [
+      "the blade face",
+      "the blade chord",
+      "the blade back",
+      "the blade loft"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "_____ is simply a reference position on a propeller blade that is specified distance from the center of the hub?",
+    "opciones": [
+      "the blade center of gravity",
+      "a blade center of pressure",
+      "the blade datum point",
+      "a blade station"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "The actual distance a propeller moves through the air in one revolution is known as?",
+    "opciones": [
+      "the geometric pitch",
+      "the resultant pitch",
+      "the effective pitch",
+      "the relative pitch"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "In reference to propellers, slip is known as the difference between?",
+    "opciones": [
+      "the propeller pitch and the effective pitch",
+      "the propeller pitch and the aerodynamic pitch",
+      "the geometric pitch and the effective pitch",
+      "the propeller pitch and the dynamic pitch"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "In cruising flight, a propeller will normally be operating in?",
+    "opciones": [
+      "the alpha range",
+      "the beta range",
+      "the theta range",
+      "the negative thrust range"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "Tractor propellers are mounted?",
+    "opciones": [
+      "on the front of an engine and pull the aircraft through the air",
+      "on the aft end of an engine and push the aircraft through the air",
+      "on the front of an engine and push the aircraft through the air",
+      "on the aft end of an engine and pull the aircraft through the air"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "The most efficient angle of attack of a propeller blade is in the range of?",
+    "opciones": [
+      "+8° to +10°",
+      "-2° to +2°",
+      "+2° to +4°",
+      "+4° to +8°"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "A propeller blade cuff?",
+    "opciones": [
+      "reduces drag",
+      "distributes anti-icing fluid",
+      "strengthens the propeller blade",
+      "increases cooling air flow"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "Which of the following occurs to cause front cone bottoming during propeller installation?",
+    "opciones": [
+      "the front cone becomes bottomed in the front propeller hub cone seat before the rear propeller hub cone",
+      "the front cone becomes bottomed in the front propeller hub cone seat before the retaining nut has",
+      "the front cone enters the front propeller hub cone seat at an angle causing the propeller retaining nut to",
+      "the front cone contacts the ends of the shaft splines, preventing the front and rear cones from being"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "Normally, for a light aircraft with metal propellers of up to approximately 6 feet in diameter, the propellers can be out of track no more than?",
+    "opciones": [
+      "¼”",
+      "⅓2”",
+      "⅛”",
+      "⅟16”"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "In cruising flight, at a constant RPM?",
+    "opciones": [
+      "the propeller is on its high pitch stop",
+      "centrifugal force of the governor flyweights exceeds the force of the speeder spring",
+      "centrifugal force of the governor flyweights balance the force of the speeder spring",
+      "the centrifugal force of the governor flyweights is less than the force of the speeder spring"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "Propeller Synchronising systems are intended to ensure that all propellers?",
+    "opciones": [
+      "produce the same thrust",
+      "maintain their angular relationships",
+      "operate at the same RPM",
+      "maintain the same angle of attack"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "An aircraft’s propeller system beta range?",
+    "opciones": [
+      "is used to achieve maximum thrust during takeoff",
+      "is used to produce zero or negative thrust",
+      "is the pitch range used for cruising speeds",
+      "refers to the most fuel efficient pitch range to use at a given RPM"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "If a hydraulic propeller is feathered and then immediately unfeathers itself, a probable cause of the trouble is that the?",
+    "opciones": [
+      "dome pressure relief valve is struck in the closed position",
+      "pressure cutout switch is struck in the closed position",
+      "governor is not cutting out in high pitch",
+      "distributor relief valve is struck in the closed position"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What is the blade back?",
+    "opciones": [
+      "The root of the blade",
+      "The cambered or curved side of the prop",
+      "The tip of the blade",
+      "The flat side of the prop"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "How is de-icing fluid transmitted on a propeller?",
+    "opciones": [
+      "By a dedicated electric pump at each blade",
+      "By ram air pressure",
+      "By centrifugal force",
+      "By engine oil pressure"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What must the propeller's contact area be on a tapered shaft?",
+    "opciones": [
+      "At least 70%",
+      "At least 30%",
+      "At least 50%",
+      "100%, with no gaps permitted"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What type of propeller uses oil pressure alone to both increase and decrease pitch?",
+    "opciones": [
+      "Double acting (hydromatic)",
+      "Single acting (oil plus counterweight)",
+      "Fixed pitch",
+      "Ground adjustable only"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What is blade angle on a propeller?",
+    "opciones": [
+      "The angle between the chord and the relative wind",
+      "The angle between the blade face and the hub centerline",
+      "The angle between the blade back and the spinner",
+      "The angle between the chord of the blade and the plane of rotation"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What happens when you increase power with a constant-speed propeller?",
+    "opciones": [
+      "Both RPM and pitch increase together",
+      "Pitch decreases to maintain RPM",
+      "Pitch increases to maintain RPM",
+      "RPM increases while pitch stays fixed"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What force turns a constant-speed propeller blade toward high pitch?",
+    "opciones": [
+      "Aerodynamic twisting moment force",
+      "Spring force from the pitch-lock mechanism",
+      "Exhaust gas back-pressure",
+      "Governor oil pressure alone"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "A propeller's blade stations are measured from where?",
+    "opciones": [
+      "From an index mark on the blade shank",
+      "Inch by inch from the center of the hub to the tip",
+      "From the blade butt outward, in whole feet",
+      "From the tip inward to the hub"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What is effective pitch?",
+    "opciones": [
+      "The angle of the blade relative to the plane of rotation",
+      "The distance between the leading and trailing edges of the blade",
+      "The theoretical distance the propeller would move in a solid, with no slip",
+      "The actual distance the propeller moves forward through the air in one revolution"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What happens when you increase pressure on the propeller governor's speeder spring?",
+    "opciones": [
+      "RPM increases and blade angle decreases",
+      "Neither RPM nor blade angle changes",
+      "RPM increases and blade angle increases",
+      "RPM decreases and blade angle increases"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What is propeller efficiency?",
+    "opciones": [
+      "RPM divided by manifold pressure",
+      "Torque horsepower divided by thrust horsepower",
+      "Shaft horsepower divided by fuel flow",
+      "Thrust horsepower divided by torque (brake) horsepower"
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "In cruise flight at a constant RPM, what is the state of the propeller governor's flyweights?",
+    "opciones": [
+      "The speeder spring tension exceeds the centrifugal force of the flyweights",
+      "The centrifugal force of the flyweights exceeds the speeder spring tension",
+      "The centrifugal force of the flyweights is balanced by (equal to) the tension of the speeder spring",
+      "The flyweights are fully retracted against their stops"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What force tends to move a propeller blade's tips forward?",
+    "opciones": [
+      "Aerodynamic twisting force",
+      "Torque bending force",
+      "Centrifugal twisting force",
+      "Thrust bending force"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "Compared to engine speed, does a propeller turn slower or faster on a geared (reduction gear) engine?",
+    "opciones": [
+      "Slower",
+      "It depends only on manifold pressure",
+      "Faster",
+      "The same speed"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What position should a propeller be placed in for aircraft storage?",
+    "opciones": [
+      "It does not matter",
+      "Vertical, blade up",
+      "Vertical, blade down",
+      "Horizontal"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "How is propeller synchronization typically achieved?",
+    "opciones": [
+      "By controlling blade angle only",
+      "By controlling propeller RPM",
+      "By controlling manifold pressure",
+      "By controlling fuel flow to each engine"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "How much can a light aircraft's metal propeller be out of track?",
+    "opciones": [
+      "About 1/16 inch (wood propellers: about 1/8 inch)",
+      "About 1/2 inch",
+      "It must be perfectly in track, with zero tolerance",
+      "About 1/4 inch"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "How do you check for proper seating of a propeller hub on a tapered shaft?",
+    "opciones": [
+      "With a go/no-go gauge only",
+      "With a dial indicator",
+      "With a feeler gauge",
+      "With Prussian blue"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "If a propeller feathers at shutdown, when does it normally unfeather?",
+    "opciones": [
+      "Only during an approved bench test",
+      "It cannot be unfeathered without removing the propeller",
+      "At the next startup, when the control is moved forward",
+      "Automatically, a few minutes after shutdown"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What part of a propeller fits into the hub?",
+    "opciones": [
+      "The blade tip",
+      "The blade cuff",
+      "The blade butt",
+      "The blade face"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What is the purpose of the snap ring on a propeller?",
+    "opciones": [
+      "To aid in removal of the propeller",
+      "To limit maximum blade travel",
+      "To balance the propeller statically",
+      "To seal the hub against oil leakage"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What do you use to smooth out minor surface irregularities on the face of a propeller?",
+    "opciones": [
+      "Fine emery cloth",
+      "A wire brush",
+      "Coarse sandpaper",
+      "A metal file"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "On the ground, what adjusts the position (pitch) of the propeller in beta mode?",
+    "opciones": [
+      "The engine power lever",
+      "The trim wheel",
+      "The propeller feathering button",
+      "The mixture control"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What does propeller synchrophasing do?",
+    "opciones": [
+      "Automatically feathers a failed engine's propeller",
+      "Balances fuel flow between engines",
+      "Keeps the propellers at a set angular relationship to each other to reduce noise and vibration",
+      "Keeps all propellers at exactly the same RPM only, ignoring blade position"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "Repairs on the face of a propeller blade should generally be oriented how?",
+    "opciones": [
+      "Across the blade, in the chordwise direction",
+      "Along the longest axis, in the spanwise direction (root to tip)",
+      "At a 45-degree angle to the leading edge",
+      "Orientation does not matter as long as depth limits are met"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What cuts out the feathering pump in a hydromechanical propeller unit once feathering is complete?",
+    "opciones": [
+      "An oil pressure switch",
+      "A centrifugal switch on the governor",
+      "A timer relay",
+      "A manual cockpit switch only"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What controls the position of the pilot valve inside a propeller governor?",
+    "opciones": [
+      "Cabin altitude",
+      "The balance between flyweight centrifugal force and speeder spring force",
+      "Engine oil pressure alone",
+      "Manifold pressure alone"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "A jet engine operates on which principle?",
+    "opciones": [
+      "Constant velocity",
+      "Constant volume",
+      "Constant pressure",
+      "Constant temperature"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "How is a subsonic turbine engine's air inlet typically designed?",
+    "opciones": [
+      "As a divergent duct of fixed geometry",
+      "As a convergent duct of fixed geometry",
+      "As a variable-geometry convergent-divergent duct",
+      "As a straight, constant-area duct"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the purpose of a vortex destroyer (dissipater) near a turbine engine's inlet?",
+    "opciones": [
+      "To prevent the ingestion of foreign objects from the ground",
+      "To measure inlet airflow",
+      "To reduce inlet noise",
+      "To de-ice the inlet lip"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What kind of bearing is best designed to sustain radial loads rather than thrust loads?",
+    "opciones": [
+      "Roller bearing",
+      "Ball bearing",
+      "Plain (sleeve) bearing",
+      "Duplex ball bearing"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Jet engine thermocouples are typically made of what?",
+    "opciones": [
+      "Chromel and Alumel",
+      "Copper and constantan",
+      "Iron and copper",
+      "Platinum and rhodium"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What type of turbine engine usually has more turbine stages than a simple turbojet?",
+    "opciones": [
+      "A single-spool turbojet",
+      "A free turbine engine (turboprop/turboshaft)",
+      "A ramjet",
+      "A pulsejet"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "In a combustion can, what is the primary air used for?",
+    "opciones": [
+      "To support combustion",
+      "To cool the combustor liner only",
+      "To pressurize the fuel nozzles",
+      "To cool the turbine blades only"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is stamped on turbine blade roots?",
+    "opciones": [
+      "The maximum EGT rating",
+      "The manufacturing date only",
+      "The blade's serial number only",
+      "Moment weight, in inch-ounces"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Which compressor is driven on the same shaft as the fan in a turbofan engine?",
+    "opciones": [
+      "Neither compressor — the fan has its own shaft",
+      "The HP (high pressure) compressor",
+      "Both compressors equally",
+      "The LP (low pressure) compressor"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What kind of air is needed to turn a pneumatic (air turbine) starter?",
+    "opciones": [
+      "High volume, high pressure air",
+      "Low volume, low pressure air",
+      "Low volume, high pressure air",
+      "High volume, low pressure air"
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "If the RPM of an axial-flow compressor remains constant, how can the angle of attack of the compressor blades be changed?",
+    "opciones": [
+      "By changing the fuel/air ratio only",
+      "By increasing the pressure ratio (changing the mass airflow/back-pressure)",
+      "By changing the oil pressure only",
+      "It cannot be changed if RPM is constant"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Continued and/or excessive heat and centrifugal force on turbine engine compressor blades usually causes what?",
+    "opciones": [
+      "Creep (permanent cumulative elongation/deformation)",
+      "Delamination",
+      "Spalling",
+      "Galling"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Where is water (or water-methanol) injected into a turbojet engine for cooling purposes?",
+    "opciones": [
+      "Into the starter",
+      "At the compressor inlet or diffuser",
+      "Into the oil system",
+      "At the turbine exit only"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The Brayton cycle, used by gas turbine engines, is also known as what?",
+    "opciones": [
+      "The constant-volume cycle",
+      "The Otto cycle",
+      "The constant-temperature cycle",
+      "The constant-pressure cycle"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Severe rubbing of turbine engine compressor blades will usually cause",
+    "opciones": [
+      "Bowing",
+      "Cracking",
+      "Burning",
+      "Galling"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Which of the following is NOT a factor in the operation of an automatic fuel control unit on a turbojet engine?",
+    "opciones": [
+      "Burner (compressor discharge) pressure",
+      "Engine RPM",
+      "Compressor inlet temperature or pressure",
+      "Mixture control position"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What determines the compression ratio of a compressor?",
+    "opciones": [
+      "Discharge temperature divided by inlet temperature",
+      "RPM divided by number of stages",
+      "Inlet pressure divided by discharge pressure",
+      "Last-stage discharge pressure divided by inlet (ambient) pressure"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "On a speed-rated (high-bypass) turbofan, how is thrust typically indicated?",
+    "opciones": [
+      "By fuel flow alone",
+      "By oil pressure alone",
+      "By EPR and/or fan speed (N1)",
+      "By EGT alone"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What does a fuel system using duplex nozzles require?",
+    "opciones": [
+      "An extra igniter per nozzle",
+      "A flow divider",
+      "A dedicated oil cooler",
+      "A second engine-driven pump"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What kind of loads do the ball bearings on a compressor/turbine rotor typically take?",
+    "opciones": [
+      "Radial loads only",
+      "Torsional loads only",
+      "Axial loads only",
+      "Axial (thrust) and radial loads"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "If a turbine engine is unable to reach takeoff EPR before EGT limits are reached, this is an indication of?",
+    "opciones": [
+      "Normal operation on a hot day",
+      "A damaged or dirty compressor",
+      "An overcharged oil system",
+      "A properly rigged fuel control"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What type of oil pump is never used in a turbine engine's lubrication system?",
+    "opciones": [
+      "A vane-type pump",
+      "A gerotor-type pump",
+      "A piston-type pump",
+      "A gear-type pump"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Where is the main oil strainer/filter typically located in a turbine oil system?",
+    "opciones": [
+      "Downstream of the bearings only",
+      "Inside the oil tank only",
+      "At the pump inlet only",
+      "At the pump outlet (pressure side)"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What could be the cause of fluctuating oil pressure in a turbine engine?",
+    "opciones": [
+      "A properly calibrated relief valve",
+      "Correct oil grade",
+      "Normal cold-start behavior",
+      "Foreign object debris (FOD) stuck in the pressure relief valve"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "How would you define a continuous-loop fire detection system?",
+    "opciones": [
+      "It uses a photoelectric cell to detect flame color",
+      "It measures smoke density optically along a fixed path",
+      "It is a single-point thermocouple wired to a warning light",
+      "It uses a core material whose resistance changes with temperature, allowing current to flow (signaling a fire) when heated"
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Roughly how much of the total compressor air passing through a turbine engine is actually used to support combustion?",
+    "opciones": [
+      "About 5 to 10%",
+      "About 90 to 100%",
+      "About 25 to 35%",
+      "About 50 to 60%"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is compressor discharge air commonly referred to as?",
+    "opciones": [
+      "P1",
+      "P7",
+      "Pc or P3",
+      "P2"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What component directs exhaust gases as they leave the turbine section?",
+    "opciones": [
+      "The diffuser",
+      "The combustion liner",
+      "The inlet guide vanes",
+      "The exhaust cone"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Name four factors that affect the thrust produced by a turbine engine.",
+    "opciones": [
+      "Altitude, ambient temperature, engine RPM, and airspeed",
+      "Oil pressure, oil temperature, fuel type, and cabin altitude",
+      "Wing loading, aspect ratio, altitude, and airspeed",
+      "Fuel color, fuel viscosity, altitude, and RPM"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the operating principle of a torque-indicating system on a turboprop/turboshaft engine?",
+    "opciones": [
+      "It measures EGT and converts it to torque",
+      "It measures fuel flow and converts it directly to horsepower",
+      "It counts propeller RPM only",
+      "It senses the twisting (torsional) deflection of a power-transmitting shaft and converts it into a horsepower/torque reading"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What does the overspeed governor in a hydromechanical fuel pump/FCU sense?",
+    "opciones": [
+      "Oil pressure only",
+      "RPM and EGT",
+      "RPM only",
+      "Fuel flow only"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "After continued operation, a gas turbine engine's pilot complains of a loss of power. What can the mechanic do?",
+    "opciones": [
+      "Replace the propeller governor",
+      "Increase the oil dilution setting",
+      "Trim the fuel control",
+      "Adjust the mixture control"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the principle of a fuel-oil heat exchanger (fuel-oil cooler)?",
+    "opciones": [
+      "It cools the fuel while heating the oil",
+      "It heats both the fuel and the oil",
+      "It cools both the fuel and the oil",
+      "It heats the fuel while cooling the oil"
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What happens to pressure as air flows through a convergent nozzle?",
+    "opciones": [
+      "Increases",
+      "Decreases",
+      "Remains constant",
+      "Is inversely proportional to the temperature"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the major function of the turbine assembly in a turbojet engine?",
+    "opciones": [
+      "Compresses the air before it enters the combustion section",
+      "Directs the gases in the proper direction to the tail pipe",
+      "Supplies the power to turn the compressor",
+      "Increases the temperature of the exhaust gases"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A turbine engine hot section is particularly susceptible to which of the following kinds of damage?",
+    "opciones": [
+      "Scoring",
+      "Pitting",
+      "Cracking",
+      "Galling"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The nozzle diaphragm of a turbine engine has the function of:",
+    "opciones": [
+      "increasing the pressure of the exhaust gas.",
+      "preventing compressor surges or stalls.",
+      "decreasing the velocity of the exhaust gas.",
+      "properly directing the gases onto the turbine buckets at a correct angle."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The formula for thrust can be derived from:",
+    "opciones": [
+      "Boyle's 1st law",
+      "Newton's 1st law",
+      "Newton's 2nd law",
+      "Charles' law"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The fan rotational speed of a dual axial compressor forward fan engine is the same as the:",
+    "opciones": [
+      "accessory drive shaft.",
+      "low-pressure compressor.",
+      "forward turbine wheel.",
+      "high-pressure compressor."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What turbine engine section provides for proper mixing of the fuel and air?",
+    "opciones": [
+      "Combustion section",
+      "Compressor section",
+      "Turbine section",
+      "Accessory section"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Gas turbine engines use a nozzle diaphragm which is located on the upstream side of the turbine wheel. One of the functions of this unit is to:",
+    "opciones": [
+      "decrease the velocity of the heated gases flowing past this point",
+      "direct the flow of gases parallel to the vertical line of the turbine buckets",
+      "increase the velocity of the heated gases flowing past this point",
+      "increase the pressure of the exhaust mass"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Where is the highest gas pressure in a turbojet engine?",
+    "opciones": [
+      "At the outlet of the tailpipe section",
+      "At the entrance of the turbine section",
+      "In the entrance of the burner section",
+      "In the outlet of the burner section"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "When starting a turbojet engine,",
+    "opciones": [
+      "a hot start is indicated if the exhaust gas temperature exceeds specified limits",
+      "an excessively lean mixture is likely to cause a hot start",
+      "the engine should start between 60 to 80 seconds after the fuel shutoff lever is opened",
+      "release the starter switch as soon as indication of light-off occurs"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Cracks may occur in hot section components of a turbine engine if they are marked during inspection with:",
+    "opciones": [
+      "a lead pencil",
+      "chalk",
+      "layout dye",
+      "any of the above"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What drives the fan in most turbofan engines?",
+    "opciones": [
+      "the turbine that drives the high pressure compressor",
+      "The turbine that drives the low pressure compressor",
+      "A special turbine that drives nothing but the fan",
+      "An electric motor driven by electricity generated by the starter generator"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "When starting a turbine engine, a hung start is indicated if the engine:",
+    "opciones": [
+      "exhaust gas temperature exceeds specified limits",
+      "fails to reach idle RPM",
+      "RPM exceeds specified operating speed",
+      "pressure ratio exceeds specified operating limits"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What are the two main sections of a turbine engine for inspection purposes?",
+    "opciones": [
+      "Combustion and exhaust",
+      "Hot and cold",
+      "Compressor and turbine",
+      "Combustion and turbine"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What are the two basic elements of the turbine section in a turbine engine?",
+    "opciones": [
+      "Impeller and diffuser",
+      "Compressor and manifold",
+      "Bucket and expander",
+      "Stator and rotor"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What are the two functional elements in a centrifugal compressor?",
+    "opciones": [
+      "Turbine and compressor",
+      "Compressor and manifold",
+      "Bucket and expander",
+      "Impeller and diffuser"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the first engine instrument indication of a successful start of a turbine engine?",
+    "opciones": [
+      "A decrease in the exhaust gas temperature",
+      "A rise in the engine fuel flow",
+      "A decrease in the engine pressure ratio",
+      "A rise in the exhaust gas temperature"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Who establishes the recommended operating time between overhauls (TBO) for a turbine engine used in general aviation?",
+    "opciones": [
+      "The engine manufacturer",
+      "The operator working in conjunction with TC",
+      "The owner/operator",
+      "TC"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The two types of compressors most commonly used in jet engines are",
+    "opciones": [
+      "axial and root",
+      "centrifugal and reciprocating",
+      "root and centrifugal",
+      "centrifugal and axial"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A turboprop power plant propeller:",
+    "opciones": [
+      "is governed at the same speed as the turbine",
+      "controls the speed of the engine in the beta range",
+      "accounts for 75 to 85 percent of the total thrust output",
+      "accounts for 15 to 25 percent of the total thrust output"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Where do stress rupture cracks usually appear on turbine blades of turbojet engines?",
+    "opciones": [
+      "Across the blade root parallel to the fir tree",
+      "Along the trailing edge, parallel to the edge",
+      "Along the leading edge, parallel to the edge.",
+      "Across the leading or trailing edge at a right angle to the edge length."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "When the leading edge of a first-stage turbine blade is found to have stress rupture cracks, which of the following should be suspected?",
+    "opciones": [
+      "Air seal wear",
+      "Faulty cooling shield",
+      "Over temperature condition",
+      "Over speed condition"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "How is the turbine shaft usually jointed to the compressor rotor of a centrifuge compressor turbine engine?",
+    "opciones": [
+      "Bolted coupling",
+      "Keyed coupling",
+      "Welded coupling",
+      "Splined coupling"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Which of the following engine variables is the most critical during turbine engine operation?",
+    "opciones": [
+      "Compressor inlet air temperature",
+      "Compressor RPM",
+      "Burner-can pressure",
+      "Turbine inlet temperature"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What should be done if a turbine engine's exhaust duct catches fire during starting?",
+    "opciones": [
+      "Turn off the fuel and continue cranking",
+      "Disengage starter immediately",
+      "Continue starting attempt to blow out fire",
+      "Place power level in increase to exhaust fuel fumes"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the proper starting sequence for a turbo-jet engine?",
+    "opciones": [
+      "Ignition, starter, fuel",
+      "Fuel, starter, ignition",
+      "Starter, ignition, fuel",
+      "Starter, fuel, ignition"
+    ],
+    "correcta": 2,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What units in a gas turbine engine aid in stabilization of the compressor during low thrust engine operations?",
+    "opciones": [
+      "Bleed air valves",
+      "Stator vanes",
+      "Inlet guide vanes",
+      "Pressurization and dump valves"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Dirty compressor blades in a turbine engine could result in",
+    "opciones": [
+      "low RPM",
+      "low EGT",
+      "high RPM",
+      "high EGT"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The exhaust section of a turbine engine is designed to:",
+    "opciones": [
+      "impart a high exit velocity to the exhaust gases",
+      "swirl the exhaust gases",
+      "increase temperature, therefore Increasing velocity",
+      "decrease temperature, therefore decreasing pressure"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "How many igniters are normally used on a turbine engine having nine burner cans?",
+    "opciones": [
+      "One",
+      "Two",
+      "Three",
+      "Nine"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The Brayton cycle is known as the constant",
+    "opciones": [
+      "pressure cycle",
+      "volume cycle",
+      "temperature cycle",
+      "mass cycle"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What term is used to describe a permanent and cumulative deformation of the turbine blades of a turbo-jet engine?",
+    "opciones": [
+      "Stretch",
+      "Elongation",
+      "Distortion",
+      "Creep"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A turbine engine dry-sump lubrication system of the self-contained, high-pressure design?",
+    "opciones": [
+      "uses the same storage area as a wet-sump engine",
+      "has no heat exchanger",
+      "consists of pressure, breather, and scavenge sub-systems",
+      "stores oil in the engine crankcase."
+    ],
+    "correcta": 2,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "In what units are turbine engine tachometers calibrated?",
+    "opciones": [
+      "Percent of engine RPM",
+      "Actual engine RPM",
+      "Pounds per square inch (PSI)",
+      "Percent of engine pressure ratio"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The type of ignition system used on most jet aircraft engines is",
+    "opciones": [
+      "high resistance",
+      "magneto",
+      "low tension",
+      "capacitor discharge"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "What would be the probable result if the oil system pressure relief valve should stick in the open position on a turbine engine?",
+    "opciones": [
+      "Increased oil pressure",
+      "Decreased oil temperature",
+      "Insufficient lubrication",
+      "Pressurization of the case and Increased oil leakage"
+    ],
+    "correcta": 2,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What happens to velocity as subsonic air flows through a convergent nozzle?",
+    "opciones": [
+      "Increases",
+      "Decreases.",
+      "Remains constant",
+      "Is inversely proportional to the temperature"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What happens to velocity as supersonic air flows through a divergent nozzle?",
+    "opciones": [
+      "Increases.",
+      "Decreases.",
+      "Remains constant.",
+      "Is inversely proportional to the temperature."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Anti-icing of turbojet engine air inlets is accomplished by",
+    "opciones": [
+      "electrical heating elements inside the inlet guide vanes.",
+      "hot air ducted over the outside of the inlet guide vanes.",
+      "engine bleed air ducted through the critical areas.",
+      "electrical heating elements located within the engine air inlet cowling."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Generally, when starting a turbine engine, the starter should be disengaged",
+    "opciones": [
+      "when the engine lights are off.",
+      "after the engine has reached self-accelerating speed.",
+      "only after the engine has reached full idle RPM.",
+      "when the ignition and fuel system are activated."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is meant by a double entry centrifugal compressor?",
+    "opciones": [
+      "A compressor that has two intakes.",
+      "A two-stage compressor independently connected to the main shaft.",
+      "Two compressors and two impellers.",
+      "A compressor with vanes on both sides of the impeller."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Stator blades in the compressor section of an axial-flow turbine engine",
+    "opciones": [
+      "increase the air velocity and prevent swirling.",
+      "straighten the airflow and accelerate it.",
+      "decrease the air velocity and prevent swirling.",
+      "prevent compressor surge."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A gas turbine engine comprises which three main sections?",
+    "opciones": [
+      "Compressor, diffuser, and scavenge.",
+      "Turbine, combustion, and scavenge.",
+      "Combustion, compressor, and inlet guide vane.",
+      "Compressor, combustion and turbine."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What type of turbine blade is most commonly used in aircraft jet engines?",
+    "opciones": [
+      "Reaction.",
+      "Divergent.",
+      "Impulse.",
+      "Reaction-Impulse (or impulse-reaction)."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The stators in the turbine section of a gas turbine engine",
+    "opciones": [
+      "increase the velocity of the air.",
+      "decrease the velocity of the air.",
+      "increase the pressure of the air.",
+      "are located behind the rotor."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The compressor stators in a gas turbine engine act as diffusers to",
+    "opciones": [
+      "decrease the velocity of the gas flow.",
+      "increase the velocity of the gas flow.",
+      "decrease the pressure of the gas.",
+      "increase the velocity and decrease the pressure of the gas."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "In a turbine engine with a dual-spool compressor, the low speed compressor",
+    "opciones": [
+      "always turns at the same speed as the high speed compressor.",
+      "is connected directly to the high speed compressor.",
+      "seeks its own best operating speed.",
+      "has a higher compressor shaft speed than the high speed compressor."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the function of the inlet guide vane assembly on an axial-flow compressor?",
+    "opciones": [
+      "Directs the air into the first stage rotor blades at the proper angle.",
+      "Converts velocity energy into pressure energy.",
+      "Converts pressure energy Into velocity energy.",
+      "Picks up air and adds energy as it accelerates outward by centrifugal force."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Which statement is true regarding jet engines?",
+    "opciones": [
+      "At the lower engine speeds, thrust increases rapidly with small increases of RPM.",
+      "At the higher engine speeds, thrust increases rapidly with small increases in RPM.",
+      "Gas turbine engines operate less efficiently at high altitudes due to the lower temperatures encountered.",
+      "The thrust delivered per pound of air consumed is less at high altitude than at low altitude."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Some high-volume turboprop and turbojet engines are equipped with two-spool or split compressors. When these engines are operated at high altitudes, the:",
+    "opciones": [
+      "throttle must be retarded to prevent over speeding of the two compressor rotors due to the lower density air.",
+      "low-pressure rotor will increase in speed as the compressor load decreases in the lower density air.",
+      "throttle must be retarded to prevent over speeding of the high-pressure rotor due to the lower density air.",
+      "low-pressure rotor will decrease in speed as the compressor load decreases in the lower density air."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The function of the exhaust cone assembly of a turbine engine is to",
+    "opciones": [
+      "collect the exhaust gases and act as a noise suppressor.",
+      "pipe the exhaust gases away from the aircraft.",
+      "swirl and collect the exhaust gases into a single exhaust jet.",
+      "straighten and collect the exhaust gases into a solid exhaust jet."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What must be done after the fuel control unit has been replaced on a turbine engine?",
+    "opciones": [
+      "Retime the engine.",
+      "Recalibrate the fuel nozzles.",
+      "Re-trim the engine.",
+      "Recheck the flame pattern."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A turbine engine compressor which contains vanes on both sides of the impeller is a",
+    "opciones": [
+      "single entry centrifugal compressor.",
+      "double entry centrifugal compressor.",
+      "double entry axial-flow compressor.",
+      "single entry axial-flow compressor."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Turbine discharge pressure is identified in service manuals and by engine instruments as",
+    "opciones": [
+      "Pt7.",
+      "Pt2.",
+      "Tt2.",
+      "Tt7."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Main bearing oil seals used with turbine engines are usually what type(s)?",
+    "opciones": [
+      "Labyrinth and/or carbon rubbing.",
+      "Silicone rubber and nylon.",
+      "Teflon and synthetic rubber.",
+      "Labyrinth and/or silicone rubber."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Three types of turbine blades are",
+    "opciones": [
+      "reaction, converging, and diverging.",
+      "impulse, reaction, and impulse-reaction.",
+      "tangential, reaction, and reaction-tangential.",
+      "impulse, vector, and impulse-vector."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Damage to turbine vanes is apt to be greater than damage to compressor vanes because turbine vanes are subjected to much greater",
+    "opciones": [
+      "stress in the combustor.",
+      "heat stress.",
+      "thrust clearance.",
+      "vibration and other stresses."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Reduced blade vibration and improved airflow characteristics in gas turbines are brought about by",
+    "opciones": [
+      "fir-tree blade attachment.",
+      "impulse type blades.",
+      "shrouded turbine rotor blades.",
+      "bulb root attachment."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Which turbine engine compressor offers the greatest advantages for both starting flexibility and improved high-altitude performance?",
+    "opciones": [
+      "Single-stage, centrifugal-flow.",
+      "Dual-stage, centrifugal-flow.",
+      "Split-spool, axial-flow.",
+      "Single-spool, axial-flow."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The highest heat-to-metal contact in a jet engine is the",
+    "opciones": [
+      "burner cans.",
+      "exhaust cone.",
+      "turbine inlet guide vanes.",
+      "turbine blades."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "When aircraft turbine blades are subjected to excessive temperatures, what type of failures would you expect?",
+    "opciones": [
+      "Compression and torsion.",
+      "Bending and torsion.",
+      "Torsion and tension.",
+      "Stress rupture."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A purpose of the shrouds on the turbine blades of an axial-flow engine is to",
+    "opciones": [
+      "reduce vibration.",
+      "shorten run-in time.",
+      "increase tip speed.",
+      "reduce air entrance."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "In a dual axial-flow compressor, the first stage turbine drives",
+    "opciones": [
+      "N2 compressor.",
+      "N1 compressor.",
+      "low pressure compressor.",
+      "both low and high pressure compressors."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the purpose of the pressurization and dump valve used on turbojet engines?",
+    "opciones": [
+      "controls the pressure of the compressor outlet by dumping air when pressure reaches an established level.",
+      "Allows fuel pressurization of the engine when starting and operating and dumps fuel pressure at engine shutdown.",
+      "controls compressor stall by dumping compressor air under certain conditions.",
+      "Maintains fuel pressure to the fuel control valve and dumps excessive fuel back to the fuel tanks."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "At what stage in a turbojet engine are pressures the greatest?",
+    "opciones": [
+      "Compressor inlet.",
+      "Turbine outlet.",
+      "Compressor outlet.",
+      "Tailpipe."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "In what section of a turbojet engine is the jet nozzle located?",
+    "opciones": [
+      "Combustion.",
+      "Turbine.",
+      "Compressor.",
+      "Exhaust"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "(1) Accumulation of contaminates in the compressor of a turbojet engine reduces aerodynamic efficiency of the blades. (2) Two common methods for removing dirt deposits from turbojet engine compressor blades are a fluid wash an abrasive grit blast.",
+    "opciones": [
+      "only No.1 is true.",
+      "only No.2 is true.",
+      "both No.1 and No.2 are true.",
+      "neither No.1 nor No.2 are true."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Why do some turbine engines have more than one turbine wheel attached to a single shaft?",
+    "opciones": [
+      "To facilitate balancing of the turbine assembly.",
+      "To straighten the airflow before it enters the exhaust area.",
+      "To help stabilize the pressure between the compressor and the turbine.",
+      "to extract more power from the exhaust gases than a single wheel can absorb."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Which of the following types of combustion sections are used in aircraft turbine engines?",
+    "opciones": [
+      "Variable, can-annular, and cascade vane.",
+      "Annular, variable, and cascade vane.",
+      "Can, multiple-can, and variable.",
+      "Multiple-can, annular, and can-annular."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Why does a turbine engine require a cool-off period before shutting it down?",
+    "opciones": [
+      "To allow the surfaces contacted by the lubricating oil to return to normal operating temperature.",
+      "To burn off excess fuel ahead of the fuel control.",
+      "To allow the turbine wheel to cool before the case contracts around it.",
+      "To avoid seizure of the engine bearings."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What instrument on a gas turbine engine should be monitored to minimize the possibility of a hot start?",
+    "opciones": [
+      "RPM Indicator.",
+      "Turbine Inlet temperature.",
+      "Horsepower meter.",
+      "Torque meter."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "On a turbine engine with a fixed power lever position, the application of engine anti-icing will result in:",
+    "opciones": [
+      "a decrease In EPR.",
+      "a false EPR reading.",
+      "an increase In EPR.",
+      "a modulation of the EPR."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Engine Pressure Ratio is the total pressure ratio between the:",
+    "opciones": [
+      "front of the compressor and the rear of the compressor.",
+      "aft end of the compressor and the aft end of the turbine.",
+      "front of the compressor and the rear of the turbine.",
+      "front of the engine inlet and the aft end of the compressor."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the primary purpose of the tachometer on an axial-compressor turbine engine?",
+    "opciones": [
+      "Monitor engine RPM during cruise conditions.",
+      "It is the most accurate instrument for establishing thrust settings under all conditions.",
+      "Monitor engine RPM during starting and to indicate over speed conditions.",
+      "Monitor power settings to prevent over temperature"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The exhaust gas temperature (EGT) indicator on a gas turbine engine provides a relative indication of the:",
+    "opciones": [
+      "Inter-stage temperature.",
+      "temperature of the N1 compressor.",
+      "temperature of the exhaust gases as they pass the exhaust cone.",
+      "turbine inlet temperature."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What instrument indicates the thrust of a gas turbine engine?",
+    "opciones": [
+      "Torque meter.",
+      "Exhaust gas temperature indicator.",
+      "Turbine inlet temperature indicator.",
+      "Engine pressure ratio indicator."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "In a turbine engine, where is the turbine discharge pressure indicator sensor located?",
+    "opciones": [
+      "At the aft end of the compressor section.",
+      "At a location in the exhaust cone that is determined to be subjected to the highest pressures.",
+      "At the eighth-stage bleed airport.",
+      "Immediately aft of the last turbine stage"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Which of these characteristics is desirable in turbine engine oil?",
+    "opciones": [
+      "High pour point.",
+      "Low flash point.",
+      "High flash point.",
+      "High Volatility"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Why are synthetic lubricants used in high-performance turbine engines?",
+    "opciones": [
+      "Synthetic oils do not require filtering and are less expensive.",
+      "The load-carrying characteristics of petroleum-based oils have a low degree of chemical stability.",
+      "Additives required in turbine engines cannot be mixed with petroleum oils.",
+      "They have less tendency to produce lacquer or coke and less tendency to evaporate at high temperatures."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "In a jet engine which uses a fuel-oil heat exchanger, the oil temperature is controlled by a thermostatic valve that regulates the flow of",
+    "opciones": [
+      "air past the heat exchanger.",
+      "fuel through the heat exchanger.",
+      "both fuel and oil through the heat exchanger.",
+      "oil through the heat exchanger."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Which of the following is a function of the fuel-oil heat exchanger on a turbojet engine?",
+    "opciones": [
+      "Removes oil vapors.",
+      "Aerates the fuel.",
+      "Emulsifies the oil.",
+      "Increases fuel temperature."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Why are fixed orifice nozzles used in the lubrication system of gas turbine engines?",
+    "opciones": [
+      "To provide a relatively constant oil flow to the main bearings at all engine speeds",
+      "To keep back pressure on the oil pump, thus preventing an air lock.",
+      "To protect the oil seals by preventing excessive pressure from entering the bearing cavities.",
+      "To reduce the oil pressure."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Possible failure related ferrous-metal particles in turbine engine oil cause an (electrical) indicating-type magnetic chip detector to indicate their presence by",
+    "opciones": [
+      "disturbing the eddy currents around the detector tip.",
+      "disturbing the magnetic lines of flux around the detector tip.",
+      "bridging the gap between the detector center (positive) electrode and the ground electrode.",
+      "generating a small electric current that is caused by the particles being in contact with the dissimilar metal of the detector tip."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The pumping capacity of the scavenger pump in a dry sump aircraft engines lubrication system",
+    "opciones": [
+      "is greater than the capacity of the oil supply pump.",
+      "is less than the capacity of the oil supply pump.",
+      "is usually equal to the capacity of the oil supply pump In order to maintain constant oiling conditions.",
+      "varies according to the oil supply tank capacity and not according to the oil supply pump capacity."
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What will result if an oil fitter screen becomes completely blocked?",
+    "opciones": [
+      "oil will flow at 75 percent of the normal rate through the system.",
+      "oil flow to the engine will stop.",
+      "oil flow from the engine will stop.",
+      "oil will flow at the normal rate through the system."
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "It is necessary to control acceleration and deceleration rates in turbine engines in order to",
+    "opciones": [
+      "prevent blowout or die-out.",
+      "prevent over temperature.",
+      "enable the engine to heat and cool at controlled rates.",
+      "prevent friction between turbine wheels and the case due to expansion and contraction."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What are the principle advantages of the duplex fuel nozzle used in most turbine engines?",
+    "opciones": [
+      "Restricts the amount of fuel flow to a level where more efficient and complete burning of the fuel is achieved.",
+      "Provides better atomization and uniform flow pattern.",
+      "Allows a wider range of fuels and filters to be used.",
+      "Requires less filtering and blending of the fuel because of the dual passages in the nozzle head."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Identify a function of the nozzle diaphragm in a turbojet engine.",
+    "opciones": [
+      "To decrease the velocity of exhaust gases.",
+      "To center the fuel spray in the combustion chamber.",
+      "To direct the flow of gases to strike the turbine buckets at a desired angle.",
+      "To direct the flow of gases into the combustion chamber."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is a profile compressor blade of a turbine engine?",
+    "opciones": [
+      "The shape of the blade root at the disk attachment.",
+      "The leading edge of the blade.",
+      "A cutout that reduces blade tip thickness.",
+      "The curvature of the blade root."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Find the gross thrust of a turbine engine at take-off power and no forward motion when it takes in 75 pounds of air per second and exhaust velocity is 1800 ft./second.",
+    "opciones": [
+      "773 lbs.",
+      "2415 lbs.",
+      "4193 lbs.",
+      "5328 lbs"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The two common types of fuel nozzles are",
+    "opciones": [
+      "simplex and duplex.",
+      "simplex and triplex.",
+      "duplex and triplex.",
+      "triplex and quadruplex."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Sequence of events in a gas turbine engine are",
+    "opciones": [
+      "Inlet, compression, diffusion, combustion.",
+      "Inlet, compression, combustion, exhausts.",
+      "Inlets, compression, diffusion, expansion, exhaust.",
+      "Inlets, compression, combustion, expansion, exhaust."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "When airflow in the compressor slows down, stagnates or reverses direction, It could be",
+    "opciones": [
+      "normal acceleration.",
+      "normal idle speed.",
+      "compressor stall.",
+      "compressor run-out."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Thrust bearings are normally of which type?",
+    "opciones": [
+      "ball.",
+      "roller.",
+      "plain.",
+      "combination plain-roller."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the purpose of swirl vanes in a combustion chamber?",
+    "opciones": [
+      "Retard radial motion of the air.",
+      "Create axial motion of the air.",
+      "Retard radial motion and creates axial motion.",
+      "Create radial motion and retard axial motion to 5 or 6 ft. per second."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What material is the impeller of a centrifugal compressor commonly made of?",
+    "opciones": [
+      "Forged aluminum alloy.",
+      "Forged steel alloy.",
+      "Stainless steel.",
+      "cast Iron."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What happens to thrust as aircraft speed Increases?",
+    "opciones": [
+      "remains the same.",
+      "Increases.",
+      "decreases.",
+      "Increases only at high altitude."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Water Injection is used to",
+    "opciones": [
+      "clean the compressor.",
+      "increase the engine thrust.",
+      "cool the compressor air at low power settings.",
+      "prevent icing at ambient temperatures."
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What variables can be sensed by a turbine engine fuel control unit to control the fuel metered to an engine?",
+    "opciones": [
+      "Engine speed, inlet total pressure, compressor discharge pressure, burner can pressure and power lever input.",
+      "Airspeed, rate of climb and density attitude.",
+      "Prop speed, airspeed and gear position.",
+      "Engine speed, ram air, inlet temperature and exhaust gas temperature."
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "How is Ignition accomplished in a can-annular combustor?",
+    "opciones": [
+      "By explosive start.",
+      "By an Igniter in each can.",
+      "By flame propagation tubes and 2 igniters.",
+      "None of the above."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Gasoline and kerosene are used as turbine engine fuels. How do they compare in heat energy?",
+    "opciones": [
+      "Gasoline has more heat energy per gallon than kerosene.",
+      "Gasoline and kerosene have the same heat energy per unit of weight",
+      "Gasoline and kerosene have the same heat energy per unit of volume.",
+      "Kerosene has more heat energy per gallon than gasoline."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The abbreviation \"P\" with subscript t7 used in jet engine terminology means",
+    "opciones": [
+      "The total inlet pressure.",
+      "Pressure and temperature at station No. 7.",
+      "Seven times the temperature divided by the total pressure.",
+      "The total pressure at station No. 7."
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Why do turbine engine ignition systems require high energy?",
+    "opciones": [
+      "To ignite the fuel under conditions of high altitude and high temperatures.",
+      "Because the applied voltage is much greater.",
+      "to Ignite the fuel under conditions of high altitude and low temperatures.",
+      "Because the applied voltage is much less."
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Horsepower that is produced when a 1000 lb. weight is lifted 33 feet in 2 minutes?",
+    "opciones": [
+      "1 HP",
+      "1/2 HP",
+      "2 HP",
+      "4 HP"
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Specific fuel consumption is calculated by?",
+    "opciones": [
+      "Multiplying fuel used by hours flown",
+      "The ratio of fuel used to distance traveled",
+      "Dividing fuel used by hours flown",
+      "Dividing the weight of fuel burned per hour by the HP developed"
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "The comparison between the volume of a cylinder with the piston at BDC to the volume of the cylinder with the piston at TDC, is called?",
+    "opciones": [
+      "Compression ratio",
+      "Piston displacement",
+      "Volumetric efficiency",
+      "Cylinder displacement"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "An 1830 engine may be regarded as developing?",
+    "opciones": [
+      "A displacement of 1830 cubic inches.",
+      "183 horsepower.",
+      "1830 horsepower.",
+      "A displacement of 1830 c.c."
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Thermal efficiency?",
+    "opciones": [
+      "Is the ratio of heat developed to the potential heat available.",
+      "May be disregarded when calculating the heat efficiency of an engine.",
+      "Can be increased by decreasing the compression ratio.",
+      "Is the ratio of the heat converted to useful work to the heating value of fuel consumed."
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Compression rings which are chrome plated on the face surfaces.",
+    "opciones": [
+      "Must never be used in aircraft engines.",
+      "Can only be used with chrome plated cylinders.",
+      "Must never be used with chrome plated cylinders.",
+      "Must be hand lapped to the cylinder."
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The most important advantage to using two or more springs on each exhaust and inlet valve is?",
+    "opciones": [
+      "Elimination of side pressure on the valve stem.",
+      "Prevention of sticking valves.",
+      "Safety factor.",
+      "Elimination of spring surge vibrations during engine operation."
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Referring to the intake and exhaust valves, the face of the valve is usually ground to an angle of?",
+    "opciones": [
+      "30 or 48 degrees",
+      "25 or 48 degrees",
+      "25 or 45 degrees",
+      "30 or 45 degrees"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The recommended method for smoothing out slight irregularities on a commutator, is by the use of?",
+    "opciones": [
+      "Emery cloth.",
+      "A mild liquid metal buffer.",
+      "A soft wire buffing wheel.",
+      "Number 000 sandpaper."
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "The reason for shielding an ignition system is to?",
+    "opciones": [
+      "Maintain current voltage.",
+      "Prevent interference (noise) which would otherwise be heard in the radio receiver.",
+      "Prevent insulation breakdown caused by coronal effect.",
+      "Protect the flexible wires from wear due to vibration."
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "A back-fire through the induction system?",
+    "opciones": [
+      "Indicates improper valve timing.",
+      "Is caused by pre-ignition.",
+      "Is caused by a leak passed the float needle.",
+      "May be caused by an excessively lean mixture."
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "When checking the idle mixture of an engine",
+    "opciones": [
+      "The rpm remains steady then drops to zero when the mixture control lever is moved to the idle cut-off position.",
+      "The rpm increases slightly and then drops to zero when the mixture control lever is moved to the idle cut-off position.",
+      "The rpm drops slightly then increases before dropping to zero when the mixture control lever is moved to the off position.",
+      "There is a steady decrease in rpm when the mixture control lever is moved to the off position."
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Partial disassembly of a pressure-injection carburetor for the correction of malfunctions?",
+    "opciones": [
+      "May only be done in an approved carburetor overhaul shop with a proper flow bench.",
+      "May be accomplished by an \"A\" Category licensed aircraft maintenance engineer.",
+      "Should only be performed by a \"D\" Category licensed aircraft maintenance engineer.",
+      "Is not recommended."
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A fuel vaporizes too easily?",
+    "opciones": [
+      "Will produce a lean mixture.",
+      "Should be mixed with a heavier grade fuel.",
+      "Is considered acceptable because of its energy to weight ratio.",
+      "Will be susceptible to vapour lock."
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "If a valve seat is found to be sharped the proper corrective action is to?",
+    "opciones": [
+      "Grind the valve seat and then lap the valve face to the valve seat.",
+      "Grind the valve face to match the seal",
+      "Lap the valve until the seat and face are matched.",
+      "Replace the seat valve, and rocker assembly."
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A cuno oil filter?",
+    "opciones": [
+      "Has a series of laminated plates or discs, with one set of discs rotating in the spaces between the other discs.",
+      "Is not approved for use on aircraft",
+      "Is required on all engines over 150 horsepower.",
+      "Must be dismantled to remove debris from between the filter plates."
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "When the coil of an electromagnet is 200 turns of wire and a current of 5 amperes the magneto motive force is?",
+    "opciones": [
+      "1000 magnetic flux.",
+      "200 ampere turns.",
+      "1000 ampere turns.",
+      "200 magnetic flux."
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "An increase in humidity in the ambient air will?",
+    "opciones": [
+      "Not affect an engine's power output",
+      "Tend to reduce an engine's power output",
+      "Cause an increase in the power output of an engine.",
+      "Only affect the power output of an engine at altitude."
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "When the ignition switch of an aircraft is selected to the \"on\" position the",
+    "opciones": [
+      "Primary circuit is connected to the battery circuit",
+      "Primary circuit is connected to the secondary circuit",
+      "Primary circuit is connected to ground",
+      "\"Ground\" of the primary circuit is opened, or disconnected."
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Cylinder heads are usually made of?",
+    "opciones": [
+      "Stellite alloy.",
+      "Aluminum alloy.",
+      "Steel alloy.",
+      "Magnesium alloy."
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The surge valve protects the oiler cooler from high pressure by diverting",
+    "opciones": [
+      "Hot oil directly to the oil tank.",
+      "Cool oil to the oil filter.",
+      "Hot oil through the copper core.",
+      "Cold oil directly to the oil tank."
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "The gears of an oil scavenger pump are usually larger than the gears of the oil pressure pump to?",
+    "opciones": [
+      "Compensate for their slower rate of delivery.",
+      "Allow for the expansion of oil due to heat",
+      "Allow the pump to turn at a slower rate and still scavenge the pressure pump's output of oil.",
+      "Ensure positive draining or scavenging of the crankcase."
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "The throat or venturi of a carburetor is designed to?",
+    "opciones": [
+      "Increase the volume of air through a carburetor.",
+      "Increase the air pressure at the fuel discharge nozzle.",
+      "Decrease the air pressure at the fuel discharge nozzle.",
+      "Decrease the volume of air flow across the discharge jet."
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The type of ignition system incorporating a transformer coil near each spark plug is called?",
+    "opciones": [
+      "Condenser.",
+      "Low tension.",
+      "High tension.",
+      "Booster."
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "When engine idling, movement of the mixture control to idle cut-off will cause",
+    "opciones": [
+      "A small RPM increase prior to a normal drop.",
+      "An immediate RPM drop accompanied by a MAP drop.",
+      "An immediate fuel flow increase.",
+      "An immediate fuel flow decrease."
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Desiccant should be inspected every",
+    "opciones": [
+      "30 days.",
+      "60 days.",
+      "90 days.",
+      "120 days."
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "A common cause of distributor flashover is?",
+    "opciones": [
+      "A cracked insulator.",
+      "Moisture.",
+      "Worn spark plugs",
+      "Worn breaker points"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The fourth cylinder to fire on a 9 cylinder radial is?",
+    "opciones": [
+      "#7",
+      "#5",
+      "#6",
+      "#4"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Direct cranking starter motors are usually?",
+    "opciones": [
+      "Shunt wound.",
+      "Compound wound.",
+      "Parallel wound.",
+      "Series wound."
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A light brown deposit on a spark plug is a sign of?",
+    "opciones": [
+      "Running normal condition.",
+      "Rich running.",
+      "Lean running.",
+      "Worn valve guides"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A backfire through the induction system may be caused by?",
+    "opciones": [
+      "An excessively rich mixture.",
+      "Slightly retarded ignition timing.",
+      "An excessively lean mixture.",
+      "A break at the float needle."
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The air bleed in the discharges nozzle of a carburetor?",
+    "opciones": [
+      "Helps produce a more uniform fuel/air mixture.",
+      "Vents the float chamber to atmosphere.",
+      "Sense the variation in air velocity.",
+      "May be used as a mixture control."
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "An entry in the log reads: \"Engine running uneven, low power, tending to cut out during flight but a ground run after trouble shooting procedures failed to reveal any irregularity. A most probable cause for the in-flight malfunction would be?",
+    "opciones": [
+      "Water in the fuel tank.",
+      "A defective spark plug.",
+      "Carburetor icing.",
+      "Too rich a fuel/air mixture."
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The purpose of the counter weights on a Hamilton Standard constant speed propeller is to?",
+    "opciones": [
+      "Assist the oil pressure in moving the blades toward the low pitch, high rpm position.",
+      "Moved the blades toward the high pitch, low rpm position",
+      "Dampen blade vibrations.",
+      "Move the blades to the low pitch, high rpm position when the oil pressure is released."
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "The heat range of a spark plug?",
+    "opciones": [
+      "Is the principal factor governing spark plug performance operating with various conditions.",
+      "Has no bearing on its performance.",
+      "Is controlled through the use of baffles.",
+      "Depends upon the number of electrodes of the spark plug."
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A normally aspirated engine with a variable pitch propeller?",
+    "opciones": [
+      "Must be equipped with a manifold pressure gauge.",
+      "Does not require a manifold pressure gauge.",
+      "Requires a manifold pressure gauge if the supercharger is functioning.",
+      "May have a manifold pressure gauge at the direction of the engineer."
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "When an attempt was made to synchronize a magneto on an engine by use of a timing light it was noted that the light remained \"on\" even though the breaker points were open. The reason for this is?",
+    "opciones": [
+      "A short in the secondary winding.",
+      "A short in primary winding.",
+      "A leak across the points.",
+      "The primary lead is still connected in the breaker points."
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The density of air depends upon?",
+    "opciones": [
+      "Humidity, height and pressure.",
+      "Pressure, temperature, and humidity.",
+      "Temperature, height and humidily.",
+      "Its velocity, temperature, and pressure."
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "If for any reason the field poles lose their magnetism in a generator which completes its field ground through the voltage regulator?",
+    "opciones": [
+      "\"Flashing the field\" by momentarily connecting the gen terminal to the bat terminal of the regulator will re-establish polarity in the poles.",
+      "Momentarily connecting the fld terminal to the bat terminal will correct the fault by \"flashing the field\".",
+      "A momentary contact of the field and generator terminals will restore magnetism in the poles.",
+      "Magnetism may only be restored by the use of a special induction coil."
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Fuel lines in gravity systems must be of a size which will provide a flow of fuel to the carburetor?",
+    "opciones": [
+      "Equal to 0.9 lb. per hour for each take-off horsepower.",
+      "At a rate of not less than 125 percent of the actual take-off fuel consumption.",
+      "At a rate considered sufficient for the take-off fuel consumption under all conditions.",
+      "Equal to 150 percent of the take-off fuel consumption."
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The location of fuel delivery into the induction system when a fuel injection carburetor is installed is?",
+    "opciones": [
+      "In the intake port of each cylinder.",
+      "The same as that for a fuel injection system installation.",
+      "At or near the fuel injection carburetor.",
+      "The same as for a float type carburetor installation."
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Is there a difference between a fuel injector system and a fuel injector carburetor?",
+    "opciones": [
+      "No, the two systems inject fuel under pressure into the central induction section.",
+      "Yes, the injection system injects the fuel at a high pressure, the injector carburetor uses atmospheric pressure.",
+      "No, both systems deliver fuel under pressure to each individual cylinder.",
+      "Yes, the injector delivers fuel direct to each cylinder, the injector carburetor delivers fuel to a central location in the induction system."
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Water injection is a method whereby water is used with the fuel/air mixture?",
+    "opciones": [
+      "To provide a denser charge into the cylinders.",
+      "To provide extra cooling for the mixture and cylinder thereby preventing detonation when additional power is required of the engine.",
+      "In turbine engines only.",
+      "As a stabilizer."
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Referring to a float-type carburetor, to lower the fuel level in the float chamber?",
+    "opciones": [
+      "Place washers under the float needle seat.",
+      "Install a shorter needle assembly.",
+      "Carefully grind the head of the needle.",
+      "Replace the seat assembly."
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "If a spark plug lead is disconnected while the engine is operating?",
+    "opciones": [
+      "The electrical energy for that spark plug will discharge",
+      "The secondary winding will burn out",
+      "The breaker points will arc.",
+      "The condenser will break down."
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A check of an in-service engine revealed one exhaust valve with insufficient clearance between the rocker arm and valve stem. If records of a previous check indicate all valve clearances within tolerance, the most probable reason for the irregularity noted would be?",
+    "opciones": [
+      "A stretched valve stem.",
+      "A displaced valve stem.",
+      "A carbon coated valve stem.",
+      "Stretched cylinder head studs."
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A magneto is internally timed?",
+    "opciones": [
+      "To correctly position the E-gap to the cam lobe position.",
+      "To take advantage of the fly-weight action of the driving gear.",
+      "Because of the keyway position.",
+      "To reduce arcing at the breaker points."
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A normal aspirated engine?",
+    "opciones": [
+      "Is less affected by icing conditions.",
+      "Is not normally used in aircraft.",
+      "Has a higher volumetric efficient at altitude.",
+      "Always has a volumetric efficiency of less than 100 percent."
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "A cycle means a?",
+    "opciones": [
+      "Sequence of events, returning to the original state.",
+      "Sequence of events.",
+      "Necessary number of events.",
+      "Movement equal to a stroke."
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Some types of exhaust valves are sodium filled to?",
+    "opciones": [
+      "Reduce valve resonance.",
+      "Improve the quality of steel.",
+      "Improve their shock absorbing capacity.",
+      "Improve heat dissipation away from the valve head."
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A \"cold-cylinder\" check is a procedure used to?",
+    "opciones": [
+      "Establish whether or not a cold spark plug should be used in a particular engine.",
+      "Detect a faulty spark plug.",
+      "Determine the cooling of an engine during cold weather.",
+      "Trace a low compression cylinder on an engine."
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Backfiring through the exhaust is caused by?",
+    "opciones": [
+      "Lean mixture",
+      "Rich mixture",
+      "Exhaust system crack",
+      "Leaking induction manifold"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A starter circuit is protected by?",
+    "opciones": [
+      "Is unprotected.",
+      "A fuse.",
+      "A circuit breaker.",
+      "Circuit breakers."
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What is the principle of back-suction mixture control?",
+    "opciones": [
+      "Decreased pressure in the float chamber leans out the mixture.",
+      "An orifice is used to slow fuel flow",
+      "A vent controls airflow to the float chamber",
+      "A spring-loaded valve meters fuel to the discharge nozzle"
+    ],
+    "correcta": 0,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Excessive blow-by in the cylinder may be caused by what?",
+    "opciones": [
+      "Valve clearance set too loose",
+      "Spark plug gap too wide",
+      "Piston rings not staggered properly",
+      "Carburetor mixture too rich"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Most piston engines have a fuel/air ratio of?",
+    "opciones": [
+      "8:1",
+      "15:1",
+      "20:1",
+      "12:1"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Define geometric pitch.",
+    "opciones": [
+      "Effective pitch minus slip",
+      "The distance the propeller actually advances in one revolution",
+      "The angle between the blade chord and the plane of rotation",
+      "Effective pitch + slip"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What propels the alcohol out of the propeller slinger ring?",
+    "opciones": [
+      "Air pressure from the engine pneumatic system",
+      "The anti-ice pump delivers the alcohol to the ring, but centrifugal force throws it out of the nozzles",
+      "Engine oil pressure through the propeller hub",
+      "Gravity through the slinger ring drain holes"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What is the function of a propeller synchronizer?",
+    "opciones": [
+      "It keeps the propellers at the same blade angle",
+      "It feathers both propellers at the same time",
+      "It balances the propellers in flight",
+      "It is designed to keep the engines at the same RPM"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What type of propellers do small turboprop aircraft have?",
+    "opciones": [
+      "Fixed-pitch wooden propellers",
+      "Ground-adjustable propellers",
+      "Two-position propellers",
+      "Reversible, auto-feathering propellers"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What are the best conditions for trimming a turbine engine?",
+    "opciones": [
+      "No wind and moisture-free air",
+      "High wind and high humidity",
+      "A tailwind of at least 10 knots",
+      "Rain, to keep the engine cool"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What causes a hot spot in the exhaust duct?",
+    "opciones": [
+      "A clogged oil jet",
+      "Excessive compressor bleed",
+      "A worn turbine bearing",
+      "A streaking fuel nozzle or a damaged combustion chamber"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What type of bearing on a turbine shaft takes up axial and radial loads?",
+    "opciones": [
+      "Roller bearings are used for axial loads only",
+      "Plain bearings are used for both loads",
+      "Needle bearings are used for both loads",
+      "Ball bearings are used for axial (thrust) and radial (centrifugal) loads"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What extracts exhaust at the proper speed from the turbine?",
+    "opciones": [
+      "The compressor",
+      "The exhaust nozzle",
+      "The turbine inlet guide vanes",
+      "The diffuser"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the probe in front of the turbine called?",
+    "opciones": [
+      "The exhaust gas temperature probe, located in the tailpipe",
+      "The compressor inlet temperature probe",
+      "The oil temperature bulb",
+      "The turbine inlet temperature probe, located just forward of the first stage turbine nozzle"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The propeller on turboprop engines accounts for how much of the thrust produced?",
+    "opciones": [
+      "75-85%",
+      "25-35%",
+      "50%",
+      "95-100%"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What type of thrust is used for the climb power setting?",
+    "opciones": [
+      "Take-off thrust",
+      "Idle thrust",
+      "Flight idle thrust",
+      "Normal rated thrust (maximum continuous thrust)"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A magneto impulse coupling",
+    "opciones": [
+      "is used to provide a high voltage advanced spark during start",
+      "is electrically energized by the booster coil",
+      "supplies voltage to the retard points during start",
+      "is used to provide a high voltage retarded spark during start"
+    ],
+    "correcta": 3,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Which of the following would be a significant factor in the failure of an engine to develop full power at take-off?",
+    "opciones": [
+      "Spark plugs gapped too close",
+      "Oil pressure slightly above normal",
+      "Improper adjustment of the carburetor heat valve control (leakage)",
+      "Propeller in low pitch"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "When are the \"last chance\" oil filters checked?",
+    "opciones": [
+      "At every 50-hour inspection",
+      "At engine overhaul",
+      "Before every flight",
+      "Only when the oil pressure drops"
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What is the primary advantage of an axial-flow compressor over a centrifugal compressor?",
+    "opciones": [
+      "Easier maintenance",
+      "High frontal area",
+      "Greater pressure ratio",
+      "Less expensive"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What type of oil pump is most commonly used on turbojet engines?",
+    "opciones": [
+      "Centrifugal",
+      "Vane",
+      "Gear",
+      "Diaphragm"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "When trimming a turbine engine, the fuel control is adjusted to",
+    "opciones": [
+      "produce as much power as the engine is capable of producing",
+      "allow the engine to produce maximum RPM without regard to power output",
+      "limit idle RPM and maximum speed",
+      "restrict power to 100 percent without regard to specified RPM"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The air passing through the combustion chamber of a jet engine is",
+    "opciones": [
+      "entirely combined with fuel and burned",
+      "used to support combustion and to cool the engine",
+      "speeded up and heated by the action of the turbines",
+      "circulated in the combustion chamber until consumed"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Newton's Third Law of Motion states:",
+    "opciones": [
+      "Every body persists in its state of rest, or of motion in a straight line, unless acted upon by some outside force",
+      "Force is proportional to the product of mass and acceleration",
+      "Force applied to an object at any point is transmitted in every direction without loss",
+      "To every action there is an equal and opposite reaction"
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "The engine pressure ratio (EPR) indicator is a direct indication of:",
+    "opciones": [
+      "pressures within the turbine section",
+      "pressure ratio between the front and aft end of the compressor",
+      "ratio of engine RPM to compressor pressure",
+      "engine thrust being produced"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The type of lubricating oil that is used in a turbine aircraft engine is",
+    "opciones": [
+      "synthetic",
+      "petroleum",
+      "a 50-50 blend of petroleum and synthetic",
+      "a 30-70 blend of petroleum and synthetic"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "During a differential pressure test on an aircraft engine, air escaping through the air intake would indicate poor condition of the?",
+    "opciones": [
+      "Valve guides",
+      "Intake valves",
+      "Exhaust valves",
+      "Piston rings"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "The main advantage of a low tension ignition system is the?",
+    "opciones": [
+      "Reduction in weight",
+      "Increase in spark plug life",
+      "Reduction in opportunities for leakage of high-tension current",
+      "Reduction in pre-ignition probability"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Which force acts on a propeller in the direction opposite to rotation?",
+    "opciones": [
+      "Torque bending force",
+      "Centrifugal force",
+      "Thrust bending force",
+      "Aerodynamic twisting force"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What does \"feathered\" mean?",
+    "opciones": [
+      "The blades are set to the lowest pitch for take-off",
+      "The blades are set to reverse pitch for braking",
+      "The propeller is removed from the engine",
+      "The blades are rotated to approximately 90 degrees to stop the propeller"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "You are inspecting a McCauley constant speed propeller and you notice red stains on the hub. What do you do?",
+    "opciones": [
+      "Clean the stains and return the aircraft to service",
+      "Tighten the hub bolts and recheck",
+      "Remove the propeller and send it to a repair station",
+      "Repaint the hub"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "If ice forms on the propeller, what happens?",
+    "opciones": [
+      "Thrust decreases and excessive vibration increases",
+      "Thrust increases and RPM decreases",
+      "The propeller automatically feathers",
+      "Nothing, since the blades shed ice at speed"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What is the purpose of the distributor valve on a hydromatic propeller?",
+    "opciones": [
+      "It shifts the propeller from the feathering to the unfeathering condition",
+      "It regulates the governor oil pressure",
+      "It drains the oil from the dome at shutdown",
+      "It synchronizes the two propellers"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "On a Hamilton Standard hydromatic propeller, the oil pressure is used for what?",
+    "opciones": [
+      "Feathering only",
+      "All functions",
+      "Increasing pitch only",
+      "Decreasing pitch only"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What is associated with a low blade angle?",
+    "opciones": [
+      "High RPM",
+      "Low RPM",
+      "Feathered position",
+      "Reverse thrust"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "Where are the high and low pitch stops located?",
+    "opciones": [
+      "In the governor",
+      "In the engine crankcase",
+      "In the propeller dome",
+      "On the propeller control lever"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "Why is feathering used on a piston engine?",
+    "opciones": [
+      "To increase cruise speed",
+      "In case of engine failure",
+      "To reduce noise on take-off",
+      "To warm up the engine faster"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What is most common on a multi-engine turboprop?",
+    "opciones": [
+      "Fixed-pitch propellers",
+      "Reversing propeller systems",
+      "Wooden propellers",
+      "Ground-adjustable propellers"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "Centrifugal twisting moment tends to",
+    "opciones": [
+      "Increase the blade angle",
+      "Feather the propeller",
+      "Decrease the blade angle",
+      "Bend the blade tips forward"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "You can correct propeller tracking with",
+    "opciones": [
+      "Shims",
+      "Longer bolts",
+      "Balancing weights",
+      "Filing the blade tips"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What type of wood are most wooden propellers made from?",
+    "opciones": [
+      "Pine",
+      "Birch",
+      "Oak",
+      "Balsa"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "How much oil pressure does the propeller governor deliver to the propeller?",
+    "opciones": [
+      "20 to 30 psi",
+      "200 to 300 psi",
+      "50 to 80 psi",
+      "600 to 800 psi"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "The governor cuts out at what pressure for feathering?",
+    "opciones": [
+      "200 psi",
+      "300 psi",
+      "650 psi",
+      "1000 psi"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "On a four-cylinder aircraft, how do you position the propeller on the engine?",
+    "opciones": [
+      "In the 12 o'clock and 6 o'clock position",
+      "In the 9 o'clock and 3 o'clock position",
+      "In any position",
+      "In the 10 o'clock and 4 o'clock position"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What operational force causes the greatest stress on a propeller?",
+    "opciones": [
+      "Thrust bending force",
+      "Centrifugal force",
+      "Torque bending force",
+      "Aerodynamic twisting force"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What is the purpose of the latch mechanism on a propeller?",
+    "opciones": [
+      "To prevent feathering during engine shutdown",
+      "To lock the propeller in reverse",
+      "To hold the blades in low pitch for take-off",
+      "To keep the propeller from windmilling in flight"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "What device is used to check the blade angle on a ground adjustable propeller?",
+    "opciones": [
+      "Dial indicator",
+      "Universal propeller protractor",
+      "Feeler gauge",
+      "Micrometer"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "How do you set the top RPM on a constant speed propeller?",
+    "opciones": [
+      "By adjusting the screw and locknut on the governor",
+      "By changing the propeller blades",
+      "By adjusting the throttle stop",
+      "By adding counterweights"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "If the propeller controls are moved, what will be indicated?",
+    "opciones": [
+      "A setting on the tachometer",
+      "A change in manifold pressure only",
+      "A change in oil temperature",
+      "A change in fuel flow only"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "How is the speed of a hydromatic constant speed propeller changed in flight?",
+    "opciones": [
+      "By changing the load tension against the flyweights in the governor",
+      "By changing the throttle setting only",
+      "By moving the mixture control",
+      "By operating the feathering button"
+    ],
+    "correcta": 0,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "The centrifugal twisting force acting on a propeller blade is",
+    "opciones": [
+      "Less than the aerodynamic twisting force and tends to move the blade to a higher angle",
+      "Greater than the aerodynamic twisting force and tends to move the blade to a lower angle",
+      "Equal to the aerodynamic twisting force",
+      "Only present when the propeller is feathered"
+    ],
+    "correcta": 1,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "The thrust produced by a rotating propeller is a result of",
+    "opciones": [
+      "An area of increased pressure immediately in front of the propeller blades",
+      "The weight of the air moved by the blades",
+      "An area of decreased pressure immediately in front of the propeller blades",
+      "The centrifugal force on the blades"
+    ],
+    "correcta": 2,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "The angle of attack of a rotating propeller blade is measured between the blade chord (or face) and which of the following?",
+    "opciones": [
+      "The plane of rotation",
+      "The engine crankshaft",
+      "The aircraft longitudinal axis",
+      "The relative airstream"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "Where is the air pressure for a Hartzell propeller stored?",
+    "opciones": [
+      "In the governor",
+      "In the engine crankcase",
+      "In the accumulator on the firewall",
+      "In the propeller cylinder"
+    ],
+    "correcta": 3,
+    "tema": "Propellers"
+  },
+  {
+    "pregunta": "When power is increased, what is the best method for doing so?",
+    "opciones": [
+      "Advance the throttle first and then increase the RPM",
+      "Increase the RPM and the throttle at the same time",
+      "Increase the RPM to the desired setting and then advance the throttle to the desired manifold pressure",
+      "Advance the throttle only"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Newton's second law of motion deals with what?",
+    "opciones": [
+      "Inertia",
+      "Equal and opposite reaction",
+      "Acceleration (force equals mass times acceleration)",
+      "Conservation of energy"
+    ],
+    "correcta": 2,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Where does the main oil filter strain the oil?",
+    "opciones": [
+      "Just before it enters the scavenge pump",
+      "At the oil tank outlet",
+      "At the oil cooler outlet",
+      "Just as it leaves the pressure pump"
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What parameters are monitored by the FCU of a jet engine?",
+    "opciones": [
+      "Oil pressure, oil temperature and fuel flow",
+      "Compressor inlet temperature, burner pressure, compressor discharge pressure and compressor RPM",
+      "Exhaust gas temperature only",
+      "Aircraft airspeed and altitude only"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What happens to engine thrust output above 36,000 feet?",
+    "opciones": [
+      "It increases because the temperature keeps decreasing",
+      "It stays constant because the temperature is stable",
+      "It decreases: the temperature is stable and the decreasing density reduces thrust",
+      "It increases because the air is less dense"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Cleaning of the compressor section may be accomplished by using?",
+    "opciones": [
+      "Ground-up walnut shells and apricot pits",
+      "Sand blasting",
+      "Steel shot",
+      "A wire brush and solvent"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "How is compressor cleaning most commonly and effectively done?",
+    "opciones": [
+      "Steam cleaning with caustic soda",
+      "Disassembly and hand polishing of each blade",
+      "Abrasive grit process or water wash",
+      "Sand blasting"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "In a high bypass turbofan engine, how much thrust is produced by the core in relation to the fan?",
+    "opciones": [
+      "About 80% from the fan and 20% from the core",
+      "About 50% from the fan and 50% from the core",
+      "About 20% from the fan and 80% from the core",
+      "100% from the core"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What drives the accessory section of a turbine engine?",
+    "opciones": [
+      "An accessory drive gear shaft coupled to the gear shaft of the compressor rotor",
+      "The free turbine shaft",
+      "An electric motor",
+      "The fan shaft"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "How does the RPM indicator work on a turbine engine?",
+    "opciones": [
+      "A mechanical cable driven from the compressor",
+      "A three-phase tachometer generator connected to the indicator",
+      "A pressure pickup in the compressor discharge",
+      "A thermocouple in the exhaust"
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What is used to cool the turbine disc?",
+    "opciones": [
+      "Fan air",
+      "Engine oil",
+      "Ram air from the inlet",
+      "High-pressure compressor bleed air"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the function of the stator vanes in the compressor section?",
+    "opciones": [
+      "To increase velocity and decrease pressure",
+      "To decrease velocity and increase pressure, and direct the air to the next stage",
+      "To drive the rotor blades",
+      "To cool the compressor case"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "On a turboprop engine, what drives the propeller reduction gears?",
+    "opciones": [
+      "The accessory gearbox only",
+      "The starter-generator",
+      "Either the compressor shaft or the free turbine shaft",
+      "The fan shaft"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The relationship between pressure and velocity through convergent and divergent ducts is described by?",
+    "opciones": [
+      "Bernoulli's principle",
+      "Newton's first law",
+      "Boyle's law",
+      "Charles' law"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What is the purpose of the blow-in doors on an engine inlet?",
+    "opciones": [
+      "To reverse the thrust",
+      "To let more air into the plenum chamber during ground operation",
+      "To dump excess fuel",
+      "To cool the engine oil"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What does the torque indicating system measure?",
+    "opciones": [
+      "Shaft horsepower",
+      "Exhaust gas temperature",
+      "Compressor RPM",
+      "Fuel flow"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What is the procedure if cracks are found in the swirl vanes of a combustion can?",
+    "opciones": [
+      "Rejection",
+      "Stop drill the cracks",
+      "Weld the cracks",
+      "Acceptable if less than 1/4 inch"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What is the most common type of combustion chamber used with centrifugal type compressors?",
+    "opciones": [
+      "Annular type",
+      "Can-annular type",
+      "Multi-chamber (can) type",
+      "Reverse-flow annular type"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the basic difference between turboprop and turbojet engines?",
+    "opciones": [
+      "The turboprop has no compressor",
+      "The turbojet has more turbine stages",
+      "The turboprop has more turbine stages and a geared propeller",
+      "The turboprop has no combustion chamber"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is static or gross thrust?",
+    "opciones": [
+      "The thrust produced at cruise speed",
+      "The thrust minus the ram drag",
+      "The thrust at 36,000 feet",
+      "The thrust produced when the aircraft is not moving"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A hydromechanical fuel control unit (FCU) uses what three inputs?",
+    "opciones": [
+      "Inlet pressure (Pt2), burner pressure (Pb) and engine RPM",
+      "Oil pressure, oil temperature and fuel flow",
+      "Airspeed, altitude and outside air temperature",
+      "EGT, N1 and N2"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is more economical than a conventional turbofan?",
+    "opciones": [
+      "A turbojet",
+      "An ultra-high bypass ducted turbofan",
+      "A low bypass turbofan",
+      "A ramjet"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "How is a turbine blade replaced?",
+    "opciones": [
+      "By any blade of the same length",
+      "By a blade of the same color code only",
+      "By a blade of equal moment-weight",
+      "Blades can only be replaced in complete sets"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The compressor takes what percentage of the turbine power?",
+    "opciones": [
+      "About 25%",
+      "About 75%",
+      "About 50%",
+      "About 10%"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "An aerodynamic blockage thrust reverser uses?",
+    "opciones": [
+      "Cascade vanes",
+      "Clamshell doors",
+      "Bucket doors",
+      "A variable exhaust nozzle"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What heats the fuel in the fuel heater of a turbine engine?",
+    "opciones": [
+      "Electric heating elements",
+      "Exhaust gases",
+      "Hydraulic fluid",
+      "Bleed air or oil"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Where is the low pressure fuel filter located?",
+    "opciones": [
+      "Between the supply tank and the engine fuel system",
+      "Between the fuel pump and the FCU",
+      "After the fuel nozzles",
+      "In the fuel manifold"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Where is the high pressure fuel filter located?",
+    "opciones": [
+      "Between the supply tank and the engine fuel system",
+      "Between the fuel pump and the FCU",
+      "In the fuel tank",
+      "After the fuel nozzles"
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "What kind of attachment is used for compressor blades?",
+    "opciones": [
+      "Welded",
+      "Riveted",
+      "Dovetail (or fir-tree or bulb root)",
+      "Bolted flange"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The two types of centrifugal compressor are?",
+    "opciones": [
+      "Axial and radial",
+      "Single entry and double entry",
+      "Low pressure and high pressure",
+      "Fixed and variable"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The diffuser section of a jet engine is located between?",
+    "opciones": [
+      "The burner section and the turbine section",
+      "The compressor section and the burner section",
+      "The turbine section and the exhaust",
+      "The inlet and the compressor"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "In what order do the stators and rotors follow each other in an axial compressor?",
+    "opciones": [
+      "A stator followed by a rotor",
+      "A rotor followed by a stator",
+      "Two rotors followed by one stator",
+      "They alternate randomly"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "In what type of fuel system is a pressurizing and dump valve found?",
+    "opciones": [
+      "A duplex fuel nozzle system",
+      "A simplex fuel nozzle system",
+      "A float-type carburetor system",
+      "A fuel injection system on a piston engine"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "A turbine engine fuel filter must retain foreign particles of the order of?",
+    "opciones": [
+      "100 to 200 microns",
+      "1 to 2 microns",
+      "10 to 25 microns",
+      "500 microns"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A spectrometric oil analysis is used to?",
+    "opciones": [
+      "Measure the viscosity of the oil",
+      "Check the oil for water contamination",
+      "Determine the flash point of the oil",
+      "Determine the concentration of metallic particles in suspension in the oil"
+    ],
+    "correcta": 3,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "Synthetic turbine oil cannot?",
+    "opciones": [
+      "Be mixed with another kind of oil",
+      "Be used above 100 degrees C",
+      "Be stored for more than one year",
+      "Be used in a dry sump system"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What must be used to mark a combustion chamber?",
+    "opciones": [
+      "A lead pencil",
+      "Chalk or a special varnish",
+      "A grease pencil",
+      "A metal scribe"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "A turbine blade with a crack at its base is caused by?",
+    "opciones": [
+      "Foreign object damage",
+      "Oil contamination",
+      "Low RPM operation",
+      "Overtemperature"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the function of the stator vane assembly at the discharge end of a typical axial flow compressor?",
+    "opciones": [
+      "It directs the air into the first stage rotor blades",
+      "It directs the flow of gases into the combustion chamber",
+      "It drives the accessory gearbox",
+      "It cools the turbine blades"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Air turbine starters should be limited to what speed?",
+    "opciones": [
+      "80,000 rpm",
+      "8,000 rpm",
+      "20,000 rpm",
+      "200,000 rpm"
+    ],
+    "correcta": 0,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The gas turbine engine operates on what cycle?",
+    "opciones": [
+      "Otto cycle",
+      "Diesel cycle",
+      "Brayton cycle",
+      "Carnot cycle"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What are the two types of ignition systems used on a gas turbine engine?",
+    "opciones": [
+      "Magneto and battery",
+      "Single and dual",
+      "Impulse and retard",
+      "High tension and low tension (capacitor discharge)"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What are the operations of a starter-generator?",
+    "opciones": [
+      "It can be used as a starter and/or a generator, and is always engaged with the engine",
+      "It is used only for starting and then disengages",
+      "It is used only as a generator",
+      "It is engaged with the engine only in flight"
+    ],
+    "correcta": 0,
+    "tema": "Engine Systems & Electrical"
+  },
+  {
+    "pregunta": "In a turbofan engine, how is the fan driven?",
+    "opciones": [
+      "By the first stage compressor",
+      "By the last stage turbine disk",
+      "By an electric motor",
+      "By the accessory gearbox"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "An advantage of an axial flow compressor is its?",
+    "opciones": [
+      "Low cost of manufacture",
+      "Ruggedness and resistance to FOD",
+      "High pressure rise per stage",
+      "High peak efficiency"
+    ],
+    "correcta": 3,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What are the turbofan bypass ratios?",
+    "opciones": [
+      "Low 4:1, medium 2:1, high 1:1",
+      "Low 10:1, medium 20:1, high 30:1",
+      "Low 1:1, medium 2 or 3:1, high 4:1 or greater",
+      "Low 0.5:1, medium 1:1, high 2:1"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Manifold pressure is defined as",
+    "opciones": [
+      "the atmospheric pressure when the engine is operating",
+      "the absolute pressure in the intake manifold",
+      "the differential pressure in the intake manifold",
+      "the pressure measured at the venturi of the carburetor"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "Piston rings are usually made of",
+    "opciones": [
+      "stainless steel",
+      "gray cast iron",
+      "cast aluminum",
+      "nickel steel"
+    ],
+    "correcta": 1,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "A six-cylinder engine with a bore of 4.375 inches and a stroke of 5.125 inches has a piston displacement of",
+    "opciones": [
+      "422.6 cubic inches",
+      "1649.0 cubic inches",
+      "462.25 cubic inches",
+      "1849.0 cubic inches"
+    ],
+    "correcta": 2,
+    "tema": "Piston engines"
+  },
+  {
+    "pregunta": "An advantage of the centrifugal-flow compressor is its",
+    "opciones": [
+      "frontal area",
+      "pressure rise per stage",
+      "ram efficiency",
+      "peak efficiency"
+    ],
+    "correcta": 1,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "What is the disadvantage of an axial flow compressor?",
+    "opciones": [
+      "Low peak efficiency",
+      "Large frontal area",
+      "High weight, high starting power requirement and high cost",
+      "Low pressure ratio"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "The compressor blades of an axial flow compressor are?",
+    "opciones": [
+      "Longer at the compressor outlet than at the inlet",
+      "The same length throughout the compressor",
+      "Longer at the compressor inlet than at the outlet",
+      "Shorter at the inlet than at the outlet"
+    ],
+    "correcta": 2,
+    "tema": "Turbine engines"
+  },
+  {
+    "pregunta": "Why does the scavenge oil system have a greater capacity than the pressure system?",
+    "opciones": [
+      "Because the scavenge pump turns slower",
+      "To compensate for oil expansion and air (foaming)",
+      "Because the oil tank is lower than the engine",
+      "To increase the oil pressure to the bearings"
+    ],
+    "correcta": 1,
+    "tema": "Engine Systems & Electrical"
+  }
+]
