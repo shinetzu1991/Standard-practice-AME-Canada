@@ -2990,13 +2990,13 @@
     "pregunta": "Failure of one damper on a fully articulated rotor head is most likely to produce:",
     "opciones": [
       "A 2-per-revolution lateral vibration",
-      "A 1-per-revolution vertical vibration",
+      "A 1-per-revolution lateral vibration",
       "Ground resonance immediately",
       "Tail rotor overspeed"
     ],
-    "correcta": 0,
+    "correcta": 1,
     "tema": "Helicopters",
-    "explicacion": "A failed damper on a fully articulated rotor head typically produces a characteristic 2-per-revolution lateral vibration."
+    "explicacion": "A failed damper lets one blade lead or lag out of position, shifting the rotor centre of mass: a 1-per-revolution (1:1) lateral shuffle."
   },
   {
     "id": "landinggear-201",
@@ -5009,9 +5009,9 @@
       "Chordwise balance",
       "Spanwise balance"
     ],
-    "correcta": 2,
+    "correcta": 1,
     "tema": "Helicopters",
-    "explicacion": "Blade alignment establishes the proper chordwise balance relationship of the rotor blade to minimize vibration during operation."
+    "explicacion": "Blade alignment puts the blade centre of gravity and centre of pressure in the correct relationship to the hub. Calling it chordwise balance is a misnomer."
   },
   {
     "id": "helicopter-218",
@@ -5446,10 +5446,11 @@
       "To minimize the Coriolis effect",
       "To increase blade tracking accuracy",
       "To reduce main rotor RPM",
-      "To improve stability"
+      "To reduce blade weight"
     ],
-    "correcta": 3,
-    "tema": "Helicopters"
+    "correcta": 0,
+    "tema": "Helicopters",
+    "explicacion": "Underslinging keeps the distance from the blades centre of gravity to the axis of rotation small, which minimizes the Coriolis effect."
   },
   {
     "pregunta": "If the cabin rate of climb is too great, the controls should be adjusted to cause the?",
@@ -9259,15 +9260,16 @@
     "tema": "Helicopters"
   },
   {
-    "pregunta": "Hydraulic pumps are of what type?",
+    "pregunta": "Helicopter hydraulic system pumps are usually of what type?",
     "opciones": [
-      "Piston",
-      "Gerotor",
-      "Vane",
-      "Gear"
+      "Gear or piston type",
+      "Centrifugal type",
+      "Diaphragm type",
+      "Jet (ejector) type"
     ],
-    "correcta": 3,
-    "tema": "Hydraulics, Landing Gear & Brakes"
+    "correcta": 0,
+    "tema": "Hydraulics, Landing Gear & Brakes",
+    "explicacion": "Aircraft hydraulic pumps are usually gear or piston type; larger helicopters such as the Bell 212 use variable-delivery piston pumps."
   },
   {
     "pregunta": "Stability about the lateral axis is?",
@@ -9343,8 +9345,9 @@
       "Centrifugal force",
       "Blade tip overspeed"
     ],
-    "correcta": 0,
-    "tema": "Helicopters"
+    "correcta": 1,
+    "tema": "Helicopters",
+    "explicacion": "Blade flapping equalizes lift between the advancing and retreating sides of the disc (dissymmetry of lift). The Coriolis effect is absorbed by lead-lag (drag) hinges."
   },
   {
     "pregunta": "Greater downwash effect through the aft part of the main rotor disk compared to the forward part of the disk is known as:",
@@ -9354,8 +9357,9 @@
       "Transitional lift",
       "Transverse flow lift"
     ],
-    "correcta": 1,
-    "tema": "Helicopters"
+    "correcta": 3,
+    "tema": "Helicopters",
+    "explicacion": "Air reaching the rear of the disc has already been accelerated downward, so the aft part of the disc has a higher downwash angle: the transverse flow effect."
   },
   {
     "pregunta": "In a hydraulic system, the purpose of the pump is to:",
