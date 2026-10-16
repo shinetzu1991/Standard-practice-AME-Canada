@@ -2710,12 +2710,13 @@
     "pregunta": "If the RPM of an axial-flow compressor remains constant, how can the angle of attack of the compressor blades be changed?",
     "opciones": [
       "By changing the fuel/air ratio only",
-      "By increasing the pressure ratio (changing the mass airflow/back-pressure)",
+      "By changing the velocity of the airflow",
       "By changing the oil pressure only",
       "It cannot be changed if RPM is constant"
     ],
     "correcta": 1,
-    "tema": "Turbine engines"
+    "tema": "Turbine engines",
+    "explicacion": "Blade angle of attack results from the rotational speed and the axial velocity of the air. With RPM constant, only a change in airflow velocity (for example from a change in pressure ratio or bleed) changes the angle of attack."
   },
   {
     "pregunta": "Continued and/or excessive heat and centrifugal force on turbine engine compressor blades usually causes what?",
@@ -6419,12 +6420,13 @@
     "pregunta": "What is the function of the stator vane assembly at the discharge end of a typical axial flow compressor?",
     "opciones": [
       "It directs the air into the first stage rotor blades",
-      "It directs the flow of gases into the combustion chamber",
+      "It straightens the airflow and eliminates turbulence before the combustion section",
       "It drives the accessory gearbox",
       "It cools the turbine blades"
     ],
     "correcta": 1,
-    "tema": "Turbine engines"
+    "tema": "Turbine engines",
+    "explicacion": "The outlet (exit) guide vanes at the discharge end of an axial-flow compressor straighten the airflow and eliminate turbulence before the air reaches the diffuser and combustion section."
   },
   {
     "pregunta": "Air turbine starters should be limited to what speed?",
