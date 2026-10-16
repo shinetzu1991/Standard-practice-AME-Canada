@@ -394,15 +394,15 @@
   },
   {
     "id": "materials-031",
-    "pregunta": "The alloy which has the highest strength-to-weight ratio when combined with aluminum is:",
+    "pregunta": "Which aluminum alloy series has the highest strength-to-weight ratio?",
     "opciones": [
-      "Zinc and aluminum",
-      "Steel and magnesium",
-      "Chrome and nickel",
-      "Aluminum and magnesium"
+      "7xxx series (aluminum-zinc, e.g. 7075)",
+      "5xxx series (aluminum-magnesium)",
+      "3xxx series (aluminum-manganese)",
+      "1xxx series (commercially pure aluminum)"
     ],
-    "correcta": 3,
-    "explicacion": "Aluminum-magnesium alloys provide high strength-to-weight ratio and are widely used in aircraft structures.",
+    "correcta": 0,
+    "explicacion": "Aluminum alloyed with zinc (7xxx series: 7075, 7178) gives the hardest and strongest aluminum alloys, as strong as steel at one third the weight. Magnesium (5xxx) alloys offer good weldability and corrosion resistance, not peak strength.",
     "tema": "Hardware, Materials & Processes"
   },
   {
@@ -820,8 +820,8 @@
       "Bend radius",
       "Bend allowance"
     ],
-    "correcta": 3,
-    "explicacion": "Bend allowance refers to the amount of material required for the bend and relates to the curvature formed.",
+    "correcta": 2,
+    "explicacion": "The curvature of the bend is the bend radius, measured on the inside of the bend. Bend allowance is the length of material in the curved portion.",
     "tema": "Physics & Math"
   },
   {
@@ -1762,15 +1762,15 @@
   },
   {
     "id": "maintenance-066",
-    "pregunta": "What neutralizes battery acid?",
+    "pregunta": "What is used to neutralize spilled electrolyte from a lead-acid battery?",
     "opciones": [
-      "Baking soda solution",
+      "Baking soda (sodium bicarbonate) solution",
       "Distilled water",
-      "Boric acid or vinegar",
+      "Boric acid solution or vinegar",
       "Engine oil"
     ],
-    "correcta": 2,
-    "explicacion": "Boric acid or vinegar can be used to neutralize battery acid, depending on the type of battery and electrolyte involved.",
+    "correcta": 0,
+    "explicacion": "Lead-acid electrolyte is sulfuric acid, so it is neutralized with a weak base: a solution of baking soda (sodium bicarbonate). Boric acid or vinegar is used for the alkaline electrolyte of nickel-cadmium batteries.",
     "tema": "Electrical"
   },
   {
@@ -2133,8 +2133,8 @@
       "Zinc",
       "Nickel"
     ],
-    "correcta": 1,
-    "explicacion": "Magnesium combined with aluminum produces alloys with excellent strength-to-weight ratios, widely used in aerospace applications.",
+    "correcta": 2,
+    "explicacion": "Zinc gives the strongest aluminum alloys (7075: 77 KSI, 7178: 84 KSI). Magnesium alloys are only moderate strength.",
     "tema": "Hardware, Materials & Processes"
   },
   {
@@ -2432,8 +2432,8 @@
       "2024 aluminum, 5/8 inch long",
       "Steel, 5/8 inch long"
     ],
-    "correcta": 0,
-    "explicacion": "AN3 indicates a 3/16 inch diameter bolt, DD indicates 2024 aluminum alloy, and the number 5 indicates a length of 5/16 inch.",
+    "correcta": 2,
+    "explicacion": "In an AN bolt part number the first number is the diameter in 1/16 inch (AN3 = 3/16 inch), DD means 2024 aluminum alloy, and the dash number is the length in 1/8 inch (5 = 5/8 inch).",
     "tema": "Hardware, Materials & Processes"
   },
   {
@@ -2926,8 +2926,8 @@
       "Strain hardening",
       "Solution heat treatment"
     ],
-    "correcta": 1,
-    "explicacion": "Age hardening (precipitation hardening) can, if not properly controlled, lead to intergranular corrosion due to precipitate formation along grain boundaries.",
+    "correcta": 3,
+    "explicacion": "If the quench is delayed or too slow during solution heat treatment, large grains precipitate along the grain boundaries, weakening the alloy and setting up intergranular corrosion. Precipitation (age) hardening locks the grain structure together.",
     "tema": "Hardware, Materials & Processes"
   },
   {
@@ -3134,9 +3134,9 @@
       "Centerlines of holes",
       "Areas to be removed"
     ],
-    "correcta": 1,
+    "correcta": 0,
     "tema": "Hardware, Materials & Processes",
-    "explicacion": "In sheet metal drawings, dashed lines commonly indicate bend lines, showing where the material is to be formed or bent during fabrication."
+    "explicacion": "Dashed (hidden) lines show edges and contours hidden behind a surface. Bend lines are layout marks made with a soft pencil or marker, not a drawing line type."
   },
   {
     "id": "electrical-200",
@@ -3150,5 +3150,18 @@
     "correcta": 1,
     "tema": "Electrical",
     "explicacion": "Use P = I²R → I = √(P/R) = √(400/200) = √2 ≈ 1.41 amperes."
+  },
+  {
+    "id": "maintenance-066b",
+    "pregunta": "What is used to neutralize spilled electrolyte from a nickel-cadmium battery?",
+    "opciones": [
+      "Baking soda (sodium bicarbonate) solution",
+      "Distilled water",
+      "Boric acid solution or vinegar",
+      "Engine oil"
+    ],
+    "correcta": 2,
+    "explicacion": "Nickel-cadmium electrolyte is potassium hydroxide, an alkali, so it is neutralized with a weak acid: a boric acid solution or vinegar. Baking soda is used for the acid electrolyte of lead-acid batteries.",
+    "tema": "Electrical"
   }
 ]
