@@ -1910,14 +1910,14 @@
     "id": "helicopter-268",
     "pregunta": "For vertical flight at a constant upward rate, the relationship of forces is:",
     "opciones": [
-      "Thrust plus lift is greater than weight plus drag",
+      "Thrust plus lift equals weight plus drag",
       "Weight plus drag is greater than thrust plus lift",
       "Thrust equals drag only",
       "Lift equals zero"
     ],
     "correcta": 0,
     "tema": "Flight Controls & Aerodynamics",
-    "explicacion": "For a vertical ascent, thrust/lift must overcome the opposing forces of weight and drag."
+    "explicacion": "At a constant rate of climb there is no acceleration, so thrust plus lift exactly balances weight plus drag."
   },
   {
     "id": "instruments-209",
@@ -4692,14 +4692,14 @@
     "id": "landinggear-220",
     "pregunta": "Internal leakage in a brake master cylinder will most likely result in:",
     "opciones": [
-      "Brake fading or inability to maintain pressure",
+      "The brake pedal slowly creeping down while pedal pressure is applied",
       "Wheel shimmy",
       "Hard pedal only",
       "Brake overheating only"
     ],
     "correcta": 0,
     "tema": "Hydraulics, Landing Gear & Brakes",
-    "explicacion": "Internal leakage allows hydraulic fluid to bypass the piston seal, reducing braking effectiveness."
+    "explicacion": "Internal leakage past the master-cylinder piston seal lets fluid bypass, so the pedal slowly creeps down while pressure is applied (FAA-H-8083-31)."
   },
   {
     "id": "electrical-235",
@@ -5236,16 +5236,16 @@
   },
   {
     "id": "helicopter-230",
-    "pregunta": "Which rotor head design best compensates for the Coriolis effect?",
+    "pregunta": "Which rotor head design uses lead-lag (drag) hinges to let the blades compensate for the Coriolis effect?",
     "opciones": [
       "Semi-rigid",
       "Rigid",
       "Fully articulated",
       "Semi-articulated"
     ],
-    "correcta": 0,
+    "correcta": 2,
     "tema": "Helicopters",
-    "explicacion": "Per the Rotary Wing Airframes exam key (RWA08), the semi-rigid rotor head compensates for the Coriolis effect (its underslung design reduces the change in blade speed as the blades flap)."
+    "explicacion": "The fully articulated rotor has lead-lag hinges that let each blade speed up or slow down as its centre of mass moves. Semirigid (underslung) rotors are affected by Coriolis to a much lesser degree."
   },
   {
     "id": "helicopter-231",
