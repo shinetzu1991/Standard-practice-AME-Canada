@@ -2396,9 +2396,9 @@
       "Less than the combined weight and drag",
       "Independent of drag"
     ],
-    "correcta": 1,
+    "correcta": 0,
     "tema": "Flight Controls & Aerodynamics",
-    "explicacion": "To maintain a positive rate of climb, the upward forces (thrust/lift) must exceed the opposing forces (weight and drag)."
+    "explicacion": "At a constant rate of climb there is no acceleration, so the upward forces (thrust and lift) exactly balance the downward forces (weight and drag). They only exceed them while the climb rate is increasing."
   },
   {
     "id": "helicopter-318",
