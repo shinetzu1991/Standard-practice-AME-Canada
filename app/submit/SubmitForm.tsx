@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { ADMIN_ONLY_CATEGORIES, SECTION_LABELS, TOPIC_ORDER, type Category } from "@/lib/sections";
+import { RESTRICTED_CATEGORIES, SECTION_LABELS, TOPIC_ORDER, type Category } from "@/lib/sections";
 import { submitQuestion, type ActionResult } from "../content-actions";
 
 const INPUT =
@@ -42,7 +42,7 @@ export default function SubmitForm() {
             }}
             className={INPUT}
           >
-            {(Object.keys(SECTION_LABELS) as Category[]).filter((c) => !ADMIN_ONLY_CATEGORIES.has(c)).map((c) => (
+            {(Object.keys(SECTION_LABELS) as Category[]).filter((c) => !RESTRICTED_CATEGORIES.has(c)).map((c) => (
               <option key={c} value={c}>
                 {SECTION_LABELS[c]}
               </option>

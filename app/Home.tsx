@@ -17,10 +17,11 @@ import SiteFooter from "./SiteFooter";
 import Link from "next/link";
 import { signOut } from "./login/actions";
 import { authEnabled } from "@/lib/supabase/config";
-import { ADMIN_ONLY_CATEGORIES, TOPIC_ORDER, type Category } from "@/lib/sections";
+import { RESTRICTED_CATEGORIES, TOPIC_ORDER, type Category } from "@/lib/sections";
 import rawStandardQuestions from "../data/questions.json";
 import rawAirframeQuestions from "../data/airframe.json";
 import rawPowerplantQuestions from "../data/powerplant.json";
+import rawAirframeVerified from "../data/airframe_verified.json";
 import rawPowerplantVerified from "../data/powerplant_verified.json";
 
 type Question = {
@@ -43,7 +44,8 @@ const CATEGORIES: { key: Category; label: string; short: string }[] = [
   ...(SHOW_POWERPLANT
     ? [{ key: "powerplant" as Category, label: "Powerplant", short: "Powerplant" }]
     : []),
-  { key: "powerplant_verified", label: "Powerplant Verified", short: "PP Verified" },
+  { key: "airframe_verified", label: "AF Verified Correct", short: "AF Verified" },
+  { key: "powerplant_verified", label: "PP Verified Correct", short: "PP Verified" },
 ];
 
 // Each section gets its own icon and colour so the three are easy to tell apart.
@@ -69,6 +71,12 @@ const SECTION_STYLE: Record<
     idle: "text-orange-700 ring-orange-200 hover:bg-orange-50 dark:text-orange-300 dark:ring-orange-900 dark:hover:bg-orange-950/40",
     badge: "bg-orange-100 text-orange-700 dark:bg-orange-950 dark:text-orange-300",
   },
+  airframe_verified: {
+    image: "/icons/section-airframe.png",
+    active: "bg-teal-600 text-white shadow-lg shadow-teal-600/30 ring-teal-600",
+    idle: "text-teal-700 ring-teal-200 hover:bg-teal-50 dark:text-teal-300 dark:ring-teal-900 dark:hover:bg-teal-950/40",
+    badge: "bg-teal-100 text-teal-700 dark:bg-teal-950 dark:text-teal-300",
+  },
   powerplant_verified: {
     image: "/icons/section-powerplant.png",
     active: "bg-emerald-600 text-white shadow-lg shadow-emerald-600/30 ring-emerald-600",
@@ -82,13 +90,15 @@ const questionBanks: Record<Category, Question[]> = {
   standard: rawStandardQuestions as Question[],
   airframe: rawAirframeQuestions as Question[],
   powerplant: rawPowerplantQuestions as Question[],
-  // Review bank: the Powerplant questions whose answer the Jeppesen textbook
-  // confirms. Admin only; it reuses the Powerplant audio clips.
+  // Review banks: the questions whose answer the Jeppesen textbooks confirm.
+  // Restricted access; they reuse the parent section's audio clips.
+  airframe_verified: rawAirframeVerified as Question[],
   powerplant_verified: rawPowerplantVerified as Question[],
 };
 
-// Audio folder for a section (the verified bank shares Powerplant's clips).
-const audioCategory = (c: Category) => (c === "powerplant_verified" ? "powerplant" : c);
+// Audio folder for a section (the verified banks share their parent's clips).
+const audioCategory = (c: Category): "standard" | "airframe" | "powerplant" =>
+  c === "airframe_verified" ? "airframe" : c === "powerplant_verified" ? "powerplant" : c;
 
 // Live banks: the JSON files above minus questions hidden from /admin, plus
 // approved user submissions. Filled once by loadBankUpdates() at start-up.
@@ -292,8 +302,8 @@ const MENU_ITEM =
 const MENU_ITEM_ACTIVE =
   "block w-full bg-blue-50 px-4 py-3 text-left text-sm font-semibold text-indigo-700 dark:bg-slate-800 dark:text-indigo-300";
 
-export default function Home({ isAdmin = false }: { isAdmin?: boolean }) {
-  const visibleCategories = CATEGORIES.filter((c) => isAdmin || !ADMIN_ONLY_CATEGORIES.has(c.key));
+export default function Home({ showVerified = false }: { showVerified?: boolean }) {
+  const visibleCategories = CATEGORIES.filter((c) => showVerified || !RESTRICTED_CATEGORIES.has(c.key));
   const [category, setCategory] = useState<Category>("standard");
   const [mode, setMode] = useState<QuizMode>("test");
   const [topic, setTopic] = useState<string | null>(null);
@@ -379,7 +389,10 @@ export default function Home({ isAdmin = false }: { isAdmin?: boolean }) {
       params.has("category") || params.has("mode") || params.has("q");
     const categoryParam = params.get("category");
     const urlCategory: Category =
-      categoryParam === "airframe" || categoryParam === "powerplant" || categoryParam === "powerplant_verified"
+      categoryParam === "airframe" ||
+      categoryParam === "powerplant" ||
+      categoryParam === "airframe_verified" ||
+      categoryParam === "powerplant_verified"
         ? categoryParam
         : "standard";
     const modeParam = params.get("mode");
