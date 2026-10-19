@@ -1921,12 +1921,12 @@
     "pregunta": "Pascal's law, hydraulic pressure exerted everywhere is expressed by what formula?",
     "opciones": [
       "P = F x A",
-      "F = P x A",
+      "F = P / A",
       "A = P x F",
       "P = F / A"
     ],
-    "correcta": 1,
-    "explicacion": "Pascal's law states that force equals pressure times area (F = P × A), meaning pressure applied to a fluid is transmitted equally in all directions.",
+    "correcta": 3,
+    "explicacion": "Pressure is force divided by the area over which it acts (P = F / A). Pascal's law states that this pressure is transmitted equally in all directions throughout a confined fluid.",
     "tema": "Physics & Math"
   },
   {
